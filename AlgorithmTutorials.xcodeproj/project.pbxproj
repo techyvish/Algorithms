@@ -8,7 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
-		C938E1F917787D4C0086F792 /* AlgorithmTutorials.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C938E1F817787D4C0086F792 /* AlgorithmTutorials.1 */; };
+		C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */; };
+		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
+		C938E2071779B1280086F792 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2051779B1280086F792 /* Combination.cpp */; };
+		C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2081779C1BF0086F792 /* Permutations.cpp */; };
+		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
+		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
+		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
+		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
+		C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */; };
+		C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */; };
+		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
+		C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9BC9609178497F900E69E55 /* NQueens.cpp */; };
+		C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D89177B279E00994C1F /* StringOperations.cpp */; };
+		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
+		C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D92177D03B500994C1F /* MatrixOperations.cpp */; };
+		C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D9C177FAF5300994C1F /* TutorialBase.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +33,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				C938E1F917787D4C0086F792 /* AlgorithmTutorials.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,7 +41,39 @@
 /* Begin PBXFileReference section */
 		C938E1F317787D4C0086F792 /* AlgorithmTutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938E1F617787D4C0086F792 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C938E1F817787D4C0086F792 /* AlgorithmTutorials.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AlgorithmTutorials.1; sourceTree = "<group>"; };
+		C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursiveLoop.cpp; sourceTree = "<group>"; };
+		C938E20017787D5F0086F792 /* RecursiveLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecursiveLoop.h; sourceTree = "<group>"; };
+		C938E202177904360086F792 /* Power.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Power.cpp; sourceTree = "<group>"; };
+		C938E203177904360086F792 /* Power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power.h; sourceTree = "<group>"; };
+		C938E2051779B1280086F792 /* Combination.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Combination.cpp; sourceTree = "<group>"; };
+		C938E2061779B1280086F792 /* Combination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Combination.h; sourceTree = "<group>"; };
+		C938E2081779C1BF0086F792 /* Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Permutations.cpp; sourceTree = "<group>"; };
+		C938E2091779C1BF0086F792 /* Permutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Permutations.h; sourceTree = "<group>"; };
+		C9600E6017A6E384006A15A9 /* InsertionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
+		C9600E6117A6E384006A15A9 /* InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
+		C96352E017A04C990092BC3C /* CutTheRod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutTheRod.cpp; sourceTree = "<group>"; };
+		C96352E117A04C990092BC3C /* CutTheRod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutTheRod.h; sourceTree = "<group>"; };
+		C975437B1798AC9300A905AC /* CoinChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinChange.cpp; sourceTree = "<group>"; };
+		C975437C1798AC9300A905AC /* CoinChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinChange.h; sourceTree = "<group>"; };
+		C975439E179C561000A905AC /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
+		C975439F179C561000A905AC /* LIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIS.h; sourceTree = "<group>"; };
+		C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PelindromicSubSeq.cpp; sourceTree = "<group>"; };
+		C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PelindromicSubSeq.h; sourceTree = "<group>"; };
+		C9940A5C17AEC824003FDD03 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColoring.cpp; sourceTree = "<group>"; };
+		C9AD36E31788B65C0036D3D7 /* GraphColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphColoring.h; sourceTree = "<group>"; };
+		C9AD3702178B500B0036D3D7 /* Parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parentheses.cpp; sourceTree = "<group>"; };
+		C9AD3703178B500B0036D3D7 /* Parentheses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parentheses.h; sourceTree = "<group>"; };
+		C9BC9609178497F900E69E55 /* NQueens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NQueens.cpp; sourceTree = "<group>"; };
+		C9BC960A178497F900E69E55 /* NQueens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQueens.h; sourceTree = "<group>"; };
+		C9ED3D89177B279E00994C1F /* StringOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringOperations.cpp; sourceTree = "<group>"; };
+		C9ED3D8A177B279E00994C1F /* StringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOperations.h; sourceTree = "<group>"; };
+		C9ED3D8F177C1A6400994C1F /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
+		C9ED3D90177C1A6400994C1F /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
+		C9ED3D92177D03B500994C1F /* MatrixOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixOperations.cpp; sourceTree = "<group>"; };
+		C9ED3D93177D03B500994C1F /* MatrixOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixOperations.h; sourceTree = "<group>"; };
+		C9ED3D9C177FAF5300994C1F /* TutorialBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TutorialBase.cpp; sourceTree = "<group>"; };
+		C9ED3D9D177FAF5300994C1F /* TutorialBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +106,50 @@
 		C938E1F517787D4C0086F792 /* AlgorithmTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				C9940A5C17AEC824003FDD03 /* common.h */,
+				C9600E5F17A6E373006A15A9 /* Sorting */,
 				C938E1F617787D4C0086F792 /* main.cpp */,
-				C938E1F817787D4C0086F792 /* AlgorithmTutorials.1 */,
+				C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */,
+				C938E20017787D5F0086F792 /* RecursiveLoop.h */,
+				C938E202177904360086F792 /* Power.cpp */,
+				C938E203177904360086F792 /* Power.h */,
+				C938E2051779B1280086F792 /* Combination.cpp */,
+				C938E2061779B1280086F792 /* Combination.h */,
+				C938E2081779C1BF0086F792 /* Permutations.cpp */,
+				C938E2091779C1BF0086F792 /* Permutations.h */,
+				C9ED3D89177B279E00994C1F /* StringOperations.cpp */,
+				C9ED3D8A177B279E00994C1F /* StringOperations.h */,
+				C9ED3D8F177C1A6400994C1F /* BST.cpp */,
+				C9ED3D90177C1A6400994C1F /* BST.h */,
+				C9ED3D92177D03B500994C1F /* MatrixOperations.cpp */,
+				C9ED3D93177D03B500994C1F /* MatrixOperations.h */,
+				C9ED3D9C177FAF5300994C1F /* TutorialBase.cpp */,
+				C9ED3D9D177FAF5300994C1F /* TutorialBase.h */,
+				C9BC9609178497F900E69E55 /* NQueens.cpp */,
+				C9BC960A178497F900E69E55 /* NQueens.h */,
+				C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */,
+				C9AD36E31788B65C0036D3D7 /* GraphColoring.h */,
+				C9AD3702178B500B0036D3D7 /* Parentheses.cpp */,
+				C9AD3703178B500B0036D3D7 /* Parentheses.h */,
+				C975437B1798AC9300A905AC /* CoinChange.cpp */,
+				C975437C1798AC9300A905AC /* CoinChange.h */,
+				C975439E179C561000A905AC /* LIS.cpp */,
+				C975439F179C561000A905AC /* LIS.h */,
+				C96352E017A04C990092BC3C /* CutTheRod.cpp */,
+				C96352E117A04C990092BC3C /* CutTheRod.h */,
+				C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */,
+				C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */,
 			);
 			path = AlgorithmTutorials;
+			sourceTree = "<group>";
+		};
+		C9600E5F17A6E373006A15A9 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				C9600E6017A6E384006A15A9 /* InsertionSort.cpp */,
+				C9600E6117A6E384006A15A9 /* InsertionSort.h */,
+			);
+			path = Sorting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +204,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
+				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
+				C938E204177904360086F792 /* Power.cpp in Sources */,
+				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
+				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
+				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
+				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
+				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
+				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
+				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
+				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
+				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
+				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
+				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
+				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
+				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
+				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +316,7 @@
 				C938E1FE17787D4C0086F792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
