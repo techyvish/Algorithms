@@ -36,7 +36,7 @@ public:
     void postorderTraversal(Node *root);
     ~BinarySearchTree();
     int LeastCommonAncestor(Node *root);
-    int size();
+    int size(Node *root);
 };
 
 
