@@ -88,6 +88,23 @@ int BinarySearchTree::LeastCommonAncestor(Node *root) {
 	return 0;
 }
 
+void BinarySearchTree::constructTreeFromInorderAndPreOrder(int inorder[], int preorder[], int nodes) {
+	// in preorder first element is root.
+	// and from in order you'll find right and left subtree.
+	// recursily find root and subtree from inorder and preorder and
+	// you can construct tree.
+}
+
+bool BST::compareTrees(Node *roota, Node *rootb) {
+    
+    if ( roota == NULL && rootb == NULL)
+        return 1;
+    
+	return (roota->value == rootb->value &&
+	        compareTrees(roota->leftChild, rootb->leftChild) &&
+	        compareTrees(roota->rightChild, rootb->rightChild));
+}
+
 BinarySearchTree::~BinarySearchTree() {
 	//delete tree;
 }
@@ -99,9 +116,21 @@ int BinarySearchTree::size(Node *root) {
 		return 0;
 }
 
+int BinarySearchTree::maximumDepth(Node *root) {
+	if (root == NULL)
+		return 0;
+	else {
+		int ldepth = maximumDepth(root->leftChild);
+		int rdepth = maximumDepth(root->rightChild);
+		if (ldepth > rdepth)
+			return (ldepth + 1);
+		else
+			return (rdepth + 1);
+	}
+}
+
 void BST::Run() {
 	int nodeVals[10] = { 30, 10, 5, 15, 20, 40, 35, 50 };
-    
 	BinarySearchTree *bst = new BinarySearchTree();
 	bst->setRoot(nodeVals[0]);
 	for (int i = 1; i < 8; i++) {
@@ -115,7 +144,28 @@ void BST::Run() {
 	bst->postorderTraversal(bst->getRoot());
 	cout << endl;
     
-    cout << "size of tree : " << bst->size(bst->getRoot());
+	cout << "size of tree : " << bst->size(bst->getRoot()) << endl;
+	cout << "max depth    : " << bst->maximumDepth(bst->getRoot()) << endl;
+    
+	int tree1[10] = { 20, 10, 30 };
+	BinarySearchTree *bst1 = new BinarySearchTree();
+	bst1->setRoot(tree1[0]);
+	for (int i = 1; i < 3; i++) {
+		bst1->constructTree(bst1->getRoot(), tree1[i]);
+	}
+    
+	int tree2[10] = { 20, 10, 30 };
+	BinarySearchTree *bst2 = new BinarySearchTree();
+	bst2->setRoot(tree2[0]);
+	for (int i = 1; i < 3; i++) {
+		bst2->constructTree(bst2->getRoot(), tree2[i]);
+	}
+    
+	cout << "tree 1 and 2 are ";
+	if (compareTrees(bst1->getRoot(), bst2->getRoot()))
+		cout << "same";
+	else
+		cout << "not same";
     
 	delete bst;
 }

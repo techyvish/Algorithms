@@ -37,6 +37,10 @@ public:
     ~BinarySearchTree();
     int LeastCommonAncestor(Node *root);
     int size(Node *root);
+    int maximumDepth(Node *root);
+    void constructTreeFromInorderAndPreOrder(int inorder[],int preorder[], int nodes);
+
+
 };
 
 
@@ -44,7 +48,7 @@ class BST : TutorialBase {
     
     
 public:
-    
+    bool compareTrees(Node *roota,Node *rootb);
     virtual void Run();
 };
 #endif /* defined(__AlgorithmTutorials__BST__) */
