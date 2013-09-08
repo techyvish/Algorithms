@@ -128,6 +128,19 @@ int BinarySearchTree::maximumDepth(Node *root) {
 void BinarySearchTree::findVerticalSum() {
 }
 
+void BST::printVertical(Node *root,int index,vector<vector<int >> *list) {
+    
+    if ( root == NULL)
+        return;
+    
+    vector<int> l = list->back();
+    l.push_back(root->value);
+    
+    printVertical(root->leftChild,index-1,list);
+    printVertical(root->rightChild,index+1,list);
+    
+}
+
 void BST::printLevelByLevel(Node *root) {
 	queue <Node *> q;
 	q.push(root);
@@ -177,27 +190,27 @@ int BST::hasPathSum(Node *tree, int theSum) {
 }
 
 void BST::iterativePostOrder(Node *root) {
-    //    1. Initially push the root into stack1.
-    //    2. while stack1 is not empty pop one element from stack1 and push into stack2 and push its left and right child into stack1
-    //        3. pop elements in stack2 will give the postorder
-    //
-    //
-    //                A
-    //              /   \
-    //             B     C
-    //            / \   /
-    //           D   E F
-    //
-    //        stack1	       stack2
-    //        A                empty
-    //        BC                A
-    //        BF                AC
-    //        B                 ACF
-    //        DE                ACFB
-    //        D                 ACFBE
-    //        empty             ACFBE
-    //
-    //        pop stack2 EBFCA -> postorder
+	//    1. Initially push the root into stack1.
+	//    2. while stack1 is not empty pop one element from stack1 and push into stack2 and push its left and right child into stack1
+	//        3. pop elements in stack2 will give the postorder
+	//
+	//
+	//                A
+	//              /   \
+	//             B     C
+	//            / \   /
+	//           D   E F
+	//
+	//        stack1	       stack2
+	//        A                empty
+	//        BC                A
+	//        BF                AC
+	//        B                 ACF
+	//        DE                ACFB
+	//        D                 ACFBE
+	//        empty             ACFBE
+	//
+	//        pop stack2 EBFCA -> postorder
 }
 
 void BST::allInOneTraversal(Node *root) {
@@ -212,6 +225,42 @@ void BST::allInOneTraversal(Node *root) {
 		allInOneTraversal(root->rightChild);
 		postorderQueue.push(root);
 	}
+}
+
+void BST::serializeBinaryTree(Node *root, queue <Node *> q) {
+	if (root == NULL) {
+		return;
+	}
+	q.push(root);
+	serializeBinaryTree(root->leftChild, q);
+	serializeBinaryTree(root->rightChild, q);
+}
+
+int BST::diameter(Node *root) {
+	if (root == NULL) {
+		return 0;
+	}
+    
+	int lheight = depth(root->leftChild);
+	int rheight = depth(root->rightChild);
+    
+	int ldiameter = diameter(root->leftChild);
+	int rdiameter = diameter(root->rightChild);
+    
+	return (max((lheight + rheight +1) , max(ldiameter , rdiameter)));
+}
+
+// is mirror
+bool BST::isSymmetric(Node *leftSubTree,Node *rightSubTree){
+
+    if ( leftSubTree == NULL && rightSubTree == NULL )
+        return true;
+    
+    if ( (leftSubTree == NULL && rightSubTree != NULL) || (leftSubTree != NULL && rightSubTree == NULL))
+        return false;
+    
+    return ( isSymmetric(leftSubTree->leftChild, rightSubTree->rightChild) &&
+             isSymmetric(leftSubTree->rightChild, rightSubTree->leftChild));
 }
 
 void BST::Run() {
@@ -255,6 +304,26 @@ void BST::Run() {
     
 	printLevelByLevel(bst->getRoot()); cout << endl;
 	cout << "depth of the tree is :" << depth(bst->getRoot());
+    
+	queue <Node *> q;
+	serializeBinaryTree(bst->getRoot(), q);
+    
+    cout << "Diameter of the tree is : " << diameter(bst->getRoot()) << endl;
+    cout << "this tree is symmetric : " << isSymmetric(bst->getRoot()->leftChild, bst->getRoot()->rightChild) << endl;
+    
+    vector<vector<int>> *list = new vector<vector<int>>() ;
+    for ( int i = -5 ; i < 5 ;i++ ){
+        vector<int> v;
+        list->push_back(v);
+    }
+    printVertical(bst->getRoot(), 0, list);
+    
+//    for ( int i = 0 ; i < list.size() ;i++){
+//        vector<int> v = list[i];
+//        for ( int j = 0 ; j < v.size() ;j++){
+//            cout << v[j];
+//        }
+//    }
     
 	delete bst;
 }

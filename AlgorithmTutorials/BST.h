@@ -11,9 +11,13 @@
 
 #include <iostream>
 #include "TutorialBase.h"
+#include <queue>
+
+using namespace std;
 
 struct Node {
 	int value;
+    int index;
 	Node *rightChild;
 	Node *leftChild;
 };
@@ -49,6 +53,11 @@ public:
     int depth(Node *root);
     void allInOneTraversal(Node *root);
     void iterativePostOrder(Node *root);
-	virtual void Run();
+	void serializeBinaryTree(Node *root,queue<Node *>q);
+    int diameter(Node *root);
+    bool isSymmetric(Node *leftSubTree,Node *rightSubTree);
+    void printVertical(Node *root,int index,vector<vector<int>>* list) ;
+
+    virtual void Run();
 };
 #endif /* defined(__AlgorithmTutorials__BST__) */
