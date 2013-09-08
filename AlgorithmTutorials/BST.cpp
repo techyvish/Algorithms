@@ -128,17 +128,16 @@ int BinarySearchTree::maximumDepth(Node *root) {
 void BinarySearchTree::findVerticalSum() {
 }
 
-void BST::printVertical(Node *root,int index,vector<vector<int >> *list) {
+void BST::printVertical(Node *root, int index, map < int, vector < int >>& list) {
+	if (root == NULL)
+		return;
     
-    if ( root == NULL)
-        return;
+	vector <int> l = list[index];
+	l.push_back(root->value);
+	list[index] = l;
     
-    vector<int> l = list->back();
-    l.push_back(root->value);
-    
-    printVertical(root->leftChild,index-1,list);
-    printVertical(root->rightChild,index+1,list);
-    
+	printVertical(root->leftChild, index - 1, list);
+	printVertical(root->rightChild, index + 1, list);
 }
 
 void BST::printLevelByLevel(Node *root) {
@@ -158,6 +157,22 @@ void BST::printLevelByLevel(Node *root) {
 			q.push(n->rightChild);
 		}
 	}
+}
+
+int BST::maxDepth(Node *root) {
+	if (root == NULL)
+		return 0;
+	return 1 + max(maxDepth(root->leftChild), maxDepth(root->rightChild));
+}
+
+int BST::minDepth(Node *root) {
+	if (root == NULL)
+		return 0;
+	return 1 + min(minDepth(root->leftChild), minDepth(root->rightChild));
+}
+
+int BST::isBalancedTree(Node *root) {
+	return (maxDepth(root) - minDepth(root) <= 1);
 }
 
 int BST::depth(Node *root) {
@@ -247,20 +262,19 @@ int BST::diameter(Node *root) {
 	int ldiameter = diameter(root->leftChild);
 	int rdiameter = diameter(root->rightChild);
     
-	return (max((lheight + rheight +1) , max(ldiameter , rdiameter)));
+	return (max((lheight + rheight + 1), max(ldiameter, rdiameter)));
 }
 
 // is mirror
-bool BST::isSymmetric(Node *leftSubTree,Node *rightSubTree){
-
-    if ( leftSubTree == NULL && rightSubTree == NULL )
-        return true;
+bool BST::isSymmetric(Node *leftSubTree, Node *rightSubTree) {
+	if (leftSubTree == NULL && rightSubTree == NULL)
+		return true;
     
-    if ( (leftSubTree == NULL && rightSubTree != NULL) || (leftSubTree != NULL && rightSubTree == NULL))
-        return false;
+	if ((leftSubTree == NULL && rightSubTree != NULL) || (leftSubTree != NULL && rightSubTree == NULL))
+		return false;
     
-    return ( isSymmetric(leftSubTree->leftChild, rightSubTree->rightChild) &&
-             isSymmetric(leftSubTree->rightChild, rightSubTree->leftChild));
+	return (isSymmetric(leftSubTree->leftChild, rightSubTree->rightChild) &&
+	        isSymmetric(leftSubTree->rightChild, rightSubTree->leftChild));
 }
 
 void BST::Run() {
@@ -308,22 +322,19 @@ void BST::Run() {
 	queue <Node *> q;
 	serializeBinaryTree(bst->getRoot(), q);
     
-    cout << "Diameter of the tree is : " << diameter(bst->getRoot()) << endl;
-    cout << "this tree is symmetric : " << isSymmetric(bst->getRoot()->leftChild, bst->getRoot()->rightChild) << endl;
+	cout << "Diameter of the tree is : " << diameter(bst->getRoot()) << endl;
+	cout << "this tree is symmetric : " << isSymmetric(bst->getRoot()->leftChild, bst->getRoot()->rightChild) << endl;
     
-    vector<vector<int>> *list = new vector<vector<int>>() ;
-    for ( int i = -5 ; i < 5 ;i++ ){
-        vector<int> v;
-        list->push_back(v);
-    }
-    printVertical(bst->getRoot(), 0, list);
+	map < int, vector < int >> list;
+	printVertical(bst->getRoot(), 0, list);
     
-//    for ( int i = 0 ; i < list.size() ;i++){
-//        vector<int> v = list[i];
-//        for ( int j = 0 ; j < v.size() ;j++){
-//            cout << v[j];
-//        }
-//    }
+	map < int, vector < int >> ::iterator it;
+	for (it = list.begin(); it != list.end(); it++) {
+		vector <int> v = (*it).second;
+		for (int j = 0; j < v.size(); j++) {
+			cout << v[j] << "  ";
+		}
+	}
     
 	delete bst;
 }

@@ -108,31 +108,52 @@ char *StringOperations :: findLongestEvenPelindrom(char *string) {
 void StringOperations :: reverseAndReplace(char *string, char *str, char *replaceWith) {
 }
 
-bool StringOperations :: isEqual(char *strSource , char *strDest ) {
-    int i = 0;
-    while (i < 3) {
-        if ( strSource[i] != strDest[i] )
-            return false;
-        i++;
-    }
-    return true;
+bool StringOperations :: isEqual(char *strSource, char *strDest) {
+	int i = 0;
+	while (i < 3) {
+		if (strSource[i] != strDest[i])
+			return false;
+		i++;
+	}
+	return true;
 }
 
 void StringOperations :: decodeURL(char *str) {
-    int i  = 0;
-    while (str[i] != '\0')  {
-        char space[] = "%20";
-        if ( str[i] == '%' && isEqual(space, str+i) ) {
-                str[i] = 32;
-                int j = i + 1;
-                int k = i + 3;
-                while ( str[k] != '\0') {
-                    str[j++] = str[k++];
-                }
-                str[j] = '\0';
-        }
-        i++;
-    }
+	int i  = 0;
+	while (str[i] != '\0') {
+		char space[] = "%20";
+		if (str[i] == '%' && isEqual(space, str + i)) {
+			str[i] = 32;
+			int j = i + 1;
+			int k = i + 3;
+			while (str[k] != '\0') {
+				str[j++] = str[k++];
+			}
+			str[j] = '\0';
+		}
+		i++;
+	}
+}
+
+int sortfunction(int i, int j) {
+	return i < j;
+}
+
+bool StringOperations::isAnagram(char *str1, char *str2) {
+	if (strlen(str1) != strlen(str2))
+		return false;
+    
+	sort((str1 + 0), (str1 + strlen(str1)), sortfunction);
+	sort((str2 + 0), (str2 + strlen(str2)), sortfunction);
+    
+	int i = 0;
+	while (str1[i] != '\0') {
+		if (str1[i] == str2[i])
+			i++;
+		else
+			return false;
+	}
+	return true;
 }
 
 void StringOperations :: run() {
@@ -160,12 +181,15 @@ void StringOperations :: run() {
 	//    else {
 	//        cout << "s2 is not substring of s1" << endl;
 	//    }
-
+    
 	//this->removeOccurancesOfString(s1, s2);
 	//cout << s1 << endl;
     
-    char t1[] = "kittne%20pic.jpg";
-    decodeURL(t1);
-    cout << t1 << endl;
+    //    char t1[] = "kittne%20pic.jpg";
+    //    decodeURL(t1);
+    //    cout << t1 << endl;
     
+	char str1[] = "BDCDEA";
+	char str2[] = "ABCDDE";
+	bool anagram = isAnagram(str1, str2);
 }

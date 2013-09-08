@@ -24,6 +24,7 @@ public:
     void reverseAndReplace(char *string , char *str , char* replaceWith );
     void decodeURL(char *str);
     bool isEqual(char *strSource , char *strDest ) ;
+    bool isAnagram(char *str1, char *str2);
     virtual void run();
 };
 

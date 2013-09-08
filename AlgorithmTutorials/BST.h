@@ -12,6 +12,7 @@
 #include <iostream>
 #include "TutorialBase.h"
 #include <queue>
+#include <map>
 
 using namespace std;
 
@@ -56,7 +57,10 @@ public:
 	void serializeBinaryTree(Node *root,queue<Node *>q);
     int diameter(Node *root);
     bool isSymmetric(Node *leftSubTree,Node *rightSubTree);
-    void printVertical(Node *root,int index,vector<vector<int>>* list) ;
+    void printVertical(Node *root,int index,map<int,vector<int>>& list) ;
+    int isBalancedTree(Node *root);
+    int maxDepth(Node *root);
+    int minDepth(Node *root);
 
     virtual void Run();
 };
