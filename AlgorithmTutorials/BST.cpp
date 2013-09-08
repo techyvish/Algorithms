@@ -7,6 +7,8 @@
 //
 
 #include "BST.h"
+#include <queue>
+
 using namespace std;
 BinarySearchTree::BinarySearchTree() {
 	root = new Node;
@@ -71,6 +73,10 @@ void BinarySearchTree::preorderTraversal(Node *root) {
 	}
 }
 
+bool BinarySearchTree::isSubTree(Node *tree) {
+	return false;
+}
+
 void BinarySearchTree::postorderTraversal(Node *root) {
 	if (root != NULL) {
 		postorderTraversal(root->leftChild);
@@ -95,16 +101,6 @@ void BinarySearchTree::constructTreeFromInorderAndPreOrder(int inorder[], int pr
 	// you can construct tree.
 }
 
-bool BST::compareTrees(Node *roota, Node *rootb) {
-    
-    if ( roota == NULL && rootb == NULL)
-        return 1;
-    
-	return (roota->value == rootb->value &&
-	        compareTrees(roota->leftChild, rootb->leftChild) &&
-	        compareTrees(roota->rightChild, rootb->rightChild));
-}
-
 BinarySearchTree::~BinarySearchTree() {
 	//delete tree;
 }
@@ -126,6 +122,95 @@ int BinarySearchTree::maximumDepth(Node *root) {
 			return (ldepth + 1);
 		else
 			return (rdepth + 1);
+	}
+}
+
+void BinarySearchTree::findVerticalSum() {
+}
+
+void BST::printLevelByLevel(Node *root) {
+	queue <Node *> q;
+	q.push(root);
+    
+	while (!q.empty()) {
+		Node *n = q.front();
+		cout << n->value << " ";
+		q.pop();
+        
+		if (n->leftChild != NULL) {
+			q.push(n->leftChild);
+		}
+        
+		if (n->rightChild != NULL) {
+			q.push(n->rightChild);
+		}
+	}
+}
+
+int BST::depth(Node *root) {
+	if (root == NULL) {
+		return 0;
+	}
+	else {
+		return 1 + max(depth(root->leftChild), depth(root->rightChild));
+	}
+}
+
+bool BST::compareTrees(Node *roota, Node *rootb) {
+	if (roota == NULL && rootb == NULL)
+		return 1;
+    
+	return (roota->value == rootb->value &&
+	        compareTrees(roota->leftChild, rootb->leftChild) &&
+	        compareTrees(roota->rightChild, rootb->rightChild));
+}
+
+int BST::hasPathSum(Node *tree, int theSum) {
+	if (theSum == 0)
+		return true;
+    
+	if (tree == NULL)
+		return 0;
+    
+	return  (hasPathSum(tree->leftChild, theSum - tree->value) ||
+	         hasPathSum(tree->rightChild, theSum  - tree->value));
+}
+
+void BST::iterativePostOrder(Node *root) {
+    //    1. Initially push the root into stack1.
+    //    2. while stack1 is not empty pop one element from stack1 and push into stack2 and push its left and right child into stack1
+    //        3. pop elements in stack2 will give the postorder
+    //
+    //
+    //                A
+    //              /   \
+    //             B     C
+    //            / \   /
+    //           D   E F
+    //
+    //        stack1	       stack2
+    //        A                empty
+    //        BC                A
+    //        BF                AC
+    //        B                 ACF
+    //        DE                ACFB
+    //        D                 ACFBE
+    //        empty             ACFBE
+    //
+    //        pop stack2 EBFCA -> postorder
+}
+
+void BST::allInOneTraversal(Node *root) {
+	queue <Node *> inorderQueue;
+	queue <Node *> preorderQueue;
+	queue <Node *> postorderQueue;
+    
+	if (root != NULL) {
+		preorderQueue.push(root);
+		allInOneTraversal(root->leftChild);
+		inorderQueue.push(root);
+		allInOneTraversal(root->rightChild);
+		postorderQueue.push(root);
 	}
 }
 
@@ -163,9 +248,13 @@ void BST::Run() {
     
 	cout << "tree 1 and 2 are ";
 	if (compareTrees(bst1->getRoot(), bst2->getRoot()))
-		cout << "same";
+		cout << "same" << endl;
 	else
-		cout << "not same";
+		cout << "not same" << endl;
+	int p = hasPathSum(bst2->getRoot(), 30);
+    
+	printLevelByLevel(bst->getRoot()); cout << endl;
+	cout << "depth of the tree is :" << depth(bst->getRoot());
     
 	delete bst;
 }
