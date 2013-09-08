@@ -22,6 +22,7 @@
 #include "CutTheRod.h"
 #include "PelindromicSubSeq.h"
 #include "BST.h"
+#include "Graph.h"
 
 using namespace std;
 
@@ -71,8 +72,11 @@ int main(int argc, const char * argv[])
 //    LongestPelindromicSubsequence longest;
 //    longest.run();
 
-    BST b;
-    b.Run();
+//    BST b;
+//    b.Run();
+    
+    Graph g;
+    g.run();
     
     return 0;
 }
