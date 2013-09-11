@@ -41,7 +41,6 @@ int main(int argc, const char * argv[])
 //    comb.combination(a, 1, 3);
     
 //    char b[] = {'0','a','b','c','\0'};
-//
 //    Permutations p;
 //    p.permutations(b, 1, 3);
     
@@ -69,14 +68,14 @@ int main(int argc, const char * argv[])
 //    CutTheRod c;
 //    c.run();
     
-//    LongestPelindromicSubsequence longest;
-//    longest.run();
+    LongestPelindromicSubsequence longest;
+    longest.run();
 
 //    BST b;
 //    b.Run();
     
-    Graph g;
-    g.run();
+//    Graph g;
+//    g.run();
     
     return 0;
 }

@@ -55,7 +55,7 @@ void CoinChange :: run() {
 	results = (int *)malloc(sizeof(int) * amt + 1);
 	memset(results, 0, sizeof(int) * amt);
     
-	call(2, coinArr);
-	//  int coinsRequired = change(amt, coins);
-	//  std::cout << "numberOfCoinsRequired for "<< amt << " is " << coinsRequired << std::endl;
+	//call(2, coinArr);
+    int coinsRequired = change(amt, coins);
+    std::cout << "numberOfCoinsRequired for "<< amt << " is " << coinsRequired << std::endl;
 }
