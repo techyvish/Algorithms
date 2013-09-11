@@ -21,6 +21,7 @@
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9BC9609178497F900E69E55 /* NQueens.cpp */; };
 		C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7B17DCFAF200ACB022 /* Graph.cpp */; };
+		C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */; };
 		C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D89177B279E00994C1F /* StringOperations.cpp */; };
 		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
 		C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D92177D03B500994C1F /* MatrixOperations.cpp */; };
@@ -69,6 +70,8 @@
 		C9BC960A178497F900E69E55 /* NQueens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQueens.h; sourceTree = "<group>"; };
 		C9D16A7B17DCFAF200ACB022 /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		C9D16A7C17DCFAF200ACB022 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
+		C9D16A7F17E0313C00ACB022 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		C9ED3D89177B279E00994C1F /* StringOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringOperations.cpp; sourceTree = "<group>"; };
 		C9ED3D8A177B279E00994C1F /* StringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOperations.h; sourceTree = "<group>"; };
 		C9ED3D8F177C1A6400994C1F /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 			children = (
 				C9600E6017A6E384006A15A9 /* InsertionSort.cpp */,
 				C9600E6117A6E384006A15A9 /* InsertionSort.h */,
+				C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */,
+				C9D16A7F17E0313C00ACB022 /* QuickSort.h */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
 				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
+				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
