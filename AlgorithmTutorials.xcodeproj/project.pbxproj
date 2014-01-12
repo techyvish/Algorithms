@@ -12,6 +12,7 @@
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
 		C938E2071779B1280086F792 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2051779B1280086F792 /* Combination.cpp */; };
 		C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2081779C1BF0086F792 /* Permutations.cpp */; };
+		C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95CCB8518829A3F00F2B964 /* KMP.cpp */; };
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
@@ -51,6 +52,8 @@
 		C938E2061779B1280086F792 /* Combination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Combination.h; sourceTree = "<group>"; };
 		C938E2081779C1BF0086F792 /* Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Permutations.cpp; sourceTree = "<group>"; };
 		C938E2091779C1BF0086F792 /* Permutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Permutations.h; sourceTree = "<group>"; };
+		C95CCB8518829A3F00F2B964 /* KMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMP.cpp; sourceTree = "<group>"; };
+		C95CCB8618829A3F00F2B964 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
 		C9600E6017A6E384006A15A9 /* InsertionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
 		C9600E6117A6E384006A15A9 /* InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
 		C96352E017A04C990092BC3C /* CutTheRod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutTheRod.cpp; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */,
 				C9D16A7B17DCFAF200ACB022 /* Graph.cpp */,
 				C9D16A7C17DCFAF200ACB022 /* Graph.h */,
+				C95CCB8518829A3F00F2B964 /* KMP.cpp */,
+				C95CCB8618829A3F00F2B964 /* KMP.h */,
 			);
 			path = AlgorithmTutorials;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
+				C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */,
 				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
 				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
