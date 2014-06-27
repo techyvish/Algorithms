@@ -12,6 +12,8 @@
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
 		C938E2071779B1280086F792 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2051779B1280086F792 /* Combination.cpp */; };
 		C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2081779C1BF0086F792 /* Permutations.cpp */; };
+		C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95293CF195A3F2A00647DAE /* 3n+1Problem.cpp */; };
+		C95293E1195D4E9300647DAE /* DerivativeSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95293DF195D4E9300647DAE /* DerivativeSequence.cpp */; };
 		C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95CCB8518829A3F00F2B964 /* KMP.cpp */; };
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
@@ -52,6 +54,11 @@
 		C938E2061779B1280086F792 /* Combination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Combination.h; sourceTree = "<group>"; };
 		C938E2081779C1BF0086F792 /* Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Permutations.cpp; sourceTree = "<group>"; };
 		C938E2091779C1BF0086F792 /* Permutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Permutations.h; sourceTree = "<group>"; };
+		C95293CF195A3F2A00647DAE /* 3n+1Problem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "3n+1Problem.cpp"; sourceTree = "<group>"; };
+		C95293D0195A3F2A00647DAE /* 3n+1Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "3n+1Problem.h"; sourceTree = "<group>"; };
+		C95293DF195D4E9300647DAE /* DerivativeSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DerivativeSequence.cpp; sourceTree = "<group>"; };
+		C95293E0195D4E9300647DAE /* DerivativeSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivativeSequence.h; sourceTree = "<group>"; };
+		C95293E3195D554A00647DAE /* prettyprint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = prettyprint.hpp; sourceTree = "<group>"; };
 		C95CCB8518829A3F00F2B964 /* KMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMP.cpp; sourceTree = "<group>"; };
 		C95CCB8618829A3F00F2B964 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
 		C9600E6017A6E384006A15A9 /* InsertionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
@@ -115,6 +122,8 @@
 		C938E1F517787D4C0086F792 /* AlgorithmTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				C95293DE195D4E5900647DAE /* TopCoder */,
+				C95293CE195A3ED600647DAE /* Skeina */,
 				C9940A5C17AEC824003FDD03 /* common.h */,
 				C9600E5F17A6E373006A15A9 /* Sorting */,
 				C938E1F617787D4C0086F792 /* main.cpp */,
@@ -152,8 +161,27 @@
 				C9D16A7C17DCFAF200ACB022 /* Graph.h */,
 				C95CCB8518829A3F00F2B964 /* KMP.cpp */,
 				C95CCB8618829A3F00F2B964 /* KMP.h */,
+				C95293E3195D554A00647DAE /* prettyprint.hpp */,
 			);
 			path = AlgorithmTutorials;
+			sourceTree = "<group>";
+		};
+		C95293CE195A3ED600647DAE /* Skeina */ = {
+			isa = PBXGroup;
+			children = (
+				C95293CF195A3F2A00647DAE /* 3n+1Problem.cpp */,
+				C95293D0195A3F2A00647DAE /* 3n+1Problem.h */,
+			);
+			path = Skeina;
+			sourceTree = "<group>";
+		};
+		C95293DE195D4E5900647DAE /* TopCoder */ = {
+			isa = PBXGroup;
+			children = (
+				C95293DF195D4E9300647DAE /* DerivativeSequence.cpp */,
+				C95293E0195D4E9300647DAE /* DerivativeSequence.h */,
+			);
+			path = TopCoder;
 			sourceTree = "<group>";
 		};
 		C9600E5F17A6E373006A15A9 /* Sorting */ = {
@@ -223,6 +251,7 @@
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
+				C95293E1195D4E9300647DAE /* DerivativeSequence.cpp in Sources */,
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
@@ -234,6 +263,7 @@
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
+				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
 				C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */,
 				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
@@ -304,6 +334,7 @@
 		C938E1FD17787D4C0086F792 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -311,6 +342,7 @@
 		C938E1FE17787D4C0086F792 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

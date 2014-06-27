@@ -24,6 +24,7 @@
 #include "BST.h"
 #include "Graph.h"
 #include "QuickSort.h"
+#include "DerivativeSequence.h"
 
 using namespace std;
 
@@ -78,8 +79,11 @@ int main(int argc, const char * argv[])
 //    Graph g;
 //    g.run();
     
-    QuickSort q;
-    q.Run();
+//    QuickSort q;
+//    q.Run();
+
+    DerivativeSequence d;
+    d.run();
     
     return 0;
 }
