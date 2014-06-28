@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A265195E9ECB00AA4A19 /* Time.cpp */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
 		C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */; };
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C916A265195E9ECB00AA4A19 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time.cpp; path = "SRM 144/Time.cpp"; sourceTree = "<group>"; };
 		C938E1F317787D4C0086F792 /* AlgorithmTutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938E1F617787D4C0086F792 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursiveLoop.cpp; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C916A265195E9ECB00AA4A19 /* Time.cpp */,
 				C95293DF195D4E9300647DAE /* DerivativeSequence.cpp */,
 				C95293E0195D4E9300647DAE /* DerivativeSequence.h */,
 			);
@@ -260,6 +263,7 @@
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
 				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
+				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,

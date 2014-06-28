@@ -25,10 +25,11 @@
 #include "Graph.h"
 #include "QuickSort.h"
 #include "DerivativeSequence.h"
+#include "Time.h"
 
 using namespace std;
 
-int main(int argc, const char * argv[])
+int main1(int argc, const char * argv[])
 {
 
 //    RecursiveLoop rl;
@@ -82,8 +83,11 @@ int main(int argc, const char * argv[])
 //    QuickSort q;
 //    q.Run();
 
-    DerivativeSequence d;
-    d.run();
+//    DerivativeSequence d;
+//    d.run();
+    
+//    Time t;
+//    t.run();
     
     return 0;
 }

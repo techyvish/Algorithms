@@ -1,0 +1,1 @@
+All algorithms from various site, TopCoder, UVA online judge and Programming Challenges Competitions.
