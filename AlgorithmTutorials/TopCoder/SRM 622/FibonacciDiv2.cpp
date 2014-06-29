@@ -9,29 +9,54 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <unistd.h>
 
 using namespace std;
 
-class Time {
+class FibonacciDiv2 {
+    
+    int f[4];
     public:
-    std::string whatTime(int seconds)
-    {
-        std::stringstream result;
-        if ( !seconds ){
-            result << 0 << ":" << 0 << ":" << 0;
-            return result.str();
+    int find(int N) {
+        
+        f[0] = 0;
+        f[1] = 1;
+        f[2] = 0;
+        
+        
+        if ( N == 0 )
+            return 0;
+        
+        if ( N == 1 )
+            return 0;
+        
+        int dist = 0;
+        
+        if ( N >= 2 )
+        {
+            for ( int i = 2 ;  ; i++ )
+            {
+                f[2] = f[1] + f[0];
+                if ( f[2] > N )
+                {
+                    int rightDist = abs(f[2] - N);
+                    int leftDist =  abs(N - f[1]);
+                    dist =   (rightDist < leftDist ) ? rightDist : leftDist;
+                    break;
+                }
+                    
+                
+                f[0] = f[1];
+                f[1] = f[2];
+            }
         }
-        int secs = seconds % 60 ;
-        int reminder = seconds / 60;
-        int mins = reminder % 60 ;
-        int hours = reminder / 60;
-        result << hours << ":" << mins << ":" << secs;
-        return result.str();
+        
+        return dist;
     }
 };
 
 //// CUT begin
-//ifstream data("Time.sample");
+//ifstream data("/Users/vishal/Algorithms/AlgorithmTutorials/TopCoder/TestCases/FibonacciDiv2.sample");
 //
 //string next_line() {
 //    string s;
@@ -59,10 +84,10 @@ class Time {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(int seconds, string __expected) {
+//bool do_test(int N, int __expected) {
 //    time_t startClock = clock();
-//    Time *instance = new Time();
-//    string __result = instance->whatTime(seconds);
+//    FibonacciDiv2 *instance = new FibonacciDiv2();
+//    int __result = instance->find(N);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -83,10 +108,10 @@ class Time {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        int seconds;
-//        from_stream(seconds);
+//        int N;
+//        from_stream(N);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -94,16 +119,16 @@ class Time {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(seconds, __answer)) {
+//        if ( do_test(N, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1403938510;
+//        int T = time(NULL) - 1403953769;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 200 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -121,8 +146,8 @@ class Time {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "Time (200 Points)" << endl << endl;
+//        cout << "FibonacciDiv2 (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
-////CUT end
+//// CUT end

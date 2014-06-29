@@ -1,14 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-public class BinaryCode {
-	public String[] decode(String message) {
-		return new String[0];
+public class DerivativeSequence {
+	public int[] derSeq(int[] a, int n) {
+		return new int[0];
 	}
 
 // CUT begin
 	public static void main(String[] args){
-		System.err.println("BinaryCode (550 Points)");
+		System.err.println("DerivativeSequence (250 Points)");
 		System.err.println();
 		HashSet<Integer> cases = new HashSet<Integer>();
         for (int i = 0; i < args.length; ++i) cases.add(Integer.parseInt(args[i]));
@@ -22,36 +22,38 @@ public class BinaryCode {
 	    	if (label == null || !label.startsWith("--"))
 	    		break;
 
-            String message = Reader.nextLine();
+            int[] a = new int[Integer.parseInt(Reader.nextLine())];
+            for (int i = 0; i < a.length; ++i)
+                a[i] = Integer.parseInt(Reader.nextLine());
+            int n = Integer.parseInt(Reader.nextLine());
             Reader.nextLine();
-            String[] __answer = new String[Integer.parseInt(Reader.nextLine())];
+            int[] __answer = new int[Integer.parseInt(Reader.nextLine())];
             for (int i = 0; i < __answer.length; ++i)
-                __answer[i] = Reader.nextLine();
+                __answer[i] = Integer.parseInt(Reader.nextLine());
 
             cases++;
             if (caseSet.size() > 0 && !caseSet.contains(cases - 1))
                 continue;
     		System.err.print(String.format("  Testcase #%d ... ", cases - 1));
 
-            if (doTest(message, __answer))
+            if (doTest(a, n, __answer))
                 passed++;
 	    }
 	    if (caseSet.size() > 0) cases = caseSet.size();
         System.err.println(String.format("%nPassed : %d/%d cases", passed, cases));
 
-        int T = (int)(System.currentTimeMillis() / 1000) - 1403938838;
+        int T = (int)(System.currentTimeMillis() / 1000) - 1404012558;
         double PT = T / 60.0, TT = 75.0;
-        System.err.println(String.format("Time   : %d minutes %d secs%nScore  : %.2f points", T / 60, T % 60, 550 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT))));
+        System.err.println(String.format("Time   : %d minutes %d secs%nScore  : %.2f points", T / 60, T % 60, 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT))));
 	}
 
-	static boolean doTest(String message, String[] __expected) {
-        message = new String(message);
+	static boolean doTest(int[] a, int n, int[] __expected) {
 		long startTime = System.currentTimeMillis();
 		Throwable exception = null;
-		BinaryCode instance = new BinaryCode();
-		String[] __result = new String[0];
+		DerivativeSequence instance = new DerivativeSequence();
+		int[] __result = new int[0];
 		try {
-			__result = instance.decode(message);
+			__result = instance.derSeq(a, n);
 		}
 		catch (Throwable e) { exception = e; }
 		double elapsed = (System.currentTimeMillis() - startTime) / 1000.0;
@@ -73,13 +75,13 @@ public class BinaryCode {
 		}
 	}
 
-	static boolean equals(String[] a, String[] b) {
+	static boolean equals(int[] a, int[] b) {
 		if (a.length != b.length) return false;
-		for (int i = 0; i < a.length; ++i) if (a[i] == null || b[i] == null || !a[i].equals(b[i])) return false;
+		for (int i = 0; i < a.length; ++i) if (a[i] != b[i]) return false;
 		return true;
 	}
 
-	static String toString(String[] arr) {
+	static String toString(int[] arr) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("[ ");
 		for (int i = 0; i < arr.length; ++i) {
@@ -90,7 +92,7 @@ public class BinaryCode {
 	}
 
 	static class Reader {
-        private static final String dataFileName = "BinaryCode.sample";
+        private static final String dataFileName = "DerivativeSequence.sample";
 	    private static BufferedReader reader;
 
 	    public static String nextLine() {
