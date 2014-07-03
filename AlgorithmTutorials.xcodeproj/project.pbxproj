@@ -12,6 +12,12 @@
 		C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */; };
 		C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */; };
 		C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */; };
+		C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2781965F13100AA4A19 /* ColorfulRoad.cpp */; };
+		C916A2851965F13100AA4A19 /* ColorfulRoad.java in Sources */ = {isa = PBXBuildFile; fileRef = C916A27A1965F13100AA4A19 /* ColorfulRoad.java */; };
+		C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A27C1965F13100AA4A19 /* FoxAndSightseeing.cpp */; };
+		C916A2871965F13100AA4A19 /* FoxAndSightseeing.java in Sources */ = {isa = PBXBuildFile; fileRef = C916A27E1965F13100AA4A19 /* FoxAndSightseeing.java */; };
+		C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */; };
+		C916A2891965F13100AA4A19 /* SparseFactorialDiv2.java in Sources */ = {isa = PBXBuildFile; fileRef = C916A2821965F13100AA4A19 /* SparseFactorialDiv2.java */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
 		C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */; };
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
@@ -57,6 +63,18 @@
 		C916A270195FBFC000AA4A19 /* DerivativeSequence.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DerivativeSequence.sample; sourceTree = "<group>"; };
 		C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DerivativeSequence.cpp; path = "SRM 322/DerivativeSequence.cpp"; sourceTree = "<group>"; };
 		C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShorterSuperSum.cpp; path = "SRM 467/ShorterSuperSum.cpp"; sourceTree = "<group>"; };
+		C916A2781965F13100AA4A19 /* ColorfulRoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorfulRoad.cpp; sourceTree = "<group>"; };
+		C916A2791965F13100AA4A19 /* ColorfulRoad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ColorfulRoad.html; sourceTree = "<group>"; };
+		C916A27A1965F13100AA4A19 /* ColorfulRoad.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ColorfulRoad.java; sourceTree = "<group>"; };
+		C916A27B1965F13100AA4A19 /* ColorfulRoad.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorfulRoad.sample; sourceTree = "<group>"; };
+		C916A27C1965F13100AA4A19 /* FoxAndSightseeing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoxAndSightseeing.cpp; sourceTree = "<group>"; };
+		C916A27D1965F13100AA4A19 /* FoxAndSightseeing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FoxAndSightseeing.html; sourceTree = "<group>"; };
+		C916A27E1965F13100AA4A19 /* FoxAndSightseeing.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FoxAndSightseeing.java; sourceTree = "<group>"; };
+		C916A27F1965F13100AA4A19 /* FoxAndSightseeing.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FoxAndSightseeing.sample; sourceTree = "<group>"; };
+		C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SparseFactorialDiv2.cpp; sourceTree = "<group>"; };
+		C916A2811965F13100AA4A19 /* SparseFactorialDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SparseFactorialDiv2.html; sourceTree = "<group>"; };
+		C916A2821965F13100AA4A19 /* SparseFactorialDiv2.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SparseFactorialDiv2.java; sourceTree = "<group>"; };
+		C916A2831965F13100AA4A19 /* SparseFactorialDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseFactorialDiv2.sample; sourceTree = "<group>"; };
 		C938E1F317787D4C0086F792 /* AlgorithmTutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938E1F617787D4C0086F792 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursiveLoop.cpp; sourceTree = "<group>"; };
@@ -122,6 +140,25 @@
 				C916A26F195F93F900AA4A19 /* Time.sample */,
 			);
 			path = TestCases;
+			sourceTree = "<group>";
+		};
+		C916A2771965F13100AA4A19 /* SRM 596 */ = {
+			isa = PBXGroup;
+			children = (
+				C916A2781965F13100AA4A19 /* ColorfulRoad.cpp */,
+				C916A2791965F13100AA4A19 /* ColorfulRoad.html */,
+				C916A27A1965F13100AA4A19 /* ColorfulRoad.java */,
+				C916A27B1965F13100AA4A19 /* ColorfulRoad.sample */,
+				C916A27C1965F13100AA4A19 /* FoxAndSightseeing.cpp */,
+				C916A27D1965F13100AA4A19 /* FoxAndSightseeing.html */,
+				C916A27E1965F13100AA4A19 /* FoxAndSightseeing.java */,
+				C916A27F1965F13100AA4A19 /* FoxAndSightseeing.sample */,
+				C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */,
+				C916A2811965F13100AA4A19 /* SparseFactorialDiv2.html */,
+				C916A2821965F13100AA4A19 /* SparseFactorialDiv2.java */,
+				C916A2831965F13100AA4A19 /* SparseFactorialDiv2.sample */,
+			);
+			path = "SRM 596";
 			sourceTree = "<group>";
 		};
 		C938E1EA17787D4C0086F792 = {
@@ -199,6 +236,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C916A2771965F13100AA4A19 /* SRM 596 */,
 				C916A26D195F937500AA4A19 /* TestCases */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
 				C916A26C195F8D9F00AA4A19 /* FibonacciDiv2.sample */,
@@ -272,16 +310,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C916A2891965F13100AA4A19 /* SparseFactorialDiv2.java in Sources */,
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
 				C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */,
 				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
+				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
+				C916A2851965F13100AA4A19 /* ColorfulRoad.java in Sources */,
+				C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */,
 				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
+				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
@@ -291,6 +334,7 @@
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
+				C916A2871965F13100AA4A19 /* FoxAndSightseeing.java in Sources */,
 				C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
