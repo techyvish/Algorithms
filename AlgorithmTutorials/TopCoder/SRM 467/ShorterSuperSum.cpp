@@ -16,7 +16,7 @@ class ShorterSuperSum {
     public:
     int calculate(int k, int n) {
         
-        if ( k == 0 )
+            if ( k == 0 )
             return n;
         
         
