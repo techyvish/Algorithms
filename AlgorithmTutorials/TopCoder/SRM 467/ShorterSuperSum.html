@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>TopCoder SRM 322 - 250: DerivativeSequence</title>
+    <title>TopCoder SRM 467 - 250: ShorterSuperSum</title>
     
     <link type="image/x-icon" rel="shortcut icon" href="http://www.topcoder.com/i/favicon.ico"/>
     
@@ -213,10 +213,10 @@ li.testcase .data {
 
 <body>
     <h1 class="heading">
-        <span id='contest-name'>SRM 322</span>
+        <span id='contest-name'>SRM 467</span>
         <span id='contest-division'>2</span>
         <span id='problem-score'>250</span>
-        <span id='problem-name'>DerivativeSequence</span>
+        <span id='problem-name'>ShorterSuperSum</span>
     </h1>
 
     <hr />
@@ -225,13 +225,14 @@ li.testcase .data {
     <div class="section">
         <h2 class="section-title">Problem Statement</h2>
         <div class="problem-intro">
-            <intro escaped="1"><p>
-Given a sequence of K elements, we can calculate its difference sequence by taking the difference between each pair of adjacent elements.  For instance, the difference sequence of {5,6,3,9,-1} is {6-5,3-6,9-3,-1-9} = {1,-3,6,-10}. Formally, the difference sequence of the sequence a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>k</sub> is b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>k-1</sub>, where b<sub>i</sub> = a<sub>i+1</sub> - a<sub>i</sub>.
-</p><p>
-The derivative sequence of order N of a sequence A is the result of iteratively applying the above process N times. For example, if A = {5,6,3,9,-1}, the derivative sequence of order 2 is: {5,6,3,9,-1} -&gt; {1,-3,6,-10} -&gt; {-3-1,6-(-3),-10-6} = {-4,9,-16}.
-</p><p>
-You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n</b>. Return a <type>int[]</type> representing the derivative sequence of order <b>n</b> of <b>a</b>.
-</p>
+            <intro escaped="1">SuperSum is a function defined as:<br />
+
+<ul>
+<li> SuperSum(0 , <b>n</b>) = <b>n</b>, for all positive <b>n</b>.</li>
+<li> SuperSum(<b>k</b> , <b>n</b>) = SuperSum(<b>k</b>-1 , 1) + SuperSum(<b>k</b>-1 , 2) + ... + SuperSum(<b>k</b>-1 , <b>n</b>), for all positive <b>k</b>, <b>n</b>.</li>
+</ul>
+<p>Given <b>k</b> and <b>n</b>, return the value for SuperSum(<b>k</b> , <b>n</b>).</p>
+
 </intro>
         </div>
     </div>
@@ -244,17 +245,17 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
             <ul class="problem-definition-lines">
                 <li class="definition-line" id='class-line'>
                     <span class='definition-name'>Class</span>
-                    <span class='definition-value'>DerivativeSequence</span>
+                    <span class='definition-value'>ShorterSuperSum</span>
                 </li>
                 <li class="definition-line" id='method-line'>
                     <span class='definition-name'>Method</span>
-                    <span class='definition-value'>derSeq</span>
+                    <span class='definition-value'>calculate</span>
                 </li>
                 <li class="definition-line" id='parameters-line'>
                     <span class='definition-name'>Parameters</span>
                     <span class='definition-value'>
                     
-                        int[]
+                        int
                     , 
                         int
                     
@@ -263,13 +264,13 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                 <li class="definition-line" id='returns-line'>
                     <span class='definition-name'>Returns</span>
                     <span class='definition-value'>
-                        int[]
+                        int
                     </span>
                 </li>
                 <li class="definition-line" id='signature-line'>
                     <span class='definition-name'>Method signature</span>
                     <span class='definition-value'>
-                        int[] derSeq(int[] a, int n)
+                        int calculate(int k, int n)
                     </span>
                 </li>
             </ul>
@@ -296,27 +297,15 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
     </div>
 
     
-    <!-- Notes -->
-    <div class="section">
-        <h2 class="section-title">Notes</h2>
-        <ul class="notes">
-        
-            <li><note escaped="1">The derivative sequence of order 0 is the original sequence. See example 4 for further clarification.</note></li>
-        
-        </ul>
-    </div>
-    
     
     <!-- Constraints -->
     <div class="section">
         <h2 class="section-title">Constraints</h2>
         <ul class="constraints">
         
-            <li><user-constraint escaped="1"><b>a</b> will contain between 1 and 20 elements, inclusive.</user-constraint></li>
+            <li><user-constraint escaped="1"><b>k</b> will be between 1 and 14, inclusive.</user-constraint></li>
         
-            <li><user-constraint escaped="1">Each element of <b>a</b> will be between -100 and 100, inclusive.</user-constraint></li>
-        
-            <li><user-constraint escaped="1"><b>n</b> will be between 0 and K-1, inclusive, where K is the number of elements in <b>a</b>.</user-constraint></li>
+            <li><user-constraint escaped="1"><b>n</b> will be between 1 and 14, inclusive.</user-constraint></li>
         
         </ul>
     </div>
@@ -333,140 +322,10 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                         <ul class="variables">
                         
                             <li class="variable data">
-                                <span class="name data">a</span>
-                                <span class="value data">
-                                
-                                    { 5, 6, 3, 9, -1 }
-                                
-                                </span>
-                            </li>
-                        
-                            <li class="variable data">
-                                <span class="name data">n</span>
+                                <span class="name data">k</span>
                                 <span class="value data">
                                 
                                     1
-                                
-                                </span>
-                            </li>
-                        
-                        </ul>
-                    </div>
-                    <div class="testcase-output">
-                        <div class='tag'>output</div>
-                        <span class="prefix data">Returns</span>
-                        <span class="value data">
-                        
-                            { 1, -3, 6, -10 }
-                        
-                        </span>
-                    </div>
-                    
-                    <div class="testcase-annotation">
-                        <div class='tag'>note</div>
-                        <div class="testcase-comment">The first example given in the problem statement.</div>
-                    </div>
-                    
-               
-                </div>
-            </li>
-            
-            <li class="testcase">
-                <div class="testcase-content">
-                    <div class="testcase-input">
-                        <div class='tag'>input</div>
-                        <ul class="variables">
-                        
-                            <li class="variable data">
-                                <span class="name data">a</span>
-                                <span class="value data">
-                                
-                                    { 5, 6, 3, 9, -1 }
-                                
-                                </span>
-                            </li>
-                        
-                            <li class="variable data">
-                                <span class="name data">n</span>
-                                <span class="value data">
-                                
-                                    2
-                                
-                                </span>
-                            </li>
-                        
-                        </ul>
-                    </div>
-                    <div class="testcase-output">
-                        <div class='tag'>output</div>
-                        <span class="prefix data">Returns</span>
-                        <span class="value data">
-                        
-                            { -4, 9, -16 }
-                        
-                        </span>
-                    </div>
-                    
-                    <div class="testcase-annotation">
-                        <div class='tag'>note</div>
-                        <div class="testcase-comment">The second example given in the problem statement.</div>
-                    </div>
-                    
-               
-                </div>
-            </li>
-            
-            <li class="testcase">
-                <div class="testcase-content">
-                    <div class="testcase-input">
-                        <div class='tag'>input</div>
-                        <ul class="variables">
-                        
-                            <li class="variable data">
-                                <span class="name data">a</span>
-                                <span class="value data">
-                                
-                                    { 5, 6, 3, 9, -1 }
-                                
-                                </span>
-                            </li>
-                        
-                            <li class="variable data">
-                                <span class="name data">n</span>
-                                <span class="value data">
-                                
-                                    4
-                                
-                                </span>
-                            </li>
-                        
-                        </ul>
-                    </div>
-                    <div class="testcase-output">
-                        <div class='tag'>output</div>
-                        <span class="prefix data">Returns</span>
-                        <span class="value data">
-                        
-                            { -38 }
-                        
-                        </span>
-                    </div>
-                    
-               
-                </div>
-            </li>
-            
-            <li class="testcase">
-                <div class="testcase-content">
-                    <div class="testcase-input">
-                        <div class='tag'>input</div>
-                        <ul class="variables">
-                        
-                            <li class="variable data">
-                                <span class="name data">a</span>
-                                <span class="value data">
-                                
-                                    { 4, 4, 4, 4, 4, 4, 4, 4 }
                                 
                                 </span>
                             </li>
@@ -487,14 +346,14 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                         <span class="prefix data">Returns</span>
                         <span class="value data">
                         
-                            { 0, 0, 0, 0, 0 }
+                            6
                         
                         </span>
                     </div>
                     
                     <div class="testcase-annotation">
                         <div class='tag'>note</div>
-                        <div class="testcase-comment">After 1 step, they all become 0.</div>
+                        <div class="testcase-comment">When <b>k</b> = 1, SuperSum is equal to the sum of the first <b>n</b> = 3 numbers: 1 + 2 + 3 = 6.</div>
                     </div>
                     
                
@@ -508,10 +367,10 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                         <ul class="variables">
                         
                             <li class="variable data">
-                                <span class="name data">a</span>
+                                <span class="name data">k</span>
                                 <span class="value data">
                                 
-                                    { -100, 100 }
+                                    2
                                 
                                 </span>
                             </li>
@@ -520,7 +379,7 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                                 <span class="name data">n</span>
                                 <span class="value data">
                                 
-                                    0
+                                    3
                                 
                                 </span>
                             </li>
@@ -532,7 +391,92 @@ You will be given a sequence <b>a</b> as a <type>int[]</type> and the order <b>n
                         <span class="prefix data">Returns</span>
                         <span class="value data">
                         
-                            { -100, 100 }
+                            10
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="testcase-annotation">
+                        <div class='tag'>note</div>
+                        <div class="testcase-comment">SuperSum(2 , 3) = SuperSum(1 , 1) + SuperSum(1 , 2) + SuperSum(1 , 3) = 1 + 3 + 6 = 10.</div>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">k</span>
+                                <span class="value data">
+                                
+                                    4
+                                
+                                </span>
+                            </li>
+                        
+                            <li class="variable data">
+                                <span class="name data">n</span>
+                                <span class="value data">
+                                
+                                    10
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            2002
+                        
+                        </span>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">k</span>
+                                <span class="value data">
+                                
+                                    10
+                                
+                                </span>
+                            </li>
+                        
+                            <li class="variable data">
+                                <span class="name data">n</span>
+                                <span class="value data">
+                                
+                                    10
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            167960
                         
                         </span>
                     </div>

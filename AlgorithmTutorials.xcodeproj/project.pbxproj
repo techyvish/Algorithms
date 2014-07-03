@@ -11,6 +11,7 @@
 		C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A267195EA0A000AA4A19 /* BinaryCode.cpp */; };
 		C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */; };
 		C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */; };
+		C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
 		C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */; };
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
@@ -55,6 +56,7 @@
 		C916A26F195F93F900AA4A19 /* Time.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Time.sample; sourceTree = "<group>"; };
 		C916A270195FBFC000AA4A19 /* DerivativeSequence.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DerivativeSequence.sample; sourceTree = "<group>"; };
 		C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DerivativeSequence.cpp; path = "SRM 322/DerivativeSequence.cpp"; sourceTree = "<group>"; };
+		C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShorterSuperSum.cpp; path = "SRM 467/ShorterSuperSum.cpp"; sourceTree = "<group>"; };
 		C938E1F317787D4C0086F792 /* AlgorithmTutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938E1F617787D4C0086F792 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursiveLoop.cpp; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A265195E9ECB00AA4A19 /* Time.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
+				C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */,
 			);
 			path = TopCoder;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
+				C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */,
 				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,

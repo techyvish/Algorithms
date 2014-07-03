@@ -9,31 +9,45 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <unistd.h>
 
 using namespace std;
 
 class DerivativeSequence {
     
     vector<int> *finalVector;
+    static int iteration ;
     
     public:
     
     DerivativeSequence()
     {
         finalVector = new vector<int>(5,0);
+        iteration = 0;
     }
+    
     
     vector<int> derSeq(vector<int> a, int order) {
         if ( order == 0 ) {
-            return *finalVector;
+            if ( iteration == 0)
+            {
+                return a;
+            }
+            else
+            {
+                return *finalVector;
+            }
         }
         else
         {
+            iteration ++;
             order --;
             int counter = 0;
             vector<int> result;
             if ( allZero(a))
             {
+                
+                finalVector->resize(finalVector->size()-(order+1));
                 return vector<int>();
             }
             
@@ -41,7 +55,6 @@ class DerivativeSequence {
             {
                 if ( i < a.size() - 1) {
                     result.push_back(a[i+1] - a[i]);
-                    std::cout << result[i] <<" " << endl;
                     counter ++;
                 }
             }
@@ -68,7 +81,9 @@ class DerivativeSequence {
 
 };
 
+int DerivativeSequence::iteration;
 // CUT begin
+
 ifstream data("/Users/vishal/Algorithms/AlgorithmTutorials/TopCoder/TestCases/DerivativeSequence.sample");
 
 string next_line() {
