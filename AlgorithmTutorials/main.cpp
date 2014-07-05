@@ -24,7 +24,7 @@
 #include "BST.h"
 #include "Graph.h"
 #include "QuickSort.h"
-#include "DerivativeSequence.h"
+//#include "DerivativeSequence.h"
 #include "Time.h"
 
 using namespace std;
