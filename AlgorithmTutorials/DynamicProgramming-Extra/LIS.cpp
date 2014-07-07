@@ -65,22 +65,18 @@ public:
         return 0;
     }
     
-    int max(int a, int b)
-    {
-        return  (a > b ) ? a : b;
-    }
 };
 
 
 
-int main()
-{
-    int a[] = {10,22,9,33,21,50,41,60,80};
- //   int a[] = { 5,3,4,8,6,7};
-    
-    LIS l;
-
-    int length = l.getLongestLenght(a,9);
-    cout << length ;
-    return  0;
-}
+//int main()
+//{
+//    int a[] = {10,22,9,33,21,50,41,60,80};
+// //   int a[] = { 5,3,4,8,6,7};
+//    
+//    LIS l;
+//
+//    int length = l.getLongestLenght(a,9);
+//    cout << length ;
+//    return  0;
+//}
