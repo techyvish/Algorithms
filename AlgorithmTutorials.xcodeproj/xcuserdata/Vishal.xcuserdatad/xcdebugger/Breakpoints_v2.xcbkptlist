@@ -103,12 +103,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/Parentheses.cpp"
-            timestampString = "426583769.095118"
+            filePath = "AlgorithmTutorials/DynamicProgramming-Extra/ZigZag.cpp"
+            timestampString = "426456619.600289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "longestZigZag(int sequence[])"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgorithmTutorials/Subsets.cpp"
+            timestampString = "426629209.216918"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
