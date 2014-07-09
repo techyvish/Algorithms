@@ -104,22 +104,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmTutorials/DynamicProgramming-Extra/ZigZag.cpp"
-            timestampString = "426456656.710433"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "main()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/DynamicProgramming-Extra/ZigZag.cpp"
             timestampString = "426456619.600289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -135,12 +119,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/DynamicProgramming-Extra/ZigZag.cpp"
-            timestampString = "426456652.938253"
+            filePath = "AlgorithmTutorials/Subsets.cpp"
+            timestampString = "426629209.216918"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
