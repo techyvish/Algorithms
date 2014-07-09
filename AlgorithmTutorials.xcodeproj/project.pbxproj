@@ -25,6 +25,8 @@
 		C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E2081779C1BF0086F792 /* Permutations.cpp */; };
 		C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95293CF195A3F2A00647DAE /* 3n+1Problem.cpp */; };
 		C952943219661A2F00647DAE /* Coins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C952943019661A2F00647DAE /* Coins.cpp */; };
+		C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9529445196BD02B00647DAE /* BadNeighbours.cpp */; };
+		C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9529449196D06ED00647DAE /* Parentheses.cpp */; };
 		C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95CCB8518829A3F00F2B964 /* KMP.cpp */; };
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
@@ -92,6 +94,8 @@
 		C95293D0195A3F2A00647DAE /* 3n+1Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "3n+1Problem.h"; sourceTree = "<group>"; };
 		C95293E3195D554A00647DAE /* prettyprint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = prettyprint.hpp; sourceTree = "<group>"; };
 		C952943019661A2F00647DAE /* Coins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coins.cpp; sourceTree = "<group>"; };
+		C9529445196BD02B00647DAE /* BadNeighbours.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BadNeighbours.cpp; sourceTree = "<group>"; };
+		C9529449196D06ED00647DAE /* Parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parentheses.cpp; sourceTree = "<group>"; };
 		C95CCB8518829A3F00F2B964 /* KMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMP.cpp; sourceTree = "<group>"; };
 		C95CCB8618829A3F00F2B964 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
 		C9600E6017A6E384006A15A9 /* InsertionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		C938E1F517787D4C0086F792 /* AlgorithmTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				C9529448196D06BD00647DAE /* Backtracking-Extra */,
 				C952942F19661A2000647DAE /* DynamicProgramming-Extra */,
 				C95293DE195D4E5900647DAE /* TopCoder */,
 				C95293CE195A3ED600647DAE /* Skeina */,
@@ -261,8 +266,17 @@
 				C952943019661A2F00647DAE /* Coins.cpp */,
 				C99AC97F1968B36E000FACE3 /* LIS.cpp */,
 				C99AC98219690DE2000FACE3 /* ZigZag.cpp */,
+				C9529445196BD02B00647DAE /* BadNeighbours.cpp */,
 			);
 			path = "DynamicProgramming-Extra";
+			sourceTree = "<group>";
+		};
+		C9529448196D06BD00647DAE /* Backtracking-Extra */ = {
+			isa = PBXGroup;
+			children = (
+				C9529449196D06ED00647DAE /* Parentheses.cpp */,
+			);
+			path = "Backtracking-Extra";
 			sourceTree = "<group>";
 		};
 		C9600E5F17A6E373006A15A9 /* Sorting */ = {
@@ -334,6 +348,7 @@
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
+				C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */,
 				C916A2851965F13100AA4A19 /* ColorfulRoad.java in Sources */,
 				C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */,
 				C952943219661A2F00647DAE /* Coins.cpp in Sources */,
@@ -341,6 +356,7 @@
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
+				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
 				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
