@@ -118,8 +118,10 @@ public:
         vector<element>::iterator it;
        
         
+        
         for ( int  i = 1 ; i < length ; i++ )
         {
+            
             it = v.begin();
             int max = INT_MIN;
             element p;
@@ -172,6 +174,7 @@ int main()
 {
     
     int seq[] = { 1, 7, 4, 9, 2, 5 };
+    int len = sizeof(seq) / sizeof(seq[0]);
     ZigZag z;
     int length = z.longestZigZag(seq);
     cout << length;
