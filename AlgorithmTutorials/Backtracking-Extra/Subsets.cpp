@@ -53,6 +53,10 @@ public:
 
     void construct_candidates(int a[],int k, int n, int c[], int *ncandidates)
     {
+        for ( int i = 0 ; i < n  ; i++ )
+        {
+            
+        }
         c[0] = true;
         c[1] = false;
         *ncandidates = 2;
@@ -60,7 +64,6 @@ public:
     
     void backtrack(int a[],int k , int  n)
     {
-        
         int c[2];
         int ncandidates;
         int i ;
@@ -71,6 +74,7 @@ public:
         {
             k = k+1;
             construct_candidates(a,k,n,c,&ncandidates);
+            cout << "n=" << n << endl;
             for ( i = 0 ; i < ncandidates ; i++ )
             {
                 a[k] = c[i];
@@ -91,10 +95,9 @@ public:
 };
 
 
-int main()
-{
-
-    Subsets s;
-    s.generateAllSubsets(3);
-    return 0;
-}
+//int main()
+//{
+//    Subsets s;
+//    s.generateAllSubsets(3);
+//    return 0;
+//}
