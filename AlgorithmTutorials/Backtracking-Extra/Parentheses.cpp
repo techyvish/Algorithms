@@ -44,14 +44,14 @@ public:
     }
 };
 
-int main()
-{
-    Parentheses p;
-    p.n = 2;
-    for ( int j = 0 ; j < 2 ; j ++ )
-    {
-        p.printParenthesis( 0 , 0 );
-        cout << endl << "------" << endl ;
-    }
-    return 0;
-}
+//int main()
+//{
+//    Parentheses p;
+//    p.n = 2;
+//    for ( int j = 0 ; j < 2 ; j ++ )
+//    {
+//        p.printParenthesis( 0 , 0 );
+//        cout << endl << "------" << endl ;
+//    }
+//    return 0;
+//}
