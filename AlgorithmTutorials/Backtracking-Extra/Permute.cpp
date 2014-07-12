@@ -23,7 +23,7 @@
 
 using namespace std;
 
-#define NMAX 3
+#define NMAX 5
 
 class PermuteNumbers {
     
@@ -47,28 +47,32 @@ public:
     
     void construct_candidates(int a[], int k, int n, int c[], int *ncandidates)
     {
-        cout << " { ";
-        for (int i=0; i< n ; i++)
-            printf(" %d",a[i]);
-        cout << " }\n" << endl;
-        int i;                          /* counter */
-        bool in_perm[NMAX];             /* who is in the permutation? */
-        for (int i=1; i<NMAX; i++) in_perm[i] = false;
-        for (int i=0; i<k; i++) in_perm[ a[i] ] = true;
-        *ncandidates = 0;
-        for (i=1; i<=n; i++)
+        int in_perm[NMAX];
+        for ( int i = 0 ; i < NMAX ; i ++ )
         {
-            if (in_perm[i] == false) {
-                c[ *ncandidates] = i;
+            in_perm[i] = false;
+        }
+        
+        for (int i = 1 ; i <= k ; i++)
+        {
+            in_perm[a[i]] = true;
+        }
+        
+        for ( int i = 1 ; i <= n ; i++ )
+        {
+            if ( in_perm[i] == false )
+            {
+                c[*ncandidates] = a[i];
                 *ncandidates = *ncandidates + 1;
             }
         }
+        
     }
     
     void backtrack(int a[],int k , int  n)
     {
-        int c[NMAX] = {0,0,0};
-        int ncandidates;
+        int c[NMAX] = {0,0,0,0,0};
+        int ncandidates = 0;
         int i ;
         
         if ( is_a_solution(a,k,n))
@@ -77,16 +81,14 @@ public:
         {
             k = k+1;
             construct_candidates(a,k,n,c,&ncandidates);
+            printf("k = %d, a[k] = %d, n = %d, ncandidates = %d ",k,a[k],n,ncandidates) ; cout << endl;
             for ( i = 0 ; i < ncandidates ; i++ )
             {
                 a[k] = c[i];
-                cout << ">>{";
-                for (i=0; i< n ; i++)
-                    printf(" %d",a[i]);
-                cout << " }\n" << endl;
+                printf(">>>>>> k = %d, a[k] = %d, i = %d, c[i] = %d ",k,a[k],i,c[i]) ; cout << endl;
                 backtrack(a,k,n);
-                //if ( finished )
-                //    return;
+                if ( finished )
+                    return;
             }
         }
     }

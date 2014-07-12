@@ -103,11 +103,11 @@ public:
     
 };
 
-int main()
-{
-    Queen q;
-    int a[NMAX][NMAX] = {0};
-    a[0][0] = 1;
-    q.placeQueen(a, 0, 8);
-    return 0;
-}
+//int main()
+//{
+//    Queen q;
+//    int a[NMAX][NMAX] = {0};
+//    a[0][0] = 1;
+//    q.placeQueen(a, 0, 8);
+//    return 0;
+//}
