@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp"
-            timestampString = "426747280.210189"
+            timestampString = "426899407.644694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
