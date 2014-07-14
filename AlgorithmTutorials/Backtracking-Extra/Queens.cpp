@@ -1,10 +1,11 @@
 //
-//  Queens.cpp
+//  Subsets.cpp
 //  AlgorithmTutorials
 //
-//  Created by Vishal Patel on 10/07/2014.
+//  Created by Vishal Patel on 7/10/14.
 //  Copyright (c) 2014 Vishal. All rights reserved.
 //
+
 #include <cstdio>
 
 #include <cmath>
@@ -20,94 +21,107 @@
 #include <unistd.h>
 #include <climits>
 
+#define NMAX 10
+
 using namespace std;
 
-#define NMAX 8
+struct _data
+{
+    
+};
 
-class Queen {
+typedef struct _data data;
+
+class Queens {
+    
     
 public:
     
+    bool finished = false;
     
-    bool is_a_solution(int a[][NMAX], int k , int n)
+    bool is_a_solution(int a[][NMAX],int k, int n)
     {
-        return (k == n);
+        return ( k == n );
     }
     
-    void process_solution(int a[][NMAX], int k , int n)
+    void process_solution(int a[][NMAX],int k , int n)
     {
-        
     }
     
-    bool queenCanBePlaced(int a[][NMAX],int k,int column,int n)
+    void construct_candidates(int a[][NMAX],int k, int n, int c[], int *ncandidates)
     {
-        for ( int i =0 ; i < n ; i++ )
+        for (int i = 0 ; i < n ; i++ )
         {
-            for ( int j = 0 ; j < n ; j ++ )
+            if ( canQueenBePlaced(a,k,i,n) )
             {
-                if ( column == j ) return false;
-                if ( k == i ) return false;
-                if ( abs(j-column) == abs(i - k)) return false;
-                return true;
+                //Erase old position (if any) and place the queen at new position.
+                
+                
+                
+                //and count remaining candidates for future.
+                *ncandidates = *ncandidates + 1;
             }
-            
+            else
+            {
+                *ncandidates = 0 ; // no candidates left to try -> backtrack.
+            }
+        }
+    }
+    
+    void backtrack(int a[][NMAX],int k , int  n)
+    {
+        int c[3];
+        int ncandidates;
+        int i ;
+        
+        if ( is_a_solution(a,k,n))
+            process_solution(a,k,n);
+        else
+        {
+            k = k+1; // rows
+            construct_candidates(a,k,n,c,&ncandidates);
+            for ( i = 0 ; i < ncandidates ; i++ )
+            {
+                a[k][i] = c[i];
+                backtrack(a,k,n);
+                if ( finished )
+                    return;
+            }
+        }
+    }
+    
+    void planceQueens(int n )
+    {
+        int a[NMAX][NMAX];  /* solution vector */
+        backtrack(a,0,n);
+    }
+    
+    bool canQueenBePlaced(int a[][NMAX],int row, int col,int n)
+    {
+        for (int i = 0 ; i < row ; i++ )
+        {
+            for ( int j = 0 ; j < col ; j++ )
+            {
+                if ( a[i][j] == 1 )
+                {
+                    if ( row == i || col == j)
+                        return false;
+                }
+                
+                if ( a[abs(i - row)][abs(j-col)] == 1 )
+                {
+                    return false;
+                }
+            }
         }
         return true;
     }
     
-    bool construct_candidates(int a[][NMAX], int k, int n, int c[], int *ncandidates,int  *column)
-    {
-        for ( int cols = *column ; cols < n ; cols++ )
-        {
-            if ( queenCanBePlaced(a,k,cols,n) )
-            {
-                *column = cols;
-                a[k][*column] = 1;
-                return true;
-            }
-        }
-        //*ncandidates = 1;
-        return false;
-    }
-    
-    void backtrack(int a[][NMAX], int k , int n)
-    {
-        int c[NMAX] = {0};
-        int ncandidates ;
-        int column = 0;
-        if ( is_a_solution(a, k, n))
-            process_solution(a, k, n);
-        else
-        {
-            k = k+1;
-            
-            if ( construct_candidates(a, k, n, c, &ncandidates, &column ) )
-            {
-                backtrack(a, k, n);
-            }
-            else
-            {
-                k--;
-                if ( construct_candidates(a, k, n, c, &ncandidates, &column ) )
-                {
-                    backtrack(a, k, n);
-                }
-            }
-        }
-    }
-    
-    void placeQueen(int a[][NMAX], int k ,int n)
-    {
-        backtrack(a, k, n);
-    }
-    
 };
 
-//int main()
-//{
-//    Queen q;
-//    int a[NMAX][NMAX] = {0};
-//    a[0][0] = 1;
-//    q.placeQueen(a, 0, 8);
-//    return 0;
-//}
+int main()
+{
+    Queens q;
+    q.planceQueens(8);
+    return 0;
+}

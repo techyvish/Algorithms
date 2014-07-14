@@ -119,9 +119,9 @@ public:
     
 };
 
-int main()
-{
-    Parentheses p;
-    p.getAllCombinations(2);
-    return 0;
-}
+//int main()
+//{
+//    Parentheses p;
+//    p.getAllCombinations(2);
+//    return 0;
+//}
