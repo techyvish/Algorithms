@@ -143,9 +143,9 @@ public:
     
 };
 
-int main()
-{
-    Queens q;
-    q.planceQueens(4);
-    return 0;
-}
+//int main()
+//{
+//    Queens q;
+//    q.planceQueens(4);
+//    return 0;
+//}
