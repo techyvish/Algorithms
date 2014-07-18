@@ -12,15 +12,71 @@
 
 using namespace std;
 
-class SignatureDecorator {
+struct data {
+    int min;
+    int realData;
+public:
+
+};
+
+bool sortthisshit(data const& a, data const& b)  {
+    if ( a.min < b.min)
+        return true;
+    else
+        return false;
+}
+
+class CostOfDancing {
     public:
-    string applyDecoration(string name, vector<string> commands, vector<string> decorations) {
-        return "";
+    
+    vector<data> minCost;
+    
+    int minimum(int K, vector<int> danceCost) {
+        
+        for ( int i = 0 ; i < danceCost.size() ; i ++ )
+        {
+            int min = 2147483647;
+            bool found = false;
+            data d;
+            for (int  j = 0 ; j < i ; j ++ )
+            {
+                if ( (danceCost[i] + danceCost[j]) < min)
+                {
+                    min = (danceCost[i] + danceCost[j]);
+                    found = true;
+//                    d.min = min;
+//                    d.realData = danceCost[i];
+                }
+            }
+            if ( !found && i!=0) {
+                min = danceCost[i] + danceCost[i-1];
+                d.min = min;
+                d.realData = danceCost[i];
+                
+            }
+            if ( i == 0 )
+            {
+                min = danceCost[0];
+                d.min = min;
+                d.realData = danceCost[i];
+            }
+            d.min = min;
+            d.realData = danceCost[i];
+            minCost.push_back(d);
+        }
+        
+        std::sort(minCost.begin(), minCost.end(), sortthisshit);
+        int sum = 0;
+        for ( int i = 0 ; i < K ; i++ )
+        {
+            sum += minCost[i].realData;
+        }
+        return sum;
     }
 };
 
 //// CUT begin
-//ifstream data("SignatureDecorator.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 624/CostOfDancing.sample");
 //
 //string next_line() {
 //    string s;
@@ -59,10 +115,10 @@ class SignatureDecorator {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string name, vector<string> commands, vector<string> decorations, string __expected) {
+//bool do_test(int K, vector<int> danceCost, int __expected) {
 //    time_t startClock = clock();
-//    SignatureDecorator *instance = new SignatureDecorator();
-//    string __result = instance->applyDecoration(name, commands, decorations);
+//    CostOfDancing *instance = new CostOfDancing();
+//    int __result = instance->minimum(K, danceCost);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -83,14 +139,12 @@ class SignatureDecorator {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string name;
-//        from_stream(name);
-//        vector<string> commands;
-//        from_stream(commands);
-//        vector<string> decorations;
-//        from_stream(decorations);
+//        int K;
+//        from_stream(K);
+//        vector<int> danceCost;
+//        from_stream(danceCost);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -98,13 +152,13 @@ class SignatureDecorator {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(name, commands, decorations, __answer)) {
+//        if ( do_test(K, danceCost, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1405645811;
+//        int T = time(NULL) - 1405657719;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -125,7 +179,7 @@ class SignatureDecorator {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "SignatureDecorator (250 Points)" << endl << endl;
+//        cout << "CostOfDancing (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

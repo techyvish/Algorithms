@@ -35,6 +35,7 @@
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
 		C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC63519789A1700FE95B1 /* DancingSentence.cpp */; };
 		C97DC63B1978ABB000FE95B1 /* SignatureDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC6381978ABB000FE95B1 /* SignatureDecorator.cpp */; };
+		C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC63D1978DA1000FE95B1 /* CostOfDancing.cpp */; };
 		C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */; };
 		C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC97F1968B36E000FACE3 /* LIS.cpp */; };
 		C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC98219690DE2000FACE3 /* ZigZag.cpp */; };
@@ -123,6 +124,9 @@
 		C97DC6381978ABB000FE95B1 /* SignatureDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignatureDecorator.cpp; sourceTree = "<group>"; };
 		C97DC6391978ABB000FE95B1 /* SignatureDecorator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignatureDecorator.html; sourceTree = "<group>"; };
 		C97DC63A1978ABB000FE95B1 /* SignatureDecorator.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SignatureDecorator.sample; sourceTree = "<group>"; };
+		C97DC63D1978DA1000FE95B1 /* CostOfDancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CostOfDancing.cpp; sourceTree = "<group>"; };
+		C97DC63E1978DA1000FE95B1 /* CostOfDancing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CostOfDancing.html; sourceTree = "<group>"; };
+		C97DC63F1978DA1000FE95B1 /* CostOfDancing.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CostOfDancing.sample; sourceTree = "<group>"; };
 		C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PelindromicSubSeq.cpp; sourceTree = "<group>"; };
 		C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PelindromicSubSeq.h; sourceTree = "<group>"; };
 		C9940A5C17AEC824003FDD03 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C97DC63C1978DA1000FE95B1 /* SRM 624 */,
 				C97DC6371978ABB000FE95B1 /* SRM 225 */,
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C916A2771965F13100AA4A19 /* SRM 596 */,
@@ -339,6 +344,16 @@
 				C97DC63A1978ABB000FE95B1 /* SignatureDecorator.sample */,
 			);
 			path = "SRM 225";
+			sourceTree = "<group>";
+		};
+		C97DC63C1978DA1000FE95B1 /* SRM 624 */ = {
+			isa = PBXGroup;
+			children = (
+				C97DC63D1978DA1000FE95B1 /* CostOfDancing.cpp */,
+				C97DC63E1978DA1000FE95B1 /* CostOfDancing.html */,
+				C97DC63F1978DA1000FE95B1 /* CostOfDancing.sample */,
+			);
+			path = "SRM 624";
 			sourceTree = "<group>";
 		};
 		C9C70FB419765BA900B3D445 /* Trie */ = {
@@ -423,6 +438,7 @@
 				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
 				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
+				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
