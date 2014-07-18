@@ -169,22 +169,22 @@ public:
     }
 };
 
-int main()
-{
-    WordFind words;
-    
-    VS v ;
-    v.push_back("TEST");
-    v.push_back("GOAT");
-    v.push_back("BOAT");
-    v.push_back("XXXR");
-    
-    vector<string> wordlist;
-    wordlist.push_back("GOAT");
-    wordlist.push_back("BOAT");
-    wordlist.push_back("TEST");
-    
-    words.findWords(v, wordlist);
-    
-    return 0;
-}
+//int main()
+//{
+//    WordFind words;
+//
+//    VS v ;
+//    v.push_back("TEST");
+//    v.push_back("GOAT");
+//    v.push_back("BOAT");
+//    v.push_back("XXXR");
+//
+//    vector<string> wordlist;
+//    wordlist.push_back("GOAT");
+//    wordlist.push_back("BOAT");
+//    wordlist.push_back("TEST");
+//
+//    words.findWords(v, wordlist);
+//
+//    return 0;
+//}

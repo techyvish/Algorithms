@@ -44,7 +44,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/vishal/Algorithms/AlgorithmTutorials/TopCoder"
+      customWorkingDirectory = "/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder"
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -60,6 +60,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
+            argument = ""
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
