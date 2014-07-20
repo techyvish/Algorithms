@@ -34,6 +34,8 @@ class LittleElephantAndBooks {
     }
 };
 
+
+
 //// CUT begin
 //ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 592/LittleElephantAndBooks.sample");
 //
