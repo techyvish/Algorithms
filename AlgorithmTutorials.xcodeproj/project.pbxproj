@@ -53,6 +53,8 @@
 		C9C70FC619788D8200B3D445 /* Bricks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FC419788D8200B3D445 /* Bricks.cpp */; };
 		C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7B17DCFAF200ACB022 /* Graph.cpp */; };
 		C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */; };
+		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
+		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
 		C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ECF1D61976256600842FE8 /* RookAttack.cpp */; };
 		C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D89177B279E00994C1F /* StringOperations.cpp */; };
 		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
@@ -160,6 +162,8 @@
 		C9D16A7C17DCFAF200ACB022 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		C9D16A7F17E0313C00ACB022 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LittleBishops.cpp; sourceTree = "<group>"; };
+		C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FifteenPuzzle.cpp; sourceTree = "<group>"; };
 		C9ECF1D61976256600842FE8 /* RookAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RookAttack.cpp; sourceTree = "<group>"; };
 		C9ED3D89177B279E00994C1F /* StringOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringOperations.cpp; sourceTree = "<group>"; };
 		C9ED3D8A177B279E00994C1F /* StringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOperations.h; sourceTree = "<group>"; };
@@ -326,6 +330,8 @@
 				C9307E7D196E6AAA000D53BA /* Queens.cpp */,
 				C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */,
 				C9ECF1D61976256600842FE8 /* RookAttack.cpp */,
+				C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */,
+				C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */,
 			);
 			path = "Backtracking-Extra";
 			sourceTree = "<group>";
@@ -465,8 +471,10 @@
 			files = (
 				C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */,
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
+				C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */,
 				C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */,
 				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
+				C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */,
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
