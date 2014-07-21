@@ -1,6 +1,6 @@
 //
 //  FifteenPuzzle.cpp
-//  AlgorithmTutorials
+//  Algorit hmTutorials
 //
 //  Created by Vishal Patel on 21/07/2014.
 //  Copyright (c) 2014 Vishal. All rights reserved.

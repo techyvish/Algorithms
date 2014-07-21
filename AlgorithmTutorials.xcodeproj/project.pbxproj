@@ -55,6 +55,8 @@
 		C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
 		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
+		C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */; };
+		C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9E2197CF5CE0034F239 /* ErasingCharacters.cpp */; };
 		C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ECF1D61976256600842FE8 /* RookAttack.cpp */; };
 		C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D89177B279E00994C1F /* StringOperations.cpp */; };
 		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
@@ -164,6 +166,12 @@
 		C9D16A7F17E0313C00ACB022 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LittleBishops.cpp; sourceTree = "<group>"; };
 		C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FifteenPuzzle.cpp; sourceTree = "<group>"; };
+		C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinPackingEasy.cpp; sourceTree = "<group>"; };
+		C9E8D9E0197CF5CE0034F239 /* BinPackingEasy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BinPackingEasy.html; sourceTree = "<group>"; };
+		C9E8D9E1197CF5CE0034F239 /* BinPackingEasy.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BinPackingEasy.sample; sourceTree = "<group>"; };
+		C9E8D9E2197CF5CE0034F239 /* ErasingCharacters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErasingCharacters.cpp; sourceTree = "<group>"; };
+		C9E8D9E3197CF5CE0034F239 /* ErasingCharacters.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ErasingCharacters.html; sourceTree = "<group>"; };
+		C9E8D9E4197CF5CE0034F239 /* ErasingCharacters.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ErasingCharacters.sample; sourceTree = "<group>"; };
 		C9ECF1D61976256600842FE8 /* RookAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RookAttack.cpp; sourceTree = "<group>"; };
 		C9ED3D89177B279E00994C1F /* StringOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringOperations.cpp; sourceTree = "<group>"; };
 		C9ED3D8A177B279E00994C1F /* StringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOperations.h; sourceTree = "<group>"; };
@@ -290,6 +298,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9E8D9DE197CF5CE0034F239 /* SRM 598 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C97DC646197B1D1D00FE95B1 /* SRM 592 */,
 				C97DC641197B19C400FE95B1 /* SRM 573 */,
@@ -418,6 +427,19 @@
 			path = Trie;
 			sourceTree = "<group>";
 		};
+		C9E8D9DE197CF5CE0034F239 /* SRM 598 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */,
+				C9E8D9E0197CF5CE0034F239 /* BinPackingEasy.html */,
+				C9E8D9E1197CF5CE0034F239 /* BinPackingEasy.sample */,
+				C9E8D9E2197CF5CE0034F239 /* ErasingCharacters.cpp */,
+				C9E8D9E3197CF5CE0034F239 /* ErasingCharacters.html */,
+				C9E8D9E4197CF5CE0034F239 /* ErasingCharacters.sample */,
+			);
+			path = "SRM 598";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,6 +516,7 @@
 				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
 				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
+				C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */,
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C97DC645197B19C400FE95B1 /* SkiResortsEasy.cpp in Sources */,
@@ -512,6 +535,7 @@
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
+				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
 				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
 				C9529450196E047400647DAE /* Permutation.cpp in Sources */,
 				C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */,
