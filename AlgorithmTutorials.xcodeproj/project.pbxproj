@@ -57,6 +57,9 @@
 		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
 		C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */; };
 		C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9E2197CF5CE0034F239 /* ErasingCharacters.cpp */; };
+		C9E8D9F1197E01E70034F239 /* GardenHose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9E8197E01E70034F239 /* GardenHose.cpp */; };
+		C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9EB197E01E70034F239 /* GeneralChess.cpp */; };
+		C9E8D9F3197E01E70034F239 /* QuickSums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9EE197E01E70034F239 /* QuickSums.cpp */; };
 		C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ECF1D61976256600842FE8 /* RookAttack.cpp */; };
 		C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D89177B279E00994C1F /* StringOperations.cpp */; };
 		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
@@ -172,6 +175,15 @@
 		C9E8D9E2197CF5CE0034F239 /* ErasingCharacters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErasingCharacters.cpp; sourceTree = "<group>"; };
 		C9E8D9E3197CF5CE0034F239 /* ErasingCharacters.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ErasingCharacters.html; sourceTree = "<group>"; };
 		C9E8D9E4197CF5CE0034F239 /* ErasingCharacters.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ErasingCharacters.sample; sourceTree = "<group>"; };
+		C9E8D9E8197E01E70034F239 /* GardenHose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GardenHose.cpp; sourceTree = "<group>"; };
+		C9E8D9E9197E01E70034F239 /* GardenHose.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GardenHose.html; sourceTree = "<group>"; };
+		C9E8D9EA197E01E70034F239 /* GardenHose.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GardenHose.sample; sourceTree = "<group>"; };
+		C9E8D9EB197E01E70034F239 /* GeneralChess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralChess.cpp; sourceTree = "<group>"; };
+		C9E8D9EC197E01E70034F239 /* GeneralChess.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GeneralChess.html; sourceTree = "<group>"; };
+		C9E8D9ED197E01E70034F239 /* GeneralChess.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeneralChess.sample; sourceTree = "<group>"; };
+		C9E8D9EE197E01E70034F239 /* QuickSums.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSums.cpp; sourceTree = "<group>"; };
+		C9E8D9EF197E01E70034F239 /* QuickSums.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QuickSums.html; sourceTree = "<group>"; };
+		C9E8D9F0197E01E70034F239 /* QuickSums.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuickSums.sample; sourceTree = "<group>"; };
 		C9ECF1D61976256600842FE8 /* RookAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RookAttack.cpp; sourceTree = "<group>"; };
 		C9ED3D89177B279E00994C1F /* StringOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringOperations.cpp; sourceTree = "<group>"; };
 		C9ED3D8A177B279E00994C1F /* StringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOperations.h; sourceTree = "<group>"; };
@@ -298,6 +310,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9E8D9E7197E01E70034F239 /* SRM 197 */,
 				C9E8D9DE197CF5CE0034F239 /* SRM 598 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C97DC646197B1D1D00FE95B1 /* SRM 592 */,
@@ -440,6 +453,22 @@
 			path = "SRM 598";
 			sourceTree = "<group>";
 		};
+		C9E8D9E7197E01E70034F239 /* SRM 197 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E8D9E8197E01E70034F239 /* GardenHose.cpp */,
+				C9E8D9E9197E01E70034F239 /* GardenHose.html */,
+				C9E8D9EA197E01E70034F239 /* GardenHose.sample */,
+				C9E8D9EB197E01E70034F239 /* GeneralChess.cpp */,
+				C9E8D9EC197E01E70034F239 /* GeneralChess.html */,
+				C9E8D9ED197E01E70034F239 /* GeneralChess.sample */,
+				C9E8D9EE197E01E70034F239 /* QuickSums.cpp */,
+				C9E8D9EF197E01E70034F239 /* QuickSums.html */,
+				C9E8D9F0197E01E70034F239 /* QuickSums.sample */,
+			);
+			path = "SRM 197";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,8 +541,10 @@
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
 				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
+				C9E8D9F3197E01E70034F239 /* QuickSums.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
 				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
+				C9E8D9F1197E01E70034F239 /* GardenHose.cpp in Sources */,
 				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
 				C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */,
@@ -532,6 +563,7 @@
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
 				C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */,
+				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,

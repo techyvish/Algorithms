@@ -10,38 +10,17 @@
 #include <typeinfo>
 #include <fstream>
 
-
 using namespace std;
-typedef vector<int > VI;
 
-class BinPackingEasy {
-public:
-    int minBins(vector<int> item) {
-        sort(item.begin(), item.end());
-        int lo = 0 , hi = item.size() - 1;
-        int ans = 0;
-        while ( lo <= hi ) {
-            if ( item[hi] + item[lo] <= 300 )
-            {
-                lo ++; hi --;
-                ans ++;
-            }
-            else
-            {
-                hi--;
-                ans ++;
-            }
-        }
-        return ans;
+class GardenHose {
+    public:
+    int countDead(int n, int rowDist, int colDist, int hoseDist) {
+        return 0;
     }
-   
-
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 598/BinPackingEasy.sample");
-//
-////ifstream data("BinPackingEasy.sample");
+//ifstream data("GardenHose.sample");
 //
 //string next_line() {
 //    string s;
@@ -58,17 +37,6 @@ public:
 //    s = next_line();
 //}
 //
-//template <typename T> void from_stream(vector<T> &ts) {
-//    int len;
-//    from_stream(len);
-//    ts.clear();
-//    for (int i = 0; i < len; ++i) {
-//        T t;
-//        from_stream(t);
-//        ts.push_back(t);
-//    }
-//}
-//
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
@@ -80,10 +48,10 @@ public:
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(vector<int> item, int __expected) {
+//bool do_test(int n, int rowDist, int colDist, int hoseDist, int __expected) {
 //    time_t startClock = clock();
-//    BinPackingEasy *instance = new BinPackingEasy();
-//    int __result = instance->minBins(item);
+//    GardenHose *instance = new GardenHose();
+//    int __result = instance->countDead(n, rowDist, colDist, hoseDist);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -104,8 +72,14 @@ public:
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        vector<int> item;
-//        from_stream(item);
+//        int n;
+//        from_stream(n);
+//        int rowDist;
+//        from_stream(rowDist);
+//        int colDist;
+//        from_stream(colDist);
+//        int hoseDist;
+//        from_stream(hoseDist);
 //        next_line();
 //        int __answer;
 //        from_stream(__answer);
@@ -115,16 +89,16 @@ public:
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(item, __answer)) {
+//        if ( do_test(n, rowDist, colDist, hoseDist, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1405926950;
+//        int T = time(NULL) - 1405995561;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -142,7 +116,7 @@ public:
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "BinPackingEasy (500 Points)" << endl << endl;
+//        cout << "GardenHose (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

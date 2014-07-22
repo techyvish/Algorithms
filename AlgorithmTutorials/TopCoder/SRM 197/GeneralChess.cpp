@@ -10,38 +10,17 @@
 #include <typeinfo>
 #include <fstream>
 
-
 using namespace std;
-typedef vector<int > VI;
 
-class BinPackingEasy {
-public:
-    int minBins(vector<int> item) {
-        sort(item.begin(), item.end());
-        int lo = 0 , hi = item.size() - 1;
-        int ans = 0;
-        while ( lo <= hi ) {
-            if ( item[hi] + item[lo] <= 300 )
-            {
-                lo ++; hi --;
-                ans ++;
-            }
-            else
-            {
-                hi--;
-                ans ++;
-            }
-        }
-        return ans;
+class GeneralChess {
+    public:
+    vector<string> attackPositions(vector<string> pieces) {
+        return vector<string>();
     }
-   
-
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 598/BinPackingEasy.sample");
-//
-////ifstream data("BinPackingEasy.sample");
+//ifstream data("GeneralChess.sample");
 //
 //string next_line() {
 //    string s;
@@ -80,10 +59,21 @@ public:
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(vector<int> item, int __expected) {
+//template <typename T> string to_string(vector<T> ts) {
+//    stringstream s;
+//    s << "[ ";
+//    for (int i = 0; i < ts.size(); ++i) {
+//        if (i > 0) s << ", ";
+//        s << to_string(ts[i]);
+//    }
+//    s << " ]";
+//    return s.str();
+//}
+//
+//bool do_test(vector<string> pieces, vector<string> __expected) {
 //    time_t startClock = clock();
-//    BinPackingEasy *instance = new BinPackingEasy();
-//    int __result = instance->minBins(item);
+//    GeneralChess *instance = new GeneralChess();
+//    vector<string> __result = instance->attackPositions(pieces);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -104,10 +94,10 @@ public:
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        vector<int> item;
-//        from_stream(item);
+//        vector<string> pieces;
+//        from_stream(pieces);
 //        next_line();
-//        int __answer;
+//        vector<string> __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -115,13 +105,13 @@ public:
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(item, __answer)) {
+//        if ( do_test(pieces, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1405926950;
+//        int T = time(NULL) - 1405995597;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -142,7 +132,7 @@ public:
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "BinPackingEasy (500 Points)" << endl << endl;
+//        cout << "GeneralChess (500 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
