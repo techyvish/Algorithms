@@ -103,9 +103,9 @@ public:
     }
 };
 
-int main()
-{
-    LittleBishops little;
-    little.placeTheBishops(4);
-    return 0;
-}
+//int main()
+//{
+//    LittleBishops little;
+//    little.placeTheBishops(4);
+//    return 0;
+//}
