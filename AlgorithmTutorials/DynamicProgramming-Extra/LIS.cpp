@@ -43,17 +43,31 @@ public:
     {
         int tmpMax =0;
         int count = 0;
-        for ( int i = k ; i < n ; i ++ )
+//        for ( int i = k ; i < n ; i ++ )
+//        {
+//            if ( a[i] > tmpMax )
+//            {
+//                tmpMax = a[i];
+//                count ++;
+//            }
+//        }
+        
+        tmpMax = 0;
+        for ( int i = 0 ; i <= k ; i++ )
         {
-            if ( a[i] > tmpMax )
+            if ( a[i] <= a[n-1])
             {
-                tmpMax = a[i];
-                count ++;
+                if ( (a[i] >= tmpMax) && (a[i] <= a[n-1]))
+                {
+                    tmpMax = a[i];
+                    count ++;
+                }
+               // include = true;
             }
         }
         if ( count > max )
             max = count;
-        *ncandidates = 0;
+        *ncandidates = 1;
     }
     
     void backtrack(int a[],int k , int  n)
@@ -70,8 +84,8 @@ public:
             construct_candidates(a,k,n,c,&ncandidates);
             for ( i = 0 ; i < ncandidates ; i++ )
             {
-                a[k] = c[i];
-                printLevel(k,i);
+                //a[k] = c[i];
+                //k = i;
                 backtrack(a,k,n);
                 if ( finished )
                     return;
@@ -79,20 +93,11 @@ public:
         }
     }
     
-    void loopIt(int n )
+    void loopIt(int a[],int n )
     {
-        int a[5];  /* solution vector */
         backtrack(a,0,n);
     }
     
-    void printLevel(int k,int i )
-    {
-        for ( int i = 0 ; i < k ; i++ )
-        {
-            cout << ">>>>>>>>";
-        }
-        cout << k << "," << i  << endl;
-    }
     
 };
 
@@ -107,20 +112,20 @@ public:
     {
         for(int i = 1; i < n; i++)
         {
-            res = lisLength(arr, i, max_ref);
+             res = lisLength(arr, i, max_ref);
             if (arr[i-1] < arr[n-1] && res + 1 > max_ending_here)
             {
                 
             }
-                //max_ending_here = res + 1;
         }
         return 0;
     }
     
     int getLongestLenght(int a[],int length)
     {
-        int *lis = new int[length];
-        int *lisArr = new int[length];
+    
+        vector<int> lis(length);
+        vector<int> lisArr(length);
         
         lis[0] = 1;
         int k = 0;
@@ -132,6 +137,8 @@ public:
             int max = 0;
             for ( int j = 0 ; j < i ; j++ )
             {
+                cout << a[j] << " " << a[i] << " " << "lis[ " << j << " ]" << lis[j] << endl;
+                
                 if ( a[j] < a[i])
                 {
                     if ( lis[j] > max )
@@ -152,27 +159,31 @@ public:
             
         }
         
+        sort(lis.begin(), lis.end());
         cout << lis[length -1]  << endl;
-        return 0;
+        return  lis[length -1];
     }
     
 };
 
 
 
-int main()
-{
-    int a[] = {10,22,9,33,21,50,41,60,80};
- //   int a[] = { 5,3,4,8,6,7};
-    
- //   RecursiveLIS lis;
- //   lis.backtrack(a, -1, 9);
-
-   // int length = l.getLongestUsingRecursion(a,9);
-   // cout << length ;
-   
-    LIS l;
-    int max_ref=  1;
-    l.lisLength(a, 9, &max_ref);
-    return  0;
-}
+//int main()
+//{
+//    int a[] = {10,22,8,33,9,21,50,41,5,10,4,11,6,12,3,13,53,14,1,15};
+//    //int a[] = { 5,3,4,8,6,7};
+//    
+//   //RecursiveLIS lis;
+//   //lis.backtrack(a, -1, 20);
+//
+//    LIS t;
+//    int length = t.getLongestLenght(a, 20);
+//    
+//   // int length = l.getLongestUsingRecursion(a,9);
+//   // cout << length ;
+//   
+////    LIS l;
+////    int max_ref=  1;
+////    l.lisLength(a, 6, &max_ref);
+//    return  0;
+//}
