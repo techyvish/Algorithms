@@ -70,6 +70,7 @@
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
+		C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -207,6 +208,9 @@
 		C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearPolyominoCovering.cpp; sourceTree = "<group>"; };
 		C9FCE7C4198093D200471F64 /* LinearPolyominoCovering.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LinearPolyominoCovering.html; sourceTree = "<group>"; };
 		C9FCE7C5198093D200471F64 /* LinearPolyominoCovering.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LinearPolyominoCovering.sample; sourceTree = "<group>"; };
+		C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumbersChallenge.cpp; sourceTree = "<group>"; };
+		C9FCE7CA1980D48500471F64 /* NumbersChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NumbersChallenge.html; sourceTree = "<group>"; };
+		C9FCE7CB1980D48500471F64 /* NumbersChallenge.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NumbersChallenge.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +328,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
 				C9E8D9E7197E01E70034F239 /* SRM 197 */,
@@ -508,6 +513,16 @@
 			path = "SRM 429";
 			sourceTree = "<group>";
 		};
+		C9FCE7C81980D48500471F64 /* SRM 621 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */,
+				C9FCE7CA1980D48500471F64 /* NumbersChallenge.html */,
+				C9FCE7CB1980D48500471F64 /* NumbersChallenge.sample */,
+			);
+			path = "SRM 621";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -595,6 +610,7 @@
 				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
 				C97DC63B1978ABB000FE95B1 /* SignatureDecorator.cpp in Sources */,
 				C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */,
+				C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */,
 				C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */,
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
