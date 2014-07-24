@@ -72,6 +72,7 @@
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
 		C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */; };
 		C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7CE1981C66300471F64 /* InsideOut.cpp */; };
+		C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D31981C92000471F64 /* UserName.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -215,6 +216,9 @@
 		C9FCE7CE1981C66300471F64 /* InsideOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsideOut.cpp; sourceTree = "<group>"; };
 		C9FCE7CF1981C66300471F64 /* InsideOut.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InsideOut.html; sourceTree = "<group>"; };
 		C9FCE7D01981C66300471F64 /* InsideOut.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsideOut.sample; sourceTree = "<group>"; };
+		C9FCE7D31981C92000471F64 /* UserName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserName.cpp; sourceTree = "<group>"; };
+		C9FCE7D41981C92000471F64 /* UserName.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UserName.html; sourceTree = "<group>"; };
+		C9FCE7D51981C92000471F64 /* UserName.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserName.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +336,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7D21981C92000471F64 /* SRM 203 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
@@ -538,6 +543,16 @@
 			path = "SRM 224";
 			sourceTree = "<group>";
 		};
+		C9FCE7D21981C92000471F64 /* SRM 203 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7D31981C92000471F64 /* UserName.cpp */,
+				C9FCE7D41981C92000471F64 /* UserName.html */,
+				C9FCE7D51981C92000471F64 /* UserName.sample */,
+			);
+			path = "SRM 203";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -650,6 +665,7 @@
 				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 				C97DC64F197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
+				C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */,
 				C9E8D9F9197E32F60034F239 /* PalindromicSubstring.cpp in Sources */,
 				C9529452196E19DD00647DAE /* Permute.cpp in Sources */,
 				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
