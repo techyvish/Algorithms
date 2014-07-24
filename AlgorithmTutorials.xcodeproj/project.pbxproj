@@ -71,6 +71,7 @@
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
 		C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */; };
+		C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7CE1981C66300471F64 /* InsideOut.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,6 +212,9 @@
 		C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumbersChallenge.cpp; sourceTree = "<group>"; };
 		C9FCE7CA1980D48500471F64 /* NumbersChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NumbersChallenge.html; sourceTree = "<group>"; };
 		C9FCE7CB1980D48500471F64 /* NumbersChallenge.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NumbersChallenge.sample; sourceTree = "<group>"; };
+		C9FCE7CE1981C66300471F64 /* InsideOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsideOut.cpp; sourceTree = "<group>"; };
+		C9FCE7CF1981C66300471F64 /* InsideOut.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InsideOut.html; sourceTree = "<group>"; };
+		C9FCE7D01981C66300471F64 /* InsideOut.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InsideOut.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +332,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7CD1981C66300471F64 /* SRM 224 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
@@ -523,6 +528,16 @@
 			path = "SRM 621";
 			sourceTree = "<group>";
 		};
+		C9FCE7CD1981C66300471F64 /* SRM 224 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7CE1981C66300471F64 /* InsideOut.cpp */,
+				C9FCE7CF1981C66300471F64 /* InsideOut.html */,
+				C9FCE7D01981C66300471F64 /* InsideOut.sample */,
+			);
+			path = "SRM 224";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -625,6 +640,7 @@
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
 				C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */,
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
+				C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */,
 				C9E8D9F6197E26280034F239 /* SubSetSum.cpp in Sources */,
 				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
 				C9529450196E047400647DAE /* Permutation.cpp in Sources */,
