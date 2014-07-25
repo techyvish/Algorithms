@@ -73,6 +73,7 @@
 		C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C91980D48500471F64 /* NumbersChallenge.cpp */; };
 		C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7CE1981C66300471F64 /* InsideOut.cpp */; };
 		C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D31981C92000471F64 /* UserName.cpp */; };
+		C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -219,6 +220,9 @@
 		C9FCE7D31981C92000471F64 /* UserName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserName.cpp; sourceTree = "<group>"; };
 		C9FCE7D41981C92000471F64 /* UserName.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UserName.html; sourceTree = "<group>"; };
 		C9FCE7D51981C92000471F64 /* UserName.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserName.sample; sourceTree = "<group>"; };
+		C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyllableCounter.cpp; sourceTree = "<group>"; };
+		C9FCE7D91981D86B00471F64 /* SyllableCounter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SyllableCounter.html; sourceTree = "<group>"; };
+		C9FCE7DA1981D86B00471F64 /* SyllableCounter.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SyllableCounter.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +340,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
@@ -553,6 +558,16 @@
 			path = "SRM 203";
 			sourceTree = "<group>";
 		};
+		C9FCE7D71981D86B00471F64 /* SRM 248 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */,
+				C9FCE7D91981D86B00471F64 /* SyllableCounter.html */,
+				C9FCE7DA1981D86B00471F64 /* SyllableCounter.sample */,
+			);
+			path = "SRM 248";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -670,6 +685,7 @@
 				C9529452196E19DD00647DAE /* Permute.cpp in Sources */,
 				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
 				C9C70FC019779D3C00B3D445 /* TestFile.cpp in Sources */,
+				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
