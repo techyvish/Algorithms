@@ -20,12 +20,36 @@
 #include <fstream>
 #include <unistd.h>
 #include <climits>
-
 using namespace std;
+
+/**** 
+*  we can define out think of our methodology here as 
+                    Fix position and 
+                    swap position as described in following diagaram.
+
+                                        {a,b,c}
+                                           |
+                    ________________________________________________
+                    |                      |                        |
+                {a,b,c}                 {b,a,c}                 {c,b,a}            // here we fix first position and swap all characters on that position.
+                   |                       |                        |
+            __________              ______________             ______________
+            |         |             |             |            |             |
+        {a,b,c}    {a,c,b}        {b,a,c}    {b,c,a}         {c,b,a}      {c,a,b}  // here we fix second position and swap remaning characters on that
+                                                                                   // position.
+
+*/
 
 #define NMAX 5
 
-class PermuteNumbers {
+struct _data
+{
+    
+};
+
+typedef struct _data data;
+
+class Permute {
     
 public:
     
@@ -33,32 +57,26 @@ public:
     
     bool is_a_solution(int a[],int k, int n)
     {
-        return ( k == n);
+        return ( k == n - 1);
     }
     
     void process_solution(int a[],int k , int n)
     {
-        int i;
-        cout << "{";
-        for (i=1; i <= k ; i++)
-            printf(" %d",a[i]);
-        cout << " }\n" << endl;
+        cout << "{ ";
+        for ( int i = 0 ; i < n ; i++ )
+            cout << (char)a[i]  << " ";
+        cout << "}" << endl;
     }
     
-    void construct_candidates(int a[], int k, int n, int c[], int *ncandidates)
+    void construct_candidates(int a[],int k, int n, int c[], int *ncandidates)
     {
-        int in_perm[NMAX];
-        for ( int i = 0 ; i < NMAX ; i ++ )
+        int in_perm[NMAX] = {0};                // Fixing the participant in permutation.
+        for ( int i = 0 ; i < k ; i++ )
         {
-            in_perm[i] = false;
+            in_perm[i] = true;
         }
         
-        for (int i = 1 ; i <= k ; i++)
-        {
-            in_perm[a[i]] = true;
-        }
-        
-        for ( int i = 1 ; i <= n ; i++ )
+        for ( int i = 0; i < n ; i++ )
         {
             if ( in_perm[i] == false )
             {
@@ -66,12 +84,12 @@ public:
                 *ncandidates = *ncandidates + 1;
             }
         }
-        
+        cout << endl;
     }
     
     void backtrack(int a[],int k , int  n)
     {
-        int c[NMAX] = {0,0,0,0,0};
+        int c[NMAX];
         int ncandidates = 0;
         int i ;
         
@@ -81,11 +99,19 @@ public:
         {
             k = k+1;
             construct_candidates(a,k,n,c,&ncandidates);
-            printf("k = %d, a[k] = %d, n = %d, ncandidates = %d ",k,a[k],n,ncandidates) ; cout << endl;
             for ( i = 0 ; i < ncandidates ; i++ )
             {
-                a[k] = c[i];
-                printf(">>>>>> k = %d, a[k] = %d, i = %d, c[i] = %d ",k,a[k],i,c[i]) ; cout << endl;
+               // cout << "a[" << k <<"] =" << (char) a[k] << " c[" << i <<"] =" << (char) c[i] << endl;
+                for ( int p = k ; p < n ;p++ ) //After locking down position we're swapping characters here.
+                {
+                    if (a[p] == c[i])
+                    {
+                        int temp = a[k];
+                        a[k] = c[i];
+                        a[p] = temp;
+                    }
+                }
+                //printLevel(k,i);
                 backtrack(a,k,n);
                 if ( finished )
                     return;
@@ -93,17 +119,26 @@ public:
         }
     }
     
-    void generateAllPerms(int a[],int n )
+    void getAllPermutations(int a[],int n )
     {
-        backtrack(a,0,n);
+        backtrack(a,-1,n);
+    }
+    
+    void printLevel(int k,int i )
+    {
+        for ( int i = 0 ; i < k ; i++ )
+        {
+            cout << ">>>>>>>>";
+        }
+        cout << k << "," << i  << endl;
     }
     
 };
 
 //int main()
 //{
-//    PermuteNumbers perm;
-//    int a[NMAX] = {1,2,3};
-//    perm.generateAllPerms(a,3);
+//    Permute p;
+//    int a[] = {'a','b','c'};
+//    p.getAllPermutations(a,3);
 //    return 0;
 //}

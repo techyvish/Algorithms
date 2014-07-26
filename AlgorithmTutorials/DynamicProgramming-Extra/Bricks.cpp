@@ -1,13 +1,13 @@
 //
-//  Subsets.cpp
+//  Bricks.cpp
 //  AlgorithmTutorials
 //
-//  Created by Vishal Patel on 7/10/14.
+//  Created by Vishal Patel on 18/07/2014.
 //  Copyright (c) 2014 Vishal. All rights reserved.
 //
 
-#include <cstdio>
 
+#include <cstdio>
 #include <cmath>
 #include <cstring>
 #include <ctime>
@@ -20,8 +20,16 @@
 #include <fstream>
 #include <unistd.h>
 #include <climits>
+#include <list>
+#include <string>
+
+using namespace std;
 
 #define NMAX 50
+
+typedef vector<int> VI ; typedef vector<vector<int>> VVI;
+typedef vector<string> VS; typedef vector<vector<string>> VVS;
+typedef signed long long i64; typedef unsigned long long u64;
 
 using namespace std;
 
@@ -32,7 +40,7 @@ struct _data
 
 typedef struct _data data;
 
-class Parentheses {
+class Bricks {
     
     
 public:
@@ -41,38 +49,26 @@ public:
     
     bool is_a_solution(int a[],int k, int n)
     {
-        return ( k == (n * 2 ) - 1);
+        return ( k == n );
     }
     
     void process_solution(int a[],int k , int n)
     {
-        if ( isValidCombo(a,n) )
-        {
-            for ( int i = 0 ; i < n * 2 ; i++ )
-            {
-                cout << (char)a[i] << " ";
-            }
-            cout << endl << endl;
-        }
     }
     
     void construct_candidates(int a[],int k, int n, int c[], int *ncandidates)
     {
         
-        for ( int i = 0 ; i < 2 ; i++ )
-        {
-            if ( i % 2 == 0 )
-                c[*ncandidates] = ')';
-            else
-                c[*ncandidates] = '(';
-            *ncandidates = *ncandidates + 1;
-        }
+        
+        
+        
+        *ncandidates = 3;
     }
     
     void backtrack(int a[],int k , int  n)
     {
-        int c[NMAX] = {0};
-        int ncandidates = 0;
+        int c[3];
+        int ncandidates;
         int i ;
         
         if ( is_a_solution(a,k,n))
@@ -84,6 +80,7 @@ public:
             for ( i = 0 ; i < ncandidates ; i++ )
             {
                 a[k] = c[i];
+                printLevel(k,i);
                 backtrack(a,k,n);
                 if ( finished )
                     return;
@@ -91,37 +88,25 @@ public:
         }
     }
     
-    void getAllCombinations(int n )
+    void loopIt(int n )
     {
-        int a[NMAX] = {0} ;  /* solution vector */
-        backtrack(a,-1,n);
+        int a[5];  /* solution vector */
+        backtrack(a,0,n);
     }
     
-    bool isValidCombo(int a[],int n)
+    void printLevel(int k,int i )
     {
-        int countOpen = 0;
-        int countClose = 0;
-        
-        if ( a[0] == ')' || a[n*2 - 1] == '(')
-            return false;
-        
-        for ( int i = 0 ; i < 2 * n ; i++)
+        for ( int i = 0 ; i < k ; i++ )
         {
-            
-            if ( a[i] == '(')
-                countOpen ++;
-            else
-                countClose ++;
-            
+            cout << ">>>>>>>>";
         }
-        return (countOpen == countClose);
+        cout << k << "," << i  << endl;
     }
     
 };
 
 //int main()
 //{
-//    Parentheses p;
-//    p.getAllCombinations(2);
+//
 //    return 0;
 //}

@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/Queens.cpp"
-            timestampString = "426672285.034585"
+            filePath = "AlgorithmTutorials/Trie/CyclicWords.cpp"
+            timestampString = "427332632.750029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "placeQueen(int a[][NMAX], int k ,int n)"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "differentCW(VS a)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/Permute.cpp"
-            timestampString = "426740163.451308"
+            filePath = "AlgorithmTutorials/Backtracking-Extra/LittleBishops.cpp"
+            timestampString = "427601173.291284"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "generateAllPerms(int a[],int n )"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "placeTheBishops(int n )"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,12 +57,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/Permute.cpp"
-            timestampString = "426742674.342196"
+            filePath = "AlgorithmTutorials/Backtracking-Extra/LittleBishops.cpp"
+            timestampString = "427601386.427496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "backtrack(int a[],int k , int n)"
             landmarkType = "5">
          </BreakpointContent>
@@ -73,14 +73,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp"
-            timestampString = "426899407.644694"
+            filePath = "AlgorithmTutorials/TopCoder/SRM 598/BinPackingEasy.cpp"
+            timestampString = "427687501.533485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "main()"
-            landmarkType = "7">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "minBins(vector&lt;int&gt; item)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

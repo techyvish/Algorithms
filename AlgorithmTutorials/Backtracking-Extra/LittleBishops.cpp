@@ -1,13 +1,12 @@
 //
-//  Subsets.cpp
+//  LittleBishops.cpp
 //  AlgorithmTutorials
 //
-//  Created by Vishal Patel on 7/10/14.
+//  Created by Vishal Patel on 21/07/2014.
 //  Copyright (c) 2014 Vishal. All rights reserved.
 //
 
 #include <cstdio>
-
 #include <cmath>
 #include <cstring>
 #include <ctime>
@@ -20,8 +19,16 @@
 #include <fstream>
 #include <unistd.h>
 #include <climits>
+#include <list>
+#include <string>
+
+using namespace std;
 
 #define NMAX 50
+
+typedef vector<int> VI ; typedef vector<vector<int>> VVI;
+typedef vector<string> VS; typedef vector<vector<string>> VVS;
+typedef signed long long i64; typedef unsigned long long u64;
 
 using namespace std;
 
@@ -32,7 +39,7 @@ struct _data
 
 typedef struct _data data;
 
-class Parentheses {
+class LittleBishops {
     
     
 public:
@@ -41,38 +48,36 @@ public:
     
     bool is_a_solution(int a[],int k, int n)
     {
-        return ( k == (n * 2 ) - 1);
+        return ( k == n - 1 );
     }
     
     void process_solution(int a[],int k , int n)
     {
-        if ( isValidCombo(a,n) )
-        {
-            for ( int i = 0 ; i < n * 2 ; i++ )
-            {
-                cout << (char)a[i] << " ";
-            }
-            cout << endl << endl;
-        }
+        
     }
     
     void construct_candidates(int a[],int k, int n, int c[], int *ncandidates)
     {
         
-        for ( int i = 0 ; i < 2 ; i++ )
+        for (int j = 0 ; j < n ; j++ )
         {
-            if ( i % 2 == 0 )
-                c[*ncandidates] = ')';
-            else
-                c[*ncandidates] = '(';
+            for ( int i = 0 ; i < k ; i ++ )
+            {
+                if ( abs( a[i] - j ) != abs ( i - k ) )
+                {
+                    a[i] = j;
+                }
+            }
+            
+            c[*ncandidates] = j;
             *ncandidates = *ncandidates + 1;
         }
     }
     
     void backtrack(int a[],int k , int  n)
     {
-        int c[NMAX] = {0};
-        int ncandidates = 0;
+        int c[NMAX];
+        int ncandidates;
         int i ;
         
         if ( is_a_solution(a,k,n))
@@ -91,37 +96,16 @@ public:
         }
     }
     
-    void getAllCombinations(int n )
+    void placeTheBishops(int n )
     {
-        int a[NMAX] = {0} ;  /* solution vector */
+        int a[NMAX];  /* solution vector */
         backtrack(a,-1,n);
     }
-    
-    bool isValidCombo(int a[],int n)
-    {
-        int countOpen = 0;
-        int countClose = 0;
-        
-        if ( a[0] == ')' || a[n*2 - 1] == '(')
-            return false;
-        
-        for ( int i = 0 ; i < 2 * n ; i++)
-        {
-            
-            if ( a[i] == '(')
-                countOpen ++;
-            else
-                countClose ++;
-            
-        }
-        return (countOpen == countClose);
-    }
-    
 };
 
 //int main()
 //{
-//    Parentheses p;
-//    p.getAllCombinations(2);
+//    LittleBishops little;
+//    little.placeTheBishops(4);
 //    return 0;
 //}
