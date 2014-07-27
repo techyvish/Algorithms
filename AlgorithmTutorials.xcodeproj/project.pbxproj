@@ -46,6 +46,7 @@
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */; };
 		C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9BC9609178497F900E69E55 /* NQueens.cpp */; };
+		C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */; };
 		C9C70FB619765BB800B3D445 /* Trie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FB519765BB800B3D445 /* Trie.cpp */; };
 		C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FB719765BCF00B3D445 /* WordFind.cpp */; };
 		C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FBB1977623000B3D445 /* CyclicWords.cpp */; };
@@ -167,6 +168,9 @@
 		C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackTrackingTemplate.cpp; sourceTree = "<group>"; };
 		C9BC9609178497F900E69E55 /* NQueens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NQueens.cpp; sourceTree = "<group>"; };
 		C9BC960A178497F900E69E55 /* NQueens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQueens.h; sourceTree = "<group>"; };
+		C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KDoubleSubstrings.cpp; sourceTree = "<group>"; };
+		C9C012CC19847B1200A1044E /* KDoubleSubstrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KDoubleSubstrings.html; sourceTree = "<group>"; };
+		C9C012CD19847B1200A1044E /* KDoubleSubstrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KDoubleSubstrings.sample; sourceTree = "<group>"; };
 		C9C70FB519765BB800B3D445 /* Trie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trie.cpp; sourceTree = "<group>"; };
 		C9C70FB719765BCF00B3D445 /* WordFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordFind.cpp; sourceTree = "<group>"; };
 		C9C70FBB1977623000B3D445 /* CyclicWords.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicWords.cpp; sourceTree = "<group>"; };
@@ -340,6 +344,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
@@ -466,6 +471,16 @@
 				C97DC64E197B3A5C00FE95B1 /* ColorfulTilesEasy.sample */,
 			);
 			path = "SRM 472";
+			sourceTree = "<group>";
+		};
+		C9C012CA19847B1200A1044E /* SRM 321 */ = {
+			isa = PBXGroup;
+			children = (
+				C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */,
+				C9C012CC19847B1200A1044E /* KDoubleSubstrings.html */,
+				C9C012CD19847B1200A1044E /* KDoubleSubstrings.sample */,
+			);
+			path = "SRM 321";
 			sourceTree = "<group>";
 		};
 		C9C70FB419765BA900B3D445 /* Trie */ = {
@@ -667,6 +682,7 @@
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
+				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
 				C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */,
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
