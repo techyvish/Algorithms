@@ -1,0 +1,33 @@
+-- Example 0
+1
+aa
+0
+
+1
+-- Example 1
+1
+aaaa
+0
+
+4
+-- Example 2
+2
+contest
+kontest
+1
+
+14
+-- Example 3
+3
+abacaba
+d
+abacaba
+1
+
+34
+-- Example 4
+1
+areyouready
+2
+
+18

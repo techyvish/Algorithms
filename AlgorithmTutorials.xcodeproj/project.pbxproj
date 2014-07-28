@@ -46,6 +46,7 @@
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */; };
 		C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9BC9609178497F900E69E55 /* NQueens.cpp */; };
+		C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */; };
 		C9C70FB619765BB800B3D445 /* Trie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FB519765BB800B3D445 /* Trie.cpp */; };
 		C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FB719765BCF00B3D445 /* WordFind.cpp */; };
 		C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C70FBB1977623000B3D445 /* CyclicWords.cpp */; };
@@ -74,7 +75,6 @@
 		C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7CE1981C66300471F64 /* InsideOut.cpp */; };
 		C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D31981C92000471F64 /* UserName.cpp */; };
 		C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */; };
-		C9FCE7E01985D42100471F64 /* PunctuationCleaner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7DD1985D42100471F64 /* PunctuationCleaner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -168,6 +168,9 @@
 		C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackTrackingTemplate.cpp; sourceTree = "<group>"; };
 		C9BC9609178497F900E69E55 /* NQueens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NQueens.cpp; sourceTree = "<group>"; };
 		C9BC960A178497F900E69E55 /* NQueens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQueens.h; sourceTree = "<group>"; };
+		C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KDoubleSubstrings.cpp; sourceTree = "<group>"; };
+		C9C012CC19847B1200A1044E /* KDoubleSubstrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KDoubleSubstrings.html; sourceTree = "<group>"; };
+		C9C012CD19847B1200A1044E /* KDoubleSubstrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KDoubleSubstrings.sample; sourceTree = "<group>"; };
 		C9C70FB519765BB800B3D445 /* Trie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trie.cpp; sourceTree = "<group>"; };
 		C9C70FB719765BCF00B3D445 /* WordFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordFind.cpp; sourceTree = "<group>"; };
 		C9C70FBB1977623000B3D445 /* CyclicWords.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicWords.cpp; sourceTree = "<group>"; };
@@ -224,9 +227,6 @@
 		C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyllableCounter.cpp; sourceTree = "<group>"; };
 		C9FCE7D91981D86B00471F64 /* SyllableCounter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SyllableCounter.html; sourceTree = "<group>"; };
 		C9FCE7DA1981D86B00471F64 /* SyllableCounter.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SyllableCounter.sample; sourceTree = "<group>"; };
-		C9FCE7DD1985D42100471F64 /* PunctuationCleaner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PunctuationCleaner.cpp; sourceTree = "<group>"; };
-		C9FCE7DE1985D42100471F64 /* PunctuationCleaner.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PunctuationCleaner.html; sourceTree = "<group>"; };
-		C9FCE7DF1985D42100471F64 /* PunctuationCleaner.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PunctuationCleaner.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,7 +344,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9FCE7DC1985D42100471F64 /* SRM 376 */,
+				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
@@ -473,6 +473,16 @@
 			path = "SRM 472";
 			sourceTree = "<group>";
 		};
+		C9C012CA19847B1200A1044E /* SRM 321 */ = {
+			isa = PBXGroup;
+			children = (
+				C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */,
+				C9C012CC19847B1200A1044E /* KDoubleSubstrings.html */,
+				C9C012CD19847B1200A1044E /* KDoubleSubstrings.sample */,
+			);
+			path = "SRM 321";
+			sourceTree = "<group>";
+		};
 		C9C70FB419765BA900B3D445 /* Trie */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,16 +583,6 @@
 			path = "SRM 248";
 			sourceTree = "<group>";
 		};
-		C9FCE7DC1985D42100471F64 /* SRM 376 */ = {
-			isa = PBXGroup;
-			children = (
-				C9FCE7DD1985D42100471F64 /* PunctuationCleaner.cpp */,
-				C9FCE7DE1985D42100471F64 /* PunctuationCleaner.html */,
-				C9FCE7DF1985D42100471F64 /* PunctuationCleaner.sample */,
-			);
-			path = "SRM 376";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -673,7 +673,6 @@
 				C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */,
 				C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */,
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
-				C9FCE7E01985D42100471F64 /* PunctuationCleaner.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */,
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
@@ -683,6 +682,7 @@
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
+				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
 				C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */,
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
