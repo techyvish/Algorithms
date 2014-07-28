@@ -75,6 +75,7 @@
 		C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7CE1981C66300471F64 /* InsideOut.cpp */; };
 		C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D31981C92000471F64 /* UserName.cpp */; };
 		C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */; };
+		C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -227,6 +228,9 @@
 		C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyllableCounter.cpp; sourceTree = "<group>"; };
 		C9FCE7D91981D86B00471F64 /* SyllableCounter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SyllableCounter.html; sourceTree = "<group>"; };
 		C9FCE7DA1981D86B00471F64 /* SyllableCounter.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SyllableCounter.sample; sourceTree = "<group>"; };
+		C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PunctuationCleaner.cpp; sourceTree = "<group>"; };
+		C9FCE7E31985DF0900471F64 /* PunctuationCleaner.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PunctuationCleaner.html; sourceTree = "<group>"; };
+		C9FCE7E41985DF0900471F64 /* PunctuationCleaner.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PunctuationCleaner.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +348,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
@@ -583,6 +588,16 @@
 			path = "SRM 248";
 			sourceTree = "<group>";
 		};
+		C9FCE7E11985DF0900471F64 /* SRM 376 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */,
+				C9FCE7E31985DF0900471F64 /* PunctuationCleaner.html */,
+				C9FCE7E41985DF0900471F64 /* PunctuationCleaner.sample */,
+			);
+			path = "SRM 376";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -640,6 +655,7 @@
 				C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */,
 				C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */,
 				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
+				C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */,
 				C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */,
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
