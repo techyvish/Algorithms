@@ -12,49 +12,63 @@
 
 using namespace std;
 
-class SyllableCounter {
+class PunctuationCleaner {
     public:
-    set<char> container;
-    int countSyllables(string word) {
-
-        int count = 0;
-
-        container.insert('A');
-        container.insert('E');
-        container.insert('I');
-        container.insert('O');
-        container.insert('U');
-        container.insert('a');
-        container.insert('e');
-        container.insert('i');
-        container.insert('o');
-        container.insert('u');
+    string clearExcess(string document) {
         
-        for ( int i = 0 ; i < word.length(); i++ )
+        char a[500] = {0};
+        char buffer[500] = {0};
+        int k = 0;
+        for ( int i = 0 ; i < document.length() ; i++ )
         {
-            if ( is_inContainer(word[i]) )
+            if ( document[i] == '?' || document[i] == '!' )
             {
-                count ++;
-                i++;
-                for ( ; i < word.length() ; i++ )
+                a[document[i]] ++ ;
+                int j = i+1;
+                for (  ; j < document.length() ; j++ )
                 {
-                    if ( !is_inContainer(word[i]))
+                    if ( document[j] == '?' || document[j] == '!' )
+                    {
+                        a[document[j]] ++ ;
+                    }
+                    else
+                    {
+                        if ( a['?'] > 0 )
+                            buffer[k++] = '?';
+                        else
+                            buffer[k++] = '!';
+                        buffer[k++] = document[j];
+                        memset(a, 0, 500);
+                        i = j;
                         break;
+                    }
+                }
+                
+                if ( j == document.length())
+                {
+                    if ( a['?'] > 0 )
+                        buffer[k++] = '?';
+                    else
+                        buffer[k++] = '!';
+                    i = j + 1;
                 }
             }
+            else
+            {
+                buffer[k++] = document[i];
+            }
         }
-        return count ;
-    }
-    
-    bool is_inContainer(char c)
-    {
-        return  container.find(c) != container.end();
+        char buffer2[500] = {'\n'};
+        sprintf(buffer2, "%s",buffer);
+        string str(buffer2);
+        return str;
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 248/SyllableCounter.sample");
-////ifstream data("SyllableCounter.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 376/PunctuationCleaner.sample");
+//
+////ifstream data("PunctuationCleaner.sample");
 //
 //string next_line() {
 //    string s;
@@ -82,10 +96,10 @@ class SyllableCounter {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string word, int __expected) {
+//bool do_test(string document, string __expected) {
 //    time_t startClock = clock();
-//    SyllableCounter *instance = new SyllableCounter();
-//    int __result = instance->countSyllables(word);
+//    PunctuationCleaner *instance = new PunctuationCleaner();
+//    string __result = instance->clearExcess(document);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -106,10 +120,10 @@ class SyllableCounter {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string word;
-//        from_stream(word);
+//        string document;
+//        from_stream(document);
 //        next_line();
-//        int __answer;
+//        string __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -117,13 +131,13 @@ class SyllableCounter {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(word, __answer)) {
+//        if ( do_test(document, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1406247127;
+//        int T = time(NULL) - 1406508166;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -144,7 +158,7 @@ class SyllableCounter {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "SyllableCounter (250 Points)" << endl << endl;
+//        cout << "PunctuationCleaner (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
