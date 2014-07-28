@@ -77,6 +77,7 @@
 		C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */; };
 		C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */; };
 		C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E71985E05900471F64 /* SantaGifts.cpp */; };
+		C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -235,6 +236,9 @@
 		C9FCE7E71985E05900471F64 /* SantaGifts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SantaGifts.cpp; sourceTree = "<group>"; };
 		C9FCE7E81985E05900471F64 /* SantaGifts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SantaGifts.html; sourceTree = "<group>"; };
 		C9FCE7E91985E05900471F64 /* SantaGifts.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SantaGifts.sample; sourceTree = "<group>"; };
+		C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwiceString.cpp; sourceTree = "<group>"; };
+		C9FCE7ED19870D0B00471F64 /* TwiceString.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TwiceString.html; sourceTree = "<group>"; };
+		C9FCE7EE19870D0B00471F64 /* TwiceString.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwiceString.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +356,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
@@ -613,6 +618,16 @@
 			path = "SRM 331";
 			sourceTree = "<group>";
 		};
+		C9FCE7EB19870D0B00471F64 /* SRM 518 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */,
+				C9FCE7ED19870D0B00471F64 /* TwiceString.html */,
+				C9FCE7EE19870D0B00471F64 /* TwiceString.sample */,
+			);
+			path = "SRM 518";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -697,6 +712,7 @@
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C97DC645197B19C400FE95B1 /* SkiResortsEasy.cpp in Sources */,
+				C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */,
 				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
 				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
 				C97DC63B1978ABB000FE95B1 /* SignatureDecorator.cpp in Sources */,
