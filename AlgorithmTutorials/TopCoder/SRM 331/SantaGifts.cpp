@@ -12,16 +12,39 @@
 
 using namespace std;
 
-class KDoubleSubstrings {
+class SantaGifts {
     public:
-    int howMuch(vector<string> str, int k) {
-        return 0;
+    vector<string> distribute(vector<string> gifts, int N) {
+        
+        vector<string> totalGift(N);
+        int a[500] = {0};
+        
+        int j = 0;
+        for ( int i  =0 ; i < gifts.size() ; i++ )
+        {
+            if ( j == N )
+            {
+                j = 0;
+            }
+            if ( a[j] < 4 )
+            {
+                a[j]++;
+                if ( totalGift[j].length())
+                {
+                    totalGift[j] += " ";
+                }
+                totalGift[j] += gifts[i];
+            }
+            j++;
+        }
+        
+        return totalGift;
     }
 };
 
 //// CUT begin
-////ifstream data("KDoubleSubstrings.sample");
-//ifstream data("/Users/vishal 1/Algorithms/AlgorithmTutorials/TopCoder/SRM 321/KDoubleSubstrings.sample");
+////ifstream data("SantaGifts.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 331/SantaGifts.sample");
 //
 //string next_line() {
 //    string s;
@@ -60,10 +83,21 @@ class KDoubleSubstrings {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(vector<string> str, int k, int __expected) {
+//template <typename T> string to_string(vector<T> ts) {
+//    stringstream s;
+//    s << "[ ";
+//    for (int i = 0; i < ts.size(); ++i) {
+//        if (i > 0) s << ", ";
+//        s << to_string(ts[i]);
+//    }
+//    s << " ]";
+//    return s.str();
+//}
+//
+//bool do_test(vector<string> gifts, int N, vector<string> __expected) {
 //    time_t startClock = clock();
-//    KDoubleSubstrings *instance = new KDoubleSubstrings();
-//    int __result = instance->howMuch(str, k);
+//    SantaGifts *instance = new SantaGifts();
+//    vector<string> __result = instance->distribute(gifts, N);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -84,12 +118,12 @@ class KDoubleSubstrings {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        vector<string> str;
-//        from_stream(str);
-//        int k;
-//        from_stream(k);
+//        vector<string> gifts;
+//        from_stream(gifts);
+//        int N;
+//        from_stream(N);
 //        next_line();
-//        int __answer;
+//        vector<string> __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -97,13 +131,13 @@ class KDoubleSubstrings {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(str, k, __answer)) {
+//        if ( do_test(gifts, N, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1406419821;
+//        int T = time(NULL) - 1406511296;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -124,7 +158,7 @@ class KDoubleSubstrings {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "KDoubleSubstrings (250 Points)" << endl << endl;
+//        cout << "SantaGifts (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

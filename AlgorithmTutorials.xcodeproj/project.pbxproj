@@ -76,6 +76,7 @@
 		C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D31981C92000471F64 /* UserName.cpp */; };
 		C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7D81981D86B00471F64 /* SyllableCounter.cpp */; };
 		C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */; };
+		C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E71985E05900471F64 /* SantaGifts.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -231,6 +232,9 @@
 		C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PunctuationCleaner.cpp; sourceTree = "<group>"; };
 		C9FCE7E31985DF0900471F64 /* PunctuationCleaner.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PunctuationCleaner.html; sourceTree = "<group>"; };
 		C9FCE7E41985DF0900471F64 /* PunctuationCleaner.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PunctuationCleaner.sample; sourceTree = "<group>"; };
+		C9FCE7E71985E05900471F64 /* SantaGifts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SantaGifts.cpp; sourceTree = "<group>"; };
+		C9FCE7E81985E05900471F64 /* SantaGifts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SantaGifts.html; sourceTree = "<group>"; };
+		C9FCE7E91985E05900471F64 /* SantaGifts.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SantaGifts.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +352,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCE7E61985E05900471F64 /* SRM 331 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
@@ -598,6 +603,16 @@
 			path = "SRM 376";
 			sourceTree = "<group>";
 		};
+		C9FCE7E61985E05900471F64 /* SRM 331 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCE7E71985E05900471F64 /* SantaGifts.cpp */,
+				C9FCE7E81985E05900471F64 /* SantaGifts.html */,
+				C9FCE7E91985E05900471F64 /* SantaGifts.sample */,
+			);
+			path = "SRM 331";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -714,6 +729,7 @@
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
 				C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */,
 				C9E8D9F9197E32F60034F239 /* PalindromicSubstring.cpp in Sources */,
+				C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */,
 				C9529452196E19DD00647DAE /* Permute.cpp in Sources */,
 				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
 				C9C70FC019779D3C00B3D445 /* TestFile.cpp in Sources */,
