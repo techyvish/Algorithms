@@ -39,6 +39,7 @@
 		C97DC645197B19C400FE95B1 /* SkiResortsEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC642197B19C400FE95B1 /* SkiResortsEasy.cpp */; };
 		C97DC64A197B1D1D00FE95B1 /* LittleElephantAndBooks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC647197B1D1D00FE95B1 /* LittleElephantAndBooks.cpp */; };
 		C97DC64F197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC64C197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp */; };
+		C986377919878120003AD85C /* TxMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C986377619878120003AD85C /* TxMsg.cpp */; };
 		C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */; };
 		C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC97F1968B36E000FACE3 /* LIS.cpp */; };
 		C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC98219690DE2000FACE3 /* ZigZag.cpp */; };
@@ -159,6 +160,9 @@
 		C97DC64C197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorfulTilesEasy.cpp; sourceTree = "<group>"; };
 		C97DC64D197B3A5C00FE95B1 /* ColorfulTilesEasy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ColorfulTilesEasy.html; sourceTree = "<group>"; };
 		C97DC64E197B3A5C00FE95B1 /* ColorfulTilesEasy.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorfulTilesEasy.sample; sourceTree = "<group>"; };
+		C986377619878120003AD85C /* TxMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TxMsg.cpp; sourceTree = "<group>"; };
+		C986377719878120003AD85C /* TxMsg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TxMsg.html; sourceTree = "<group>"; };
+		C986377819878120003AD85C /* TxMsg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TxMsg.sample; sourceTree = "<group>"; };
 		C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PelindromicSubSeq.cpp; sourceTree = "<group>"; };
 		C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PelindromicSubSeq.h; sourceTree = "<group>"; };
 		C9940A5C17AEC824003FDD03 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C986377519878120003AD85C /* SRM 486 */,
 				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
@@ -486,6 +491,16 @@
 				C97DC64E197B3A5C00FE95B1 /* ColorfulTilesEasy.sample */,
 			);
 			path = "SRM 472";
+			sourceTree = "<group>";
+		};
+		C986377519878120003AD85C /* SRM 486 */ = {
+			isa = PBXGroup;
+			children = (
+				C986377619878120003AD85C /* TxMsg.cpp */,
+				C986377719878120003AD85C /* TxMsg.html */,
+				C986377819878120003AD85C /* TxMsg.sample */,
+			);
+			path = "SRM 486";
 			sourceTree = "<group>";
 		};
 		C9C012CA19847B1200A1044E /* SRM 321 */ = {
@@ -748,6 +763,7 @@
 				C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */,
 				C9529452196E19DD00647DAE /* Permute.cpp in Sources */,
 				C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */,
+				C986377919878120003AD85C /* TxMsg.cpp in Sources */,
 				C9C70FC019779D3C00B3D445 /* TestFile.cpp in Sources */,
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 			);
