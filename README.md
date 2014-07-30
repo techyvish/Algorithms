@@ -5,7 +5,7 @@ Algorithms
 This repo includes solutions of problems from various site like TopCoder, UVA online judge and Programming Challenges  Competitions.
 
 
-Techniquies Covered
+Techniques covered
 ===================
 
 1. String manipulations, Simulation
