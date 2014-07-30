@@ -14,6 +14,7 @@ Techniques covered
 4. Graphs
 5. Recursion
 6. Searching / Sorting.
+7. Tries
 
 
 Note : problem statement included with each problem. 
