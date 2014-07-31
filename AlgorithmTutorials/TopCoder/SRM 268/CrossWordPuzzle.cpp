@@ -12,16 +12,43 @@
 
 using namespace std;
 
-class TxMsg {
+class CrossWordPuzzle {
     public:
-    string getMessage(string original) {
-        return "";
+    int countWords(vector<string> board, int size) {
+        int total = 0;
+
+        for ( int i = 0  ; i < board.size(); i ++ )
+        {
+            string s = board[i];
+            int cnt = 0;
+            for ( int j = 0 ; j < s.size() ; j ++ )
+            {
+                if ( s[j] == 'X')
+                {
+                    if ( cnt == size )
+                    {
+                        total ++;
+                    }
+                    cnt = 0;
+                }
+                else
+                {
+                     cnt ++ ;
+                }
+            }
+            if ( cnt  && (cnt == size ))
+            {
+                total++;
+            }
+        }
+        return total;
     }
 };
 
 //// CUT begin
-////ifstream data("TxMsg.sample");
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 486/TxMsg.sample");
+////ifstream data("CrossWordPuzzle.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 268/CrossWordPuzzle.sample");
+//
 //
 //string next_line() {
 //    string s;
@@ -38,6 +65,17 @@ class TxMsg {
 //    s = next_line();
 //}
 //
+//template <typename T> void from_stream(vector<T> &ts) {
+//    int len;
+//    from_stream(len);
+//    ts.clear();
+//    for (int i = 0; i < len; ++i) {
+//        T t;
+//        from_stream(t);
+//        ts.push_back(t);
+//    }
+//}
+//
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
@@ -49,10 +87,10 @@ class TxMsg {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string original, string __expected) {
+//bool do_test(vector<string> board, int size, int __expected) {
 //    time_t startClock = clock();
-//    TxMsg *instance = new TxMsg();
-//    string __result = instance->getMessage(original);
+//    CrossWordPuzzle *instance = new CrossWordPuzzle();
+//    int __result = instance->countWords(board, size);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -73,10 +111,12 @@ class TxMsg {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string original;
-//        from_stream(original);
+//        vector<string> board;
+//        from_stream(board);
+//        int size;
+//        from_stream(size);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -84,13 +124,13 @@ class TxMsg {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(original, __answer)) {
+//        if ( do_test(board, size, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1406617859;
+//        int T = time(NULL) - 1406778934;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -111,7 +151,7 @@ class TxMsg {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "TxMsg (250 Points)" << endl << endl;
+//        cout << "CrossWordPuzzle (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
