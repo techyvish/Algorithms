@@ -16,7 +16,7 @@ class CrossWordPuzzle {
     public:
     int countWords(vector<string> board, int size) {
         int total = 0;
-
+        
         for ( int i = 0  ; i < board.size(); i ++ )
         {
             string s = board[i];
