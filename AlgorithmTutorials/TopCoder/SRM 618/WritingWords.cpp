@@ -20,7 +20,7 @@ class WritingWords {
      
         int sum = 0 ;
         
-         for ( int  i = 0 ; i < word.size() ; i++ )
+        for ( int  i = 0 ; i < word.size() ; i++ )
         {
             sum += (word[i] - 'A' + 1) ;
         }

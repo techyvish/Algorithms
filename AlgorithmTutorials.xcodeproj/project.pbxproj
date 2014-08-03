@@ -61,6 +61,7 @@
 		C9DD3CFB198B5071006D4A6C /* TextCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF8198B5071006D4A6C /* TextCompressor.cpp */; };
 		C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */; };
 		C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D02198EF702006D4A6C /* WritingWords.cpp */; };
+		C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
 		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
 		C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */; };
@@ -211,6 +212,9 @@
 		C9DD3D02198EF702006D4A6C /* WritingWords.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WritingWords.cpp; sourceTree = "<group>"; };
 		C9DD3D03198EF702006D4A6C /* WritingWords.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WritingWords.html; sourceTree = "<group>"; };
 		C9DD3D04198EF702006D4A6C /* WritingWords.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WritingWords.sample; sourceTree = "<group>"; };
+		C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomColoringDiv2.cpp; sourceTree = "<group>"; };
+		C9DD3D08198EFC74006D4A6C /* RandomColoringDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RandomColoringDiv2.html; sourceTree = "<group>"; };
+		C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RandomColoringDiv2.sample; sourceTree = "<group>"; };
 		C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LittleBishops.cpp; sourceTree = "<group>"; };
 		C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FifteenPuzzle.cpp; sourceTree = "<group>"; };
 		C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinPackingEasy.cpp; sourceTree = "<group>"; };
@@ -394,7 +398,6 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9DD3D01198EF702006D4A6C /* SRM 618 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -418,10 +421,12 @@
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C986377519878120003AD85C /* SRM 486 */,
 				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
+				C9DD3D06198EFC74006D4A6C /* SRM 540 */,
 				C97DC641197B19C400FE95B1 /* SRM 573 */,
 				C97DC646197B1D1D00FE95B1 /* SRM 592 */,
 				C916A2771965F13100AA4A19 /* SRM 596 */,
 				C9E8D9DE197CF5CE0034F239 /* SRM 598 */,
+				C9DD3D01198EF702006D4A6C /* SRM 618 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C97DC63C1978DA1000FE95B1 /* SRM 624 */,
 				C916A26D195F937500AA4A19 /* TestCases */,
@@ -604,6 +609,16 @@
 				C9DD3D04198EF702006D4A6C /* WritingWords.sample */,
 			);
 			path = "SRM 618";
+			sourceTree = "<group>";
+		};
+		C9DD3D06198EFC74006D4A6C /* SRM 540 */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */,
+				C9DD3D08198EFC74006D4A6C /* RandomColoringDiv2.html */,
+				C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */,
+			);
+			path = "SRM 540";
 			sourceTree = "<group>";
 		};
 		C9E8D9DE197CF5CE0034F239 /* SRM 598 */ = {
@@ -832,6 +847,7 @@
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
 				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
+				C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */,
 				C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */,
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
 				C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */,
