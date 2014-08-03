@@ -11,6 +11,39 @@
 #include <fstream>
 #include <map>
 
+
+
+
+//typedef std::pair<MyKey, MyValue> MyPair;
+//struct CompareByKey {
+//    bool operator() (const MyPair& a, const MyPair& b) const {
+//        return a.first < b.first;
+//    };
+//};
+//struct CompareByValue {
+//    bool operator() (const MyPair& a, const MyPair& b) const {
+//        return a.second < b.second;
+//    };
+//};
+//Then either you use std::vector and std::sort, or use two sets.
+//
+//int main() {
+//    std::vector< MyPair > v;
+//    //... push all the elements into v.
+//    std::sort(v.begin(), v.end(), CompareByKey());
+//    //now you have a vector sorted by keys and can be accessed by binary_search.
+//    std::sort(v.begin(), v.end(), CompareByValue());
+//    //now you have the same vector but sorted by values.
+//    //with two sets:
+//    std::set< MyPair, CompareByKey> sk;
+//    //insert all the elements into sk and you have a sorted set according to key.
+//    std::multiset<MyPair, CompareByValue> sv;
+//    std::copy(sk.begin(), sk.end(), std::back_inserter(sv));
+//    //now you have another set with the values sorted by value.
+//    
+//};
+
+
 using namespace std;
 
 struct CompareDates : public std::binary_function <map<string,int> ,  map<string,int>,bool >

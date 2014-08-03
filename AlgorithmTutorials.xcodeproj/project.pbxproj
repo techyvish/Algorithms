@@ -59,6 +59,7 @@
 		C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CEF198B4B39006D4A6C /* FewestFactors.cpp */; };
 		C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF2198B4B39006D4A6C /* HammingDistance.cpp */; };
 		C9DD3CFB198B5071006D4A6C /* TextCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF8198B5071006D4A6C /* TextCompressor.cpp */; };
+		C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
 		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
 		C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */; };
@@ -203,6 +204,9 @@
 		C9DD3CF8198B5071006D4A6C /* TextCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextCompressor.cpp; sourceTree = "<group>"; };
 		C9DD3CF9198B5071006D4A6C /* TextCompressor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TextCompressor.html; sourceTree = "<group>"; };
 		C9DD3CFA198B5071006D4A6C /* TextCompressor.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TextCompressor.sample; sourceTree = "<group>"; };
+		C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CheckFunction.cpp; sourceTree = "<group>"; };
+		C9DD3CFE198E3E16006D4A6C /* CheckFunction.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CheckFunction.html; sourceTree = "<group>"; };
+		C9DD3CFF198E3E16006D4A6C /* CheckFunction.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CheckFunction.sample; sourceTree = "<group>"; };
 		C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LittleBishops.cpp; sourceTree = "<group>"; };
 		C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FifteenPuzzle.cpp; sourceTree = "<group>"; };
 		C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinPackingEasy.cpp; sourceTree = "<group>"; };
@@ -398,6 +402,7 @@
 				C97DC6371978ABB000FE95B1 /* SRM 225 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C942673C1989F5F2009B802B /* SRM 268 */,
+				C9DD3CFC198E3E16006D4A6C /* SRM 271 */,
 				C9DD3CEE198B4B39006D4A6C /* SRM 272 */,
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
@@ -574,6 +579,16 @@
 				C9DD3CFA198B5071006D4A6C /* TextCompressor.sample */,
 			);
 			path = "SRM 222";
+			sourceTree = "<group>";
+		};
+		C9DD3CFC198E3E16006D4A6C /* SRM 271 */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */,
+				C9DD3CFE198E3E16006D4A6C /* CheckFunction.html */,
+				C9DD3CFF198E3E16006D4A6C /* CheckFunction.sample */,
+			);
+			path = "SRM 271";
 			sourceTree = "<group>";
 		};
 		C9E8D9DE197CF5CE0034F239 /* SRM 598 */ = {
@@ -822,6 +837,7 @@
 				C9DD3CFB198B5071006D4A6C /* TextCompressor.cpp in Sources */,
 				C9C70FC019779D3C00B3D445 /* TestFile.cpp in Sources */,
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
+				C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
