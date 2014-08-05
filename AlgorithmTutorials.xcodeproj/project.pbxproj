@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91667D91990B49100FBD819 /* MicroStrings.cpp */; };
 		C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A265195E9ECB00AA4A19 /* Time.cpp */; };
 		C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A267195EA0A000AA4A19 /* BinaryCode.cpp */; };
 		C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */; };
@@ -101,6 +102,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C91667D91990B49100FBD819 /* MicroStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicroStrings.cpp; sourceTree = "<group>"; };
+		C91667DA1990B49100FBD819 /* MicroStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MicroStrings.html; sourceTree = "<group>"; };
+		C91667DB1990B49100FBD819 /* MicroStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MicroStrings.sample; sourceTree = "<group>"; };
 		C916A265195E9ECB00AA4A19 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time.cpp; path = "SRM 144/Time.cpp"; sourceTree = "<group>"; };
 		C916A267195EA0A000AA4A19 /* BinaryCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryCode.cpp; path = "SRM 144/BinaryCode.cpp"; sourceTree = "<group>"; };
 		C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FibonacciDiv2.cpp; path = "SRM 622/FibonacciDiv2.cpp"; sourceTree = "<group>"; };
@@ -284,6 +288,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91667D81990B49100FBD819 /* SRM 614 */ = {
+			isa = PBXGroup;
+			children = (
+				C91667D91990B49100FBD819 /* MicroStrings.cpp */,
+				C91667DA1990B49100FBD819 /* MicroStrings.html */,
+				C91667DB1990B49100FBD819 /* MicroStrings.sample */,
+			);
+			path = "SRM 614";
+			sourceTree = "<group>";
+		};
 		C916A26D195F937500AA4A19 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +412,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C91667D81990B49100FBD819 /* SRM 614 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -828,6 +843,7 @@
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C97DC645197B19C400FE95B1 /* SkiResortsEasy.cpp in Sources */,
+				C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */,
 				C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */,
 				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
 				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
