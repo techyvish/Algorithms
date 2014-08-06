@@ -60,74 +60,102 @@ class TextCompressor {
     string longestRepeat(string sourceText)
     {
         map<string,int> m;
+        string res  = "";
         for ( int i =  0 ; i < sourceText.length() ; i ++ )
         {
             int k = 2;
             for ( int j = i + 1 ; j < sourceText.length() ; j ++ )
             {
                 string searchString = sourceText.substr(i, k++);
-                string longest =  findlongest(sourceText,searchString,m,i);
-            }
-        }
-
-        map<string,int>::iterator it;
-        vector<MyPair> v ;
-
-        for ( it = m.begin() ; it != m.end(); it++ )
-        {
-
-            v.push_back(make_pair(it->first, it->second));
-        }
-
-        std::sort(v.begin(), v.end(), CompareByKey());
-        //now you have a vector sorted by keys and can be accessed by binary_search.
-        std::sort(v.begin(), v.end(), CompareByValue());
-
-        vector<MyPair> a;
-        int maxval = v[v.size()-1].second;
-        for (int i = 0 ; i < v.size() ; i++ )
-        {
-            MyPair p =  v[i];
-            if ( maxval == p.second )
-            {
-                a.push_back(v[i]);
-            }
-        }
-
-        std::sort(a.begin(), a.end(), CompareByKey());
-        return a[a.size()-1].first;
-    }
-
-    
-    string findlongest(string& source, string& searchStr, map<string,int>& m,int initial)
-    {
-        int c = 0;
-        for ( int i = initial + searchStr.length() ; i < source.length() ; i++ )
-        {
-            c = i;
-            int j = 0 ;
-            bool found = true ;
-            for (  ; j < searchStr.length() ; j++ )
-            {
-                if ( source[c++] != searchStr[j])
+                if ((sourceText.find(searchString, i+searchString.size()) != string::npos)  &&  res.size() < searchString.size() )
                 {
-                    found = false;
-                    break;
+                   res = searchString;
                 }
             }
-            if ( found )
-            {
-                int val = m[searchStr];
-                val++;
-                m[searchStr] = val;
-            }
         }
 
+        return  res;
+
+//        map<string,int>::iterator it;
+//        vector<MyPair> v ;
+//
+//        for ( it = m.begin() ; it != m.end(); it++ )
+//        {
+//
+//            v.push_back(make_pair(it->first, it->second));
+//        }
+//
+//        std::sort(v.begin(), v.end(), CompareByKey());
+//        //now you have a vector sorted by keys and can be accessed by binary_search.
+//        std::sort(v.begin(), v.end(), CompareByValue());
+//
+//        vector<MyPair> a;
+//        int maxval = v[v.size()-1].second;
+//        for (int i = 0 ; i < v.size() ; i++ )
+//        {
+//            MyPair p =  v[i];
+//            if ( maxval == p.second )
+//            {
+//                a.push_back(v[i]);
+//            }
+//        }
+//
+//        std::sort(a.begin(), a.end(), CompareByKey());
+//        return a[a.size()-1].first;
+    }
 
 
-        return searchStr;
+//    string findlongest(string& source, string& searchStr, map<string,int>& m,int initial)
+//    {
+//        int c = 0;
+//        for ( int i = initial + searchStr.length() ; i < source.length() ; i++ )
+//        {
+//            c = i;
+//            int j = 0 ;
+//            bool found = true ;
+//            for (  ; j < searchStr.length() ; j++ )
+//            {
+//                if ( source[c++] != searchStr[j])
+//                {
+//                    found = false;
+//                    break;
+//                }
+//            }
+//            if ( found )
+//            {
+//                int val = m[searchStr];
+//                val++;
+//                m[searchStr] = val;
+//            }
+//        }
+//
+//        return searchStr;
     }
 };
+
+//class TextCompressor {
+//public:
+//    string longestRepeat(string s)
+//    {
+//        string res = "";
+//        for ( int i = 0 ; i < s.size(); i++ )
+//        {
+//
+//            for ( int j = 1 ; j < s.size() - i ; j++ )
+//            {
+//               string a = s.substr(i, j);
+//               if ( s.find(a,i+a.size()) != string::npos &&  res.size() < a.size())
+//               {
+//                   res = a ;
+//               }
+//            }
+//
+//        }
+//        return res;
+//    }
+//
+//};
+
 
 // CUT begin
 ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.sample");
