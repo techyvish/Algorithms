@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */; };
+		98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */; };
 		C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91667D91990B49100FBD819 /* MicroStrings.cpp */; };
 		C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A265195E9ECB00AA4A19 /* Time.cpp */; };
 		C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A267195EA0A000AA4A19 /* BinaryCode.cpp */; };
@@ -106,6 +107,7 @@
 		98BE40C6033E81729F786B92 /* TheEquation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TheEquation.html; sourceTree = "<group>"; };
 		98BE4C5024B24D09ACEEDF9F /* TheEquation.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = TheEquation.sample; sourceTree = "<group>"; };
 		98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheEquation.cpp; sourceTree = "<group>"; };
+		98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RatInMaze.cpp; sourceTree = "<group>"; };
 		C91667D91990B49100FBD819 /* MicroStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicroStrings.cpp; sourceTree = "<group>"; };
 		C91667DA1990B49100FBD819 /* MicroStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MicroStrings.html; sourceTree = "<group>"; };
 		C91667DB1990B49100FBD819 /* MicroStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MicroStrings.sample; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				C9307E7D196E6AAA000D53BA /* Queens.cpp */,
 				C9ECF1D61976256600842FE8 /* RookAttack.cpp */,
 				C952944C196E046100647DAE /* Subsets.cpp */,
+				98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */,
 			);
 			path = "Backtracking-Extra";
 			sourceTree = "<group>";
@@ -902,6 +905,7 @@
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 				C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */,
 				98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */,
+				98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

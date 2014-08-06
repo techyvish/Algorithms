@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="136bb9d2-bea5-4d3f-a423-565a7bfbdb3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.xcworkspace/xcuserdata/Vishal.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.xcworkspace/xcuserdata/Vishal.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.cpp" afterPath="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp" afterPath="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Algorithm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,15 +40,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TheEquation.cpp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TheEquation.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6251277" vertical-offset="378" max-vertical-offset="3146">
-              <caret line="45" column="93" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1848" max-vertical-offset="3146">
+              <caret line="137" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
-                <element signature="e#1001#1013#0" expanded="true" />
-                <element signature="e#1152#1164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RatInMaze.cpp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6167247" vertical-offset="1801" max-vertical-offset="2662">
+              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackTrackingTemplate.cpp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="3256">
+              <caret line="142" column="17" selection-start-line="8" selection-start-column="0" selection-end-line="142" selection-end-column="3" />
+              <folding>
+                <element signature="e#141#158#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,6 +147,7 @@
         <option value="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.cpp" />
         <option value="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.sample" />
         <option value="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp" />
+        <option value="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp" />
       </list>
     </option>
   </component>
@@ -240,11 +264,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TopCoder" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRM 331" />
+              <option name="myItemId" value="Backtracking-Extra" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,11 +328,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24057315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24057315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1415397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -343,7 +363,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp</url>
+          <line>113</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -401,14 +428,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="3256">
+          <caret line="142" column="17" selection-start-line="8" selection-start-column="0" selection-end-line="142" selection-end-column="3" />
+          <folding>
+            <element signature="e#141#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6251277" vertical-offset="378" max-vertical-offset="3146">
-          <caret line="45" column="93" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1848" max-vertical-offset="3146">
+          <caret line="137" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#1001#1013#0" expanded="true" />
-            <element signature="e#1152#1164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6167247" vertical-offset="1801" max-vertical-offset="2662">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
