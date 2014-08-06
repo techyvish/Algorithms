@@ -64,7 +64,7 @@ class TextCompressor {
         for ( int i =  0 ; i < sourceText.length() ; i ++ )
         {
             int k = 2;
-            for ( int j = i + 1 ; j < sourceText.length() ; j ++ )
+            for ( int j =  1 ; j < sourceText.length() ; j ++ )
             {
                 string searchString = sourceText.substr(i, k++);
                 if ((sourceText.find(searchString, i+searchString.size()) != string::npos)  &&  res.size() < searchString.size() )
@@ -130,7 +130,7 @@ class TextCompressor {
 //        }
 //
 //        return searchStr;
-    }
+//    }
 };
 
 //class TextCompressor {
