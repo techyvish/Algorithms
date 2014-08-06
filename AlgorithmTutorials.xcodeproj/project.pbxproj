@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */; };
 		C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91667D91990B49100FBD819 /* MicroStrings.cpp */; };
 		C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A265195E9ECB00AA4A19 /* Time.cpp */; };
 		C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A267195EA0A000AA4A19 /* BinaryCode.cpp */; };
@@ -102,6 +103,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		98BE40C6033E81729F786B92 /* TheEquation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TheEquation.html; sourceTree = "<group>"; };
+		98BE4C5024B24D09ACEEDF9F /* TheEquation.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = TheEquation.sample; sourceTree = "<group>"; };
+		98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheEquation.cpp; sourceTree = "<group>"; };
 		C91667D91990B49100FBD819 /* MicroStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicroStrings.cpp; sourceTree = "<group>"; };
 		C91667DA1990B49100FBD819 /* MicroStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MicroStrings.html; sourceTree = "<group>"; };
 		C91667DB1990B49100FBD819 /* MicroStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MicroStrings.sample; sourceTree = "<group>"; };
@@ -288,6 +292,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98BE4347D4C66BDEF65D53FA /* SRM 373 */ = {
+			isa = PBXGroup;
+			children = (
+				98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */,
+				98BE40C6033E81729F786B92 /* TheEquation.html */,
+				98BE4C5024B24D09ACEEDF9F /* TheEquation.sample */,
+			);
+			path = "SRM 373";
+			sourceTree = "<group>";
+		};
 		C91667D81990B49100FBD819 /* SRM 614 */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,7 +426,6 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C91667D81990B49100FBD819 /* SRM 614 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -430,6 +443,7 @@
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
+				98BE4347D4C66BDEF65D53FA /* SRM 373 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
@@ -441,6 +455,7 @@
 				C97DC646197B1D1D00FE95B1 /* SRM 592 */,
 				C916A2771965F13100AA4A19 /* SRM 596 */,
 				C9E8D9DE197CF5CE0034F239 /* SRM 598 */,
+				C91667D81990B49100FBD819 /* SRM 614 */,
 				C9DD3D01198EF702006D4A6C /* SRM 618 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C97DC63C1978DA1000FE95B1 /* SRM 624 */,
@@ -886,6 +901,7 @@
 				C9C70FC019779D3C00B3D445 /* TestFile.cpp in Sources */,
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 				C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */,
+				98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
