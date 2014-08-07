@@ -86,6 +86,7 @@ class TextCompressor {
 //        }
 //
 //        std::sort(v.begin(), v.end(), CompareByKey());
+
 //        //now you have a vector sorted by keys and can be accessed by binary_search.
 //        std::sort(v.begin(), v.end(), CompareByValue());
 //

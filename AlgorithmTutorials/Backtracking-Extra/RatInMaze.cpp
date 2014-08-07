@@ -19,6 +19,7 @@
 #include <climits>
 
 #define  COLUMN 5
+
 using namespace std;
 
 typedef pair<int,int> MyPair;
@@ -43,6 +44,7 @@ public:
 
     void process_solution(int a[][COLUMN],int k , int n)
     {
+
     }
 
     void construct_candidates(int a[][COLUMN],int k, int n,vector<MyPair>& c, int *ncandidates,int column)
@@ -61,7 +63,6 @@ public:
             c.push_back(r);
             *ncandidates = *ncandidates + 1;
         }
-
     }
 
     void backtrack(int a[][COLUMN],int k , int  n,int column)
