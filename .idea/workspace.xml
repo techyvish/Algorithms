@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="136bb9d2-bea5-4d3f-a423-565a7bfbdb3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp" afterPath="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/GraphColor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AlgorithmTutorials.xcodeproj/project.pbxproj" />
     </list>
     <ignored path="Algorithm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RatInMaze.cpp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RatInMaze.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.96629214" vertical-offset="1342" max-vertical-offset="2860">
-              <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="2860">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphColor.cpp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/GraphColor.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37078652" vertical-offset="671" max-vertical-offset="2266">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -70,7 +83,7 @@
       <file leaf-file-name="BackTrackingTemplate.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="3256">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2970">
               <caret line="142" column="3" selection-start-line="8" selection-start-column="0" selection-end-line="142" selection-end-column="3" />
               <folding />
             </state>
@@ -92,26 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="6688" max-vertical-offset="28424">
               <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SantaGifts.cpp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 331/SantaGifts.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="946" max-vertical-offset="3762">
-              <caret line="47" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="string" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/string">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="69300" max-vertical-offset="90398">
-              <caret line="3150" column="0" selection-start-line="3150" selection-start-column="0" selection-end-line="3150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,6 +138,7 @@
         <option value="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 373/TheEquation.cpp" />
         <option value="$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.cpp" />
         <option value="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp" />
+        <option value="$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/GraphColor.cpp" />
       </list>
     </option>
   </component>
@@ -221,28 +215,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TopCoder" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgorithmTutorials" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgorithmTutorials" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TopCoder" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRM 373" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,14 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="3256">
-          <caret line="142" column="3" selection-start-line="8" selection-start-column="0" selection-end-line="142" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/TopCoder/SRM 222/TextCompressor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1963" max-vertical-offset="5786">
@@ -535,8 +499,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/RatInMaze.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96629214" vertical-offset="1342" max-vertical-offset="2860">
-          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="2860">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/BackTrackingTemplate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="3256">
+          <caret line="142" column="3" selection-start-line="8" selection-start-column="0" selection-end-line="142" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlgorithmTutorials/Backtracking-Extra/GraphColor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37078652" vertical-offset="671" max-vertical-offset="2266">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="e#99#116#0" expanded="true" />
           </folding>
