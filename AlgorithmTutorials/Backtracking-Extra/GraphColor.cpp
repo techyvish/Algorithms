@@ -18,6 +18,9 @@
 #include <unistd.h>
 #include <climits>
 
+#define COLUMN 5
+#define ROW    5
+
 using namespace std;
 
 struct _data
@@ -27,33 +30,32 @@ struct _data
 
 typedef struct _data data;
 
-class Template {
+class GraphColor {
 
 
 public:
 
     bool finished = false;
 
-    bool is_a_solution(int a[],int k, int n)
+    bool is_a_solution(int a[][COLUMN],int k, int n)
     {
         return ( k == n );
     }
 
-    void process_solution(int a[],int k , int n)
+    void process_solution(int a[][COLUMN],int k , int n)
     {
     }
 
-    void construct_candidates(int a[],int k, int n, int c[], int *ncandidates)
+    void construct_candidates(int a[][COLUMN],int k, int n, int c[], int *ncandidates)
     {
 
         *ncandidates = 3;
     }
 
-    void backtrack(int a[],int k , int  n)
+    void backtrack(int a[][COLUMN],int k , int  n,int colors)
     {
         int c[3];
         int ncandidates = 0;
-        int i ;
 
         if ( is_a_solution(a,k,n))
             process_solution(a,k,n);
@@ -61,37 +63,38 @@ public:
         {
             k = k+1;
             construct_candidates(a,k,n,c,&ncandidates);
-            for ( i = 0 ; i < ncandidates ; i++ )
+            for (int i = 0 ; i < ncandidates ; i++ )
             {
-                a[k] = c[i];
-                printLevel(k,i);
-                backtrack(a,k,n);
+                //a[k] = c[i];
+                backtrack(a,k,n,colors);
                 if ( finished )
                     return;
             }
         }
     }
 
-    void loopIt(int n )
+    void colorIt(int n)
     {
-        int a[5];  /* solution vector */
-        backtrack(a,0,n);
+        /* Create following graph and test whether it is 3 colorable
+         (3)---(2)
+          |   / |
+          |  /  |
+          | /   |
+         (0)---(1)
+        */
+        int a[ROW][COLUMN] = {{0, 1, 1, 1},
+                               {1, 0, 1, 0},
+                               {1, 1, 0, 1},
+                               {1, 0, 1, 0},
+        };
+        int colors = 3;
+        backtrack(a,0,n,colors);
     }
-
-    void printLevel(int k,int i )
-    {
-        for ( int i = 0 ; i < k ; i++ )
-        {
-            cout << ">>>>>>>>";
-        }
-        cout << k << "," << i  << endl;
-    }
-
 };
 
-//int main()
-//{
-//    Template t;
-//    t.loopIt(3);
-//    return 0;
-//}
+int main()
+{
+    GraphColor g;
+    g.colorIt(3);
+    return 0;
+}

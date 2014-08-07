@@ -116,9 +116,9 @@ public:
 
 };
 
-int main()
-{
-    RateInMaze rate;
-    rate.showPath(4); // 4x4 grid
-    return 0;
-}
+//int main()
+//{
+//    RateInMaze rate;
+//    rate.showPath(4); // 4x4 grid
+//    return 0;
+//}
