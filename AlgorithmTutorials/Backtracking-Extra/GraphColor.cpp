@@ -35,6 +35,8 @@ class GraphColor {
 public:
 
     bool finished = false;
+    int color[ROW] = {0};
+    int availColor[3]={1,2,3};
 
     bool is_a_solution(int a[][COLUMN],int k, int n)
     {
@@ -48,6 +50,10 @@ public:
     void construct_candidates(int a[][COLUMN],int k, int n, int c[], int *ncandidates)
     {
 
+        for  (int i = 0 ; i < n ; i ++ )
+        {
+            color[k] =  ;
+        }
         *ncandidates = 3;
     }
 
@@ -74,6 +80,11 @@ public:
 
     void colorIt(int n)
     {
+        // Algo: color first node, pick next color and color all adjacent
+        // pick next check adjacent one by one and color if same color, pick next color
+        // if not colorable leave it we'll get back to it later.
+        // pick next node and repeat from step 1.
+
         /* Create following graph and test whether it is 3 colorable
                              (3)---(2)
                               |   / |
@@ -81,13 +92,13 @@ public:
                               | /   |
                              (0)---(1)
         */
-        int a[ROW][COLUMN] = {{0, 1, 1, 1},
+        int a[ROW][COLUMN] =  {{0, 1, 1, 1},
                                {1, 0, 1, 0},
                                {1, 1, 0, 1},
                                {1, 0, 1, 0},
         };
         int colors = 3;
-        backtrack(a,0,n,colors);
+        backtrack(a,-1,n,colors);
     }
 };
 
