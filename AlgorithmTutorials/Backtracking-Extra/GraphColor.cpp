@@ -4,7 +4,6 @@
 //
 
 #include <cstdio>
-
 #include <cmath>
 #include <cstring>
 #include <ctime>
@@ -76,11 +75,11 @@ public:
     void colorIt(int n)
     {
         /* Create following graph and test whether it is 3 colorable
-         (3)---(2)
-          |   / |
-          |  /  |
-          | /   |
-         (0)---(1)
+                             (3)---(2)
+                              |   / |
+                              |  /  |
+                              | /   |
+                             (0)---(1)
         */
         int a[ROW][COLUMN] = {{0, 1, 1, 1},
                                {1, 0, 1, 0},
