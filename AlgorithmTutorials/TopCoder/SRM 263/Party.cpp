@@ -25,7 +25,7 @@ class Party {
             int temp2 = pB[personB[i]];
         
         
-            if ( i == 0 )
+            if ( i == 0 )	
             {
                 pB[personA[i]] = 1;
                 pB[personB[i]] = 1;
@@ -41,12 +41,12 @@ class Party {
                 
                 if (std::find(q.begin(), q.end(), pair1) != q.end())
                 {
-                    pB[personB[i]] = temp1 ;
+                    pB[personB[i]] = temp2 + (temp1-temp2) ;
                 }
                 else
                 {
-                    pB[personA[i]] = ++temp1;
-                    pB[personB[i]] = temp1 + temp2 ;
+                    pB[personB[i]] = temp2 + temp1 + 1 ;
+                    pB[personA[i]] = temp1 + temp2 + 1 ;
                     q.push_back(pair1);
                     q.push_back(pair2);
                 }
