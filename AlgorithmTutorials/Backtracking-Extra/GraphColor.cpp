@@ -149,9 +149,9 @@ public:
     }
 };
 
-int main()
-{
-    GraphColor g;
-    g.colorIt(4);
-    return 0;
-}
+//int main()
+//{
+//    GraphColor g;
+//    g.colorIt(4);
+//    return 0;
+//}

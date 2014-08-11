@@ -12,10 +12,55 @@
 
 using namespace std;
 
+typedef pair<int, int> MyPair;
+
 class Party {
     public:
     double averageNames(int n, vector<int> personA, vector<int> personB) {
-        return 0.0;
+        int pB[500] =  {0} ;
+        vector<MyPair> q;
+        for ( int i = 0 ; i < personB.size() ; i++ )
+        {
+            int temp1 = pB[personA[i]];
+            int temp2 = pB[personB[i]];
+        
+        
+            if ( i == 0 )
+            {
+                pB[personA[i]] = 1;
+                pB[personB[i]] = 1;
+                MyPair pair1(personA[i],personB[i]);
+                q.push_back(pair1);
+                MyPair pair2(personB[i],personA[i]);
+                q.push_back(pair2);
+            }
+            else
+            {
+                MyPair pair1(personA[i],personB[i]);
+                MyPair pair2(personB[i],personA[i]);
+                
+                if (std::find(q.begin(), q.end(), pair1) != q.end())
+                {
+                    pB[personB[i]] = temp1 ;
+                }
+                else
+                {
+                    pB[personA[i]] = ++temp1;
+                    pB[personB[i]] = temp1 + temp2 ;
+                    q.push_back(pair1);
+                    q.push_back(pair2);
+                }
+                
+            }
+        }
+        
+        int sum = 0;
+        for ( int i = 0 ; i < n ; i++ )
+        {
+            sum += pB[i];
+        }
+        
+        return (double)sum/(double)n;
     }
 };
 
