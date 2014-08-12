@@ -1,0 +1,56 @@
+-- Example 0
+10
+1
+5
+10
+50
+
+POSSIBLE
+-- Example 1
+15
+1
+5
+10
+50
+
+POSSIBLE
+-- Example 2
+65
+1
+5
+10
+50
+
+POSSIBLE
+-- Example 3
+66
+1
+5
+10
+50
+
+POSSIBLE
+-- Example 4
+1000
+999
+998
+997
+996
+
+IMPOSSIBLE
+-- Example 5
+20
+5
+5
+5
+5
+
+POSSIBLE
+-- Example 6
+2
+1
+5
+10
+50
+
+IMPOSSIBLE

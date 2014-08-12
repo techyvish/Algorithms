@@ -91,6 +91,7 @@
 		C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E21985DF0900471F64 /* PunctuationCleaner.cpp */; };
 		C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7E71985E05900471F64 /* SantaGifts.cpp */; };
 		C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */; };
+		C9FE7F701999907B002A1EEE /* LotteryTicket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F6D1999907B002A1EEE /* LotteryTicket.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -287,6 +288,9 @@
 		C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwiceString.cpp; sourceTree = "<group>"; };
 		C9FCE7ED19870D0B00471F64 /* TwiceString.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TwiceString.html; sourceTree = "<group>"; };
 		C9FCE7EE19870D0B00471F64 /* TwiceString.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwiceString.sample; sourceTree = "<group>"; };
+		C9FE7F6D1999907B002A1EEE /* LotteryTicket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LotteryTicket.cpp; sourceTree = "<group>"; };
+		C9FE7F6E1999907B002A1EEE /* LotteryTicket.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LotteryTicket.html; sourceTree = "<group>"; };
+		C9FE7F6F1999907B002A1EEE /* LotteryTicket.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LotteryTicket.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +460,7 @@
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
+				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C986377519878120003AD85C /* SRM 486 */,
 				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
@@ -791,6 +796,16 @@
 			path = "SRM 518";
 			sourceTree = "<group>";
 		};
+		C9FE7F6C1999907B002A1EEE /* SRM 466 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE7F6D1999907B002A1EEE /* LotteryTicket.cpp */,
+				C9FE7F6E1999907B002A1EEE /* LotteryTicket.html */,
+				C9FE7F6F1999907B002A1EEE /* LotteryTicket.sample */,
+			);
+			path = "SRM 466";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -912,6 +927,7 @@
 				C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */,
 				C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */,
 				C97DC64F197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp in Sources */,
+				C9FE7F701999907B002A1EEE /* LotteryTicket.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
 				C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */,
 				C9E8D9F9197E32F60034F239 /* PalindromicSubstring.cpp in Sources */,
