@@ -15,12 +15,31 @@ using namespace std;
 class Truckloads {
     public:
     int numTrucks(int numCrates, int loadSize) {
-        return 0;
+      
+        if ( numCrates <= loadSize )
+            return 1;
+        else
+        {
+            int leftPart = 0;
+            int rightPart = 0;
+            leftPart = numCrates / 2 ;
+            if (numCrates %2 == 0 )
+            {
+                rightPart = numCrates / 2  ;
+            }
+            else
+            {
+                rightPart = (numCrates / 2) + 1 ;
+            }
+            return  (numTrucks(leftPart,loadSize) + numTrucks(rightPart,loadSize));
+        }
+        
     }
 };
 
 // CUT begin
-ifstream data("Truckloads.sample");
+ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 284/Truckloads.sample");
+//ifstream data("Truckloads.sample");
 
 string next_line() {
     string s;

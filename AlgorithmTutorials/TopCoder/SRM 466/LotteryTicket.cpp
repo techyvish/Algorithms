@@ -110,7 +110,7 @@ class LotteryTicket {
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
-//    s << t;
+//    s << t; 
 //    return s.str();
 //}
 //
