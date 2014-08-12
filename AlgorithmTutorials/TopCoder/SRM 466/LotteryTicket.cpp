@@ -14,8 +14,77 @@ using namespace std;
 
 class LotteryTicket {
     public:
+    bool finished = false;
+    int b[4] = {0};
+    int total;
+    
     string buy(int price, int b1, int b2, int b3, int b4) {
-        return "";
+    
+        int a[4] = {0,0,0,0};
+        b[0] = b1;
+        b[1] = b2;
+        b[2] = b3;
+        b[3] = b4;
+        total = price;
+        backTrack(a, -1, 4);
+        if ( finished )
+        {
+            return "POSSIBLE";
+        }
+        else
+        {
+            return "IMPOSSIBLE";
+        }
+    }
+    
+    bool is_a_solution(int a[],int k , int n )
+    {
+        return ( k == n - 1);
+    }
+    
+    void process_solution(int a[],int k ,int n)
+    {
+        int sum = 0;
+        for ( int i = 0 ; i < n ; i++ )
+        {
+            if ( a[i] )
+            {
+                sum += b[i];
+            }
+        }
+        
+        if ( sum == total )
+        {
+            finished = true;
+        }
+    }
+    
+    void construct_candidates(int a[],int k,int n , int c[], int *ncandidates)
+    {
+        c[0] = true;
+        c[1] = false;
+        *ncandidates = 2;
+    }
+    
+    void backTrack(int a[],int k,int n)
+    {
+        int ncandidates = 0;
+        int c[4] = {0};
+        
+        if ( is_a_solution(a,k,n))
+        {
+            process_solution(a,k,n);
+        }
+        else
+        {
+            k = k + 1 ;
+            construct_candidates(a,k,n,c,&ncandidates);
+            for ( int i = 0 ; i < ncandidates ; i++ )
+            {
+                a[k] = c[i];
+                backTrack(a,k,n);
+            }
+        }
     }
 };
 
