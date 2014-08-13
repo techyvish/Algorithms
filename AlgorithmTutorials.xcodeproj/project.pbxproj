@@ -93,6 +93,8 @@
 		C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7EC19870D0B00471F64 /* TwiceString.cpp */; };
 		C9FE7F701999907B002A1EEE /* LotteryTicket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F6D1999907B002A1EEE /* LotteryTicket.cpp */; };
 		C9FE7F751999C2E2002A1EEE /* Truckloads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F721999C2E2002A1EEE /* Truckloads.cpp */; };
+		C9FE7F7D199AD94B002A1EEE /* Haar1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F77199AD94B002A1EEE /* Haar1D.cpp */; };
+		C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -295,6 +297,12 @@
 		C9FE7F721999C2E2002A1EEE /* Truckloads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Truckloads.cpp; sourceTree = "<group>"; };
 		C9FE7F731999C2E2002A1EEE /* Truckloads.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Truckloads.html; sourceTree = "<group>"; };
 		C9FE7F741999C2E2002A1EEE /* Truckloads.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Truckloads.sample; sourceTree = "<group>"; };
+		C9FE7F77199AD94B002A1EEE /* Haar1D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Haar1D.cpp; sourceTree = "<group>"; };
+		C9FE7F78199AD94B002A1EEE /* Haar1D.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Haar1D.html; sourceTree = "<group>"; };
+		C9FE7F79199AD94B002A1EEE /* Haar1D.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Haar1D.sample; sourceTree = "<group>"; };
+		C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HingedDoor.cpp; sourceTree = "<group>"; };
+		C9FE7F7B199AD94B002A1EEE /* HingedDoor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HingedDoor.html; sourceTree = "<group>"; };
+		C9FE7F7C199AD94B002A1EEE /* HingedDoor.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HingedDoor.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +465,7 @@
 				C942673C1989F5F2009B802B /* SRM 268 */,
 				C9DD3CFC198E3E16006D4A6C /* SRM 271 */,
 				C9DD3CEE198B4B39006D4A6C /* SRM 272 */,
+				C9FE7F76199AD94B002A1EEE /* SRM 275 */,
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C9FE7F711999C2E2002A1EEE /* SRM 284 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
@@ -821,6 +830,19 @@
 			path = "SRM 284";
 			sourceTree = "<group>";
 		};
+		C9FE7F76199AD94B002A1EEE /* SRM 275 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE7F77199AD94B002A1EEE /* Haar1D.cpp */,
+				C9FE7F78199AD94B002A1EEE /* Haar1D.html */,
+				C9FE7F79199AD94B002A1EEE /* Haar1D.sample */,
+				C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */,
+				C9FE7F7B199AD94B002A1EEE /* HingedDoor.html */,
+				C9FE7F7C199AD94B002A1EEE /* HingedDoor.sample */,
+			);
+			path = "SRM 275";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -898,6 +920,7 @@
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
 				C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */,
 				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
+				C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */,
 				C9E8D9F3197E01E70034F239 /* QuickSums.cpp in Sources */,
 				C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
@@ -919,6 +942,7 @@
 				C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */,
 				C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */,
 				C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */,
+				C9FE7F7D199AD94B002A1EEE /* Haar1D.cpp in Sources */,
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */,
