@@ -95,6 +95,7 @@
 		C9FE7F751999C2E2002A1EEE /* Truckloads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F721999C2E2002A1EEE /* Truckloads.cpp */; };
 		C9FE7F7D199AD94B002A1EEE /* Haar1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F77199AD94B002A1EEE /* Haar1D.cpp */; };
 		C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */; };
+		C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F81199B3840002A1EEE /* OddDivisors.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -303,6 +304,9 @@
 		C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HingedDoor.cpp; sourceTree = "<group>"; };
 		C9FE7F7B199AD94B002A1EEE /* HingedDoor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HingedDoor.html; sourceTree = "<group>"; };
 		C9FE7F7C199AD94B002A1EEE /* HingedDoor.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HingedDoor.sample; sourceTree = "<group>"; };
+		C9FE7F81199B3840002A1EEE /* OddDivisors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OddDivisors.cpp; sourceTree = "<group>"; };
+		C9FE7F82199B3840002A1EEE /* OddDivisors.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = OddDivisors.html; sourceTree = "<group>"; };
+		C9FE7F83199B3840002A1EEE /* OddDivisors.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OddDivisors.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +478,7 @@
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
+				C9FE7F80199B3840002A1EEE /* SRM 449 */,
 				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C986377519878120003AD85C /* SRM 486 */,
@@ -843,6 +848,16 @@
 			path = "SRM 275";
 			sourceTree = "<group>";
 		};
+		C9FE7F80199B3840002A1EEE /* SRM 449 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE7F81199B3840002A1EEE /* OddDivisors.cpp */,
+				C9FE7F82199B3840002A1EEE /* OddDivisors.html */,
+				C9FE7F83199B3840002A1EEE /* OddDivisors.sample */,
+			);
+			path = "SRM 449";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -952,6 +967,7 @@
 				C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */,
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
+				C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
 				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
