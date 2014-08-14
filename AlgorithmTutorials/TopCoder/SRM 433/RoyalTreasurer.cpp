@@ -10,49 +10,49 @@
 #include <typeinfo>
 #include <fstream>
 
+struct  {
+    
+    bool operator()(int a, int b)
+    {
+        return a < b;
+    }
+    
+}CompareLess;
+
+struct  {
+    
+    bool operator()(int a, int b)
+    {
+        return  a > b;
+    }
+    
+}CompareMore;
+
+bool compare(int a, int b)
+{
+    return a < b;
+}
+
 using namespace std;
 
-class ValueHistogram {
-public:
-    vector<string> build(vector<int> values) {
-        vector<int> a(10);
-        vector<int> b(10);
-        vector<string> final;
+class RoyalTreasurer {
+    public:
+    int minimalArrangement(vector<int> A, vector<int> B) {
         
-        for ( int i = 0 ; i < values.size() ; i++ )
+        sort(A.begin(),A.end(),CompareLess);
+        sort(B.begin(),B.end(),CompareMore);
+        
+        int sum = 0 ;
+        for ( int i = 0 ; i < A.size(); i++)
         {
-            a[values[i]] = a[values[i]]+1;
+            sum += A[i]*B[i];
         }
-        b = a;
-        
-        sort(a.begin(),a.end());
-        int higest = a[9] + 1;
-        
-        while (higest != 0 )
-        {
-            string str ;
-            for (int i = 0 ; i < 10 ; i++ )
-            {
-                if ( b[i] != 0 )
-                {
-                    str += "X";
-                    b[i]--;
-                }
-                else
-                {
-                    str += ".";
-                }
-            }
-            higest--;
-            final.push_back(str);
-        }
-        reverse(final.begin(), final.end());
-        return final;
+        return sum;
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 565/ValueHistogram.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 433/RoyalTreasurer.sample");
 //
 //string next_line() {
 //    string s;
@@ -91,21 +91,10 @@ public:
 //    return "\"" + t + "\"";
 //}
 //
-//template <typename T> string to_string(vector<T> ts) {
-//    stringstream s;
-//    s << "[ ";
-//    for (int i = 0; i < ts.size(); ++i) {
-//        if (i > 0) s << ", ";
-//        s << to_string(ts[i]);
-//    }
-//    s << " ]";
-//    return s.str();
-//}
-//
-//bool do_test(vector<int> values, vector<string> __expected) {
+//bool do_test(vector<int> A, vector<int> B, int __expected) {
 //    time_t startClock = clock();
-//    ValueHistogram *instance = new ValueHistogram();
-//    vector<string> __result = instance->build(values);
+//    RoyalTreasurer *instance = new RoyalTreasurer();
+//    int __result = instance->minimalArrangement(A, B);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -126,10 +115,12 @@ public:
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        vector<int> values;
-//        from_stream(values);
+//        vector<int> A;
+//        from_stream(A);
+//        vector<int> B;
+//        from_stream(B);
 //        next_line();
-//        vector<string> __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -137,13 +128,13 @@ public:
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(values, __answer)) {
+//        if ( do_test(A, B, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1407989804;
+//        int T = time(NULL) - 1407997502;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -164,7 +155,7 @@ public:
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "ValueHistogram (250 Points)" << endl << endl;
+//        cout << "RoyalTreasurer (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

@@ -1,0 +1,60 @@
+-- Example 0
+25735
+5
+is
+there
+anybody
+out
+there
+
+is there anybody out there
+-- Example 1
+31415926
+8
+may
+i
+have
+a
+large
+container
+of
+coffee
+
+may a have i large container of coffee
+-- Example 2
+1212
+4
+a
+aa
+a
+aa
+
+a aa a aa
+-- Example 3
+11111111122
+12
+a
+b
+d
+c
+a
+e
+f
+z
+zz
+za
+az
+e
+
+a a b c d e e f z az za
+-- Example 4
+2222
+6
+ab
+cd
+ef
+a
+b
+ab
+
+ab ab cd ef

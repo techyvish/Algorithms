@@ -81,6 +81,8 @@
 		C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D8F177C1A6400994C1F /* BST.cpp */; };
 		C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D92177D03B500994C1F /* MatrixOperations.cpp */; };
 		C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED3D9C177FAF5300994C1F /* TutorialBase.cpp */; };
+		C9F5C8FD199C8DD400A3D863 /* RoyalTreasurer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C8FA199C8DD400A3D863 /* RoyalTreasurer.cpp */; };
+		C9F5C902199C919E00A3D863 /* MnemonicMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C8FF199C919E00A3D863 /* MnemonicMemory.cpp */; };
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
@@ -267,6 +269,12 @@
 		C9ED3D93177D03B500994C1F /* MatrixOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixOperations.h; sourceTree = "<group>"; };
 		C9ED3D9C177FAF5300994C1F /* TutorialBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TutorialBase.cpp; sourceTree = "<group>"; };
 		C9ED3D9D177FAF5300994C1F /* TutorialBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialBase.h; sourceTree = "<group>"; };
+		C9F5C8FA199C8DD400A3D863 /* RoyalTreasurer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoyalTreasurer.cpp; sourceTree = "<group>"; };
+		C9F5C8FB199C8DD400A3D863 /* RoyalTreasurer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RoyalTreasurer.html; sourceTree = "<group>"; };
+		C9F5C8FC199C8DD400A3D863 /* RoyalTreasurer.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoyalTreasurer.sample; sourceTree = "<group>"; };
+		C9F5C8FF199C919E00A3D863 /* MnemonicMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MnemonicMemory.cpp; sourceTree = "<group>"; };
+		C9F5C900199C919E00A3D863 /* MnemonicMemory.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MnemonicMemory.html; sourceTree = "<group>"; };
+		C9F5C901199C919E00A3D863 /* MnemonicMemory.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MnemonicMemory.sample; sourceTree = "<group>"; };
 		C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonSubSeq.cpp; sourceTree = "<group>"; };
 		C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThePalindrome.cpp; sourceTree = "<group>"; };
 		C9FCE7C0198093D200471F64 /* ThePalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ThePalindrome.html; sourceTree = "<group>"; };
@@ -487,11 +495,13 @@
 				C9FE7F711999C2E2002A1EEE /* SRM 284 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
+				C9F5C8FE199C919E00A3D863 /* SRM 357 */,
 				C9FE7FA6199C4045002A1EEE /* SRM 367 */,
 				98BE4347D4C66BDEF65D53FA /* SRM 373 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
+				C9F5C8F9199C8DD400A3D863 /* SRM 433 */,
 				C9FE7F80199B3840002A1EEE /* SRM 449 */,
 				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
@@ -740,6 +750,26 @@
 			path = "SRM 197";
 			sourceTree = "<group>";
 		};
+		C9F5C8F9199C8DD400A3D863 /* SRM 433 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C8FA199C8DD400A3D863 /* RoyalTreasurer.cpp */,
+				C9F5C8FB199C8DD400A3D863 /* RoyalTreasurer.html */,
+				C9F5C8FC199C8DD400A3D863 /* RoyalTreasurer.sample */,
+			);
+			path = "SRM 433";
+			sourceTree = "<group>";
+		};
+		C9F5C8FE199C919E00A3D863 /* SRM 357 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C8FF199C919E00A3D863 /* MnemonicMemory.cpp */,
+				C9F5C900199C919E00A3D863 /* MnemonicMemory.html */,
+				C9F5C901199C919E00A3D863 /* MnemonicMemory.sample */,
+			);
+			path = "SRM 357";
+			sourceTree = "<group>";
+		};
 		C9FCE7BE198093D200471F64 /* SRM 428 */ = {
 			isa = PBXGroup;
 			children = (
@@ -977,6 +1007,7 @@
 				C952943219661A2F00647DAE /* Coins.cpp in Sources */,
 				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
+				C9F5C8FD199C8DD400A3D863 /* RoyalTreasurer.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
 				C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */,
@@ -999,6 +1030,7 @@
 				C9FCE7EF19870D0B00471F64 /* TwiceString.cpp in Sources */,
 				C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */,
 				C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */,
+				C9F5C902199C919E00A3D863 /* MnemonicMemory.cpp in Sources */,
 				C97DC63B1978ABB000FE95B1 /* SignatureDecorator.cpp in Sources */,
 				C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */,
 				C9FCE7CC1980D48500471F64 /* NumbersChallenge.cpp in Sources */,
