@@ -15,12 +15,22 @@ using namespace std;
 class DiagonalDisproportion {
     public:
     int getDisproportion(vector<string> matrix) {
-        return 0;
+        
+        int k = 0;
+        int l = (int)matrix[0].size() - 1;
+        int sum1 = 0, sum2 =0;
+        for ( int i = 0 ; i < matrix.size() ; i++ )
+        {
+            string str  = matrix[i];
+            sum1 += str[k++] - 48;
+            sum2 += str[l--] - 48;
+        }
+        return sum1-sum2;
     }
 };
 
 // CUT begin
-ifstream data("DiagonalDisproportion.sample");
+ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 283/DiagonalDisproportion.sample");
 
 string next_line() {
     string s;
