@@ -13,14 +13,46 @@
 using namespace std;
 
 class ValueHistogram {
-    public:
+public:
     vector<string> build(vector<int> values) {
-        return vector<string>();
+        vector<int> a(10);
+        vector<int> b(10);
+        vector<string> final;
+        
+        for ( int i = 0 ; i < values.size() ; i++ )
+        {
+            a[values[i]] = a[values[i]]+1;
+        }
+        b = a;
+        
+        sort(a.begin(),a.end());
+        int higest = a[9] + 1;
+        
+        while (higest != 0 )
+        {
+            string str ;
+            for (int i = 0 ; i < 10 ; i++ )
+            {
+                if ( b[i] != 0 )
+                {
+                    str += "X";
+                    b[i]--;
+                }
+                else
+                {
+                    str += ".";
+                }
+            }
+            higest--;
+            final.push_back(str);
+        }
+        reverse(final.begin(), final.end());
+        return final;
     }
 };
 
 // CUT begin
-ifstream data("ValueHistogram.sample");
+ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 565/ValueHistogram.sample");
 
 string next_line() {
     string s;
