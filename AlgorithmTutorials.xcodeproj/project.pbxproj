@@ -98,6 +98,7 @@
 		C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F81199B3840002A1EEE /* OddDivisors.cpp */; };
 		C9FE7FA5199C38CC002A1EEE /* DiagonalDisproportion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA2199C38CC002A1EEE /* DiagonalDisproportion.cpp */; };
 		C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */; };
+		C9FE7FAF199C6FC2002A1EEE /* ValueHistogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -315,6 +316,9 @@
 		C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhiteCells.cpp; sourceTree = "<group>"; };
 		C9FE7FA8199C4045002A1EEE /* WhiteCells.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WhiteCells.html; sourceTree = "<group>"; };
 		C9FE7FA9199C4045002A1EEE /* WhiteCells.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhiteCells.sample; sourceTree = "<group>"; };
+		C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueHistogram.cpp; sourceTree = "<group>"; };
+		C9FE7FAD199C6FC2002A1EEE /* ValueHistogram.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ValueHistogram.html; sourceTree = "<group>"; };
+		C9FE7FAE199C6FC2002A1EEE /* ValueHistogram.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValueHistogram.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +466,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FE7FAB199C6FC2002A1EEE /* SRM 565 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -888,6 +893,16 @@
 			path = "SRM 367";
 			sourceTree = "<group>";
 		};
+		C9FE7FAB199C6FC2002A1EEE /* SRM 565 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */,
+				C9FE7FAD199C6FC2002A1EEE /* ValueHistogram.html */,
+				C9FE7FAE199C6FC2002A1EEE /* ValueHistogram.sample */,
+			);
+			path = "SRM 565";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -953,6 +968,7 @@
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
 				C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */,
 				C9C70FC619788D8200B3D445 /* Bricks.cpp in Sources */,
+				C9FE7FAF199C6FC2002A1EEE /* ValueHistogram.cpp in Sources */,
 				C97DC64A197B1D1D00FE95B1 /* LittleElephantAndBooks.cpp in Sources */,
 				C9C70FB619765BB800B3D445 /* Trie.cpp in Sources */,
 				C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */,

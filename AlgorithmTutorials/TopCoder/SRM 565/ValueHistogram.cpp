@@ -12,36 +12,15 @@
 
 using namespace std;
 
-class WhiteCells {
+class ValueHistogram {
     public:
-    int countOccupied(vector<string> board) {
-        int sum = 0;
-        for ( int i = 0 ; i < board.size(); i++ )
-        {
-            string str = board[i];
-            if ( i%2 == 0 )
-            {
-                for ( int j = 0 ; j < str.size(); j+=2  )
-                {
-                    if ( str[j] == 'F')
-                        sum ++;
-                }
-            }
-            else
-            {
-                for ( int j = 1 ; j < str.size(); j+=2  )
-                {
-                    if ( str[j] == 'F')
-                        sum ++;
-                }
-            }
-        }
-        return sum;
+    vector<string> build(vector<int> values) {
+        return vector<string>();
     }
 };
 
 // CUT begin
-ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 367/WhiteCells.sample");
+ifstream data("ValueHistogram.sample");
 
 string next_line() {
     string s;
@@ -80,10 +59,21 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(vector<string> board, int __expected) {
+template <typename T> string to_string(vector<T> ts) {
+    stringstream s;
+    s << "[ ";
+    for (int i = 0; i < ts.size(); ++i) {
+        if (i > 0) s << ", ";
+        s << to_string(ts[i]);
+    }
+    s << " ]";
+    return s.str();
+}
+
+bool do_test(vector<int> values, vector<string> __expected) {
     time_t startClock = clock();
-    WhiteCells *instance = new WhiteCells();
-    int __result = instance->countOccupied(board);
+    ValueHistogram *instance = new ValueHistogram();
+    vector<string> __result = instance->build(values);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -104,10 +94,10 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<string> board;
-        from_stream(board);
+        vector<int> values;
+        from_stream(values);
         next_line();
-        int __answer;
+        vector<string> __answer;
         from_stream(__answer);
 
         cases++;
@@ -115,13 +105,13 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(board, __answer)) {
+        if ( do_test(values, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1407977643;
+        int T = time(NULL) - 1407989804;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
         cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -142,7 +132,7 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "WhiteCells (250 Points)" << endl << endl;
+        cout << "ValueHistogram (250 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
