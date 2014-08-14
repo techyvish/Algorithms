@@ -1,0 +1,48 @@
+-- Example 0
+8
+........
+........
+........
+........
+........
+........
+........
+........
+
+0
+-- Example 1
+8
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+FFFFFFFF
+
+32
+-- Example 2
+8
+.F.F...F
+F...F.F.
+...F.F.F
+F.F...F.
+.F...F..
+F...F.F.
+.F.F.F.F
+..FF..F.
+
+1
+-- Example 3
+8
+........
+..F.....
+.....F..
+.....F..
+........
+........
+.......F
+.F......
+
+2

@@ -97,6 +97,7 @@
 		C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F7A199AD94B002A1EEE /* HingedDoor.cpp */; };
 		C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7F81199B3840002A1EEE /* OddDivisors.cpp */; };
 		C9FE7FA5199C38CC002A1EEE /* DiagonalDisproportion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA2199C38CC002A1EEE /* DiagonalDisproportion.cpp */; };
+		C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -311,6 +312,9 @@
 		C9FE7FA2199C38CC002A1EEE /* DiagonalDisproportion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiagonalDisproportion.cpp; sourceTree = "<group>"; };
 		C9FE7FA3199C38CC002A1EEE /* DiagonalDisproportion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DiagonalDisproportion.html; sourceTree = "<group>"; };
 		C9FE7FA4199C38CC002A1EEE /* DiagonalDisproportion.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DiagonalDisproportion.sample; sourceTree = "<group>"; };
+		C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhiteCells.cpp; sourceTree = "<group>"; };
+		C9FE7FA8199C4045002A1EEE /* WhiteCells.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WhiteCells.html; sourceTree = "<group>"; };
+		C9FE7FA9199C4045002A1EEE /* WhiteCells.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhiteCells.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,7 +462,6 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9FE7FA1199C38CC002A1EEE /* SRM 283 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -476,9 +479,11 @@
 				C9DD3CEE198B4B39006D4A6C /* SRM 272 */,
 				C9FE7F76199AD94B002A1EEE /* SRM 275 */,
 				C97DC6311978991900FE95B1 /* SRM 279 */,
+				C9FE7FA1199C38CC002A1EEE /* SRM 283 */,
 				C9FE7F711999C2E2002A1EEE /* SRM 284 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
+				C9FE7FA6199C4045002A1EEE /* SRM 367 */,
 				98BE4347D4C66BDEF65D53FA /* SRM 373 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
@@ -873,6 +878,16 @@
 			path = "SRM 283";
 			sourceTree = "<group>";
 		};
+		C9FE7FA6199C4045002A1EEE /* SRM 367 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */,
+				C9FE7FA8199C4045002A1EEE /* WhiteCells.html */,
+				C9FE7FA9199C4045002A1EEE /* WhiteCells.sample */,
+			);
+			path = "SRM 367";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -981,6 +996,7 @@
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
 				C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */,
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
+				C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
