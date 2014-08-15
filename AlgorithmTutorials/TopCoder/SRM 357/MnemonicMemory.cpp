@@ -9,13 +9,44 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <map>
 
 using namespace std;
+
+struct Compare {
+    
+};
 
 class MnemonicMemory {
     public:
     string getPhrase(string number, vector<string> dictionary) {
-        return "";
+        
+        std::map<int,vector<string> > words;
+        
+        for (int i = 0 ; i < dictionary.size() ; i++ )
+        {
+            vector<string> vector =  words[(int)dictionary[i].size()];
+            vector.push_back(dictionary[i]);
+            sort(vector.begin(), vector.end());
+            words[(int)dictionary[i].size()] = vector;
+        }
+        string str ;
+        
+        for ( int i = 0 ; i < number.size() ; i++ )
+        {
+            vector<string> vector =  words[number[i]-48];
+            if ( vector.size() )
+            {
+                str += vector[0];
+                str += " ";
+                vector.erase(vector.begin());
+                words[number[i]-48] = vector;
+            }
+        }
+        
+        str.erase(str.end()-1,str.end());
+        
+        return str;
     }
 };
 
