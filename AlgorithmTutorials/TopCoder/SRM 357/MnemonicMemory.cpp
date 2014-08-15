@@ -16,7 +16,7 @@ class MnemonicMemory {
     public:
     string getPhrase(string number, vector<string> dictionary) {
         return "";
-    }
+    }   
 };
 
 // CUT begin
