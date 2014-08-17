@@ -84,6 +84,8 @@
 		C9F5C8FD199C8DD400A3D863 /* RoyalTreasurer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C8FA199C8DD400A3D863 /* RoyalTreasurer.cpp */; };
 		C9F5C902199C919E00A3D863 /* MnemonicMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C8FF199C919E00A3D863 /* MnemonicMemory.cpp */; };
 		C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C904199DC50900A3D863 /* RedundantStrings.cpp */; };
+		C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C909199DE87300A3D863 /* PipePuzzle.cpp */; };
+		C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */; };
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
@@ -279,6 +281,12 @@
 		C9F5C904199DC50900A3D863 /* RedundantStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedundantStrings.cpp; sourceTree = "<group>"; };
 		C9F5C905199DC50900A3D863 /* RedundantStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RedundantStrings.html; sourceTree = "<group>"; };
 		C9F5C906199DC50900A3D863 /* RedundantStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RedundantStrings.sample; sourceTree = "<group>"; };
+		C9F5C909199DE87300A3D863 /* PipePuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PipePuzzle.cpp; sourceTree = "<group>"; };
+		C9F5C90A199DE87300A3D863 /* PipePuzzle.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PipePuzzle.html; sourceTree = "<group>"; };
+		C9F5C90B199DE87300A3D863 /* PipePuzzle.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PipePuzzle.sample; sourceTree = "<group>"; };
+		C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AverageAverage.cpp; sourceTree = "<group>"; };
+		C9F5C90F19A0CF6700A3D863 /* AverageAverage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AverageAverage.html; sourceTree = "<group>"; };
+		C9F5C91019A0CF6700A3D863 /* AverageAverage.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AverageAverage.sample; sourceTree = "<group>"; };
 		C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonSubSeq.cpp; sourceTree = "<group>"; };
 		C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThePalindrome.cpp; sourceTree = "<group>"; };
 		C9FCE7C0198093D200471F64 /* ThePalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ThePalindrome.html; sourceTree = "<group>"; };
@@ -478,7 +486,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9F5C903199DC50900A3D863 /* SRM 238 */,
+				C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -489,8 +497,10 @@
 				C9DD3CF7198B5071006D4A6C /* SRM 222 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
 				C97DC6371978ABB000FE95B1 /* SRM 225 */,
+				C9F5C903199DC50900A3D863 /* SRM 238 */,
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9B2C6C01998306F00A99932 /* SRM 263 */,
+				C9F5C908199DE87300A3D863 /* SRM 265 */,
 				C942673C1989F5F2009B802B /* SRM 268 */,
 				C9DD3CFC198E3E16006D4A6C /* SRM 271 */,
 				C9DD3CEE198B4B39006D4A6C /* SRM 272 */,
@@ -785,6 +795,26 @@
 			path = "SRM 238";
 			sourceTree = "<group>";
 		};
+		C9F5C908199DE87300A3D863 /* SRM 265 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C909199DE87300A3D863 /* PipePuzzle.cpp */,
+				C9F5C90A199DE87300A3D863 /* PipePuzzle.html */,
+				C9F5C90B199DE87300A3D863 /* PipePuzzle.sample */,
+			);
+			path = "SRM 265";
+			sourceTree = "<group>";
+		};
+		C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */,
+				C9F5C90F19A0CF6700A3D863 /* AverageAverage.html */,
+				C9F5C91019A0CF6700A3D863 /* AverageAverage.sample */,
+			);
+			path = "Member SRM 482";
+			sourceTree = "<group>";
+		};
 		C9FCE7BE198093D200471F64 /* SRM 428 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1054,6 +1084,7 @@
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */,
+				C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */,
 				C97543A0179C561100A905AC /* LIS.cpp in Sources */,
 				C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */,
 				C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */,
@@ -1091,6 +1122,7 @@
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 				C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */,
 				98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */,
+				C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */,
 				98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */,
 				98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */,
 				C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */,

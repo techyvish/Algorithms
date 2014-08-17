@@ -1,0 +1,38 @@
+-- Example 0
+5
+LL-L-
+L+L+L
+--NL-
+L+--L
+LL+L-
+
+19
+-- Example 1
+4
+ELLL
+LLLL
+LLLL
+LLLL
+
+13
+-- Example 2
+7
+ELLLLL+
+++++++L
+L+++++L
+L+++++L
+L+++++L
+L+++++L
++LLLLLL
+
+71
+-- Example 3
+1
+-+-+-+-+-+-+-+-+-+-W
+
+19
+-- Example 4
+1
+N
+
+0

@@ -9,49 +9,18 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
-#include <map>
 
 using namespace std;
 
-struct Compare {
-    
-};
-
-class MnemonicMemory {
+class PipePuzzle {
     public:
-    string getPhrase(string number, vector<string> dictionary) {
-        
-        std::map<int,vector<string> > words;
-        
-        for (int i = 0 ; i < dictionary.size() ; i++ )
-        {
-            vector<string> vector =  words[(int)dictionary[i].size()];
-            vector.push_back(dictionary[i]);
-            sort(vector.begin(), vector.end());
-            words[(int)dictionary[i].size()] = vector;
-        }
-        string str ;
-        
-        for ( int i = 0 ; i < number.size() ; i++ )
-        {
-            vector<string> vector =  words[number[i]-48];
-            if ( vector.size() )
-            {
-                str += vector[0];
-                str += " ";
-                vector.erase(vector.begin());
-                words[number[i]-48] = vector;
-            }
-        }
-        
-        str.erase(str.end()-1,str.end());
-        
-        return str;
+    int longest(vector<string> pipes) {
+        return 0;
     }
 };
-//
+
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 357/MnemonicMemory.sample");
+//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/SRM 265/PipePuzzle.sample");
 //
 //string next_line() {
 //    string s;
@@ -90,10 +59,10 @@ class MnemonicMemory {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string number, vector<string> dictionary, string __expected) {
+//bool do_test(vector<string> pipes, int __expected) {
 //    time_t startClock = clock();
-//    MnemonicMemory *instance = new MnemonicMemory();
-//    string __result = instance->getPhrase(number, dictionary);
+//    PipePuzzle *instance = new PipePuzzle();
+//    int __result = instance->longest(pipes);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -114,12 +83,10 @@ class MnemonicMemory {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string number;
-//        from_stream(number);
-//        vector<string> dictionary;
-//        from_stream(dictionary);
+//        vector<string> pipes;
+//        from_stream(pipes);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -127,16 +94,16 @@ class MnemonicMemory {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(number, dictionary, __answer)) {
+//        if ( do_test(pipes, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1407998470;
+//        int T = time(NULL) - 1408086234;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 1000 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -154,7 +121,7 @@ class MnemonicMemory {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "MnemonicMemory (250 Points)" << endl << endl;
+//        cout << "PipePuzzle (1000 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
