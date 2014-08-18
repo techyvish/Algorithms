@@ -87,6 +87,7 @@
 		C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C909199DE87300A3D863 /* PipePuzzle.cpp */; };
 		C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */; };
 		C9F5C91A19A1C72100A3D863 /* PalindromesCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */; };
+		C9F5C91F19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C91C19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp */; };
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
@@ -291,6 +292,9 @@
 		C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PalindromesCount.cpp; sourceTree = "<group>"; };
 		C9F5C91819A1C72100A3D863 /* PalindromesCount.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PalindromesCount.html; sourceTree = "<group>"; };
 		C9F5C91919A1C72100A3D863 /* PalindromesCount.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PalindromesCount.sample; sourceTree = "<group>"; };
+		C9F5C91C19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheAirTripDivTwo.cpp; sourceTree = "<group>"; };
+		C9F5C91D19A1CFBB00A3D863 /* TheAirTripDivTwo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TheAirTripDivTwo.html; sourceTree = "<group>"; };
+		C9F5C91E19A1CFBB00A3D863 /* TheAirTripDivTwo.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheAirTripDivTwo.sample; sourceTree = "<group>"; };
 		C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonSubSeq.cpp; sourceTree = "<group>"; };
 		C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThePalindrome.cpp; sourceTree = "<group>"; };
 		C9FCE7C0198093D200471F64 /* ThePalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ThePalindrome.html; sourceTree = "<group>"; };
@@ -490,12 +494,12 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9F5C91619A1C72100A3D863 /* Member SRM 474 */,
-				C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
 				C916A26C195F8D9F00AA4A19 /* FibonacciDiv2.sample */,
+				C9F5C91619A1C72100A3D863 /* Member SRM 474 */,
+				C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */,
 				C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */,
 				C9E8D9E7197E01E70034F239 /* SRM 197 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
@@ -525,6 +529,7 @@
 				C9FE7F80199B3840002A1EEE /* SRM 449 */,
 				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
+				C9F5C91B19A1CFBB00A3D863 /* SRM 479 */,
 				C986377519878120003AD85C /* SRM 486 */,
 				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
 				C9DD3D06198EFC74006D4A6C /* SRM 540 */,
@@ -830,6 +835,16 @@
 			path = "Member SRM 474";
 			sourceTree = "<group>";
 		};
+		C9F5C91B19A1CFBB00A3D863 /* SRM 479 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C91C19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp */,
+				C9F5C91D19A1CFBB00A3D863 /* TheAirTripDivTwo.html */,
+				C9F5C91E19A1CFBB00A3D863 /* TheAirTripDivTwo.sample */,
+			);
+			path = "SRM 479";
+			sourceTree = "<group>";
+		};
 		C9FCE7BE198093D200471F64 /* SRM 428 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1098,6 +1113,7 @@
 				C9C70FB919765BCF00B3D445 /* WordFind.cpp in Sources */,
 				C9FE7F7D199AD94B002A1EEE /* Haar1D.cpp in Sources */,
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
+				C9F5C91F19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */,
 				C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */,
