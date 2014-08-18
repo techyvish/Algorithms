@@ -86,6 +86,7 @@
 		C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C904199DC50900A3D863 /* RedundantStrings.cpp */; };
 		C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C909199DE87300A3D863 /* PipePuzzle.cpp */; };
 		C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */; };
+		C9F5C91A19A1C72100A3D863 /* PalindromesCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */; };
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
@@ -287,6 +288,9 @@
 		C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AverageAverage.cpp; sourceTree = "<group>"; };
 		C9F5C90F19A0CF6700A3D863 /* AverageAverage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AverageAverage.html; sourceTree = "<group>"; };
 		C9F5C91019A0CF6700A3D863 /* AverageAverage.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AverageAverage.sample; sourceTree = "<group>"; };
+		C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PalindromesCount.cpp; sourceTree = "<group>"; };
+		C9F5C91819A1C72100A3D863 /* PalindromesCount.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PalindromesCount.html; sourceTree = "<group>"; };
+		C9F5C91919A1C72100A3D863 /* PalindromesCount.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PalindromesCount.sample; sourceTree = "<group>"; };
 		C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonSubSeq.cpp; sourceTree = "<group>"; };
 		C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThePalindrome.cpp; sourceTree = "<group>"; };
 		C9FCE7C0198093D200471F64 /* ThePalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ThePalindrome.html; sourceTree = "<group>"; };
@@ -486,6 +490,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9F5C91619A1C72100A3D863 /* Member SRM 474 */,
 				C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
@@ -815,6 +820,16 @@
 			path = "Member SRM 482";
 			sourceTree = "<group>";
 		};
+		C9F5C91619A1C72100A3D863 /* Member SRM 474 */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */,
+				C9F5C91819A1C72100A3D863 /* PalindromesCount.html */,
+				C9F5C91919A1C72100A3D863 /* PalindromesCount.sample */,
+			);
+			path = "Member SRM 474";
+			sourceTree = "<group>";
+		};
 		C9FCE7BE198093D200471F64 /* SRM 428 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1055,6 +1070,7 @@
 				C9F5C8FD199C8DD400A3D863 /* RoyalTreasurer.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
+				C9F5C91A19A1C72100A3D863 /* PalindromesCount.cpp in Sources */,
 				C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */,
 				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
 				C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */,
