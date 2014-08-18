@@ -13,9 +13,68 @@
 using namespace std;
 
 class AverageAverage {
+    vector<int> q;
+    vector<double> total;
     public:
+  
     double average(vector<int> numList) {
-        return 0.0;
+        int a[10] = {0};
+        q = numList;
+        backtrack(a,-1, (int)numList.size());
+        double sum = 0;
+        for (int i = 0 ; i < total.size(); i++)
+        {
+            sum+= total[i];
+        }
+        return  (double) sum/ (double)(total.size());
+    }
+    
+    bool is_a_solution( int a[], int k, int n)
+    {
+        return  ( k == n - 1 );
+    }
+    
+    void process_solution( int a[] , int k , int n )
+    {
+        double sum = 0;
+        double atotal = 0;
+        for ( int i = 0 ; i < n ; i ++)
+        {
+            if ( a[i] )
+            {
+                sum += q[i];
+                atotal++;
+            }
+        }
+        if ( atotal != 0 )
+            total.push_back(sum/atotal);
+    }
+    
+    void construct_candidates(int a[] , int k , int  n , int c[], int *ncandidates)
+    {
+        c[0] = true;
+        c[1] = false;
+        *ncandidates = 2;
+    }
+    
+    void backtrack(int a[], int k , int n )
+    {
+        int c[3] = {0} ;
+        int ncandidates = 0 ;
+        if ( is_a_solution(a, k, n ))
+        {
+            process_solution(a, k, n);
+        }
+        else
+        {
+            k = k + 1 ;
+            construct_candidates(a, k, n, c, &ncandidates);
+            for ( int i = 0 ; i < ncandidates ; i ++)
+            {
+                a[k] = c[i];
+                backtrack(a, k, n);
+            }
+        }
     }
 };
 
