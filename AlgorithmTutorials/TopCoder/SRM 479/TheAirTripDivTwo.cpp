@@ -9,13 +9,27 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <map>
+#include <set>
 
 using namespace std;
 
 class TheAirTripDivTwo {
     public:
     int find(vector<int> flights, int fuel) {
-        return 0;
+    
+        int count = 0;
+        int sum = 0;
+        for ( int i = 0 ; i < flights.size() ; i++ )
+        {
+            sum += flights[i];
+            if ( sum <= fuel )
+            {
+                count++;
+            }
+        }
+        
+        return count;
     }
 };
 
