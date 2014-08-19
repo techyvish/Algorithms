@@ -48,6 +48,7 @@
 		C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */; };
 		C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC97F1968B36E000FACE3 /* LIS.cpp */; };
 		C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC98219690DE2000FACE3 /* ZigZag.cpp */; };
+		C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A1000419A30C0900C00863 /* HiddenMessage.cpp */; };
 		C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */; };
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */; };
@@ -206,6 +207,9 @@
 		C9940A5C17AEC824003FDD03 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		C99AC97F1968B36E000FACE3 /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
 		C99AC98219690DE2000FACE3 /* ZigZag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZigZag.cpp; sourceTree = "<group>"; };
+		C9A1000419A30C0900C00863 /* HiddenMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenMessage.cpp; sourceTree = "<group>"; };
+		C9A1000519A30C0900C00863 /* HiddenMessage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HiddenMessage.html; sourceTree = "<group>"; };
+		C9A1000619A30C0900C00863 /* HiddenMessage.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HiddenMessage.sample; sourceTree = "<group>"; };
 		C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColoring.cpp; sourceTree = "<group>"; };
 		C9AD36E31788B65C0036D3D7 /* GraphColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphColoring.h; sourceTree = "<group>"; };
 		C9AD3702178B500B0036D3D7 /* Parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parentheses.cpp; sourceTree = "<group>"; };
@@ -517,6 +521,7 @@
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C9FE7FA1199C38CC002A1EEE /* SRM 283 */,
 				C9FE7F711999C2E2002A1EEE /* SRM 284 */,
+				C9A1000319A30C0900C00863 /* SRM 316 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
 				C9F5C8FE199C919E00A3D863 /* SRM 357 */,
@@ -660,6 +665,16 @@
 				C986377819878120003AD85C /* TxMsg.sample */,
 			);
 			path = "SRM 486";
+			sourceTree = "<group>";
+		};
+		C9A1000319A30C0900C00863 /* SRM 316 */ = {
+			isa = PBXGroup;
+			children = (
+				C9A1000419A30C0900C00863 /* HiddenMessage.cpp */,
+				C9A1000519A30C0900C00863 /* HiddenMessage.html */,
+				C9A1000619A30C0900C00863 /* HiddenMessage.sample */,
+			);
+			path = "SRM 316";
 			sourceTree = "<group>";
 		};
 		C9B2C6C01998306F00A99932 /* SRM 263 */ = {
@@ -1154,6 +1169,7 @@
 				C9FCE7DB1981D86B00471F64 /* SyllableCounter.cpp in Sources */,
 				C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */,
 				98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */,
+				C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */,
 				C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */,
 				98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */,
 				98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */,
