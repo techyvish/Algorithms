@@ -15,7 +15,24 @@ using namespace std;
 class HiddenMessage {
     public:
     string getMessage(string text) {
-        return "";
+        
+        string finalText ;
+        for (int i = 0 ; i< text.size() ;i++)
+        {
+            if ( text[i] != ' ')
+            {
+                finalText += text[i];
+                for ( ; i < text.size() ; i++ )
+                {
+                    if ( text[i] == ' ')
+                    {
+                        break;
+                    }
+
+                }
+            }
+        }
+        return finalText;
     }
 };
 
