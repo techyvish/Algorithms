@@ -49,6 +49,7 @@
 		C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC97F1968B36E000FACE3 /* LIS.cpp */; };
 		C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC98219690DE2000FACE3 /* ZigZag.cpp */; };
 		C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A1000419A30C0900C00863 /* HiddenMessage.cpp */; };
+		C9A1000C19A30F7D00C00863 /* NumberMagicEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A1000919A30F7D00C00863 /* NumberMagicEasy.cpp */; };
 		C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */; };
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */; };
@@ -210,6 +211,9 @@
 		C9A1000419A30C0900C00863 /* HiddenMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenMessage.cpp; sourceTree = "<group>"; };
 		C9A1000519A30C0900C00863 /* HiddenMessage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HiddenMessage.html; sourceTree = "<group>"; };
 		C9A1000619A30C0900C00863 /* HiddenMessage.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HiddenMessage.sample; sourceTree = "<group>"; };
+		C9A1000919A30F7D00C00863 /* NumberMagicEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumberMagicEasy.cpp; sourceTree = "<group>"; };
+		C9A1000A19A30F7D00C00863 /* NumberMagicEasy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NumberMagicEasy.html; sourceTree = "<group>"; };
+		C9A1000B19A30F7D00C00863 /* NumberMagicEasy.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NumberMagicEasy.sample; sourceTree = "<group>"; };
 		C9AD36E21788B65C0036D3D7 /* GraphColoring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColoring.cpp; sourceTree = "<group>"; };
 		C9AD36E31788B65C0036D3D7 /* GraphColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphColoring.h; sourceTree = "<group>"; };
 		C9AD3702178B500B0036D3D7 /* Parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parentheses.cpp; sourceTree = "<group>"; };
@@ -535,6 +539,7 @@
 				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
 				C9F5C91B19A1CFBB00A3D863 /* SRM 479 */,
+				C9A1000819A30F7D00C00863 /* SRM 484 */,
 				C986377519878120003AD85C /* SRM 486 */,
 				C9FCE7EB19870D0B00471F64 /* SRM 518 */,
 				C9DD3D06198EFC74006D4A6C /* SRM 540 */,
@@ -675,6 +680,16 @@
 				C9A1000619A30C0900C00863 /* HiddenMessage.sample */,
 			);
 			path = "SRM 316";
+			sourceTree = "<group>";
+		};
+		C9A1000819A30F7D00C00863 /* SRM 484 */ = {
+			isa = PBXGroup;
+			children = (
+				C9A1000919A30F7D00C00863 /* NumberMagicEasy.cpp */,
+				C9A1000A19A30F7D00C00863 /* NumberMagicEasy.html */,
+				C9A1000B19A30F7D00C00863 /* NumberMagicEasy.sample */,
+			);
+			path = "SRM 484";
 			sourceTree = "<group>";
 		};
 		C9B2C6C01998306F00A99932 /* SRM 263 */ = {
@@ -1159,6 +1174,7 @@
 				C9FE7F701999907B002A1EEE /* LotteryTicket.cpp in Sources */,
 				C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */,
 				C9FCE7D61981C92000471F64 /* UserName.cpp in Sources */,
+				C9A1000C19A30F7D00C00863 /* NumberMagicEasy.cpp in Sources */,
 				C9E8D9F9197E32F60034F239 /* PalindromicSubstring.cpp in Sources */,
 				C9FCE7EA1985E05900471F64 /* SantaGifts.cpp in Sources */,
 				C9529452196E19DD00647DAE /* Permute.cpp in Sources */,
