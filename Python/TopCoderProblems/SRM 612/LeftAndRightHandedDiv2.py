@@ -3,7 +3,14 @@ import math,string,itertools,fractions,heapq,collections,re,array,bisect
 
 class LeftAndRightHandedDiv2:
     def count(self, S):
-        return 0
+
+        cnt = 0;
+        i = 0;
+        for ch in S:
+            if ch == 'L' and S[i-1] == 'R' and i != 0:
+                cnt += 1;
+            i += 1;
+        return cnt;
 
 # CUT begin
 # TEST CODE FOR PYTHON {{{
