@@ -3,7 +3,6 @@ __author__ = 'Vishal'
  # List Operations
  # This methods will show list operations
 
-
 def main():
     movies = ["Singhm 2", "Gajani", "Johny mera naam"]
     years = [2010, 2009, 1975]
@@ -16,6 +15,14 @@ def main():
     insertcastat(cast, 0, "Salman")
     insertcastat(cast, 300, "Madhuri")
     insertyears(movies, years)
+
+    newmovies = ["Humpty sharma", 2014, ["Dhawan", ["Ashutosh"]],
+                 "Gippy", 2013, ["Gippy Simar", []],
+                 "Happy New Year", 2014, ["Shahrukh khan", ["Arjun", "Irani"]]]
+
+    printmoviedatabase(newmovies)
+    print("\n")
+    printmoviedatabase(newmovies, 1)
 
 
 def printmovies(movies):
@@ -52,7 +59,15 @@ def insertyears(movies, years):
     for i in range(len(movies) * 2):
         if i % 2 != 0:
             movies.insert(i, years[k])
-            k += 1;
+            k += 1
     print(movies)
+
+
+def printmoviedatabase(movies, level=0):
+    for i in movies:
+        if isinstance(i, list):
+            printmoviedatabase(i, level * 2)
+        else:
+            print(" "*level, i)
 
 main()
