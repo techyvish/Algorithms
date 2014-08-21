@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
-import math,string,itertools,fractions,heapq,collections,re,array,bisect;
+import math,string,itertools,fractions,heapq,collections,re,array,bisect
 
-class LeftAndRightHandedDiv2:
-    def count(self, S):
-
-        cnt = 0;
-        i = 0;
-        for ch in S:
-            if ch == 'L' and S[i-1] == 'R' and i != 0:
-                cnt += 1;
-            i += 1;
-        return cnt;
+class KingdomAndDucks:
+    def minDucks(self, duckTypes):
+        return 0
 
 # CUT begin
 # TEST CODE FOR PYTHON {{{
@@ -40,12 +33,12 @@ def pretty_str(x):
     else:
         return str(x)
 
-def do_test(S, __expected):
+def do_test(duckTypes, __expected):
     startTime = time.time()
-    instance = LeftAndRightHandedDiv2()
+    instance = KingdomAndDucks()
     exception = None
     try:
-        __result = instance.count(S);
+        __result = instance.minDucks(duckTypes);
     except:
         import traceback
         exception = traceback.format_exc()
@@ -66,30 +59,33 @@ def do_test(S, __expected):
         return 0
 
 def run_tests():
-    sys.stdout.write("LeftAndRightHandedDiv2 (250 Points)\n\n")
+    sys.stdout.write("KingdomAndDucks (250 Points)\n\n")
 
     passed = cases = 0
     case_set = set()
     for arg in sys.argv[1:]:
         case_set.add(int(arg))
 
-    with open("LeftAndRightHandedDiv2.sample", "r") as f:
+    with open("KingdomAndDucks.sample", "r") as f:
         while True:
             label = f.readline()
             if not label.startswith("--"): break
 
-            S = f.readline().rstrip()
+            duckTypes = []
+            for i in range(0, int(f.readline())):
+                duckTypes.append(int(f.readline().rstrip()))
+            duckTypes = tuple(duckTypes)
             f.readline()
             __answer = int(f.readline().rstrip())
 
             cases += 1
             if len(case_set) > 0 and (cases - 1) in case_set: continue
             sys.stdout.write("  Testcase #%d ... " % (cases - 1))
-            passed += do_test(S, __answer)
+            passed += do_test(duckTypes, __answer)
 
     sys.stdout.write("\nPassed : %d / %d cases\n" % (passed, cases))
 
-    T = time.time() - 1408511000
+    T = time.time() - 1408577779
     PT, TT = (T / 60.0, 75.0)
     points = 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT))
     sys.stdout.write("Time   : %d minutes %d secs\n" % (int(T/60), T%60))
