@@ -1,0 +1,34 @@
+-- Example 0
+3
+BOB
+TOMMY
+JIM
+
+3
+  BOB
+TOMMY
+  JIM
+-- Example 1
+4
+JOHN
+JAKE
+ALAN
+BLUE
+
+4
+JOHN
+JAKE
+ALAN
+BLUE
+-- Example 2
+4
+LONGEST
+A
+LONGER
+SHORT
+
+4
+LONGEST
+      A
+ LONGER
+  SHORT
