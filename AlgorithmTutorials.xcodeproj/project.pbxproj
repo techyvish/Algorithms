@@ -38,6 +38,9 @@
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
+		C977117819A8A9DD00E67FDB /* Lembda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117619A8A9DD00E67FDB /* Lembda.cpp */; };
+		C977117B19A8ADE500E67FDB /* Tuple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117919A8ADE500E67FDB /* Tuple.cpp */; };
+		C977118019A8B4A400E67FDB /* MovingAvg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117D19A8B4A400E67FDB /* MovingAvg.cpp */; };
 		C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC63519789A1700FE95B1 /* DancingSentence.cpp */; };
 		C97DC63B1978ABB000FE95B1 /* SignatureDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC6381978ABB000FE95B1 /* SignatureDecorator.cpp */; };
 		C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC63D1978DA1000FE95B1 /* CostOfDancing.cpp */; };
@@ -183,6 +186,11 @@
 		C975437C1798AC9300A905AC /* CoinChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinChange.h; sourceTree = "<group>"; };
 		C975439E179C561000A905AC /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
 		C975439F179C561000A905AC /* LIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIS.h; sourceTree = "<group>"; };
+		C977117619A8A9DD00E67FDB /* Lembda.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lembda.cpp; path = ../../../Documents/Lembda.cpp; sourceTree = "<group>"; };
+		C977117919A8ADE500E67FDB /* Tuple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tuple.cpp; sourceTree = "<group>"; };
+		C977117D19A8B4A400E67FDB /* MovingAvg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingAvg.cpp; sourceTree = "<group>"; };
+		C977117E19A8B4A400E67FDB /* MovingAvg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MovingAvg.html; sourceTree = "<group>"; };
+		C977117F19A8B4A400E67FDB /* MovingAvg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MovingAvg.sample; sourceTree = "<group>"; };
 		C97DC6331978991900FE95B1 /* DancingSentence.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DancingSentence.html; sourceTree = "<group>"; };
 		C97DC6341978991900FE95B1 /* DancingSentence.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = DancingSentence.sample; sourceTree = "<group>"; };
 		C97DC63519789A1700FE95B1 /* DancingSentence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DancingSentence.cpp; sourceTree = "<group>"; };
@@ -435,6 +443,7 @@
 		C938E1F517787D4C0086F792 /* AlgorithmTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				C977116F19A8A99300E67FDB /* CPP11 */,
 				C9529448196D06BD00647DAE /* Backtracking-Extra */,
 				C9ED3D8F177C1A6400994C1F /* BST.cpp */,
 				C9ED3D90177C1A6400994C1F /* BST.h */,
@@ -504,6 +513,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C977117C19A8B4A400E67FDB /* SRM 304 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -603,6 +613,25 @@
 				C9D16A7F17E0313C00ACB022 /* QuickSort.h */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		C977116F19A8A99300E67FDB /* CPP11 */ = {
+			isa = PBXGroup;
+			children = (
+				C977117619A8A9DD00E67FDB /* Lembda.cpp */,
+				C977117919A8ADE500E67FDB /* Tuple.cpp */,
+			);
+			path = CPP11;
+			sourceTree = "<group>";
+		};
+		C977117C19A8B4A400E67FDB /* SRM 304 */ = {
+			isa = PBXGroup;
+			children = (
+				C977117D19A8B4A400E67FDB /* MovingAvg.cpp */,
+				C977117E19A8B4A400E67FDB /* MovingAvg.html */,
+				C977117F19A8B4A400E67FDB /* MovingAvg.sample */,
+			);
+			path = "SRM 304";
 			sourceTree = "<group>";
 		};
 		C97DC6311978991900FE95B1 /* SRM 279 */ = {
@@ -1112,6 +1141,7 @@
 				C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */,
 				C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */,
 				C9307E7E196E6AAA000D53BA /* Queens.cpp in Sources */,
+				C977117819A8A9DD00E67FDB /* Lembda.cpp in Sources */,
 				C952943219661A2F00647DAE /* Coins.cpp in Sources */,
 				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
@@ -1127,6 +1157,7 @@
 				C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
 				C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */,
+				C977117B19A8ADE500E67FDB /* Tuple.cpp in Sources */,
 				C9E8D9F1197E01E70034F239 /* GardenHose.cpp in Sources */,
 				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
@@ -1191,6 +1222,7 @@
 				98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */,
 				C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */,
 				C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */,
+				C977118019A8B4A400E67FDB /* MovingAvg.cpp in Sources */,
 				98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */,
 				98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */,
 				C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */,
