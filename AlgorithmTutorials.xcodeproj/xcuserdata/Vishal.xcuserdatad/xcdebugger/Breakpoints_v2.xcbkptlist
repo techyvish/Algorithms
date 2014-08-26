@@ -137,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 304/MovingAvg.cpp"
-            timestampString = "430487398.397789"
+            filePath = "AlgorithmTutorials/TopCoder/SRM 148/MNS.cpp"
+            timestampString = "430702950.001702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "difference(int k, vector&lt;double&gt; data)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "combos(vector&lt;int&gt; numbers)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -153,13 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 304/MovingAvg.cpp"
-            timestampString = "430487412.393148"
+            filePath = "AlgorithmTutorials/TopCoder/SRM 148/MNS.cpp"
+            timestampString = "430702959.476628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "difference(int k, vector&lt;double&gt; data)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "backtrack(vector&lt;int&gt; numbers,int k ,int n )"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

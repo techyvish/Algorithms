@@ -20,6 +20,7 @@
 		C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A27C1965F13100AA4A19 /* FoxAndSightseeing.cpp */; };
 		C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */; };
 		C9307E7E196E6AAA000D53BA /* Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9307E7D196E6AAA000D53BA /* Queens.cpp */; };
+		C938485019ABF4E300053182 /* MNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938484D19ABF4E300053182 /* MNS.cpp */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
 		C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */; };
 		C938E204177904360086F792 /* Power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E202177904360086F792 /* Power.cpp */; };
@@ -38,7 +39,6 @@
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
-		C977117819A8A9DD00E67FDB /* Lembda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117619A8A9DD00E67FDB /* Lembda.cpp */; };
 		C977117B19A8ADE500E67FDB /* Tuple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117919A8ADE500E67FDB /* Tuple.cpp */; };
 		C977118019A8B4A400E67FDB /* MovingAvg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117D19A8B4A400E67FDB /* MovingAvg.cpp */; };
 		C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC63519789A1700FE95B1 /* DancingSentence.cpp */; };
@@ -154,6 +154,9 @@
 		C916A2811965F13100AA4A19 /* SparseFactorialDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SparseFactorialDiv2.html; sourceTree = "<group>"; };
 		C916A2831965F13100AA4A19 /* SparseFactorialDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseFactorialDiv2.sample; sourceTree = "<group>"; };
 		C9307E7D196E6AAA000D53BA /* Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queens.cpp; sourceTree = "<group>"; };
+		C938484D19ABF4E300053182 /* MNS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNS.cpp; sourceTree = "<group>"; };
+		C938484E19ABF4E300053182 /* MNS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MNS.html; sourceTree = "<group>"; };
+		C938484F19ABF4E300053182 /* MNS.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNS.sample; sourceTree = "<group>"; };
 		C938E1F317787D4C0086F792 /* AlgorithmTutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938E1F617787D4C0086F792 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C938E1FF17787D5F0086F792 /* RecursiveLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursiveLoop.cpp; sourceTree = "<group>"; };
@@ -186,7 +189,6 @@
 		C975437C1798AC9300A905AC /* CoinChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinChange.h; sourceTree = "<group>"; };
 		C975439E179C561000A905AC /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
 		C975439F179C561000A905AC /* LIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIS.h; sourceTree = "<group>"; };
-		C977117619A8A9DD00E67FDB /* Lembda.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lembda.cpp; path = ../../../Documents/Lembda.cpp; sourceTree = "<group>"; };
 		C977117919A8ADE500E67FDB /* Tuple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tuple.cpp; sourceTree = "<group>"; };
 		C977117D19A8B4A400E67FDB /* MovingAvg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingAvg.cpp; sourceTree = "<group>"; };
 		C977117E19A8B4A400E67FDB /* MovingAvg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MovingAvg.html; sourceTree = "<group>"; };
@@ -424,6 +426,16 @@
 			path = "SRM 596";
 			sourceTree = "<group>";
 		};
+		C938484C19ABF4E300053182 /* SRM 148 */ = {
+			isa = PBXGroup;
+			children = (
+				C938484D19ABF4E300053182 /* MNS.cpp */,
+				C938484E19ABF4E300053182 /* MNS.html */,
+				C938484F19ABF4E300053182 /* MNS.sample */,
+			);
+			path = "SRM 148";
+			sourceTree = "<group>";
+		};
 		C938E1EA17787D4C0086F792 = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +525,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C938484C19ABF4E300053182 /* SRM 148 */,
 				C977117C19A8B4A400E67FDB /* SRM 304 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
@@ -618,7 +631,6 @@
 		C977116F19A8A99300E67FDB /* CPP11 */ = {
 			isa = PBXGroup;
 			children = (
-				C977117619A8A9DD00E67FDB /* Lembda.cpp */,
 				C977117919A8ADE500E67FDB /* Tuple.cpp */,
 			);
 			path = CPP11;
@@ -1124,6 +1136,7 @@
 				C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */,
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
 				C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */,
+				C938485019ABF4E300053182 /* MNS.cpp in Sources */,
 				C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */,
 				C916A2761965EBDB00AA4A19 /* ShorterSuperSum.cpp in Sources */,
 				C938E20117787D5F0086F792 /* RecursiveLoop.cpp in Sources */,
@@ -1141,7 +1154,6 @@
 				C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */,
 				C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */,
 				C9307E7E196E6AAA000D53BA /* Queens.cpp in Sources */,
-				C977117819A8A9DD00E67FDB /* Lembda.cpp in Sources */,
 				C952943219661A2F00647DAE /* Coins.cpp in Sources */,
 				C938E20A1779C1BF0086F792 /* Permutations.cpp in Sources */,
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
