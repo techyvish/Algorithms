@@ -137,29 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 148/MNS.cpp"
-            timestampString = "430778298.285782"
+            filePath = "AlgorithmTutorials/Backtracking-Extra/Permute.cpp"
+            timestampString = "430873750.683713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "combos(vector&lt;int&gt; numbers)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 148/MNS.cpp"
-            timestampString = "430778008.114719"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "backtrack(vector&lt;int&gt; numbers,int k ,int n )"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "backtrack(int a[],int k , int n)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

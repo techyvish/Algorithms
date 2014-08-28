@@ -17,6 +17,8 @@ class MNS {
     public:
     
     int count = 0;
+    vector<int> finalNumbers;
+    set<vector<int>> finalSet;
     
     int** convert2Darray(vector<int> numbers)
     {
@@ -28,11 +30,11 @@ class MNS {
             for (int j =0 ; j < MAX ; j++)
             {
                 a[i][j] = numbers[k++];
-                cout << a[i][j] << " ";
+                //cout << a[i][j] << " ";
             }
-            cout << endl;
+           // cout << endl;
         }
-        cout << endl;
+        //cout << endl;
         return  a;
     }
     
@@ -63,81 +65,76 @@ class MNS {
     
     void process_solution(vector<int> numbers,int k ,int n )
     {
-        
-        
-//        for ( int i = 0 ; i < numbers.size() ; i++ )
-//        {
-//            cout << numbers[i] << " ";
-//        }
-//        cout << endl;
-        if ( convertAndCheckMagicNumber(numbers))
+        vector<int> final(9);
+        for ( int i = 0 ; i < numbers.size() ; i++ )
         {
-            count ++;
+            final[i] = finalNumbers[numbers[i]];
         }
+        //cout << endl;
+        if ( finalSet.find(final) == finalSet.end() )
+        {
+            if ( convertAndCheckMagicNumber(final))
+            {
+                count ++;
+                finalSet.insert(final);
+            }
+        }
+        
     }
     
     void construct_candidates(vector<int> numbers,int k ,int n , int c[],int *ncandidates)
     {
-        int p = 0;
-        int **a = convert2Darray(numbers);
-        for ( int i = 0 ; i < MAX ; i++)
+        //int **a = convert2Darray(numbers);
+        int in_perm[9] = {0};
+        
+        for (int i = 0 ; i < k ; i++) {
+            in_perm[i] = true;
+        }
+
+        for (int i = 0 ; i < n ; i++)
         {
-            for ( int j = 0 ; j < MAX ; j++)
+            if ( in_perm[i] != true )
             {
-                if ( k != i && j != k )
-                {
-                    c[p++] = (MAX*i) + j;
-                }
+                c[*ncandidates] = numbers[i];
+                *ncandidates = *ncandidates + 1;
             }
         }
-        
-        *ncandidates = p;
     }
     
     void backtrack(vector<int> numbers,int k ,int n )
     {
         int c[9] = {0};
         int ncandidates = 0;
-        if ( convertAndCheckMagicNumber(numbers) )
+        if ( is_a_solutions(numbers, k, n) )
         {
-            count++;
+            process_solution(numbers, k, n);
         }
-//        if ( is_a_solutions(numbers, k, n) )
-//        {
-//            process_solution(numbers, k, n);
-//        }
-//        else
+        else
         {
-            for ( int k = 0 ; k < numbers.size() ; k++ )
+            k = k + 1;
+            construct_candidates(numbers, k, n, c, &ncandidates);
+            for (int i = 0 ; i < ncandidates ; i++)
             {
-                construct_candidates(numbers, k, n, c, &ncandidates);
-                //backtrack(numbers, k, n);
-                for (int j = 0 ; j < ncandidates ; j++)
+                for ( int p = k ; p < n ; p++ )
                 {
-                    if (  numbers[k] != numbers[c[j]])
+                    if ( numbers[p] == c[i] )
                     {
-                        int temp = numbers[k] ;
-                        numbers[k]= numbers[c[j]];
-                        numbers[c[j]] = temp;
-                        
-                        if ( convertAndCheckMagicNumber(numbers) )
-                        {
-                            count++;
-                        }
-                        
-                        int temp1 = numbers[k] ;
-                        numbers[k]= numbers[c[j]];
-                        numbers[c[j]] = temp1;
+                        int temp = numbers[k]; // Hold on to what you currently are at
+                        numbers[k] = numbers[p]; // find out the similar one from candidates
+                        numbers[p] = temp; // and swap it with what you're holding on
                     }
                 }
-                memset(c, 0, 9);
+                backtrack(numbers, k, n);
             }
         }
         
     }
     
     int combos(vector<int> numbers) {
-        backtrack(numbers, 0, 9);
+        
+        vector<int> nums = {0,1,2,3,4,5,6,7,8};
+        finalNumbers = numbers;
+        backtrack(nums, -1, 9);
         return count;
     }
 };
