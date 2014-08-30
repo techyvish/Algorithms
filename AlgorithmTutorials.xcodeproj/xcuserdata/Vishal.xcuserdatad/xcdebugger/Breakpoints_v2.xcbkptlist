@@ -137,29 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 304/MovingAvg.cpp"
-            timestampString = "430487398.397789"
+            filePath = "AlgorithmTutorials/Backtracking-Extra/Permute.cpp"
+            timestampString = "430873750.683713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "difference(int k, vector&lt;double&gt; data)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 304/MovingAvg.cpp"
-            timestampString = "430487412.393148"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "difference(int k, vector&lt;double&gt; data)"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "backtrack(int a[],int k , int n)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

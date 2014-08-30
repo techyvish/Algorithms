@@ -10,6 +10,10 @@
 #include <typeinfo>
 #include <fstream>
 
+//It turns out that as you follow the flow of water you only need to make a decision as to how to place the 'L' pipes. If you encounter either a '-' or a '+' then you can always place it such that the pipe is aligned along the direction that the water flows. Since there can be at most 20 'L' pipes there are at most 220 paths. This is small enough that you can follow each path and count the number of pipes used.
+//
+//First start off at the square that contains the water source and keep track of which direction the water is flowing. Then move to the next square based on what the current direction is. If you've moved off the grid or onto the source then you know that the path has ended. Otherwise check that you haven't used the current pipe and then mark it used unless it is a '+' (the only pipes you can use more than once are the '+' pipes). If the current pipe is a '+' then change it to a '-', since using one direction allows the other direction to be used (also note that you can never enter a pipe along the same direction since that would imply a cycle in the path, but there can't be a cycle since the source can never be entered). When the current pipe is '-' or '+' then the direction of the water doesn't change so the next pipe will be in that direction. If the current pipe is 'L' then the path will split; it can either change the direction to turn right or left. You can then add one to the current path length and recursively follow the path to the next pipe. Once the path has ended, retrace it backwards marking the pipes unused and following the other direction as you come back to each 'L'.
+
 using namespace std;
 
 class PipePuzzle {
