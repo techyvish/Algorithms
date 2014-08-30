@@ -10,6 +10,7 @@
 		98BE43C1766108D0A510205E /* TheEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */; };
 		98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */; };
 		98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BE4C5779B4F36DDB513038 /* GraphColor.cpp */; };
+		C910109E19B16DD700633E6C /* FloodRelief.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C910109B19B16DD700633E6C /* FloodRelief.cpp */; };
 		C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C91667D91990B49100FBD819 /* MicroStrings.cpp */; };
 		C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A265195E9ECB00AA4A19 /* Time.cpp */; };
 		C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A267195EA0A000AA4A19 /* BinaryCode.cpp */; };
@@ -132,6 +133,9 @@
 		98BE4C5779B4F36DDB513038 /* GraphColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColor.cpp; sourceTree = "<group>"; };
 		98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheEquation.cpp; sourceTree = "<group>"; };
 		98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RatInMaze.cpp; sourceTree = "<group>"; };
+		C910109B19B16DD700633E6C /* FloodRelief.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FloodRelief.cpp; sourceTree = "<group>"; };
+		C910109C19B16DD700633E6C /* FloodRelief.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FloodRelief.html; sourceTree = "<group>"; };
+		C910109D19B16DD700633E6C /* FloodRelief.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FloodRelief.sample; sourceTree = "<group>"; };
 		C91667D91990B49100FBD819 /* MicroStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicroStrings.cpp; sourceTree = "<group>"; };
 		C91667DA1990B49100FBD819 /* MicroStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MicroStrings.html; sourceTree = "<group>"; };
 		C91667DB1990B49100FBD819 /* MicroStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MicroStrings.sample; sourceTree = "<group>"; };
@@ -390,6 +394,16 @@
 			path = "SRM 373";
 			sourceTree = "<group>";
 		};
+		C910109A19B16DD700633E6C /* SRM 371 */ = {
+			isa = PBXGroup;
+			children = (
+				C910109B19B16DD700633E6C /* FloodRelief.cpp */,
+				C910109C19B16DD700633E6C /* FloodRelief.html */,
+				C910109D19B16DD700633E6C /* FloodRelief.sample */,
+			);
+			path = "SRM 371";
+			sourceTree = "<group>";
+		};
 		C91667D81990B49100FBD819 /* SRM 614 */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +539,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C910109A19B16DD700633E6C /* SRM 371 */,
 				C938484C19ABF4E300053182 /* SRM 148 */,
 				C977117C19A8B4A400E67FDB /* SRM 304 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
@@ -1202,6 +1217,7 @@
 				C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */,
+				C910109E19B16DD700633E6C /* FloodRelief.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
 				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
