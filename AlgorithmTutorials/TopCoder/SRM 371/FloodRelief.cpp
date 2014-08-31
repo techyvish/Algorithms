@@ -15,12 +15,21 @@ using namespace std;
 class FloodRelief {
     public:
     int minimumPumps(vector<string> heights) {
+        
+        char a[500][500] = {0};
+        for ( int i = 0 ; i < heights.size() ; i++ )
+        {
+            for ( int j = 0 ; j < heights[i].size() ; j++)
+            {
+                a[i][j] = heights[i][j];
+            }
+        }
         return 0;
     }
 };
 
 // CUT begin
-ifstream data("FloodRelief.sample");
+ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 371/FloodRelief.sample");
 
 string next_line() {
     string s;
