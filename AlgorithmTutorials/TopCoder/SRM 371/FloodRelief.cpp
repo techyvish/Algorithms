@@ -12,8 +12,18 @@
 
 using namespace std;
 
+typedef enum {
+    Low = 0,
+    high = 1,
+}heights;
+
 class FloodRelief {
     public:
+    set<char> mapSet;
+    heights previousLandscape;
+    heights currentLandscape;
+    
+    
     int minimumPumps(vector<string> heights) {
         
         char a[500][500] = {0};
@@ -24,7 +34,74 @@ class FloodRelief {
                 a[i][j] = heights[i][j];
             }
         }
-        return 0;
+        
+        previousLandscape = Low;
+        currentLandscape = high;
+        
+        printMatrix(a,(int)heights.size(),(int)heights[0].size());
+        mapSet.insert(a[0][0]);
+        int count = 0;
+        if ( !mapSet.empty() )
+        {
+            char b = *(mapSet.begin());
+            floodfill(a,0,0,(int)heights.size(),(int)heights[0].size(),b);
+            mapSet.erase(mapSet.find(b));
+            count ++;
+        }
+        return count ;
+    }
+    
+    void floodfill(char a[][500],int x , int y,int maxX,int maxY,char startChar)
+    {
+        if ( x < 0 || y < 0 )
+            return;
+        if ( x > maxX-1 || y > maxY-1  )
+            return;
+
+        if ( a[x][y] >= startChar && a[x][y] != '1' )
+        {
+        }
+        
+        if ( a[x][y] < startChar && a[x][y] != '1' )
+        {
+        }
+        
+        if ( a[x][y] > startChar && a[x][y] != '1' )
+        {
+            mapSet.insert(a[x][y]);
+            return;
+        }
+        else if ( a[x][y] <= startChar && a[x][y] != '1' )
+        {
+            a[x][y] = '1';
+        }
+        
+        printMatrix(a,maxX,maxY);
+        if ( a[x+1][y] != '1')
+            floodfill(a, x+1, y, maxX,maxY,startChar);
+        
+        if ( a[x][y+1] != '1')
+            floodfill(a, x, y+1, maxX,maxY,startChar);
+        
+        if ( a[x-1][y] != '1')
+            floodfill(a, x-1, y, maxX,maxY,startChar);
+        
+        if ( a[x][y-1] != '1')
+            floodfill(a, x, y-1, maxX,maxY,startChar);
+            
+    }
+                    
+    void printMatrix(char a[][500],int maxX, int maxY)
+    {
+        for ( int i = 0 ; i < maxX ; i++ )
+        {
+            for ( int j = 0 ; j < maxY ; j++ )
+            {
+                cout << a[i][j];
+            }
+            cout << endl;
+        }
+        cout << endl;
     }
 };
 
