@@ -74,6 +74,7 @@
 		C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */; };
 		C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D02198EF702006D4A6C /* WritingWords.cpp */; };
 		C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */; };
+		C9E6124219B5B10D00122DCB /* ZCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6123F19B5B10D00122DCB /* ZCurve.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
 		C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */; };
 		C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */; };
@@ -270,6 +271,9 @@
 		C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomColoringDiv2.cpp; sourceTree = "<group>"; };
 		C9DD3D08198EFC74006D4A6C /* RandomColoringDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RandomColoringDiv2.html; sourceTree = "<group>"; };
 		C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RandomColoringDiv2.sample; sourceTree = "<group>"; };
+		C9E6123F19B5B10D00122DCB /* ZCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZCurve.cpp; sourceTree = "<group>"; };
+		C9E6124019B5B10D00122DCB /* ZCurve.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ZCurve.html; sourceTree = "<group>"; };
+		C9E6124119B5B10D00122DCB /* ZCurve.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZCurve.sample; sourceTree = "<group>"; };
 		C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LittleBishops.cpp; sourceTree = "<group>"; };
 		C9E8D9DB197CC05F0034F239 /* FifteenPuzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FifteenPuzzle.cpp; sourceTree = "<group>"; };
 		C9E8D9DF197CF5CE0034F239 /* BinPackingEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinPackingEasy.cpp; sourceTree = "<group>"; };
@@ -539,6 +543,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9E6123E19B5B10D00122DCB /* SRM 266 */,
 				C910109A19B16DD700633E6C /* SRM 371 */,
 				C938484C19ABF4E300053182 /* SRM 148 */,
 				C977117C19A8B4A400E67FDB /* SRM 304 */,
@@ -833,6 +838,16 @@
 				C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */,
 			);
 			path = "SRM 540";
+			sourceTree = "<group>";
+		};
+		C9E6123E19B5B10D00122DCB /* SRM 266 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6123F19B5B10D00122DCB /* ZCurve.cpp */,
+				C9E6124019B5B10D00122DCB /* ZCurve.html */,
+				C9E6124119B5B10D00122DCB /* ZCurve.sample */,
+			);
+			path = "SRM 266";
 			sourceTree = "<group>";
 		};
 		C9E8D9DE197CF5CE0034F239 /* SRM 598 */ = {
@@ -1206,6 +1221,7 @@
 				C9FE7F7D199AD94B002A1EEE /* Haar1D.cpp in Sources */,
 				C952944D196E046100647DAE /* Subsets.cpp in Sources */,
 				C9F5C91F19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp in Sources */,
+				C9E6124219B5B10D00122DCB /* ZCurve.cpp in Sources */,
 				C916A266195E9ECB00AA4A19 /* Time.cpp in Sources */,
 				C916A268195EA0A000AA4A19 /* BinaryCode.cpp in Sources */,
 				C9F5C90C199DE87300A3D863 /* PipePuzzle.cpp in Sources */,
