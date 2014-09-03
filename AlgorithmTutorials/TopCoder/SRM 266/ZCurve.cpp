@@ -14,8 +14,43 @@ using namespace std;
 
 class ZCurve {
     public:
+    int sum;
     int zValue(int N, int r, int c) {
+        
+        int n = pow(2,2*N);
+        int a[500][500] = {0};
+        cout << endl;
+        recurse(N,r,c);
         return 0;
+    }
+    
+    void recurse(int n,int r , int c)
+    {
+       if ( n == 0)
+       {
+           sum += 4 ;
+           return;
+       }
+       else
+       {
+           int grid = 2 * pow(2,n);
+        
+           for ( int i = 0 ; i < grid ; i+= grid/2 )
+           {
+               for (int j = 0 ; j < grid ; j+= grid/2)
+               {
+                   
+                   if ( (r == (grid/4 + i)) &&  (c == (grid/4 + j)) )
+                   {
+                       cout << "found";
+                   }
+                   recurse(n-1, r, c) ;
+               }
+           }
+       }
+    
+       
+
     }
 };
 
