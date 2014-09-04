@@ -68,6 +68,7 @@
 		C9D16A7D17DCFAF200ACB022 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7B17DCFAF200ACB022 /* Graph.cpp */; };
 		C9D16A8017E0313C00ACB022 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */; };
 		C9D5842B19A5D61F00A7FC0B /* FlipColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D5842919A5D61F00A7FC0B /* FlipColor.cpp */; };
+		C9D83B1B19B8436700DF89FD /* FibonacciSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B1819B8436700DF89FD /* FibonacciSequence.cpp */; };
 		C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CEF198B4B39006D4A6C /* FewestFactors.cpp */; };
 		C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF2198B4B39006D4A6C /* HammingDistance.cpp */; };
 		C9DD3CFB198B5071006D4A6C /* TextCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF8198B5071006D4A6C /* TextCompressor.cpp */; };
@@ -253,6 +254,9 @@
 		C9D16A7E17E0313C00ACB022 /* QuickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		C9D16A7F17E0313C00ACB022 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		C9D5842919A5D61F00A7FC0B /* FlipColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlipColor.cpp; sourceTree = "<group>"; };
+		C9D83B1819B8436700DF89FD /* FibonacciSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciSequence.cpp; sourceTree = "<group>"; };
+		C9D83B1919B8436700DF89FD /* FibonacciSequence.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FibonacciSequence.html; sourceTree = "<group>"; };
+		C9D83B1A19B8436700DF89FD /* FibonacciSequence.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FibonacciSequence.sample; sourceTree = "<group>"; };
 		C9DD3CEF198B4B39006D4A6C /* FewestFactors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FewestFactors.cpp; sourceTree = "<group>"; };
 		C9DD3CF0198B4B39006D4A6C /* FewestFactors.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FewestFactors.html; sourceTree = "<group>"; };
 		C9DD3CF1198B4B39006D4A6C /* FewestFactors.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FewestFactors.sample; sourceTree = "<group>"; };
@@ -543,6 +547,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9D83B1719B8436700DF89FD /* TCHS SRM 22 */,
 				C9E6123E19B5B10D00122DCB /* SRM 266 */,
 				C910109A19B16DD700633E6C /* SRM 371 */,
 				C938484C19ABF4E300053182 /* SRM 148 */,
@@ -785,6 +790,16 @@
 				C9C70FBE19779D3C00B3D445 /* TestFile.cpp */,
 			);
 			path = Trie;
+			sourceTree = "<group>";
+		};
+		C9D83B1719B8436700DF89FD /* TCHS SRM 22 */ = {
+			isa = PBXGroup;
+			children = (
+				C9D83B1819B8436700DF89FD /* FibonacciSequence.cpp */,
+				C9D83B1919B8436700DF89FD /* FibonacciSequence.html */,
+				C9D83B1A19B8436700DF89FD /* FibonacciSequence.sample */,
+			);
+			path = "TCHS SRM 22";
 			sourceTree = "<group>";
 		};
 		C9DD3CEE198B4B39006D4A6C /* SRM 272 */ = {
@@ -1232,6 +1247,7 @@
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
+				C9D83B1B19B8436700DF89FD /* FibonacciSequence.cpp in Sources */,
 				C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */,
 				C910109E19B16DD700633E6C /* FloodRelief.cpp in Sources */,
 				C9C70FBD1977623000B3D445 /* CyclicWords.cpp in Sources */,
