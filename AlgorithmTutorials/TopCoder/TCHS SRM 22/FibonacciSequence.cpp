@@ -20,7 +20,7 @@ class FibonacciSequence {
         arr.resize(100);
         arr[1] = 1 ;
         arr[2] = 1 ;
-        int sum = fibo(b);
+        fibo(b);
         int count = 0;
         for ( int i = 0 ; i <= b ; i++ )
         {
