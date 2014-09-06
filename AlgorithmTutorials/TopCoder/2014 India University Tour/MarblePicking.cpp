@@ -12,35 +12,37 @@
 
 using namespace std;
 
-class NumberofFiboCalls {
+class MarblePicking {
     public:
-    int count0 = 0;
-    int count1 = 0;
-    vector<int> fiboCallsMade(int n) {
-        
-        
-        int sum = fibo(n);
+    int fewestColors(vector<string> marbles, int count) {
     
-        return vector<int> (count0,count1);
-    }
     
-    int fibo(int x)
-    {
-        if ( x ==  0 ) {
-            count0 ++ ;
-            return  0;
-        }
-        if ( x == 1 )
+        vector<char> totals;
+        for ( int i = 0 ; i < marbles.size(); i++ )
         {
-            count1 ++;
-            return  1;
+            for ( int j = 0 ; j < marbles[i].size() ; j++)
+            totals.push_back(marbles[i][j]);
         }
-        return fibo(x-1) + fibo(x-2);
+        
+        sort(totals.begin(), totals.end());
+        
+        int j = 0 ;
+        char a[500] = {0};
+        set<char> p ;
+        
+        for ( int i = 0 ; i < totals.size(); i++)
+        {
+            if ( j != count ) {
+                p.insert(totals[i]);
+                j++;
+            }
+        }
+        return (int)p.size();
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 352/NumberofFiboCalls.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/2014 India University Tour/MarblePicking.sample");
 //
 //string next_line() {
 //    string s;
@@ -79,21 +81,10 @@ class NumberofFiboCalls {
 //    return "\"" + t + "\"";
 //}
 //
-//template <typename T> string to_string(vector<T> ts) {
-//    stringstream s;
-//    s << "[ ";
-//    for (int i = 0; i < ts.size(); ++i) {
-//        if (i > 0) s << ", ";
-//        s << to_string(ts[i]);
-//    }
-//    s << " ]";
-//    return s.str();
-//}
-//
-//bool do_test(int n, vector<int> __expected) {
+//bool do_test(vector<string> marbles, int count, int __expected) {
 //    time_t startClock = clock();
-//    NumberofFiboCalls *instance = new NumberofFiboCalls();
-//    vector<int> __result = instance->fiboCallsMade(n);
+//    MarblePicking *instance = new MarblePicking();
+//    int __result = instance->fewestColors(marbles, count);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -114,10 +105,12 @@ class NumberofFiboCalls {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        int n;
-//        from_stream(n);
+//        vector<string> marbles;
+//        from_stream(marbles);
+//        int count;
+//        from_stream(count);
 //        next_line();
-//        vector<int> __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -125,16 +118,16 @@ class NumberofFiboCalls {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(n, __answer)) {
+//        if ( do_test(marbles, count, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1409899756;
+//        int T = time(NULL) - 1409979956;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -152,7 +145,7 @@ class NumberofFiboCalls {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "NumberofFiboCalls (250 Points)" << endl << endl;
+//        cout << "MarblePicking (500 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

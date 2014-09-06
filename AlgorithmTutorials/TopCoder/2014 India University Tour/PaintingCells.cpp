@@ -12,35 +12,30 @@
 
 using namespace std;
 
-class NumberofFiboCalls {
+class PaintingCells {
     public:
-    int count0 = 0;
-    int count1 = 0;
-    vector<int> fiboCallsMade(int n) {
+    int paint(int rows, int columns) {
         
-        
-        int sum = fibo(n);
-    
-        return vector<int> (count0,count1);
-    }
-    
-    int fibo(int x)
-    {
-        if ( x ==  0 ) {
-            count0 ++ ;
-            return  0;
-        }
-        if ( x == 1 )
+        int whites = 0;
+        for ( int i =0 ; i < rows ; i++)
         {
-            count1 ++;
-            return  1;
+            if ( i % 2 == 0 )
+            {
+                for ( int j = 0 ; j < columns ; j += 2 )
+                    whites++;
+            }
+            else
+            {
+                for ( int j = 1 ; j < columns ; j += 2)
+                    whites++;
+            }
         }
-        return fibo(x-1) + fibo(x-2);
+        return whites;
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 352/NumberofFiboCalls.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/2014 India University Tour/PaintingCells.sample");
 //
 //string next_line() {
 //    string s;
@@ -57,17 +52,6 @@ class NumberofFiboCalls {
 //    s = next_line();
 //}
 //
-//template <typename T> void from_stream(vector<T> &ts) {
-//    int len;
-//    from_stream(len);
-//    ts.clear();
-//    for (int i = 0; i < len; ++i) {
-//        T t;
-//        from_stream(t);
-//        ts.push_back(t);
-//    }
-//}
-//
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
@@ -79,21 +63,10 @@ class NumberofFiboCalls {
 //    return "\"" + t + "\"";
 //}
 //
-//template <typename T> string to_string(vector<T> ts) {
-//    stringstream s;
-//    s << "[ ";
-//    for (int i = 0; i < ts.size(); ++i) {
-//        if (i > 0) s << ", ";
-//        s << to_string(ts[i]);
-//    }
-//    s << " ]";
-//    return s.str();
-//}
-//
-//bool do_test(int n, vector<int> __expected) {
+//bool do_test(int rows, int columns, int __expected) {
 //    time_t startClock = clock();
-//    NumberofFiboCalls *instance = new NumberofFiboCalls();
-//    vector<int> __result = instance->fiboCallsMade(n);
+//    PaintingCells *instance = new PaintingCells();
+//    int __result = instance->paint(rows, columns);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -114,10 +87,12 @@ class NumberofFiboCalls {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        int n;
-//        from_stream(n);
+//        int rows;
+//        from_stream(rows);
+//        int columns;
+//        from_stream(columns);
 //        next_line();
-//        vector<int> __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -125,13 +100,13 @@ class NumberofFiboCalls {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(n, __answer)) {
+//        if ( do_test(rows, columns, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1409899756;
+//        int T = time(NULL) - 1409979608;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -152,7 +127,7 @@ class NumberofFiboCalls {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "NumberofFiboCalls (250 Points)" << endl << endl;
+//        cout << "PaintingCells (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

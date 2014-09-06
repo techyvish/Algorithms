@@ -72,6 +72,9 @@
 		C9D5842B19A5D61F00A7FC0B /* FlipColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D5842919A5D61F00A7FC0B /* FlipColor.cpp */; };
 		C9D83B1B19B8436700DF89FD /* FibonacciSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B1819B8436700DF89FD /* FibonacciSequence.cpp */; };
 		C9D83B2019B88A2C00DF89FD /* NumbersChallenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B1D19B88A2C00DF89FD /* NumbersChallenge.cpp */; };
+		C9D83B2A19BACCE400DF89FD /* PaintingCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B2719BACCE400DF89FD /* PaintingCells.cpp */; };
+		C9D83B2E19BACDF300DF89FD /* MarblePicking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B2B19BACDF300DF89FD /* MarblePicking.cpp */; };
+		C9D83B3219BAD41300DF89FD /* ChemicalMixing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D83B2F19BAD41300DF89FD /* ChemicalMixing.cpp */; };
 		C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CEF198B4B39006D4A6C /* FewestFactors.cpp */; };
 		C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF2198B4B39006D4A6C /* HammingDistance.cpp */; };
 		C9DD3CFB198B5071006D4A6C /* TextCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CF8198B5071006D4A6C /* TextCompressor.cpp */; };
@@ -267,6 +270,15 @@
 		C9D83B1D19B88A2C00DF89FD /* NumbersChallenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumbersChallenge.cpp; sourceTree = "<group>"; };
 		C9D83B1E19B88A2C00DF89FD /* NumbersChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NumbersChallenge.html; sourceTree = "<group>"; };
 		C9D83B1F19B88A2C00DF89FD /* NumbersChallenge.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NumbersChallenge.sample; sourceTree = "<group>"; };
+		C9D83B2719BACCE400DF89FD /* PaintingCells.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PaintingCells.cpp; sourceTree = "<group>"; };
+		C9D83B2819BACCE400DF89FD /* PaintingCells.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PaintingCells.html; sourceTree = "<group>"; };
+		C9D83B2919BACCE400DF89FD /* PaintingCells.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PaintingCells.sample; sourceTree = "<group>"; };
+		C9D83B2B19BACDF300DF89FD /* MarblePicking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MarblePicking.cpp; sourceTree = "<group>"; };
+		C9D83B2C19BACDF300DF89FD /* MarblePicking.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MarblePicking.html; sourceTree = "<group>"; };
+		C9D83B2D19BACDF300DF89FD /* MarblePicking.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarblePicking.sample; sourceTree = "<group>"; };
+		C9D83B2F19BAD41300DF89FD /* ChemicalMixing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChemicalMixing.cpp; sourceTree = "<group>"; };
+		C9D83B3019BAD41300DF89FD /* ChemicalMixing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChemicalMixing.html; sourceTree = "<group>"; };
+		C9D83B3119BAD41300DF89FD /* ChemicalMixing.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChemicalMixing.sample; sourceTree = "<group>"; };
 		C9DD3CEF198B4B39006D4A6C /* FewestFactors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FewestFactors.cpp; sourceTree = "<group>"; };
 		C9DD3CF0198B4B39006D4A6C /* FewestFactors.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FewestFactors.html; sourceTree = "<group>"; };
 		C9DD3CF1198B4B39006D4A6C /* FewestFactors.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FewestFactors.sample; sourceTree = "<group>"; };
@@ -557,6 +569,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9D83B2619BACCE400DF89FD /* 2014 India University Tour */,
 				C9C3210F19B9949000F5F34A /* SRM 352 */,
 				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
 				C9D83B1C19B88A2C00DF89FD /* SRM 621 */,
@@ -841,6 +854,22 @@
 				C9D83B1F19B88A2C00DF89FD /* NumbersChallenge.sample */,
 			);
 			path = "SRM 621";
+			sourceTree = "<group>";
+		};
+		C9D83B2619BACCE400DF89FD /* 2014 India University Tour */ = {
+			isa = PBXGroup;
+			children = (
+				C9D83B2F19BAD41300DF89FD /* ChemicalMixing.cpp */,
+				C9D83B3019BAD41300DF89FD /* ChemicalMixing.html */,
+				C9D83B3119BAD41300DF89FD /* ChemicalMixing.sample */,
+				C9D83B2B19BACDF300DF89FD /* MarblePicking.cpp */,
+				C9D83B2C19BACDF300DF89FD /* MarblePicking.html */,
+				C9D83B2D19BACDF300DF89FD /* MarblePicking.sample */,
+				C9D83B2719BACCE400DF89FD /* PaintingCells.cpp */,
+				C9D83B2819BACCE400DF89FD /* PaintingCells.html */,
+				C9D83B2919BACCE400DF89FD /* PaintingCells.sample */,
+			);
+			path = "2014 India University Tour";
 			sourceTree = "<group>";
 		};
 		C9DD3CEE198B4B39006D4A6C /* SRM 272 */ = {
@@ -1235,6 +1264,7 @@
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
 				C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */,
 				C9C70FC619788D8200B3D445 /* Bricks.cpp in Sources */,
+				C9D83B2E19BACDF300DF89FD /* MarblePicking.cpp in Sources */,
 				C9FE7FAF199C6FC2002A1EEE /* ValueHistogram.cpp in Sources */,
 				C97DC64A197B1D1D00FE95B1 /* LittleElephantAndBooks.cpp in Sources */,
 				C9C70FB619765BB800B3D445 /* Trie.cpp in Sources */,
@@ -1261,6 +1291,7 @@
 				C9E8D9F1197E01E70034F239 /* GardenHose.cpp in Sources */,
 				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
+				C9D83B3219BAD41300DF89FD /* ChemicalMixing.cpp in Sources */,
 				C94267401989F5F2009B802B /* CrossWordPuzzle.cpp in Sources */,
 				C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */,
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
@@ -1298,6 +1329,7 @@
 				C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */,
 				C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */,
 				C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */,
+				C9D83B2A19BACCE400DF89FD /* PaintingCells.cpp in Sources */,
 				C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */,
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
 				C9FE7FA5199C38CC002A1EEE /* DiagonalDisproportion.cpp in Sources */,
