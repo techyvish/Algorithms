@@ -20,7 +20,7 @@ class ColorfulRoad {
 };
 
 //// CUT begin
-//ifstream data("ColorfulRoad.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 596/ColorfulRoad.sample");
 //
 //string next_line() {
 //    string s;
