@@ -86,11 +86,11 @@ public:
 };
 
 
-int  main()
-{
-    LongFordSequence a;
-    int arr[] = {1,2,3};
-    int total = sizeof(arr)/sizeof(arr[0]);
-    vector<int> p = a.getFirst(arr,total);
-    return 0;
-}
+//int  main()
+//{
+//    LongFordSequence a;
+//    int arr[] = {1,2,3};
+//    int total = sizeof(arr)/sizeof(arr[0]);
+//    vector<int> p = a.getFirst(arr,total);
+//    return 0;
+//}
