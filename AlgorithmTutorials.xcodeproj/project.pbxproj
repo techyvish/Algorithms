@@ -37,6 +37,7 @@
 		C9529452196E19DD00647DAE /* Permute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9529451196E19DD00647DAE /* Permute.cpp */; };
 		C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95CCB8518829A3F00F2B964 /* KMP.cpp */; };
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
+		C960BE8B19BABCDB00E4E4C8 /* AttendanceShort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
@@ -192,6 +193,9 @@
 		C95CCB8618829A3F00F2B964 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
 		C9600E6017A6E384006A15A9 /* InsertionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
 		C9600E6117A6E384006A15A9 /* InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
+		C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttendanceShort.cpp; sourceTree = "<group>"; };
+		C960BE8919BABCDB00E4E4C8 /* AttendanceShort.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AttendanceShort.html; sourceTree = "<group>"; };
+		C960BE8A19BABCDB00E4E4C8 /* AttendanceShort.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AttendanceShort.sample; sourceTree = "<group>"; };
 		C96352E017A04C990092BC3C /* CutTheRod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutTheRod.cpp; sourceTree = "<group>"; };
 		C96352E117A04C990092BC3C /* CutTheRod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutTheRod.h; sourceTree = "<group>"; };
 		C975437B1798AC9300A905AC /* CoinChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinChange.cpp; sourceTree = "<group>"; };
@@ -805,6 +809,9 @@
 		C9C3210F19B9949000F5F34A /* SRM 352 */ = {
 			isa = PBXGroup;
 			children = (
+				C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */,
+				C960BE8919BABCDB00E4E4C8 /* AttendanceShort.html */,
+				C960BE8A19BABCDB00E4E4C8 /* AttendanceShort.sample */,
 				C9C3211019B9949000F5F34A /* NumberofFiboCalls.cpp */,
 				C9C3211119B9949000F5F34A /* NumberofFiboCalls.html */,
 				C9C3211219B9949000F5F34A /* NumberofFiboCalls.sample */,
@@ -1230,6 +1237,7 @@
 				C9FCE7E51985DF0900471F64 /* PunctuationCleaner.cpp in Sources */,
 				C9C3210E19B97E7D00F5F34A /* LongFordSequence.cpp in Sources */,
 				C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */,
+				C960BE8B19BABCDB00E4E4C8 /* AttendanceShort.cpp in Sources */,
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
