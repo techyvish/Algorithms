@@ -17,11 +17,11 @@ class NumberofFiboCalls {
     int count0 = 0;
     int count1 = 0;
     vector<int> fiboCallsMade(int n) {
-        
-        
-        int sum = fibo(n);
-    
-        return vector<int> (count0,count1);
+        fibo(n);
+        vector<int>  v;
+        v.push_back(count0);
+        v.push_back(count1);
+        return v;
     }
     
     int fibo(int x)
