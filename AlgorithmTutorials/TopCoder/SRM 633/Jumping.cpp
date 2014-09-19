@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  Codeforces
-//
-//  Created by Vishal Patel on 9/09/2014.
-//  Copyright (c) 2014 Vishal Patel. All rights reserved.
-//
-
 #include <cstdio>
 #include <cmath>
 #include <cstring>
@@ -17,23 +9,18 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
-#include <unistd.h>
-#include <climits>
-#include <list>
-#include <string>
-#include <map>
-#include <set>
-#include <iostream>
+
 using namespace std;
 
-class NOPalindroms {
-public:
-    string checkforpalindroms(string inputnumnbers, string stringtocheck) {
-        return " ";
+class Jumping {
+    public:
+    string ableToGet(int x, int y, vector<int> jumpLengths) {
+        return "";
     }
 };
+
 //// CUT begin
-//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/input.txt");
+//ifstream data("Jumping.sample");
 //
 //string next_line() {
 //    string s;
@@ -72,48 +59,55 @@ public:
 //    return "\"" + t + "\"";
 //}
 //
-//bool double_equal(const double &a, const double &b) { return b==b && a==a && fabs(b - a) <= 1e-9 * max(1.0, fabs(a) ); }
-//
-//bool do_test(string inputnumnbers,string stringtocheck,string __answer) {
-//    NOPalindroms *instance = new NOPalindroms();
-//    string __result = instance->checkforpalindroms(inputnumnbers, stringtocheck);
+//bool do_test(int x, int y, vector<int> jumpLengths, string __expected) {
+//    time_t startClock = clock();
+//    Jumping *instance = new Jumping();
+//    string __result = instance->ableToGet(x, y, jumpLengths);
+//    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
-//    if (__answer == __result ) {
-//        cout << "PASSED!" << endl;
+//
+//    if (__result == __expected) {
+//        cout << "PASSED!" << " (" << elapsed << " seconds)" << endl;
 //        return true;
 //    }
 //    else {
-//        cout << "FAILED!" << endl;
-//        cout << "           Expected: " << to_string(__answer) << endl;
+//        cout << "FAILED!" << " (" << elapsed << " seconds)" << endl;
+//        cout << "           Expected: " << to_string(__expected) << endl;
 //        cout << "           Received: " << to_string(__result) << endl;
 //        return false;
 //    }
-//    return true;
 //}
+//
 //int run_test(bool mainProcess, const set<int> &case_set, const string command) {
 //    int cases = 0, passed = 0;
-//    // skip first four lines.
-//    next_line();
-//    next_line();
-//    next_line();
-//    next_line();
 //    while (true) {
-//        if (next_line().find("input") != 0)
+//        if (next_line().find("--") != 0)
 //            break;
-//        //start writing here
-//        string inputnumnbers;
-//        from_stream(inputnumnbers);
-//        string stringtocheck;
-//        from_stream(stringtocheck);
+//        int x;
+//        from_stream(x);
+//        int y;
+//        from_stream(y);
+//        vector<int> jumpLengths;
+//        from_stream(jumpLengths);
 //        next_line();
 //        string __answer;
 //        from_stream(__answer);
+//
 //        cases++;
+//        if (case_set.size() > 0 && case_set.find(cases - 1) == case_set.end())
+//            continue;
+//
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if( do_test(inputnumnbers,stringtocheck,__answer)) {
+//        if ( do_test(x, y, jumpLengths, __answer)) {
 //            passed++;
 //        }
-//        //end writing here
+//    }
+//    if (mainProcess) {
+//        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
+//        int T = time(NULL) - 1411005137;
+//        double PT = T / 60.0, TT = 75.0;
+//        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
+//        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -130,6 +124,9 @@ public:
 //            cases.insert(atoi(argv[i]));
 //        }
 //    }
-//    cout << "Start testing" << endl << endl << endl;
+//    if (mainProcess) {
+//        cout << "Jumping (500 Points)" << endl << endl;
+//    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
+//// CUT end
