@@ -12,16 +12,25 @@
 
 using namespace std;
 
-class Jumping {
+class ShoppingSurveyDiv2 {
     public:
-    string ableToGet(int x, int y, vector<int> jumpLengths) {
-        return "";
+    int minValue(int N, vector<int> s) {
+        
+        int ans = s[0];
+        
+        for ( int i = 1 ;i < s.size() ; i++)
+        {
+            ans = ans + s[i] - N;
+            if ( ans < 0 )
+                ans =0;
+        }
+       
+        return ans;
     }
 };
 
-
 //// CUT begin
-//ifstream data("Jumping.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 634/ShoppingSurveyDiv2.sample");
 //
 //string next_line() {
 //    string s;
@@ -60,10 +69,10 @@ class Jumping {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(int x, int y, vector<int> jumpLengths, string __expected) {
+//bool do_test(int N, vector<int> s, int __expected) {
 //    time_t startClock = clock();
-//    Jumping *instance = new Jumping();
-//    string __result = instance->ableToGet(x, y, jumpLengths);
+//    ShoppingSurveyDiv2 *instance = new ShoppingSurveyDiv2();
+//    int __result = instance->minValue(N, s);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -84,14 +93,12 @@ class Jumping {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        int x;
-//        from_stream(x);
-//        int y;
-//        from_stream(y);
-//        vector<int> jumpLengths;
-//        from_stream(jumpLengths);
+//        int N;
+//        from_stream(N);
+//        vector<int> s;
+//        from_stream(s);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -99,13 +106,13 @@ class Jumping {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(x, y, jumpLengths, __answer)) {
+//        if ( do_test(N, s, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1411005137;
+//        int T = time(NULL) - 1411695248;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -126,7 +133,7 @@ class Jumping {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "Jumping (500 Points)" << endl << endl;
+//        cout << "ShoppingSurveyDiv2 (500 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

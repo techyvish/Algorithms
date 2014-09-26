@@ -96,10 +96,10 @@ public:
     }
 };
 
-int main()
-{
-    
-    RobinKarp r ;
-    r.search("test for tests","test",101);
-    return 0;
-}
+//int main()
+//{
+//
+//    RobinKarp r ;
+//    r.search("test for tests","test",101);
+//    return 0;
+//}

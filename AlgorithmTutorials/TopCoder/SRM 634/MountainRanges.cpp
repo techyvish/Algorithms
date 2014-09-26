@@ -12,16 +12,35 @@
 
 using namespace std;
 
-class Jumping {
+class MountainRanges {
     public:
-    string ableToGet(int x, int y, vector<int> jumpLengths) {
-        return "";
+    
+    int countPeaks(vector<int> heights) {
+        int peak = 0;
+        for (int i = 0 ; i < heights.size() ; i++ )
+        {
+            bool flag = true;
+            if ( i != 0 && heights[i-1] >= heights[i])
+            {
+                flag = false;
+            }
+            if ( i != heights.size()-1)
+            {
+                if ( heights[i+1] >= heights[i])
+                {
+                    flag = false;
+                }
+            }
+            if ( flag )
+                peak++;
+        }
+        
+        return peak;
     }
 };
 
-
 //// CUT begin
-//ifstream data("Jumping.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 634/MountainRanges.sample");
 //
 //string next_line() {
 //    string s;
@@ -60,10 +79,10 @@ class Jumping {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(int x, int y, vector<int> jumpLengths, string __expected) {
+//bool do_test(vector<int> heights, int __expected) {
 //    time_t startClock = clock();
-//    Jumping *instance = new Jumping();
-//    string __result = instance->ableToGet(x, y, jumpLengths);
+//    MountainRanges *instance = new MountainRanges();
+//    int __result = instance->countPeaks(heights);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -84,14 +103,10 @@ class Jumping {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        int x;
-//        from_stream(x);
-//        int y;
-//        from_stream(y);
-//        vector<int> jumpLengths;
-//        from_stream(jumpLengths);
+//        vector<int> heights;
+//        from_stream(heights);
 //        next_line();
-//        string __answer;
+//        int __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -99,16 +114,16 @@ class Jumping {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(x, y, jumpLengths, __answer)) {
+//        if ( do_test(heights, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1411005137;
+//        int T = time(NULL) - 1411693204;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -126,7 +141,7 @@ class Jumping {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "Jumping (500 Points)" << endl << endl;
+//        cout << "MountainRanges (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

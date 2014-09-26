@@ -217,14 +217,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/PatternSearching/Rabin-Karp.cpp"
-            timestampString = "433051518.557587"
+            filePath = "AlgorithmTutorials/TopCoder/Single Round Match 634/ShoppingSurveyDiv2.cpp"
+            timestampString = "433389859.578161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "main()"
-            landmarkType = "7">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "minValue(int N, vector&lt;int&gt; s)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

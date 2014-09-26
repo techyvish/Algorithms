@@ -20,6 +20,9 @@
 		C916A2841965F13100AA4A19 /* ColorfulRoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2781965F13100AA4A19 /* ColorfulRoad.cpp */; };
 		C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A27C1965F13100AA4A19 /* FoxAndSightseeing.cpp */; };
 		C916A2881965F13100AA4A19 /* SparseFactorialDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */; };
+		C917ECBE19D5216C00917302 /* MountainRanges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECB519D5216C00917302 /* MountainRanges.cpp */; };
+		C917ECBF19D5216C00917302 /* ShoppingSurveyDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECB819D5216C00917302 /* ShoppingSurveyDiv2.cpp */; };
+		C917ECC019D5216C00917302 /* SpecialStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECBB19D5216C00917302 /* SpecialStrings.cpp */; };
 		C9307E7E196E6AAA000D53BA /* Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9307E7D196E6AAA000D53BA /* Queens.cpp */; };
 		C938485019ABF4E300053182 /* MNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938484D19ABF4E300053182 /* MNS.cpp */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
@@ -173,6 +176,15 @@
 		C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SparseFactorialDiv2.cpp; sourceTree = "<group>"; };
 		C916A2811965F13100AA4A19 /* SparseFactorialDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SparseFactorialDiv2.html; sourceTree = "<group>"; };
 		C916A2831965F13100AA4A19 /* SparseFactorialDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseFactorialDiv2.sample; sourceTree = "<group>"; };
+		C917ECB519D5216C00917302 /* MountainRanges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MountainRanges.cpp; sourceTree = "<group>"; };
+		C917ECB619D5216C00917302 /* MountainRanges.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MountainRanges.html; sourceTree = "<group>"; };
+		C917ECB719D5216C00917302 /* MountainRanges.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MountainRanges.sample; sourceTree = "<group>"; };
+		C917ECB819D5216C00917302 /* ShoppingSurveyDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShoppingSurveyDiv2.cpp; sourceTree = "<group>"; };
+		C917ECB919D5216C00917302 /* ShoppingSurveyDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ShoppingSurveyDiv2.html; sourceTree = "<group>"; };
+		C917ECBA19D5216C00917302 /* ShoppingSurveyDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShoppingSurveyDiv2.sample; sourceTree = "<group>"; };
+		C917ECBB19D5216C00917302 /* SpecialStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpecialStrings.cpp; sourceTree = "<group>"; };
+		C917ECBC19D5216C00917302 /* SpecialStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SpecialStrings.html; sourceTree = "<group>"; };
+		C917ECBD19D5216C00917302 /* SpecialStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpecialStrings.sample; sourceTree = "<group>"; };
 		C9307E7D196E6AAA000D53BA /* Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queens.cpp; sourceTree = "<group>"; };
 		C938484D19ABF4E300053182 /* MNS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNS.cpp; sourceTree = "<group>"; };
 		C938484E19ABF4E300053182 /* MNS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MNS.html; sourceTree = "<group>"; };
@@ -497,6 +509,22 @@
 			path = "SRM 596";
 			sourceTree = "<group>";
 		};
+		C917ECB419D5216C00917302 /* SRM 634 */ = {
+			isa = PBXGroup;
+			children = (
+				C917ECB519D5216C00917302 /* MountainRanges.cpp */,
+				C917ECB619D5216C00917302 /* MountainRanges.html */,
+				C917ECB719D5216C00917302 /* MountainRanges.sample */,
+				C917ECB819D5216C00917302 /* ShoppingSurveyDiv2.cpp */,
+				C917ECB919D5216C00917302 /* ShoppingSurveyDiv2.html */,
+				C917ECBA19D5216C00917302 /* ShoppingSurveyDiv2.sample */,
+				C917ECBB19D5216C00917302 /* SpecialStrings.cpp */,
+				C917ECBC19D5216C00917302 /* SpecialStrings.html */,
+				C917ECBD19D5216C00917302 /* SpecialStrings.sample */,
+			);
+			path = "SRM 634";
+			sourceTree = "<group>";
+		};
 		C938484C19ABF4E300053182 /* SRM 148 */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +628,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C917ECB419D5216C00917302 /* SRM 634 */,
 				C9F2CEF919CBDA71009A2773 /* SRM 633 */,
 				C9F2CECA19C55B07009A2773 /* SRM 216 */,
 				C9F2CEC519C53514009A2773 /* SRM 210 */,
@@ -1349,6 +1378,7 @@
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
+				C917ECBE19D5216C00917302 /* MountainRanges.cpp in Sources */,
 				C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */,
 				C9C70FC619788D8200B3D445 /* Bricks.cpp in Sources */,
 				C9D83B2E19BACDF300DF89FD /* MarblePicking.cpp in Sources */,
@@ -1411,6 +1441,7 @@
 				C916A26A195ED9BE00AA4A19 /* FibonacciDiv2.cpp in Sources */,
 				C9F2CECE19C55B07009A2773 /* TournamentRanker.cpp in Sources */,
 				C9C3211319B9949000F5F34A /* NumberofFiboCalls.cpp in Sources */,
+				C917ECBF19D5216C00917302 /* ShoppingSurveyDiv2.cpp in Sources */,
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
@@ -1428,6 +1459,7 @@
 				C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */,
 				C9E8D9F6197E26280034F239 /* SubSetSum.cpp in Sources */,
 				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
+				C917ECC019D5216C00917302 /* SpecialStrings.cpp in Sources */,
 				C9529450196E047400647DAE /* Permutation.cpp in Sources */,
 				C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */,
 				C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */,
