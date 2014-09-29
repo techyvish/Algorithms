@@ -24,23 +24,33 @@ class ChemicalMixing {
         
         float totalSolvent  = 0.0;
         float totalVolume = 0.0;
+        float mindiff = 9999.0;
+        float minstrendght = 999999.0;
         do {
+            totalSolvent = 0.0;
+            totalVolume = 0.0;
             for (int i = 0; i < n; ++i) {
                 if (v[i]) {
+                    //cout << volume[i] << endl;
                     totalVolume += volume[i];
+                    //cout << solute[i] << endl;
                     totalSolvent += solute[i];
                 }
             }
-            cout << endl;
+            //cout << endl;
             double finalStrenth = totalSolvent / totalVolume;
             if ( totalVolume >= minVolume &&
-                (finalStrenth >=  desiredStrength && finalStrenth <= minStrength))
+                ( abs(finalStrenth-desiredStrength) < mindiff  ))
             {
+                mindiff =      abs(finalStrenth-desiredStrength);
                 minVol = totalVolume;
-                minStrength = finalStrenth;
                 
             }
+           
         } while (std::next_permutation(v.begin(), v.end()));
+        
+        totalSolvent = 0.0;
+        totalVolume = 0.0;
         
         for (int i = 0; i < n; ++i)
         {
@@ -49,13 +59,14 @@ class ChemicalMixing {
         }
         double finalStrenth = totalSolvent / totalVolume;
         if ( totalVolume >= minVolume &&
-            (finalStrenth >=  desiredStrength && finalStrenth <= minStrength) )
+            ( abs(finalStrenth-desiredStrength) < mindiff  ))
         {
+            mindiff =  abs(finalStrenth-desiredStrength);
             minVol = totalVolume;
-            minStrength = finalStrenth;
+            
         }
         
-        return abs( finalStrenth - desiredStrength);
+        return mindiff ;//abs( finalStrenth - desiredStrength);
     }
 };
 

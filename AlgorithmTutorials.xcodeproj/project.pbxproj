@@ -23,6 +23,7 @@
 		C917ECBE19D5216C00917302 /* MountainRanges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECB519D5216C00917302 /* MountainRanges.cpp */; };
 		C917ECBF19D5216C00917302 /* ShoppingSurveyDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECB819D5216C00917302 /* ShoppingSurveyDiv2.cpp */; };
 		C917ECC019D5216C00917302 /* SpecialStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECBB19D5216C00917302 /* SpecialStrings.cpp */; };
+		C917ECC419D91F0E00917302 /* LongestPalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C917ECC119D91F0E00917302 /* LongestPalindrome.cpp */; };
 		C9307E7E196E6AAA000D53BA /* Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9307E7D196E6AAA000D53BA /* Queens.cpp */; };
 		C938485019ABF4E300053182 /* MNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938484D19ABF4E300053182 /* MNS.cpp */; };
 		C938E1F717787D4C0086F792 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C938E1F617787D4C0086F792 /* main.cpp */; };
@@ -185,6 +186,9 @@
 		C917ECBB19D5216C00917302 /* SpecialStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpecialStrings.cpp; sourceTree = "<group>"; };
 		C917ECBC19D5216C00917302 /* SpecialStrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SpecialStrings.html; sourceTree = "<group>"; };
 		C917ECBD19D5216C00917302 /* SpecialStrings.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpecialStrings.sample; sourceTree = "<group>"; };
+		C917ECC119D91F0E00917302 /* LongestPalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LongestPalindrome.cpp; sourceTree = "<group>"; };
+		C917ECC219D91F0E00917302 /* LongestPalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LongestPalindrome.html; sourceTree = "<group>"; };
+		C917ECC319D91F0E00917302 /* LongestPalindrome.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LongestPalindrome.sample; sourceTree = "<group>"; };
 		C9307E7D196E6AAA000D53BA /* Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queens.cpp; sourceTree = "<group>"; };
 		C938484D19ABF4E300053182 /* MNS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNS.cpp; sourceTree = "<group>"; };
 		C938484E19ABF4E300053182 /* MNS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MNS.html; sourceTree = "<group>"; };
@@ -933,6 +937,9 @@
 		C9D83B2619BACCE400DF89FD /* 2014 India University Tour */ = {
 			isa = PBXGroup;
 			children = (
+				C917ECC119D91F0E00917302 /* LongestPalindrome.cpp */,
+				C917ECC219D91F0E00917302 /* LongestPalindrome.html */,
+				C917ECC319D91F0E00917302 /* LongestPalindrome.sample */,
 				C9D83B2F19BAD41300DF89FD /* ChemicalMixing.cpp */,
 				C9D83B3019BAD41300DF89FD /* ChemicalMixing.html */,
 				C9D83B3119BAD41300DF89FD /* ChemicalMixing.sample */,
@@ -1378,6 +1385,7 @@
 				C938E204177904360086F792 /* Power.cpp in Sources */,
 				C938E2071779B1280086F792 /* Combination.cpp in Sources */,
 				C916A2861965F13100AA4A19 /* FoxAndSightseeing.cpp in Sources */,
+				C917ECC419D91F0E00917302 /* LongestPalindrome.cpp in Sources */,
 				C917ECBE19D5216C00917302 /* MountainRanges.cpp in Sources */,
 				C9529447196BD02B00647DAE /* BadNeighbours.cpp in Sources */,
 				C9C70FC619788D8200B3D445 /* Bricks.cpp in Sources */,
