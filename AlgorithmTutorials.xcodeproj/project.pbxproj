@@ -38,6 +38,7 @@
 		C95CCB8718829A3F00F2B964 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95CCB8518829A3F00F2B964 /* KMP.cpp */; };
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
 		C960BE8B19BABCDB00E4E4C8 /* AttendanceShort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */; };
+		C960BE9019BAC27600E4E4C8 /* RGBStreet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C960BE8D19BAC27600E4E4C8 /* RGBStreet.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
@@ -163,6 +164,7 @@
 		C916A2801965F13100AA4A19 /* SparseFactorialDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SparseFactorialDiv2.cpp; sourceTree = "<group>"; };
 		C916A2811965F13100AA4A19 /* SparseFactorialDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SparseFactorialDiv2.html; sourceTree = "<group>"; };
 		C916A2831965F13100AA4A19 /* SparseFactorialDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseFactorialDiv2.sample; sourceTree = "<group>"; };
+		C926400119DC23DB001B2FFB /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = macros.h; path = ../macros.h; sourceTree = "<group>"; };
 		C9307E7D196E6AAA000D53BA /* Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queens.cpp; sourceTree = "<group>"; };
 		C938484D19ABF4E300053182 /* MNS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNS.cpp; sourceTree = "<group>"; };
 		C938484E19ABF4E300053182 /* MNS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MNS.html; sourceTree = "<group>"; };
@@ -196,6 +198,9 @@
 		C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttendanceShort.cpp; sourceTree = "<group>"; };
 		C960BE8919BABCDB00E4E4C8 /* AttendanceShort.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AttendanceShort.html; sourceTree = "<group>"; };
 		C960BE8A19BABCDB00E4E4C8 /* AttendanceShort.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AttendanceShort.sample; sourceTree = "<group>"; };
+		C960BE8D19BAC27600E4E4C8 /* RGBStreet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGBStreet.cpp; sourceTree = "<group>"; };
+		C960BE8E19BAC27600E4E4C8 /* RGBStreet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RGBStreet.html; sourceTree = "<group>"; };
+		C960BE8F19BAC27600E4E4C8 /* RGBStreet.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBStreet.sample; sourceTree = "<group>"; };
 		C96352E017A04C990092BC3C /* CutTheRod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutTheRod.cpp; sourceTree = "<group>"; };
 		C96352E117A04C990092BC3C /* CutTheRod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutTheRod.h; sourceTree = "<group>"; };
 		C975437B1798AC9300A905AC /* CoinChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinChange.cpp; sourceTree = "<group>"; };
@@ -491,6 +496,7 @@
 		C938E1F517787D4C0086F792 /* AlgorithmTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				C926400119DC23DB001B2FFB /* macros.h */,
 				C977116F19A8A99300E67FDB /* CPP11 */,
 				C9529448196D06BD00647DAE /* Backtracking-Extra */,
 				C9ED3D8F177C1A6400994C1F /* BST.cpp */,
@@ -561,6 +567,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C960BE8C19BAC27600E4E4C8 /* SRM 325 */,
 				C9C3210F19B9949000F5F34A /* SRM 352 */,
 				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
 				C9D83B1C19B88A2C00DF89FD /* SRM 621 */,
@@ -668,6 +675,16 @@
 				C9D16A7F17E0313C00ACB022 /* QuickSort.h */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		C960BE8C19BAC27600E4E4C8 /* SRM 325 */ = {
+			isa = PBXGroup;
+			children = (
+				C960BE8D19BAC27600E4E4C8 /* RGBStreet.cpp */,
+				C960BE8E19BAC27600E4E4C8 /* RGBStreet.html */,
+				C960BE8F19BAC27600E4E4C8 /* RGBStreet.sample */,
+			);
+			path = "SRM 325";
 			sourceTree = "<group>";
 		};
 		C977116F19A8A99300E67FDB /* CPP11 */ = {
@@ -1298,6 +1315,7 @@
 				C9C3211319B9949000F5F34A /* NumberofFiboCalls.cpp in Sources */,
 				C9E8D9F2197E01E70034F239 /* GeneralChess.cpp in Sources */,
 				C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */,
+				C960BE9019BAC27600E4E4C8 /* RGBStreet.cpp in Sources */,
 				C916A2741960217A00AA4A19 /* DerivativeSequence.cpp in Sources */,
 				C9D83B1B19B8436700DF89FD /* FibonacciSequence.cpp in Sources */,
 				C9FE7F84199B3840002A1EEE /* OddDivisors.cpp in Sources */,
