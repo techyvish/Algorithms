@@ -20,7 +20,7 @@ class RGBStreet {
 };
 
 // CUT begin
-ifstream data("RGBStreet.sample");
+ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 325/RGBStreet.sample");
 
 string next_line() {
     string s;
