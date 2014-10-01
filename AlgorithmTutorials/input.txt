@@ -1,0 +1,19 @@
+ClassName:NOPalindroms
+MethodName:checkforpalindroms
+Parameters:string:inputnumnbers,string:stringtocheck
+Returns:string
+input
+3 3
+cba
+output
+NO
+input
+3 4
+cba
+output
+cbd
+input
+4 4
+abcd
+output
+abda

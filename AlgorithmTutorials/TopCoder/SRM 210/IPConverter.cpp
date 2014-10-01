@@ -12,57 +12,23 @@
 
 using namespace std;
 
-class PalindromesCount {
+class IPConverter {
     public:
-    bool temp = true;
-    bool is_palindorm(string str,int i , int j)
-    {
-        if ( i == j )
-            return true ;
-        if ( j == i+1)
-            return true ;
-        if ( str[i] == str[j] )
-        {
-            return is_palindorm(str, ++i, --j);
-        }
-        else
-        {
-            return false;
-        }
-    }
-    
-    int count(string A, string B) {
-        int count = 0;
-        int k = 0;
-        if (is_palindorm(B+A,0, (int)A.size() + (int)B.size() -1 ))
-        {
-            count ++;
-        }
+    vector<string> possibleAddresses(string ambiguousIP) {
         
-        if (is_palindorm(A+B,0,(int)A.size() + (int)B.size() -1 ))
-        {
-            count++;
-        }
-        for ( int i = 0 ; i < A.size() - 1 ; i++ )
-        {
-            k++;
-            string part1 = A.substr(0,k);
-            string part2 = A.substr(k,A.size());
-            if (is_palindorm(part1 + B +part2,0,(int)part1.size() + (int )B.size() + (int) part2.size() - 1))
-            {
-                count ++;
-            }
-        }
         
-        return  count;
+        
+        
+        
+        
+        
+        
+        return vector<string>();
     }
-    
-
-
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/Member SRM 474/PalindromesCount.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 210/IPConverter.sample");
 //
 //string next_line() {
 //    string s;
@@ -79,6 +45,17 @@ class PalindromesCount {
 //    s = next_line();
 //}
 //
+//template <typename T> void from_stream(vector<T> &ts) {
+//    int len;
+//    from_stream(len);
+//    ts.clear();
+//    for (int i = 0; i < len; ++i) {
+//        T t;
+//        from_stream(t);
+//        ts.push_back(t);
+//    }
+//}
+//
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
@@ -90,10 +67,21 @@ class PalindromesCount {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string A, string B, int __expected) {
+//template <typename T> string to_string(vector<T> ts) {
+//    stringstream s;
+//    s << "[ ";
+//    for (int i = 0; i < ts.size(); ++i) {
+//        if (i > 0) s << ", ";
+//        s << to_string(ts[i]);
+//    }
+//    s << " ]";
+//    return s.str();
+//}
+//
+//bool do_test(string ambiguousIP, vector<string> __expected) {
 //    time_t startClock = clock();
-//    PalindromesCount *instance = new PalindromesCount();
-//    int __result = instance->count(A, B);
+//    IPConverter *instance = new IPConverter();
+//    vector<string> __result = instance->possibleAddresses(ambiguousIP);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -114,12 +102,10 @@ class PalindromesCount {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string A;
-//        from_stream(A);
-//        string B;
-//        from_stream(B);
+//        string ambiguousIP;
+//        from_stream(ambiguousIP);
 //        next_line();
-//        int __answer;
+//        vector<string> __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -127,13 +113,13 @@ class PalindromesCount {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(A, B, __answer)) {
+//        if ( do_test(ambiguousIP, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1408339851;
+//        int T = time(NULL) - 1410661749;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -154,7 +140,7 @@ class PalindromesCount {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "PalindromesCount (250 Points)" << endl << endl;
+//        cout << "IPConverter (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

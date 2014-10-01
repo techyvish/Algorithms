@@ -12,57 +12,30 @@
 
 using namespace std;
 
-class PalindromesCount {
+class PaintingCells {
     public:
-    bool temp = true;
-    bool is_palindorm(string str,int i , int j)
-    {
-        if ( i == j )
-            return true ;
-        if ( j == i+1)
-            return true ;
-        if ( str[i] == str[j] )
-        {
-            return is_palindorm(str, ++i, --j);
-        }
-        else
-        {
-            return false;
-        }
-    }
-    
-    int count(string A, string B) {
-        int count = 0;
-        int k = 0;
-        if (is_palindorm(B+A,0, (int)A.size() + (int)B.size() -1 ))
-        {
-            count ++;
-        }
+    int paint(int rows, int columns) {
         
-        if (is_palindorm(A+B,0,(int)A.size() + (int)B.size() -1 ))
+        int whites = 0;
+        for ( int i =0 ; i < rows ; i++)
         {
-            count++;
-        }
-        for ( int i = 0 ; i < A.size() - 1 ; i++ )
-        {
-            k++;
-            string part1 = A.substr(0,k);
-            string part2 = A.substr(k,A.size());
-            if (is_palindorm(part1 + B +part2,0,(int)part1.size() + (int )B.size() + (int) part2.size() - 1))
+            if ( i % 2 == 0 )
             {
-                count ++;
+                for ( int j = 0 ; j < columns ; j += 2 )
+                    whites++;
+            }
+            else
+            {
+                for ( int j = 1 ; j < columns ; j += 2)
+                    whites++;
             }
         }
-        
-        return  count;
+        return whites;
     }
-    
-
-
 };
 
 //// CUT begin
-//ifstream data("/Users/vishal 1/Algorithm/AlgorithmTutorials/TopCoder/Member SRM 474/PalindromesCount.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/2014 India University Tour/PaintingCells.sample");
 //
 //string next_line() {
 //    string s;
@@ -90,10 +63,10 @@ class PalindromesCount {
 //    return "\"" + t + "\"";
 //}
 //
-//bool do_test(string A, string B, int __expected) {
+//bool do_test(int rows, int columns, int __expected) {
 //    time_t startClock = clock();
-//    PalindromesCount *instance = new PalindromesCount();
-//    int __result = instance->count(A, B);
+//    PaintingCells *instance = new PaintingCells();
+//    int __result = instance->paint(rows, columns);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -114,10 +87,10 @@ class PalindromesCount {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string A;
-//        from_stream(A);
-//        string B;
-//        from_stream(B);
+//        int rows;
+//        from_stream(rows);
+//        int columns;
+//        from_stream(columns);
 //        next_line();
 //        int __answer;
 //        from_stream(__answer);
@@ -127,13 +100,13 @@ class PalindromesCount {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(A, B, __answer)) {
+//        if ( do_test(rows, columns, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1408339851;
+//        int T = time(NULL) - 1409979608;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -154,7 +127,7 @@ class PalindromesCount {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "PalindromesCount (250 Points)" << endl << endl;
+//        cout << "PaintingCells (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
