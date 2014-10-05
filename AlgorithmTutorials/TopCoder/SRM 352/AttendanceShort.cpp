@@ -22,7 +22,7 @@ class AttendanceShort {
         for ( int i = 0 ; i < names.size() ; i++ )
         {
             string record = attendance[i];
-            float c = (float)record.length();
+            int c = (int )record.length();
             float sum = 0.0;
             for ( int  i = 0 ; i < c ; i++ )
             {
