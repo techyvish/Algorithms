@@ -43,6 +43,9 @@
 		C9600E6217A6E384006A15A9 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9600E6017A6E384006A15A9 /* InsertionSort.cpp */; };
 		C960BE8B19BABCDB00E4E4C8 /* AttendanceShort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C960BE8819BABCDB00E4E4C8 /* AttendanceShort.cpp */; };
 		C96352E217A04C990092BC3C /* CutTheRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96352E017A04C990092BC3C /* CutTheRod.cpp */; };
+		C9711A5719E0EC4E00D17AB6 /* IdentifyingWood.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711A4E19E0EC4E00D17AB6 /* IdentifyingWood.cpp */; };
+		C9711A5819E0EC4E00D17AB6 /* LonglongestPathTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711A5119E0EC4E00D17AB6 /* LonglongestPathTree.cpp */; };
+		C9711A5919E0EC4E00D17AB6 /* QuadraticLaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711A5419E0EC4E00D17AB6 /* QuadraticLaw.cpp */; };
 		C975437D1798AC9300A905AC /* CoinChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975437B1798AC9300A905AC /* CoinChange.cpp */; };
 		C97543A0179C561100A905AC /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975439E179C561000A905AC /* LIS.cpp */; };
 		C977117B19A8ADE500E67FDB /* Tuple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C977117919A8ADE500E67FDB /* Tuple.cpp */; };
@@ -224,6 +227,15 @@
 		C960BE8A19BABCDB00E4E4C8 /* AttendanceShort.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AttendanceShort.sample; sourceTree = "<group>"; };
 		C96352E017A04C990092BC3C /* CutTheRod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutTheRod.cpp; sourceTree = "<group>"; };
 		C96352E117A04C990092BC3C /* CutTheRod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutTheRod.h; sourceTree = "<group>"; };
+		C9711A4E19E0EC4E00D17AB6 /* IdentifyingWood.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdentifyingWood.cpp; sourceTree = "<group>"; };
+		C9711A4F19E0EC4E00D17AB6 /* IdentifyingWood.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = IdentifyingWood.html; sourceTree = "<group>"; };
+		C9711A5019E0EC4E00D17AB6 /* IdentifyingWood.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IdentifyingWood.sample; sourceTree = "<group>"; };
+		C9711A5119E0EC4E00D17AB6 /* LonglongestPathTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LonglongestPathTree.cpp; sourceTree = "<group>"; };
+		C9711A5219E0EC4E00D17AB6 /* LonglongestPathTree.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LonglongestPathTree.html; sourceTree = "<group>"; };
+		C9711A5319E0EC4E00D17AB6 /* LonglongestPathTree.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LonglongestPathTree.sample; sourceTree = "<group>"; };
+		C9711A5419E0EC4E00D17AB6 /* QuadraticLaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadraticLaw.cpp; sourceTree = "<group>"; };
+		C9711A5519E0EC4E00D17AB6 /* QuadraticLaw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QuadraticLaw.html; sourceTree = "<group>"; };
+		C9711A5619E0EC4E00D17AB6 /* QuadraticLaw.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuadraticLaw.sample; sourceTree = "<group>"; };
 		C975437B1798AC9300A905AC /* CoinChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinChange.cpp; sourceTree = "<group>"; };
 		C975437C1798AC9300A905AC /* CoinChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinChange.h; sourceTree = "<group>"; };
 		C975439E179C561000A905AC /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
@@ -632,6 +644,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9711A4D19E0EC4E00D17AB6 /* SRM 635 */,
 				C917ECB419D5216C00917302 /* SRM 634 */,
 				C9F2CEF919CBDA71009A2773 /* SRM 633 */,
 				C9F2CECA19C55B07009A2773 /* SRM 216 */,
@@ -744,6 +757,22 @@
 				C9D16A7F17E0313C00ACB022 /* QuickSort.h */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		C9711A4D19E0EC4E00D17AB6 /* SRM 635 */ = {
+			isa = PBXGroup;
+			children = (
+				C9711A4E19E0EC4E00D17AB6 /* IdentifyingWood.cpp */,
+				C9711A4F19E0EC4E00D17AB6 /* IdentifyingWood.html */,
+				C9711A5019E0EC4E00D17AB6 /* IdentifyingWood.sample */,
+				C9711A5119E0EC4E00D17AB6 /* LonglongestPathTree.cpp */,
+				C9711A5219E0EC4E00D17AB6 /* LonglongestPathTree.html */,
+				C9711A5319E0EC4E00D17AB6 /* LonglongestPathTree.sample */,
+				C9711A5419E0EC4E00D17AB6 /* QuadraticLaw.cpp */,
+				C9711A5519E0EC4E00D17AB6 /* QuadraticLaw.html */,
+				C9711A5619E0EC4E00D17AB6 /* QuadraticLaw.sample */,
+			);
+			path = "SRM 635";
 			sourceTree = "<group>";
 		};
 		C977116F19A8A99300E67FDB /* CPP11 */ = {
@@ -1412,6 +1441,7 @@
 				C9D5842B19A5D61F00A7FC0B /* FlipColor.cpp in Sources */,
 				C952944B196D06ED00647DAE /* Parentheses.cpp in Sources */,
 				C9FE7F7E199AD94B002A1EEE /* HingedDoor.cpp in Sources */,
+				C9711A5919E0EC4E00D17AB6 /* QuadraticLaw.cpp in Sources */,
 				C9E8D9F3197E01E70034F239 /* QuickSums.cpp in Sources */,
 				C9DD3CF5198B4B39006D4A6C /* FewestFactors.cpp in Sources */,
 				C9ED3D9E177FAF5400994C1F /* TutorialBase.cpp in Sources */,
@@ -1419,12 +1449,14 @@
 				C977117B19A8ADE500E67FDB /* Tuple.cpp in Sources */,
 				C9E8D9F1197E01E70034F239 /* GardenHose.cpp in Sources */,
 				C97DC6401978DA1000FE95B1 /* CostOfDancing.cpp in Sources */,
+				C9711A5819E0EC4E00D17AB6 /* LonglongestPathTree.cpp in Sources */,
 				C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */,
 				C9D83B3219BAD41300DF89FD /* ChemicalMixing.cpp in Sources */,
 				C94267401989F5F2009B802B /* CrossWordPuzzle.cpp in Sources */,
 				C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */,
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
+				C9711A5719E0EC4E00D17AB6 /* IdentifyingWood.cpp in Sources */,
 				C97DC645197B19C400FE95B1 /* SkiResortsEasy.cpp in Sources */,
 				C91667DC1990B49100FBD819 /* MicroStrings.cpp in Sources */,
 				C9FE7F751999C2E2002A1EEE /* Truckloads.cpp in Sources */,
