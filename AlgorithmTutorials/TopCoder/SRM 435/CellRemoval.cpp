@@ -12,12 +12,86 @@
 
 using namespace std;
 
+
+struct _node
+{
+    _node *left;
+    _node *rigiht;
+    int data;
+    
+};
+typedef struct _node Node ;
+
 class CellRemoval {
     public:
-    int cellsLeft(vector<int> parent, int deletedCell) {
-        return 0;
+    float s = 0;
+    void createGraph(int a,Node *parent,vector<int > &b,int deletedCell)
+    {
+        vector<int> c;
+        for ( int i = 0 ; i < b.size() ; i++)
+        {
+            if ( b[i] == a)
+            {
+                c.push_back(i);
+            }
+        }
+        
+        if ( c.size() == 1 )
+        {
+            parent->data = c[0];
+            parent->left = NULL;
+            parent->rigiht = NULL;
+            createGraph(c[0], parent, b,deletedCell);
+        }
+        
+        if ( c.size() == 2 )
+        {
+            Node *left = new Node;
+            Node *right = new Node;
+            parent->left = left;
+            parent->rigiht = right;
+            left->data = c[0];
+            right->data = c[1];
+            createGraph(c[0], left, b, deletedCell);
+            createGraph(c[1], right, b, deletedCell);
+        }
+        
+        if ( c.size() == 0 )
+        {
+            return;
+        }
+
     }
+    
+    int runDFS(Node *node,int deletedCell)
+    {
+   
+        if ( node == NULL )
+            s += .5;
+        if ( node != NULL && node->data != deletedCell  )
+        {
+            runDFS(node->left, deletedCell);
+            runDFS(node->rigiht, deletedCell);
+        }
+        return s;
+    }
+    
+    int cellsLeft(vector<int> parent, int deletedCell) {
+        
+        Node *node = new Node;
+        node->left = NULL;
+        node->rigiht = NULL;
+        node->data = -1;
+        
+        createGraph(-1,node,parent,deletedCell);
+        
+        int cnt = runDFS(node,deletedCell);
+        
+        return cnt;
+    }
+
 };
+
 
 // CUT begin
 ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 435/CellRemoval.sample");
