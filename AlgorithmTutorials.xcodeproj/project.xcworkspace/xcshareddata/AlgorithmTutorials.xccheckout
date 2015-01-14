@@ -14,7 +14,7 @@
 		<string>https://github.com/techyvish/Algorithms.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AlgorithmTutorials.xcodeproj/project.xcworkspace</string>
+	<string>AlgorithmTutorials.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F304953EAEB841C54C2C3B4BB938FF540F0A05C9</key>
