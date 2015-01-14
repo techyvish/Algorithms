@@ -67,6 +67,7 @@
 		C9AD3704178B500B0036D3D7 /* Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3702178B500B0036D3D7 /* Parentheses.cpp */; };
 		C9AE191B196FA4910023DD19 /* BackTrackingTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AE191A196FA4910023DD19 /* BackTrackingTemplate.cpp */; };
 		C9B2C6C41998306F00A99932 /* Party.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9B2C6C11998306F00A99932 /* Party.cpp */; };
+		C9B7A98F1A65FAF800A3488C /* CellRemoval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9B7A98C1A65FAF800A3488C /* CellRemoval.cpp */; };
 		C9BC960B178497F900E69E55 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9BC9609178497F900E69E55 /* NQueens.cpp */; };
 		C9C012CE19847B1200A1044E /* KDoubleSubstrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */; };
 		C9C3210E19B97E7D00F5F34A /* LongFordSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C3210C19B97E7D00F5F34A /* LongFordSequence.cpp */; };
@@ -285,6 +286,9 @@
 		C9B2C6C11998306F00A99932 /* Party.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Party.cpp; sourceTree = "<group>"; };
 		C9B2C6C21998306F00A99932 /* Party.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Party.html; sourceTree = "<group>"; };
 		C9B2C6C31998306F00A99932 /* Party.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Party.sample; sourceTree = "<group>"; };
+		C9B7A98C1A65FAF800A3488C /* CellRemoval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CellRemoval.cpp; sourceTree = "<group>"; };
+		C9B7A98D1A65FAF800A3488C /* CellRemoval.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CellRemoval.html; sourceTree = "<group>"; };
+		C9B7A98E1A65FAF800A3488C /* CellRemoval.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CellRemoval.sample; sourceTree = "<group>"; };
 		C9BC9609178497F900E69E55 /* NQueens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NQueens.cpp; sourceTree = "<group>"; };
 		C9BC960A178497F900E69E55 /* NQueens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQueens.h; sourceTree = "<group>"; };
 		C9C012CB19847B1200A1044E /* KDoubleSubstrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KDoubleSubstrings.cpp; sourceTree = "<group>"; };
@@ -644,6 +648,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9B7A98B1A65FAF800A3488C /* SRM 435 */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
@@ -899,6 +904,16 @@
 				C9B2C6C31998306F00A99932 /* Party.sample */,
 			);
 			path = "SRM 263";
+			sourceTree = "<group>";
+		};
+		C9B7A98B1A65FAF800A3488C /* SRM 435 */ = {
+			isa = PBXGroup;
+			children = (
+				C9B7A98C1A65FAF800A3488C /* CellRemoval.cpp */,
+				C9B7A98D1A65FAF800A3488C /* CellRemoval.html */,
+				C9B7A98E1A65FAF800A3488C /* CellRemoval.sample */,
+			);
+			path = "SRM 435";
 			sourceTree = "<group>";
 		};
 		C9C012CA19847B1200A1044E /* SRM 321 */ = {
@@ -1497,6 +1512,7 @@
 				C9E8D9E6197CF5CE0034F239 /* ErasingCharacters.cpp in Sources */,
 				C9FE7FA5199C38CC002A1EEE /* DiagonalDisproportion.cpp in Sources */,
 				C9FCE7D11981C66300471F64 /* InsideOut.cpp in Sources */,
+				C9B7A98F1A65FAF800A3488C /* CellRemoval.cpp in Sources */,
 				C9E8D9F6197E26280034F239 /* SubSetSum.cpp in Sources */,
 				C95293D1195A3F2A00647DAE /* 3n+1Problem.cpp in Sources */,
 				C917ECC019D5216C00917302 /* SpecialStrings.cpp in Sources */,
