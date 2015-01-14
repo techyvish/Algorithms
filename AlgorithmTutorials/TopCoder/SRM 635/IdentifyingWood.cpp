@@ -12,58 +12,26 @@
 
 using namespace std;
 
-class IPConverter {
+class IdentifyingWood {
     public:
-    
-    bool validate(string s)
-    {
-        if ( s.length() > 3 )
-            return false;
-        if ( s.length() > 1 && s[0] == '0' )
-            return false;
-        if ( !s.length() )
-            return false;
-        stringstream ss;
-        ss << s;
-        int num;
-        ss >> num;
-        return  num < 256;
-    }
-    
-    vector<string> possibleAddresses(string ambiguousIP) {
-        int n = (int)ambiguousIP.length();
-        vector<string> v;
-        set<string> ips;
-        for ( int i = 0 ; i <  n ; i++ )
+    string check(string s, string t) {
+        int k = 0;
+        for (int i = 0 ; i < s.size() ;i++ )
         {
-            for ( int j = i + 1 ; j < n ; j++ )
+            if ( s[i] == t[k])
             {
-                for ( int k = j + 1 ; k < n ; k++  )
-                {
-                    string a = ambiguousIP.substr( 0 , i);
-                    string b = ambiguousIP.substr( i , j - i  );
-                    string c = ambiguousIP.substr( j , k - j);
-                    string d = ambiguousIP.substr( k );
-                    if ( validate(a) && validate(b) && validate(c) && validate(d))
-                    {
-                        string s = a + "." + b + "." + c + "." + d;
-                        if ( ips.find(s) == ips.end() )
-                        {
-                            ips.insert(s);
-                            v.push_back(s);
-                        }
-                    }
-                }
+                k++;
             }
-            
         }
-        sort(v.begin(), v.end());
-        return v;
+        if ( k == t.size() )
+            return  "Yep, it's wood.";
+        else
+            return "Nope.";
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 210/IPConverter.sample");
+//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 635/IdentifyingWood.sample");
 //
 //string next_line() {
 //    string s;
@@ -80,17 +48,6 @@ class IPConverter {
 //    s = next_line();
 //}
 //
-//template <typename T> void from_stream(vector<T> &ts) {
-//    int len;
-//    from_stream(len);
-//    ts.clear();
-//    for (int i = 0; i < len; ++i) {
-//        T t;
-//        from_stream(t);
-//        ts.push_back(t);
-//    }
-//}
-//
 //template <typename T>
 //string to_string(T t) {
 //    stringstream s;
@@ -102,21 +59,10 @@ class IPConverter {
 //    return "\"" + t + "\"";
 //}
 //
-//template <typename T> string to_string(vector<T> ts) {
-//    stringstream s;
-//    s << "[ ";
-//    for (int i = 0; i < ts.size(); ++i) {
-//        if (i > 0) s << ", ";
-//        s << to_string(ts[i]);
-//    }
-//    s << " ]";
-//    return s.str();
-//}
-//
-//bool do_test(string ambiguousIP, vector<string> __expected) {
+//bool do_test(string s, string t, string __expected) {
 //    time_t startClock = clock();
-//    IPConverter *instance = new IPConverter();
-//    vector<string> __result = instance->possibleAddresses(ambiguousIP);
+//    IdentifyingWood *instance = new IdentifyingWood();
+//    string __result = instance->check(s, t);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -137,10 +83,12 @@ class IPConverter {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string ambiguousIP;
-//        from_stream(ambiguousIP);
+//        string s;
+//        from_stream(s);
+//        string t;
+//        from_stream(t);
 //        next_line();
-//        vector<string> __answer;
+//        string __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -148,13 +96,13 @@ class IPConverter {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(ambiguousIP, __answer)) {
+//        if ( do_test(s, t, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1410661749;
+//        int T = time(NULL) - 1412478003;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
 //        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -175,7 +123,7 @@ class IPConverter {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "IPConverter (250 Points)" << endl << endl;
+//        cout << "IdentifyingWood (250 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}

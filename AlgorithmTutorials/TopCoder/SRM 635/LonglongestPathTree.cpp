@@ -12,58 +12,15 @@
 
 using namespace std;
 
-class IPConverter {
+class LonglongestPathTree {
     public:
-    
-    bool validate(string s)
-    {
-        if ( s.length() > 3 )
-            return false;
-        if ( s.length() > 1 && s[0] == '0' )
-            return false;
-        if ( !s.length() )
-            return false;
-        stringstream ss;
-        ss << s;
-        int num;
-        ss >> num;
-        return  num < 256;
-    }
-    
-    vector<string> possibleAddresses(string ambiguousIP) {
-        int n = (int)ambiguousIP.length();
-        vector<string> v;
-        set<string> ips;
-        for ( int i = 0 ; i <  n ; i++ )
-        {
-            for ( int j = i + 1 ; j < n ; j++ )
-            {
-                for ( int k = j + 1 ; k < n ; k++  )
-                {
-                    string a = ambiguousIP.substr( 0 , i);
-                    string b = ambiguousIP.substr( i , j - i  );
-                    string c = ambiguousIP.substr( j , k - j);
-                    string d = ambiguousIP.substr( k );
-                    if ( validate(a) && validate(b) && validate(c) && validate(d))
-                    {
-                        string s = a + "." + b + "." + c + "." + d;
-                        if ( ips.find(s) == ips.end() )
-                        {
-                            ips.insert(s);
-                            v.push_back(s);
-                        }
-                    }
-                }
-            }
-            
-        }
-        sort(v.begin(), v.end());
-        return v;
+    long long getLength(vector<int> A, vector<int> B, vector<int> L) {
+        return 0;
     }
 };
 
 //// CUT begin
-//ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 210/IPConverter.sample");
+//ifstream data("LonglongestPathTree.sample");
 //
 //string next_line() {
 //    string s;
@@ -102,21 +59,10 @@ class IPConverter {
 //    return "\"" + t + "\"";
 //}
 //
-//template <typename T> string to_string(vector<T> ts) {
-//    stringstream s;
-//    s << "[ ";
-//    for (int i = 0; i < ts.size(); ++i) {
-//        if (i > 0) s << ", ";
-//        s << to_string(ts[i]);
-//    }
-//    s << " ]";
-//    return s.str();
-//}
-//
-//bool do_test(string ambiguousIP, vector<string> __expected) {
+//bool do_test(vector<int> A, vector<int> B, vector<int> L, long long __expected) {
 //    time_t startClock = clock();
-//    IPConverter *instance = new IPConverter();
-//    vector<string> __result = instance->possibleAddresses(ambiguousIP);
+//    LonglongestPathTree *instance = new LonglongestPathTree();
+//    long long __result = instance->getLength(A, B, L);
 //    double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
 //    delete instance;
 //
@@ -137,10 +83,14 @@ class IPConverter {
 //    while (true) {
 //        if (next_line().find("--") != 0)
 //            break;
-//        string ambiguousIP;
-//        from_stream(ambiguousIP);
+//        vector<int> A;
+//        from_stream(A);
+//        vector<int> B;
+//        from_stream(B);
+//        vector<int> L;
+//        from_stream(L);
 //        next_line();
-//        vector<string> __answer;
+//        long long __answer;
 //        from_stream(__answer);
 //
 //        cases++;
@@ -148,16 +98,16 @@ class IPConverter {
 //            continue;
 //
 //        cout << "  Testcase #" << cases - 1 << " ... ";
-//        if ( do_test(ambiguousIP, __answer)) {
+//        if ( do_test(A, B, L, __answer)) {
 //            passed++;
 //        }
 //    }
 //    if (mainProcess) {
 //        cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-//        int T = time(NULL) - 1410661749;
+//        int T = time(NULL) - 1412478100;
 //        double PT = T / 60.0, TT = 75.0;
 //        cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-//        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+//        cout << "Score  : " << 1000 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
 //    }
 //    return 0;
 //}
@@ -175,7 +125,7 @@ class IPConverter {
 //        }
 //    }
 //    if (mainProcess) {
-//        cout << "IPConverter (250 Points)" << endl << endl;
+//        cout << "LonglongestPathTree (1000 Points)" << endl << endl;
 //    }
 //    return run_test(mainProcess, cases, argv[0]);
 //}
