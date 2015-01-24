@@ -12,6 +12,7 @@
 
 using namespace std;
 
+// creating node
 
 struct _node
 {
