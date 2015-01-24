@@ -12,8 +12,6 @@
 
 using namespace std;
 
-// creating node
-
 struct _node
 {
     _node *left;
