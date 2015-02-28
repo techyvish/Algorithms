@@ -9,18 +9,52 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <map>
 
 using namespace std;
 
 class TaroJiroDividing {
     public:
     int getNumber(int A, int B) {
-        return 0;
+        
+        map<int ,int > m;
+        
+        m[A] ++;
+        if ( A % 2 == 0 )
+        {
+            while ( A % 2  == 0 ) {
+                m[A/2] ++;
+                
+                A = A/2;
+            }
+
+        }
+        
+        m[B] ++;
+        if ( B % 2 == 0 )
+        {
+            while ( B % 2  == 0 ) {
+                m[B/2] ++;
+                B = B/2;
+            }
+            
+
+        }
+        
+        int ans = 0 ;
+        for ( auto it = m.begin() ; it != m.end() ;it++ )
+        {
+            if ( it->second > 1 )
+            {
+                ans ++;
+            }
+        }
+        return ans;
     }
 };
 
 // CUT begin
-ifstream data("TaroJiroDividing.sample");
+ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/SRM 650/TaroJiroDividing.sample");
 
 string next_line() {
     string s;

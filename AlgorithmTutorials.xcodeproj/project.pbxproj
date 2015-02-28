@@ -91,6 +91,7 @@
 		C9DD3D00198E3E16006D4A6C /* CheckFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3CFD198E3E16006D4A6C /* CheckFunction.cpp */; };
 		C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D02198EF702006D4A6C /* WritingWords.cpp */; };
 		C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */; };
+		C9E059EE1AA1F041006722B4 /* TaroJiroDividing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */; };
 		C9E1246419C02AA4002D2885 /* test_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E1246219C02AA4002D2885 /* test_input.cpp */; };
 		C9E6124219B5B10D00122DCB /* ZCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6123F19B5B10D00122DCB /* ZCurve.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
@@ -341,6 +342,9 @@
 		C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomColoringDiv2.cpp; sourceTree = "<group>"; };
 		C9DD3D08198EFC74006D4A6C /* RandomColoringDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RandomColoringDiv2.html; sourceTree = "<group>"; };
 		C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RandomColoringDiv2.sample; sourceTree = "<group>"; };
+		C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TaroJiroDividing.cpp; sourceTree = "<group>"; };
+		C9E059EC1AA1F041006722B4 /* TaroJiroDividing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TaroJiroDividing.html; sourceTree = "<group>"; };
+		C9E059ED1AA1F041006722B4 /* TaroJiroDividing.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TaroJiroDividing.sample; sourceTree = "<group>"; };
 		C9E1246219C02AA4002D2885 /* test_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_input.cpp; sourceTree = "<group>"; };
 		C9E1246519C033BB002D2885 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		C9E6123F19B5B10D00122DCB /* ZCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZCurve.cpp; sourceTree = "<group>"; };
@@ -648,30 +652,20 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C9B7A98B1A65FAF800A3488C /* SRM 435 */,
+				C9E059EA1AA1F041006722B4 /* SRM 650 */,
+				C9D83B2619BACCE400DF89FD /* 2014 India University Tour */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
 				C916A2731960217A00AA4A19 /* DerivativeSequence.cpp */,
 				C916A269195ED9BE00AA4A19 /* FibonacciDiv2.cpp */,
 				C916A26C195F8D9F00AA4A19 /* FibonacciDiv2.sample */,
-				C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */,
-				C9711A4D19E0EC4E00D17AB6 /* SRM 635 */,
-				C917ECB419D5216C00917302 /* SRM 634 */,
-				C9F2CEF919CBDA71009A2773 /* SRM 633 */,
-				C9F2CECA19C55B07009A2773 /* SRM 216 */,
-				C9F2CEC519C53514009A2773 /* SRM 210 */,
-				C9D83B2619BACCE400DF89FD /* 2014 India University Tour */,
-				C9C3210F19B9949000F5F34A /* SRM 352 */,
-				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
-				C9D83B1C19B88A2C00DF89FD /* SRM 621 */,
-				C9D83B1719B8436700DF89FD /* TCHS SRM 22 */,
-				C9E6123E19B5B10D00122DCB /* SRM 266 */,
-				C910109A19B16DD700633E6C /* SRM 371 */,
-				C938484C19ABF4E300053182 /* SRM 148 */,
-				C977117C19A8B4A400E67FDB /* SRM 304 */,
 				C9F5C91619A1C72100A3D863 /* Member SRM 474 */,
 				C9F5C90D19A0CF6700A3D863 /* Member SRM 482 */,
+				C916A2751965EBDB00AA4A19 /* ShorterSuperSum.cpp */,
+				C938484C19ABF4E300053182 /* SRM 148 */,
 				C9E8D9E7197E01E70034F239 /* SRM 197 */,
 				C9FCE7D21981C92000471F64 /* SRM 203 */,
+				C9F2CEC519C53514009A2773 /* SRM 210 */,
+				C9F2CECA19C55B07009A2773 /* SRM 216 */,
 				C9DD3CF7198B5071006D4A6C /* SRM 222 */,
 				C9FCE7CD1981C66300471F64 /* SRM 224 */,
 				C97DC6371978ABB000FE95B1 /* SRM 225 */,
@@ -679,6 +673,7 @@
 				C9FCE7D71981D86B00471F64 /* SRM 248 */,
 				C9B2C6C01998306F00A99932 /* SRM 263 */,
 				C9F5C908199DE87300A3D863 /* SRM 265 */,
+				C9E6123E19B5B10D00122DCB /* SRM 266 */,
 				C942673C1989F5F2009B802B /* SRM 268 */,
 				C9DD3CFC198E3E16006D4A6C /* SRM 271 */,
 				C9DD3CEE198B4B39006D4A6C /* SRM 272 */,
@@ -686,16 +681,20 @@
 				C97DC6311978991900FE95B1 /* SRM 279 */,
 				C9FE7FA1199C38CC002A1EEE /* SRM 283 */,
 				C9FE7F711999C2E2002A1EEE /* SRM 284 */,
+				C977117C19A8B4A400E67FDB /* SRM 304 */,
 				C9A1000319A30C0900C00863 /* SRM 316 */,
 				C9C012CA19847B1200A1044E /* SRM 321 */,
 				C9FCE7E61985E05900471F64 /* SRM 331 */,
+				C9C3210F19B9949000F5F34A /* SRM 352 */,
 				C9F5C8FE199C919E00A3D863 /* SRM 357 */,
 				C9FE7FA6199C4045002A1EEE /* SRM 367 */,
+				C910109A19B16DD700633E6C /* SRM 371 */,
 				98BE4347D4C66BDEF65D53FA /* SRM 373 */,
 				C9FCE7E11985DF0900471F64 /* SRM 376 */,
 				C9FCE7BE198093D200471F64 /* SRM 428 */,
 				C9FCE7C2198093D200471F64 /* SRM 429 */,
 				C9F5C8F9199C8DD400A3D863 /* SRM 433 */,
+				C9B7A98B1A65FAF800A3488C /* SRM 435 */,
 				C9FE7F80199B3840002A1EEE /* SRM 449 */,
 				C9FE7F6C1999907B002A1EEE /* SRM 466 */,
 				C97DC64B197B3A5C00FE95B1 /* SRM 472 */,
@@ -711,10 +710,16 @@
 				C9E8D9DE197CF5CE0034F239 /* SRM 598 */,
 				C91667D81990B49100FBD819 /* SRM 614 */,
 				C9DD3D01198EF702006D4A6C /* SRM 618 */,
+				C9D83B1C19B88A2C00DF89FD /* SRM 621 */,
 				C9FCE7C81980D48500471F64 /* SRM 621 */,
 				C97DC63C1978DA1000FE95B1 /* SRM 624 */,
+				C9F2CEF919CBDA71009A2773 /* SRM 633 */,
+				C917ECB419D5216C00917302 /* SRM 634 */,
+				C9711A4D19E0EC4E00D17AB6 /* SRM 635 */,
+				C9D83B1719B8436700DF89FD /* TCHS SRM 22 */,
 				C916A26D195F937500AA4A19 /* TestCases */,
 				C916A265195E9ECB00AA4A19 /* Time.cpp */,
+				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
 			);
 			path = TopCoder;
 			sourceTree = "<group>";
@@ -1048,6 +1053,16 @@
 				C9DD3D09198EFC74006D4A6C /* RandomColoringDiv2.sample */,
 			);
 			path = "SRM 540";
+			sourceTree = "<group>";
+		};
+		C9E059EA1AA1F041006722B4 /* SRM 650 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */,
+				C9E059EC1AA1F041006722B4 /* TaroJiroDividing.html */,
+				C9E059ED1AA1F041006722B4 /* TaroJiroDividing.sample */,
+			);
+			path = "SRM 650";
 			sourceTree = "<group>";
 		};
 		C9E6123E19B5B10D00122DCB /* SRM 266 */ = {
@@ -1450,6 +1465,7 @@
 				C9ED3D8B177B279E00994C1F /* StringOperations.cpp in Sources */,
 				C9F5C8FD199C8DD400A3D863 /* RoyalTreasurer.cpp in Sources */,
 				C9ED3D91177C1A6400994C1F /* BST.cpp in Sources */,
+				C9E059EE1AA1F041006722B4 /* TaroJiroDividing.cpp in Sources */,
 				C9ED3D94177D03B500994C1F /* MatrixOperations.cpp in Sources */,
 				C9F5C91A19A1C72100A3D863 /* PalindromesCount.cpp in Sources */,
 				C9DD3CF6198B4B39006D4A6C /* HammingDistance.cpp in Sources */,

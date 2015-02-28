@@ -92,7 +92,7 @@ class CellRemoval {
     }
 
 };
-
+/*
 
 // CUT begin
 ifstream data("/Users/Shared/Algorithms/AlgorithmTutorials/TopCoder/SRM 435/CellRemoval.sample");
@@ -203,3 +203,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
