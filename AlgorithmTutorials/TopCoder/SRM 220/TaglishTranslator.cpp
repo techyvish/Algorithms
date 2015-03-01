@@ -9,54 +9,18 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
-#include <map>
 
 using namespace std;
 
-class TaroJiroDividing {
+class TaglishTranslator {
     public:
-    int getNumber(int A, int B) {
-        
-        map<int ,int > m;
-        
-        m[A] ++;
-        if ( A % 2 == 0 )
-        {
-            while ( A % 2  == 0 ) {
-                m[A/2] ++;
-                
-                A = A/2;
-            }
-
-        }
-        
-        m[B] ++;
-        if ( B % 2 == 0 )
-        {
-            while ( B % 2  == 0 ) {
-                m[B/2] ++;
-                B = B/2;
-            }
-            
-
-        }
-        
-        int ans = 0 ;
-        for ( auto it = m.begin() ; it != m.end() ;it++ )
-        {
-            if ( it->second > 1 )
-            {
-                ans ++;
-            }
-        }
-        return ans;
+    string translate(string sentence) {
+        return "";
     }
 };
 
-/*
-
 // CUT begin
-ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/SRM 650/TaroJiroDividing.sample");
+ifstream data("TaglishTranslator.sample");
 
 string next_line() {
     string s;
@@ -84,10 +48,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(int A, int B, int __expected) {
+bool do_test(string sentence, string __expected) {
     time_t startClock = clock();
-    TaroJiroDividing *instance = new TaroJiroDividing();
-    int __result = instance->getNumber(A, B);
+    TaglishTranslator *instance = new TaglishTranslator();
+    string __result = instance->translate(sentence);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -108,12 +72,10 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        int A;
-        from_stream(A);
-        int B;
-        from_stream(B);
+        string sentence;
+        from_stream(sentence);
         next_line();
-        int __answer;
+        string __answer;
         from_stream(__answer);
 
         cases++;
@@ -121,16 +83,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(A, B, __answer)) {
+        if ( do_test(sentence, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1424933422;
+        int T = time(NULL) - 1425194557;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 1100 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -148,9 +110,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "TaroJiroDividing (250 Points)" << endl << endl;
+        cout << "TaglishTranslator (1100 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/

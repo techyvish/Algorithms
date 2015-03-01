@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TopCoder SRM 220 - 1100: TaglishTranslator</title>
+    
+    <link type="image/x-icon" rel="shortcut icon" href="http://www.topcoder.com/i/favicon.ico"/>
+    
+
+    
+    <style type="text/css">
+        /* font */
+body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+ul.constraints > li:before, ul.notes > li:before {
+    font-family: monospace;
+    font-weight: normal;
+}
+.heading {
+    font-weight: bold;
+    font-size: 175%;
+    line-height: 1.2em;
+}
+.section .section-title {
+    font-weight: bold;
+    font-size: 125%;
+}
+ol.testcases > li:before {
+    font-family: monospace;
+}
+type {
+    font-weight: bold;
+    font-family: monospace;
+}
+li.testcase .data {
+    font-family: monospace;
+    line-height: 1.5em;
+}
+
+/* layout */
+.heading {
+    margin-top: 0.1em;
+    margin-bottom:0.1em;
+    text-align: center;
+}
+.section .section-title {
+    margin-top : 1em;
+    margin-bottom: 1em;
+}
+.problem-intro, note, user-constraint {
+    padding-left: 1.25em;
+}
+
+/* Lists */
+ul.constraints, ul.notes, ul.variables, ul.problem-definition-lines {
+    list-style-type: none;
+    padding: 0px;
+}
+ul.constraints > li:before {
+    content: "-";
+    position:relative;
+    margin-left: 0px; /* optional, for multiline li element */
+    left: 0.625em;
+}
+ul.notes > li:before {
+    content: "-";
+    position:relative;
+    margin-left: 0px; /* optional, for multiline li element */
+    left: 0.625em;
+}
+
+/* Testcases */
+li.testcase {
+    line-height: 1.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    overflow: auto;
+}
+li.testcase > .testcase-content > div { padding-bottom: 0.5em; padding-left: 1em; }
+
+li.testcase .testcase-comment {
+    margin: 0;
+    padding-left: 1em;
+}
+.testcase-comment p:first-child { margin-top: 0; }
+.testcase-comment p:last-child { margin-bottom: 0; }
+
+li.testcase .testcase-content {
+    margin: 0.31em;
+}
+
+/* Data and variables */
+.testcase-output {
+    padding: 0.2em 1em 0.2em 0em;
+}
+.variables, .testcase-output {
+    margin-left: 0.5em;
+    display: table;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.variable {
+    display: table-row;
+}
+.variable .name {
+    padding: 0.2em 0em 0.2em 1em;
+    font-weight: bold;
+    display: table-cell;
+    text-align: right;
+}
+.testcase-output .prefix {
+    padding: 0.2em 0em 0.2em 1em;
+    display: table-cell;
+}
+.testcase-output .prefix:after {
+    content : ":";
+    padding-right: 0.5em;
+}
+.variable .name:after {
+    font-weight: bold;
+    content : ":";
+    padding-right: 0.5em;
+}
+.variable .value, .testcase-output .value {
+    padding: 0.2em 1em 0.2em 0em;
+    display: table-cell;
+}
+ol.testcases {
+    padding: 0px;
+    counter-reset: test_number -1;
+}
+ol.testcases > li {
+    list-style:none;
+}
+ol.testcases > li:before {
+    counter-increment:test_number;
+    display: block;
+    clear: both;
+    content:counter(test_number) ")";
+    color: inherit;
+    background: inherit;
+}
+
+/* Problem Definition */
+.problem-definition, .problem-limits {
+    padding-left: 1.25em;
+}
+.problem-definition-lines, .limit-lines {
+    display: table;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.definition-line, .limit-line {
+    display: table-row;
+    height: 1.5em;
+    overflow: auto;
+}
+.limit-name:after {
+    content: ":";
+    margin-right: 1em;
+}
+.definition-name, .definition-value, .limit-name, .limit-value {
+    display: table-cell;
+}
+.definition-value {
+    padding-left: 0.5em;
+}
+.definition-name:after {
+    content: ":";
+}
+#contest-division:before {
+    content: "Div ";
+}
+#problem-score:before {
+    content: "- Problem ";
+}
+#problem-name {
+    display: block;
+}
+
+/* Tags, hidden default */
+.tag {
+    visibility: hidden;
+    position: absolute;
+}
+
+        body {
+    /* font color */
+    color: #333333;
+    /* background color */
+    background-color: white;
+}
+.section .section-title {
+    /* title color */
+    color: black;
+}
+li.testcase .data {
+    /* highlight color */
+    background: #eee;
+}
+
+    </style>
+    
+    
+    
+
+</head>
+
+<body>
+    <h1 class="heading">
+        <span id='contest-name'>SRM 220</span>
+        <span id='contest-division'>2</span>
+        <span id='problem-score'>1100</span>
+        <span id='problem-name'>TaglishTranslator</span>
+    </h1>
+
+    <hr />
+
+    <!-- Problem Statement -->
+    <div class="section">
+        <h2 class="section-title">Problem Statement</h2>
+        <div class="problem-intro">
+            <intro><p>Tagalog is one of the major languages spoken in the Philippines.  Since the USA occupied the Philippines from 1899 to 1946, it has been the custom of Tagalog-speakers to use English words and conjugate them as if they were Tagalog words, creating a language they call &quot;Taglish&quot;.</p>
+
+<p>You are to write an English-Taglish translator that will convert a simple English sentence into a Taglish sentence by conjugating the verb and adjusting the syntax according to Tagalog grammar rules.</p>
+
+<p>The English sentence will come in the format:</p>
+<pre>
+	&lt;subject&gt; &lt;verb&gt; (&lt;object&gt;)
+</pre>
+
+<p>The <tt>&lt;subject&gt;</tt> will be either a single-word <i>name</i> or the word &quot;The&quot; followed by a single-word <i>thing</i>.  The <tt>&lt;verb&gt;</tt> will be a single word, or a word preceded by the word &quot;will&quot;.  It is in the future tense if it is preceded by the word &quot;will&quot;, past tense if the verb ends in the letters &quot;ed&quot;, or present tense otherwise.  If there is an object, it will be in the format of the subject (&quot;<i>name</i>&quot; or &quot;the <i>thing</i>&quot;), but it also may be preceded by the word &quot;to&quot;.  Note that &quot;the&quot;, &quot;will&quot; or &quot;to&quot;, or the suffix &quot;ed&quot; may be in any case or mixed case.  If the verb is preceded with the word &quot;will&quot; <i>and</i> ends with &quot;ed&quot;, it should be considered future tense.</p>
+
+<p>The returned <type>String</type> will be in the format:</p>
+<pre>
+	&lt;re-conjugated verb&gt; &lt;subject&gt; (&lt;object&gt;)
+</pre>
+
+<p>The verb conjugation works as follows:</p>
+<ul>
+<li>Past Tense - Put &quot;nag&quot; at the beginning of the word, and remove the &quot;ed&quot; from the end of it.</li>
+<li>Present Tense - Double the first syllable and put &quot;nag&quot; at the beginning of the word.</li>
+<li>Future Tense - Double the first syllable and put &quot;mag&quot; at the beginning of the word, and remove the word &quot;will&quot; from before the verb.</li>
+</ul>
+
+<p>In the present and future tense, the &quot;first syllable&quot; is defined as any consonants at the beginning of the word followed by exactly one vowel (where a vowel is a upper- or lower-case a, e, i, o, or u and a consonant is any other letter).</p>
+
+<p>If the <tt>&lt;subject&gt;</tt> in the English sentence is a thing, omit the word &quot;the&quot; in the Taglish sentance and prepend the Tagalog article, &quot;ang&quot; to the subject to form the Taglish subject.  If the <tt>&lt;subject&gt;</tt> is a name, prepend the Tagalog article &quot;si&quot; to the English name.</p>
+
+<p>If there was an object in the English sentence, the <tt>&lt;object&gt;</tt> in the Taglish sentence is the object from the English sentence preceded by a Tagalog article which depends on the nature of the object:</p>
+<ul>
+<li>If the object is a thing and wasn't preceded by the word &quot;to&quot; in the English sentence, it is preceded by the word &quot;ng&quot; in the Taglish sentence (and the word &quot;the&quot; is dropped).</li>
+<li>If the object is a name and wasn't preceded by the word &quot;to&quot;, it is preceded by the word &quot;ni&quot;.</li>
+<li>If the object is a thing and <i>was</i> preceded by the word &quot;to&quot;, it is preceded by the word &quot;sa&quot; (and the words &quot;to&quot; and &quot;the&quot; are dropped).</li>
+<li>If the object is a name and <i>was</i> preceded by the word &quot;to&quot;, it is preceded by the word &quot;kay&quot; (and the word &quot;to&quot; is dropped).</li>
+</ul>
+
+<p>Case should be preserved in both the words that are carried over and in any doubling of syllables, but new words or letters added to words should be added in lower-case.</p></intro>
+        </div>
+    </div>
+    
+    <!-- Problem definition -->
+    
+    <div class="section" id="definition">
+        <h2 class="section-title">Definition</h2>
+        <div class="problem-definition">
+            <ul class="problem-definition-lines">
+                <li class="definition-line" id='class-line'>
+                    <span class='definition-name'>Class</span>
+                    <span class='definition-value'>TaglishTranslator</span>
+                </li>
+                <li class="definition-line" id='method-line'>
+                    <span class='definition-name'>Method</span>
+                    <span class='definition-value'>translate</span>
+                </li>
+                <li class="definition-line" id='parameters-line'>
+                    <span class='definition-name'>Parameters</span>
+                    <span class='definition-value'>
+                    
+                        string
+                    
+                    </span>
+                </li>
+                <li class="definition-line" id='returns-line'>
+                    <span class='definition-name'>Returns</span>
+                    <span class='definition-value'>
+                        string
+                    </span>
+                </li>
+                <li class="definition-line" id='signature-line'>
+                    <span class='definition-name'>Method signature</span>
+                    <span class='definition-value'>
+                        string translate(string sentence)
+                    </span>
+                </li>
+            </ul>
+            <div class="problem-definition-public-tip">(be sure your method is public)</div>
+        </div>        
+    </div>
+    
+
+    <!-- Limits -->
+    <div class="section">
+        <h2 class="section-title">Limits</h2>
+        <div class='problem-limits'>
+            <ul class="limit-lines">
+                <li class='limit-line'>
+                    <span class='limit-name'>Time limit (s)</span>
+                    <span class='limit-value'>2.000</span>
+                </li>
+                <li class='limit-line'>
+                    <span class='limit-name'>Memory limit (MB)</span>
+                    <span class='limit-value'>64</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Notes -->
+    <div class="section">
+        <h2 class="section-title">Notes</h2>
+        <ul class="notes">
+        
+            <li><note>'y' is never a vowel in Tagalog.</note></li>
+        
+            <li><note>The only distinction between a name and a thing is the presence of the word &quot;the&quot;.</note></li>
+        
+            <li><note>Remember that the object may be preceded by two words - &quot;to&quot; and &quot;the&quot;.  If both are present, the &quot;to&quot; will precede the &quot;the&quot; (as in English).</note></li>
+        
+            <li><note>Do not change the case of letters in any words.  When doubling syllables, use the same case as they were in the existing syllable.  When adding other letters or words into the translation, use lower-case letters.</note></li>
+        
+            <li><note>&quot;To&quot;, &quot;the&quot; and &quot;will&quot; will always be &quot;control&quot; words if they appear in the place where they could be used as a &quot;control&quot; word.</note></li>
+        
+        </ul>
+    </div>
+    
+    
+    <!-- Constraints -->
+    <div class="section">
+        <h2 class="section-title">Constraints</h2>
+        <ul class="constraints">
+        
+            <li><user-constraint><b>sentence</b> will have a valid subject and verb, and will either end with the verb or have a valid object.</user-constraint></li>
+        
+            <li><user-constraint>Each word in <b>sentence</b> will have at least one vowel (a, e, i, o, or u).</user-constraint></li>
+        
+            <li><user-constraint><b>sentence</b> will be between 3 and 50 characters in length, inclusive.</user-constraint></li>
+        
+            <li><user-constraint><b>sentence</b> will have between 2 and 7 words, inclusive, delimited by single spaces.</user-constraint></li>
+        
+            <li><user-constraint><b>sentence</b> will contain only upper- and lower-case letters and spaces.</user-constraint></li>
+        
+            <li><user-constraint><b>sentence</b> will not have any leading or trailing spaces.</user-constraint></li>
+        
+            <li><user-constraint><b>sentence</b> will not have any consecutive spaces (words in <b>sentence</b> will be delimited by single spaces).</user-constraint></li>
+        
+            <li><user-constraint>The verb in the sentence will not be &quot;ed&quot;.</user-constraint></li>
+        
+        </ul>
+    </div>
+
+    <!-- Test cases -->
+    <div class="section">
+        <h2 class="section-title">Test cases</h2>
+        <ol class="testcases" start='0'>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;The fox jumps to the dog&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;nagjujumps ang fox sa dog&quot;
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="testcase-annotation">
+                        <div class='tag'>note</div>
+                        <div class="testcase-comment">These sentences don't allow that many descriptive words.</div>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;tomek codes&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;nagcocodes si tomek&quot;
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="testcase-annotation">
+                        <div class='tag'>note</div>
+                        <div class="testcase-comment">Almost as simple of a sentence as we can take.</div>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;tHe mAn plAyEd ThE pIAnO&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;nagplAy ang mAn ng pIAnO&quot;
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="testcase-annotation">
+                        <div class='tag'>note</div>
+                        <div class="testcase-comment">Don't forget, control words should be noticed insensitive to case, but case still matters!</div>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;Bob will Filed the taxes&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;magFiFiled si Bob ng taxes&quot;
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="testcase-annotation">
+                        <div class='tag'>note</div>
+                        <div class="testcase-comment">&quot;Will&quot; takes preference over &quot;ed&quot;.</div>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;Matthew walked to Mathew&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;nagwalk si Matthew kay Mathew&quot;
+                        
+                        </span>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+            <li class="testcase">
+                <div class="testcase-content">
+                    <div class="testcase-input">
+                        <div class='tag'>input</div>
+                        <ul class="variables">
+                        
+                            <li class="variable data">
+                                <span class="name data">sentence</span>
+                                <span class="value data">
+                                
+                                    &quot;StrongBad kicked TheCheat&quot;
+                                
+                                </span>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="testcase-output">
+                        <div class='tag'>output</div>
+                        <span class="prefix data">Returns</span>
+                        <span class="value data">
+                        
+                            &quot;nagkick si StrongBad ni TheCheat&quot;
+                        
+                        </span>
+                    </div>
+                    
+               
+                </div>
+            </li>
+            
+        </ol>
+    </div>
+    <hr />
+
+    This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.
+</body>
+</html>

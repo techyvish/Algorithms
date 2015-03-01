@@ -92,6 +92,7 @@
 		C9DD3D05198EF702006D4A6C /* WritingWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D02198EF702006D4A6C /* WritingWords.cpp */; };
 		C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */; };
 		C9E059EE1AA1F041006722B4 /* TaroJiroDividing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */; };
+		C9E059F31AA2F4C9006722B4 /* HiddenNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059F01AA2F4C9006722B4 /* HiddenNumbers.cpp */; };
 		C9E1246419C02AA4002D2885 /* test_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E1246219C02AA4002D2885 /* test_input.cpp */; };
 		C9E6124219B5B10D00122DCB /* ZCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6123F19B5B10D00122DCB /* ZCurve.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
@@ -345,6 +346,9 @@
 		C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TaroJiroDividing.cpp; sourceTree = "<group>"; };
 		C9E059EC1AA1F041006722B4 /* TaroJiroDividing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TaroJiroDividing.html; sourceTree = "<group>"; };
 		C9E059ED1AA1F041006722B4 /* TaroJiroDividing.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TaroJiroDividing.sample; sourceTree = "<group>"; };
+		C9E059F01AA2F4C9006722B4 /* HiddenNumbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenNumbers.cpp; sourceTree = "<group>"; };
+		C9E059F11AA2F4C9006722B4 /* HiddenNumbers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HiddenNumbers.html; sourceTree = "<group>"; };
+		C9E059F21AA2F4C9006722B4 /* HiddenNumbers.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HiddenNumbers.sample; sourceTree = "<group>"; };
 		C9E1246219C02AA4002D2885 /* test_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_input.cpp; sourceTree = "<group>"; };
 		C9E1246519C033BB002D2885 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		C9E6123F19B5B10D00122DCB /* ZCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZCurve.cpp; sourceTree = "<group>"; };
@@ -652,6 +656,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9E059EF1AA2F4C9006722B4 /* SRM 220 */,
 				C9E059EA1AA1F041006722B4 /* SRM 650 */,
 				C9D83B2619BACCE400DF89FD /* 2014 India University Tour */,
 				C916A267195EA0A000AA4A19 /* BinaryCode.cpp */,
@@ -1063,6 +1068,16 @@
 				C9E059ED1AA1F041006722B4 /* TaroJiroDividing.sample */,
 			);
 			path = "SRM 650";
+			sourceTree = "<group>";
+		};
+		C9E059EF1AA2F4C9006722B4 /* SRM 220 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E059F01AA2F4C9006722B4 /* HiddenNumbers.cpp */,
+				C9E059F11AA2F4C9006722B4 /* HiddenNumbers.html */,
+				C9E059F21AA2F4C9006722B4 /* HiddenNumbers.sample */,
+			);
+			path = "SRM 220";
 			sourceTree = "<group>";
 		};
 		C9E6123E19B5B10D00122DCB /* SRM 266 */ = {
@@ -1559,6 +1574,7 @@
 				98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */,
 				C9F2CF0119CBDA71009A2773 /* Target.cpp in Sources */,
 				C9A4BC2119CFD001002A89D9 /* Rabin-Karp.cpp in Sources */,
+				C9E059F31AA2F4C9006722B4 /* HiddenNumbers.cpp in Sources */,
 				C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
