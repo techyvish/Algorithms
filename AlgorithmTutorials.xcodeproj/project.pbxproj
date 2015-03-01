@@ -93,6 +93,7 @@
 		C9DD3D0A198EFC74006D4A6C /* RandomColoringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DD3D07198EFC74006D4A6C /* RandomColoringDiv2.cpp */; };
 		C9E059EE1AA1F041006722B4 /* TaroJiroDividing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */; };
 		C9E059F31AA2F4C9006722B4 /* HiddenNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059F01AA2F4C9006722B4 /* HiddenNumbers.cpp */; };
+		C9E059F71AA2F77F006722B4 /* TaroFillingAStringDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E059F41AA2F77F006722B4 /* TaroFillingAStringDiv2.cpp */; };
 		C9E1246419C02AA4002D2885 /* test_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E1246219C02AA4002D2885 /* test_input.cpp */; };
 		C9E6124219B5B10D00122DCB /* ZCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6123F19B5B10D00122DCB /* ZCurve.cpp */; };
 		C9E8D9DA197CA8390034F239 /* LittleBishops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E8D9D8197CA8390034F239 /* LittleBishops.cpp */; };
@@ -349,6 +350,9 @@
 		C9E059F01AA2F4C9006722B4 /* HiddenNumbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenNumbers.cpp; sourceTree = "<group>"; };
 		C9E059F11AA2F4C9006722B4 /* HiddenNumbers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HiddenNumbers.html; sourceTree = "<group>"; };
 		C9E059F21AA2F4C9006722B4 /* HiddenNumbers.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HiddenNumbers.sample; sourceTree = "<group>"; };
+		C9E059F41AA2F77F006722B4 /* TaroFillingAStringDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TaroFillingAStringDiv2.cpp; sourceTree = "<group>"; };
+		C9E059F51AA2F77F006722B4 /* TaroFillingAStringDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TaroFillingAStringDiv2.html; sourceTree = "<group>"; };
+		C9E059F61AA2F77F006722B4 /* TaroFillingAStringDiv2.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TaroFillingAStringDiv2.sample; sourceTree = "<group>"; };
 		C9E1246219C02AA4002D2885 /* test_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_input.cpp; sourceTree = "<group>"; };
 		C9E1246519C033BB002D2885 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		C9E6123F19B5B10D00122DCB /* ZCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZCurve.cpp; sourceTree = "<group>"; };
@@ -1063,6 +1067,9 @@
 		C9E059EA1AA1F041006722B4 /* SRM 650 */ = {
 			isa = PBXGroup;
 			children = (
+				C9E059F41AA2F77F006722B4 /* TaroFillingAStringDiv2.cpp */,
+				C9E059F51AA2F77F006722B4 /* TaroFillingAStringDiv2.html */,
+				C9E059F61AA2F77F006722B4 /* TaroFillingAStringDiv2.sample */,
 				C9E059EB1AA1F041006722B4 /* TaroJiroDividing.cpp */,
 				C9E059EC1AA1F041006722B4 /* TaroJiroDividing.html */,
 				C9E059ED1AA1F041006722B4 /* TaroJiroDividing.sample */,
@@ -1500,6 +1507,7 @@
 				C9D83B3219BAD41300DF89FD /* ChemicalMixing.cpp in Sources */,
 				C94267401989F5F2009B802B /* CrossWordPuzzle.cpp in Sources */,
 				C9E8D9E5197CF5CE0034F239 /* BinPackingEasy.cpp in Sources */,
+				C9E059F71AA2F77F006722B4 /* TaroFillingAStringDiv2.cpp in Sources */,
 				C97DC63619789A1700FE95B1 /* DancingSentence.cpp in Sources */,
 				C9AD36E41788B65C0036D3D7 /* GraphColoring.cpp in Sources */,
 				C9711A5719E0EC4E00D17AB6 /* IdentifyingWood.cpp in Sources */,

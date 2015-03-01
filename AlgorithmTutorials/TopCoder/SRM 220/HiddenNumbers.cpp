@@ -106,6 +106,7 @@ class HiddenNumbers {
     }
 };
 
+/*
 // CUT begin
 ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/SRM 220/HiddenNumbers.sample");
 
@@ -224,3 +225,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
