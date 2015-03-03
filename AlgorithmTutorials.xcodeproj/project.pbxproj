@@ -160,6 +160,9 @@
 		98BE4C5779B4F36DDB513038 /* GraphColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColor.cpp; sourceTree = "<group>"; };
 		98BE4CE880ABB0D13626D7BC /* TheEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheEquation.cpp; sourceTree = "<group>"; };
 		98BE4DA38AA8C4E903AB3C05 /* RatInMaze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RatInMaze.cpp; sourceTree = "<group>"; };
+		C90BDBDF1AA5796500032D20 /* EllysCoprimesDiv2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EllysCoprimesDiv2.cpp; sourceTree = "<group>"; };
+		C90BDBE01AA5796500032D20 /* EllysCoprimesDiv2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = EllysCoprimesDiv2.html; sourceTree = "<group>"; };
+		C90BDBE11AA5796500032D20 /* EllysCoprimesDiv2.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = EllysCoprimesDiv2.sample; sourceTree = "<group>"; };
 		C910109B19B16DD700633E6C /* FloodRelief.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FloodRelief.cpp; sourceTree = "<group>"; };
 		C910109C19B16DD700633E6C /* FloodRelief.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FloodRelief.html; sourceTree = "<group>"; };
 		C910109D19B16DD700633E6C /* FloodRelief.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FloodRelief.sample; sourceTree = "<group>"; };
@@ -495,6 +498,16 @@
 			path = "SRM 373";
 			sourceTree = "<group>";
 		};
+		C90BDBDE1AA5796500032D20 /* SRM 577 */ = {
+			isa = PBXGroup;
+			children = (
+				C90BDBDF1AA5796500032D20 /* EllysCoprimesDiv2.cpp */,
+				C90BDBE01AA5796500032D20 /* EllysCoprimesDiv2.html */,
+				C90BDBE11AA5796500032D20 /* EllysCoprimesDiv2.sample */,
+			);
+			path = "SRM 577";
+			sourceTree = "<group>";
+		};
 		C910109A19B16DD700633E6C /* SRM 371 */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +673,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C90BDBDE1AA5796500032D20 /* SRM 577 */,
 				C9E059EF1AA2F4C9006722B4 /* SRM 220 */,
 				C9E059EA1AA1F041006722B4 /* SRM 650 */,
 				C9D83B2619BACCE400DF89FD /* 2014 India University Tour */,
