@@ -104,70 +104,108 @@ using namespace std;
 class TaroFillingAStringDiv2 {
 public:
     
+    vector<int> vuglyness;
+    bool finished = false;
+    
+    int ugliness(string &s )
+    {
+        int ugly = 0 ;
+        for ( int i = 0; i < s.length() ; i++ )
+        {
+            if (i != s.length() -1 )
+            {
+                if ( s[i] == s[i+1])
+                {
+                    ugly ++;
+                }
+            }
+        }
+        return  ugly;
+    }
+    
+    bool is_a_soluiton(string &s,int k,int n)
+    {
+        return k == n-1;
+    }
+    
+    
+    void construct_candidtes(string &s, int k, int n , char c[], int *ncandidates)
+    {
+        for ( int i = 0 ;  i< 2 ;i ++)
+        {
+            if ( i % 2 == 0 )
+                c[*ncandidates] = 'A';
+            else
+                c[*ncandidates] = 'B';
+            *ncandidates = *ncandidates + 1;
+        }
+    }
+    
+    void process_solution(string &s ,int k ,unsigned long n)
+    {
+        int  p = ugliness(s);
+        vuglyness.push_back(p);
+        finished = true;
+    }
+    
+    int find_next_empty_spot(string &s,int k)
+    {
+        int i = k;
+        for (  ; i < s.length(); i++)
+        {
+                if ( s[i] == '?')
+                {
+                    k = i; break;
+                }
+        }
+        if (  i == s.length())
+            return (int)s.length() - 1;
+        return k;
+    }
+    
+    void backtrack(string& s,int k, unsigned long n)
+    {
+        char c[3] = {0};
+        int ncandidates = 0;
+    
+        if ( is_a_soluiton(s,k,n))
+        {
+            process_solution(s,k,n);
+        }
+        else
+        {
+            k = find_next_empty_spot(s,k);
+            construct_candidtes(s, k, (int)s.length(), c, &ncandidates);
+            for (unsigned long i = 0 ; i < ncandidates ; i++)
+            {
+                s[k] = c[i];
+                backtrack(s, k, n);
+                //if ( finished )
+                  //  return;
+            }
+        }
+        
+    }
+    
     int calculateUgliness(string s)
     {
-        int ugliness = 0;
-        for ( int i = 0 ; i < s.length() ; )
+        int k = 0;
+        unsigned long n = s.length();
+        if ( find_next_empty_spot(s,k) == s.length() -1 )
         {
-            if ( i != s.length() )
-            {
-                if ( s[i] == s[i+1] )
-                {
-                    ugliness ++;
-                    i += 2;
-                }
-                else
-                    i++;
-            }
+            return ugliness(s);
         }
-        return ugliness;
+        backtrack(s,k,n);
+        sort(vuglyness.begin(), vuglyness.end());
+        return vuglyness[0];
     }
-    int getNumber(string S)
-    {
-        int totalUgliness = 999999;
-        F(i,0,S.length())
-        {
-            if (S[i] == '?')
-            {
-                S[i] = 'A';
-                string s = S.substr(0, i+1);
-                int x = calculateUgliness(s);
-                if ( x <= totalUgliness )
-                {
-                    totalUgliness = x;
-                }
-                else
-                {
-                    s[i] = 'B';
-                }
-                
-                
-                int y = calculateUgliness(s);
-                if ( y < totalUgliness )
-                {
-                    totalUgliness = y;
-                }
-                else
-                {
-                    s[i] = 'A';
-                }
-            }
-            else
-            {
-                string s = S.substr(0, i+1);
-                totalUgliness = calculateUgliness(s);
-            }
-            
-        }
-        if ( totalUgliness == 999999 )
-            return 0;
-        else
-            return totalUgliness;
-        
-        return 0;
-        
-    }
+    
 
+    int getNumber(string s)
+    {
+        return calculateUgliness(s);
+        return 0;
+    }
 };
 
 // CUT begin

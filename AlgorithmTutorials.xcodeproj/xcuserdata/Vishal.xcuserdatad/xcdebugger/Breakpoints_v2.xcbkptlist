@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgorithmTutorials/TopCoder/SRM 650/TaroFillingAStringDiv2.cpp"
-            timestampString = "447026704.917074"
+            timestampString = "447237284.209652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "getNumber(string S)"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "calculateUgliness(string s)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
