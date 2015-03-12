@@ -137,22 +137,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/Backtracking-Extra/Permute.cpp"
-            timestampString = "430873750.683713"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "backtrack(int a[],int k , int n)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AlgorithmTutorials/TopCoder/SRM 371/FloodRelief.cpp"
             timestampString = "431336430.240691"
             startingColumnNumber = "9223372036854775807"
@@ -208,22 +192,6 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "minValue(int N, vector&lt;int&gt; s)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmTutorials/TopCoder/SRM 650/TaroFillingAStringDiv2.cpp"
-            timestampString = "447237284.209652"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "calculateUgliness(string s)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
