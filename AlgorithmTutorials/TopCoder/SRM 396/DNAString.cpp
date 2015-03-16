@@ -28,10 +28,10 @@ using namespace std;
 #define LIN(i, l, r)                        (l <= i && i < r)
 #define INR(i, l, r)                        (l < i && i <= r)
 
-#define F(i, L, R)                          for (int i = L; i < R; i++) //next four are for "for loops"
-#define FE(i, L, R)                         for (int i = L; i <= R; i++)
-#define FF(i, L, R)                         for (int i = L; i > R; i--)
-#define FFE(i, L, R)                        for (int i = L; i >= R; i--)
+#define FOR(i, L, R)                        for (int i = L; i < R; i++) //next four are for "for loops"
+#define FOREQ(i, L, R)                      for (int i = L; i <= R; i++)
+#define FORBACK(i, L, R)                    for (int i = L; i > R; i--)
+#define FORBACKEQ(i, L, R)                  for (int i = L; i >= R; i--)
 
 #define getI(a)                             scanf("%d", &a) //next three are handy ways to get ints, it's also force you to use '&' sign
 #define getII(a, b)                         scanf("%d%d", &a, &b)
@@ -52,6 +52,7 @@ using namespace std;
 #define SZ(x)                               ((int)((x).size()))
 #define REMAX(a, b)                         (a) = max((a), (b)) // set a to the maximum of a and b
 #define REMIN(a, b)                         (a) = min((a), (b));
+#define LN(x)                               ((int)((x).length()))
 
 #define FOREACH(i, t)                       for (typeof(t.begin())i = t.begin(); i != t.end(); i++) // traverse an STL data structure
 #define ALL(c)                              (c).begin(), (c).end() //handy for function like "sort()"
@@ -96,7 +97,7 @@ template<typename T, typename TT> ostream& operator <<(ostream &s, pair<T, TT> t
 
 template<typename T> ostream& operator <<(ostream &s, vector<T> t)
 {
-    F(i, 0, SZ(t)) s<<t[i]<<" "; return s;
+    FOR(i, 0, SZ(t)) s<<t[i]<<" "; return s;
 }
 
 using namespace std;
@@ -104,6 +105,12 @@ using namespace std;
 class DNAString {
     public:
     int minChanges(int maxPeriod, vector<string> dna) {
+        
+        FOR(i, 0, SZ(dna))
+        {
+            
+        }
+        
         return 0;
     }
 };
