@@ -122,6 +122,7 @@
 		C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C90E19A0CF6700A3D863 /* AverageAverage.cpp */; };
 		C9F5C91A19A1C72100A3D863 /* PalindromesCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C91719A1C72100A3D863 /* PalindromesCount.cpp */; };
 		C9F5C91F19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C91C19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp */; };
+		C9FADEAC1AB8415E008471D0 /* CountryGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FADEA91AB8415E008471D0 /* CountryGroup.cpp */; };
 		C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */; };
 		C9FCE7C6198093D200471F64 /* ThePalindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */; };
 		C9FCE7C7198093D200471F64 /* LinearPolyominoCovering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE7C3198093D200471F64 /* LinearPolyominoCovering.cpp */; };
@@ -424,6 +425,9 @@
 		C9F5C91C19A1CFBB00A3D863 /* TheAirTripDivTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheAirTripDivTwo.cpp; sourceTree = "<group>"; };
 		C9F5C91D19A1CFBB00A3D863 /* TheAirTripDivTwo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TheAirTripDivTwo.html; sourceTree = "<group>"; };
 		C9F5C91E19A1CFBB00A3D863 /* TheAirTripDivTwo.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheAirTripDivTwo.sample; sourceTree = "<group>"; };
+		C9FADEA91AB8415E008471D0 /* CountryGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CountryGroup.cpp; sourceTree = "<group>"; };
+		C9FADEAA1AB8415E008471D0 /* CountryGroup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CountryGroup.html; sourceTree = "<group>"; };
+		C9FADEAB1AB8415E008471D0 /* CountryGroup.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CountryGroup.sample; sourceTree = "<group>"; };
 		C9FCE7BB197F769E00471F64 /* CommonSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonSubSeq.cpp; sourceTree = "<group>"; };
 		C9FCE7BF198093D200471F64 /* ThePalindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThePalindrome.cpp; sourceTree = "<group>"; };
 		C9FCE7C0198093D200471F64 /* ThePalindrome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ThePalindrome.html; sourceTree = "<group>"; };
@@ -677,6 +681,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C9FADEA81AB8415E008471D0 /* Single Round Match 653 */,
 				C9FE09651AB1B4E000EC2302 /* SRM 396 */,
 				C90BDBDE1AA5796500032D20 /* SRM 577 */,
 				C9E059EF1AA2F4C9006722B4 /* SRM 220 */,
@@ -1256,6 +1261,16 @@
 			path = "SRM 479";
 			sourceTree = "<group>";
 		};
+		C9FADEA81AB8415E008471D0 /* Single Round Match 653 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FADEA91AB8415E008471D0 /* CountryGroup.cpp */,
+				C9FADEAA1AB8415E008471D0 /* CountryGroup.html */,
+				C9FADEAB1AB8415E008471D0 /* CountryGroup.sample */,
+			);
+			path = "Single Round Match 653";
+			sourceTree = "<group>";
+		};
 		C9FCE7BE198093D200471F64 /* SRM 428 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1608,6 +1623,7 @@
 				C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */,
 				C9F5C91119A0CF6700A3D863 /* AverageAverage.cpp in Sources */,
 				C977118019A8B4A400E67FDB /* MovingAvg.cpp in Sources */,
+				C9FADEAC1AB8415E008471D0 /* CountryGroup.cpp in Sources */,
 				98BE4ADE17170E99F97B8E2F /* RatInMaze.cpp in Sources */,
 				98BE4E0288B53C98796A9C0B /* GraphColor.cpp in Sources */,
 				C9F2CF0119CBDA71009A2773 /* Target.cpp in Sources */,
