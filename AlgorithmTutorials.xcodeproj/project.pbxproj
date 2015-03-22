@@ -58,6 +58,7 @@
 		C97DC64F197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DC64C197B3A5C00FE95B1 /* ColorfulTilesEasy.cpp */; };
 		C986377919878120003AD85C /* TxMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C986377619878120003AD85C /* TxMsg.cpp */; };
 		C9940A5A17AEC3BC003FDD03 /* PelindromicSubSeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */; };
+		C99A34D31ABE925100859E82 /* RockPaperScissorsMagicEasy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99A34D01ABE925100859E82 /* RockPaperScissorsMagicEasy.cpp */; };
 		C99AC9811968B36E000FACE3 /* LIS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC97F1968B36E000FACE3 /* LIS.cpp */; };
 		C99AC98419690DE2000FACE3 /* ZigZag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C99AC98219690DE2000FACE3 /* ZigZag.cpp */; };
 		C9A1000719A30C0900C00863 /* HiddenMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A1000419A30C0900C00863 /* HiddenMessage.cpp */; };
@@ -277,6 +278,9 @@
 		C9940A5817AEC3BC003FDD03 /* PelindromicSubSeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PelindromicSubSeq.cpp; sourceTree = "<group>"; };
 		C9940A5917AEC3BC003FDD03 /* PelindromicSubSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PelindromicSubSeq.h; sourceTree = "<group>"; };
 		C9940A5C17AEC824003FDD03 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		C99A34D01ABE925100859E82 /* RockPaperScissorsMagicEasy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RockPaperScissorsMagicEasy.cpp; sourceTree = "<group>"; };
+		C99A34D11ABE925100859E82 /* RockPaperScissorsMagicEasy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RockPaperScissorsMagicEasy.html; sourceTree = "<group>"; };
+		C99A34D21ABE925100859E82 /* RockPaperScissorsMagicEasy.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RockPaperScissorsMagicEasy.sample; sourceTree = "<group>"; };
 		C99AC97F1968B36E000FACE3 /* LIS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIS.cpp; sourceTree = "<group>"; };
 		C99AC98219690DE2000FACE3 /* ZigZag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZigZag.cpp; sourceTree = "<group>"; };
 		C9A1000419A30C0900C00863 /* HiddenMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenMessage.cpp; sourceTree = "<group>"; };
@@ -681,6 +685,7 @@
 		C95293DE195D4E5900647DAE /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				C99A34CF1ABE925100859E82 /* SRM 653 */,
 				C9FADEA81AB8415E008471D0 /* Single Round Match 653 */,
 				C9FE09651AB1B4E000EC2302 /* SRM 396 */,
 				C90BDBDE1AA5796500032D20 /* SRM 577 */,
@@ -904,6 +909,16 @@
 				C986377819878120003AD85C /* TxMsg.sample */,
 			);
 			path = "SRM 486";
+			sourceTree = "<group>";
+		};
+		C99A34CF1ABE925100859E82 /* SRM 653 */ = {
+			isa = PBXGroup;
+			children = (
+				C99A34D01ABE925100859E82 /* RockPaperScissorsMagicEasy.cpp */,
+				C99A34D11ABE925100859E82 /* RockPaperScissorsMagicEasy.html */,
+				C99A34D21ABE925100859E82 /* RockPaperScissorsMagicEasy.sample */,
+			);
+			path = "SRM 653";
 			sourceTree = "<group>";
 		};
 		C9A1000319A30C0900C00863 /* SRM 316 */ = {
@@ -1497,6 +1512,7 @@
 			files = (
 				C9ECF1D71976256600842FE8 /* RookAttack.cpp in Sources */,
 				C938E1F717787D4C0086F792 /* main.cpp in Sources */,
+				C99A34D31ABE925100859E82 /* RockPaperScissorsMagicEasy.cpp in Sources */,
 				C9E8D9DD197CC05F0034F239 /* FifteenPuzzle.cpp in Sources */,
 				C938485019ABF4E300053182 /* MNS.cpp in Sources */,
 				C9FCE7BD197F769E00471F64 /* CommonSubSeq.cpp in Sources */,
