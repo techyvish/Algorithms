@@ -9,35 +9,51 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <algorithm>
 
 using namespace std;
-
-unsigned long binormialCoeff(unsigned long N, unsigned long k )
-{
-    unsigned long c[1000][1000];
-    for ( unsigned long i = 0 ; i < N  ; i++ )
-    {
-        for ( unsigned long j = 0 ; j < k - i   ; j ++ )
-        {
-            
-        }
-    }
-    
-    return 0;
-}
-
-
+#define MOD 1000000007 
 
 class RockPaperScissorsMagicEasy {
-    public:
-    int count(vector<int> card, int score) {
-        
-        unsigned long  N = card.size();
-        
-        unsigned long wins = binormialCoeff( N , score) ;
-        
-        return 0;
-    }
+public:
+	long long  binormialCoeff(long long  n, long long  k)
+	{
+		long long C[100][100];
+		long long int i, j;
+		// Caculate value of Binomial Coefficient in bottom up manner 
+		for (i = 0; i <= n; i++) {
+			for (j = 0; j <= min(i, k); j++) {
+				// Base Cases 
+				if (j == 0 || j == i)
+					C[i][j] = 1;
+
+				// Calculate value using previosly stored values 
+				else
+					C[i][j] = (C[i - 1][j - 1] + C[i - 1][j]) % MOD;
+			}
+		}
+		//cout<<"Hello"<<endl; 
+
+		return C[n][k];
+	}
+
+	int count(vector<int> card, int score) {
+		if (score > card.size())
+			return 0;
+		unsigned long  N = card.size();
+		long long wins = binormialCoeff(N, score);
+		long long y = 1;
+		int k = N - score;
+		long long res = 0;
+		res += wins;
+		while (k--)
+		{
+			y <<= 1;
+			y %= MOD;
+		}
+		res = (res * y) % MOD;
+		return res;
+	}
 };
 
 // CUT begin
