@@ -15,54 +15,61 @@ using namespace std;
 class OneEntrance{
 public:
 
+	vector<int> g[10];
+	int ar[10];
 
-	vector<int>g[25];
-	int dist[25];
-	bool vis[25];
-	bool valid[25];
+	bool valid[10];
+	bool vis[10];
+	int res;
 
-	int ar[25];
-	void dfs(int u){
-
+	void dfs(int u)
+	{
 		vis[u] = true;
-		for (int i = 0; i<g[u].size(); i++){
+		for (int i = 0; i < g[u].size(); i++)
+		{
 			int v = g[u][i];
-			if (valid[v] && !vis[v]){
+			if (valid[v] && !vis[v])
+			{
 				dfs(v);
 			}
 		}
 	}
 
+
 	int count(vector <int> a, vector <int> b, int s){
-		int n = (int)a.size() + 1;
-		for (int i = 0; i<a.size(); i++){
+
+		int n = a.size() + 1;
+		res = 0;
+		for (int i = 0; i < a.size() ; i++)
+		{
 			g[a[i]].push_back(b[i]);
 			g[b[i]].push_back(a[i]);
 		}
 
-		for (int i = 0; i<n; i++){
+		for (int i = 0; i < n; i++)
+		{
 			ar[i] = i;
 		}
-		int res = 0;
-		do{
-			bool val = true;
+
+		do {
+			bool ok = true;
 			memset(valid, true, sizeof(valid));
-			for (int i = 0; i < n; i ++)
+			for (int i = 0; i < n; i++)
 			{
-				cout << ar[i] << " ";
-			}
-			cout << endl;
-			for (int i = 0; i<n; i++){
 				memset(vis, false, sizeof(vis));
 				valid[ar[i]] = false;
 				dfs(ar[i]);
-				if (!vis[s]){
-					val = false;
+
+				if (!vis[s])
+				{
+					ok = false;
 					break;
 				}
 			}
-			res += val;
+
+			res += ok;
 		} while (next_permutation(ar, ar + n));
+
 		return res;
 	}
 };
@@ -71,7 +78,7 @@ public:
 ifstream data("../../SRM 654/OneEntrance.sample");
 
 string next_line() {
-    string s;
+   string s;
     getline(data, s);
     return s;
 }
