@@ -12,74 +12,18 @@
 
 using namespace std;
 
-class OneEntrance{
-public:
-
-	vector<int> g[10];
-	int ar[10];
-
-	bool valid[10];
-	bool vis[10];
-	int res;
-
-	void dfs(int u)
-	{
-		vis[u] = true;
-		for (int i = 0; i < g[u].size(); i++)
-		{
-			int v = g[u][i];
-			if (valid[v] && !vis[v])
-			{
-				dfs(v);
-			}
-		}
-	}
-
-
-	int count(vector <int> a, vector <int> b, int s){
-
-		int n = a.size() + 1;
-		res = 0;
-		for (int i = 0; i < a.size() ; i++)
-		{
-			g[a[i]].push_back(b[i]);
-			g[b[i]].push_back(a[i]);
-		}
-
-		for (int i = 0; i < n; i++)
-		{
-			ar[i] = i;
-		}
-
-		do {
-			bool ok = true;
-			memset(valid, true, sizeof(valid));
-			for (int i = 0; i < n; i++)
-			{
-				memset(vis, false, sizeof(vis));
-				valid[ar[i]] = false;
-				dfs(ar[i]);
-
-				if (!vis[s])
-				{
-					ok = false;
-					break;
-				}
-			}
-
-			res += ok;
-		} while (next_permutation(ar, ar + n));
-
-		return res;
-	}
+class ThePermutationGameDiv2 {
+    public:
+    long long findMin(int N) {
+        return 0;
+    }
 };
 
-/*
 // CUT begin
-ifstream data("../../SRM 654/OneEntrance.sample");
+ifstream data("../../SRM 652/ThePermutationGameDiv2.sample");
 
 string next_line() {
-   string s;
+    string s;
     getline(data, s);
     return s;
 }
@@ -93,17 +37,6 @@ void from_stream(string &s) {
     s = next_line();
 }
 
-template <typename T> void from_stream(vector<T> &ts) {
-    int len;
-    from_stream(len);
-    ts.clear();
-    for (int i = 0; i < len; ++i) {
-        T t;
-        from_stream(t);
-        ts.push_back(t);
-    }
-}
-
 template <typename T>
 string to_string(T t) {
     stringstream s;
@@ -115,10 +48,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(vector<int> a, vector<int> b, int s, int __expected) {
+bool do_test(int N, long long __expected) {
     time_t startClock = clock();
-    OneEntrance *instance = new OneEntrance();
-    int __result = instance->count(a, b, s);
+    ThePermutationGameDiv2 *instance = new ThePermutationGameDiv2();
+    long long __result = instance->findMin(N);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -139,14 +72,10 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<int> a;
-        from_stream(a);
-        vector<int> b;
-        from_stream(b);
-        int s;
-        from_stream(s);
+        int N;
+        from_stream(N);
         next_line();
-        int __answer;
+        long long __answer;
         from_stream(__answer);
 
         cases++;
@@ -154,13 +83,13 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(a, b, s, __answer)) {
+        if ( do_test(N, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1427538546;
+        int T = time(NULL) - 1427600432;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
         cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -181,9 +110,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "OneEntrance (500 Points)" << endl << endl;
+        cout << "ThePermutationGameDiv2 (500 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
