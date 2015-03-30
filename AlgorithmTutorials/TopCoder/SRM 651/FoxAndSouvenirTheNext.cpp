@@ -12,16 +12,15 @@
 
 using namespace std;
 
-class ThePermutationGameDiv2 {
+class FoxAndSouvenirTheNext {
     public:
-    long long findMin(int N) {
-        return 0;
+    string ableToSplit(vector<int> value) {
+        return "";
     }
 };
 
-/*
 // CUT begin
-ifstream data("../../SRM 652/ThePermutationGameDiv2.sample");
+ifstream data("../../SRM 651/FoxAndSouvenirTheNext.sample");
 
 string next_line() {
     string s;
@@ -38,6 +37,17 @@ void from_stream(string &s) {
     s = next_line();
 }
 
+template <typename T> void from_stream(vector<T> &ts) {
+    int len;
+    from_stream(len);
+    ts.clear();
+    for (int i = 0; i < len; ++i) {
+        T t;
+        from_stream(t);
+        ts.push_back(t);
+    }
+}
+
 template <typename T>
 string to_string(T t) {
     stringstream s;
@@ -49,10 +59,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(int N, long long __expected) {
+bool do_test(vector<int> value, string __expected) {
     time_t startClock = clock();
-    ThePermutationGameDiv2 *instance = new ThePermutationGameDiv2();
-    long long __result = instance->findMin(N);
+    FoxAndSouvenirTheNext *instance = new FoxAndSouvenirTheNext();
+    string __result = instance->ableToSplit(value);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -73,10 +83,10 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        int N;
-        from_stream(N);
+        vector<int> value;
+        from_stream(value);
         next_line();
-        long long __answer;
+        string __answer;
         from_stream(__answer);
 
         cases++;
@@ -84,13 +94,13 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(N, __answer)) {
+        if ( do_test(value, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1427600432;
+        int T = time(NULL) - 1427715517;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
         cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -111,9 +121,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "ThePermutationGameDiv2 (500 Points)" << endl << endl;
+        cout << "FoxAndSouvenirTheNext (500 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/

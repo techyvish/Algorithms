@@ -14,7 +14,7 @@ using namespace std;
 
 unsigned long binormialCoeff(unsigned long N, unsigned long k )
 {
-    unsigned long c[N+1][N+1];
+    unsigned long c[100][100];
     for ( unsigned long i = 0 ; i < N  ; i++ )
     {
         for ( unsigned long j = 0 ; j < k - i   ; j ++ )
@@ -39,7 +39,7 @@ class RockPaperScissorsMagicEasy {
         return 0;
     }
 };
-
+/*
 // CUT begin
 ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/SRM 653/RockPaperScissorsMagicEasy.sample");
 
@@ -149,3 +149,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
