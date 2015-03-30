@@ -1,3 +1,4 @@
-/Debug/*.*
+Debug/*.*
 *.sdf
-/CompetetiveProgramming/Debug/*.*
+*.opensdf
+CompetetiveProgramming/Debug/*.*
