@@ -12,18 +12,15 @@
 
 using namespace std;
 
-class FoxAndSouvenirTheNext {
+class BichromeBoard {
     public:
-    string ableToSplit(vector<int> value) {
+    string ableToDraw(vector<string> board) {
         return "";
     }
 };
 
-
-
 // CUT begin
-/*
-ifstream data("../../SRM 651/FoxAndSouvenirTheNext.sample");
+ifstream data("../../SRM 655/BichromeBoard.sample");
 
 string next_line() {
     string s;
@@ -62,10 +59,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(vector<int> value, string __expected) {
+bool do_test(vector<string> board, string __expected) {
     time_t startClock = clock();
-    FoxAndSouvenirTheNext *instance = new FoxAndSouvenirTheNext();
-    string __result = instance->ableToSplit(value);
+    BichromeBoard *instance = new BichromeBoard();
+    string __result = instance->ableToDraw(board);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -86,8 +83,8 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<int> value;
-        from_stream(value);
+        vector<string> board;
+        from_stream(board);
         next_line();
         string __answer;
         from_stream(__answer);
@@ -97,16 +94,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(value, __answer)) {
+        if ( do_test(board, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1427715517;
+        int T = time(NULL) - 1428619585;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -124,10 +121,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "FoxAndSouvenirTheNext (500 Points)" << endl << endl;
+        cout << "BichromeBoard (250 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
-*?
 // CUT end
-*/
