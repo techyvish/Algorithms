@@ -14,8 +14,32 @@ using namespace std;
 
 class BichromeBoard {
     public:
-    string ableToDraw(vector<string> board) {
-        return "";
+
+		
+
+    string ableToDraw(vector<string> board){
+		
+		for (int k = 0; k < 2; k++)
+		{
+			bool bad = false;
+			for (int i = 0; i < board.size(); i++)
+			{
+				for (int j = 0; j < board[i].size(); j++)
+				{
+					if (board[i][j] != '?')
+					{
+						if ( board[i][j] != ((( i+j+k) %2 != 0) ? 'W' : 'B'))
+						{
+							bad = true;
+						}
+					}
+				}
+			}
+
+			if (!bad)
+				return "Possible";
+		}
+		return "Impossible";
     }
 };
 
