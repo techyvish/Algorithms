@@ -12,38 +12,35 @@
 
 using namespace std;
 
-class BichromeBoard {
+class FoldingPaper2 {
     public:
 
-    string ableToDraw(vector<string> board){
-		
-		for (int k = 0; k < 2; k++)
+		const int INF = 1000000000;
+		int fold(int x, int y)
 		{
-			bool bad = false;
-			for (int i = 0; i < board.size(); i++)
-			{
-				for (int j = 0; j < board[i].size(); j++)
-				{
-					if (board[i][j] != '?')
-					{
-						if ( board[i][j] != ((( i+j+k) %2 != 0) ? 'W' : 'B'))
-						{
-							bad = true;
-						}
-					}
+			if (x < y) {
+				return INF;
+			}
+			if (x == y) {
+				return 0;
+			}
+			return 1 + fold(x - min(x / 2, x - y), y);
+		}
+		int solve(int W, int H, int A)
+		{
+			int res = INF;
+			for (int w = 1; w <= A; w++) {
+				if (A % w == 0) {
+					int h = A / w;
+					res = std::min(res, fold(W, w) + fold(H, h));
 				}
 			}
-
-			if (!bad)
-				return "Possible";
+			return (res >= INF) ? -1 : res;
 		}
-		return "Impossible";
-    }
 };
 
-/*
 // CUT begin
-ifstream data("../../SRM 655/BichromeBoard.sample");
+ifstream data("../../SRM 655/FoldingPaper2.sample");
 
 string next_line() {
     string s;
@@ -60,17 +57,6 @@ void from_stream(string &s) {
     s = next_line();
 }
 
-template <typename T> void from_stream(vector<T> &ts) {
-    int len;
-    from_stream(len);
-    ts.clear();
-    for (int i = 0; i < len; ++i) {
-        T t;
-        from_stream(t);
-        ts.push_back(t);
-    }
-}
-
 template <typename T>
 string to_string(T t) {
     stringstream s;
@@ -82,10 +68,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(vector<string> board, string __expected) {
+bool do_test(int W, int H, int A, int __expected) {
     time_t startClock = clock();
-    BichromeBoard *instance = new BichromeBoard();
-    string __result = instance->ableToDraw(board);
+    FoldingPaper2 *instance = new FoldingPaper2();
+    int __result = instance->solve(W, H, A);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -106,10 +92,14 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<string> board;
-        from_stream(board);
+        int W;
+        from_stream(W);
+        int H;
+        from_stream(H);
+        int A;
+        from_stream(A);
         next_line();
-        string __answer;
+        int __answer;
         from_stream(__answer);
 
         cases++;
@@ -117,16 +107,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(board, __answer)) {
+        if ( do_test(W, H, A, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1428619585;
+        int T = time(NULL) - 1428712743;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -144,9 +134,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "BichromeBoard (250 Points)" << endl << endl;
+        cout << "FoldingPaper2 (500 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
