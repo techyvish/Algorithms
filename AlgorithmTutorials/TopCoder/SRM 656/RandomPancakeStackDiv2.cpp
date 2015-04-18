@@ -12,37 +12,50 @@
 
 using namespace std;
 
-class CorruptedMessage {
+class RandomPancakeStackDiv2 {
+    public:
 
-	public:
-	string reconstructMessage(string s, int k)
-	{
-		int l = s.length();
-		for (int i = 0; i < 26; i++)
+		
+    double expectedDeliciousness(vector<int> d) {
+		
+		vector<int> v;
+		vector<double> vv;
+		double div = 0;
+		int sz = d.size();
+		for (int i = 0; i < sz; i++)
 		{
-			int uniqueCount = 0;
-			for (int j = 0; j < l; j++)
+			v.push_back(i);
+ 		}
+
+		do {
+			int del = d[v[0]];
+
+			for (int i = 1; i < sz; i++)
 			{
-				if (s[j] != (char)i + 97)
-					uniqueCount++;
+				if (v[i]+1 < v[i - 1]+1)
+					break;
+				else
+					del += d[i];
 			}
 
-			if (uniqueCount == k)
-			{
-				string str;
-				for (int p = 0; p < l; p++)
-					str += (char)i + 97;
-				return str;
-			}
+			div += 1;
+			vv.push_back(del);
+		} while (next_permutation(v.begin(), v.end()));
+
+		double sum = 0.0;
+		for (int i = 0; i < vv.size(); i++)
+		{
+			sum += vv[i];
 		}
-		return s;
-	}
+		double ans = 0.0;
+		ans = sum / div;
 
-
+        return ans;
+    }
 };
-/*
+
 // CUT begin
-ifstream data("../../Single Round Match 656/CorruptedMessage.sample");
+ifstream data("../../SRM 656/RandomPancakeStackDiv2.sample");
 
 string next_line() {
     string s;
@@ -59,6 +72,17 @@ void from_stream(string &s) {
     s = next_line();
 }
 
+template <typename T> void from_stream(vector<T> &ts) {
+    int len;
+    from_stream(len);
+    ts.clear();
+    for (int i = 0; i < len; ++i) {
+        T t;
+        from_stream(t);
+        ts.push_back(t);
+    }
+}
+
 template <typename T>
 string to_string(T t) {
     stringstream s;
@@ -70,14 +94,16 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(string s, int k, string __expected) {
+bool double_equal(const double &a, const double &b) { return b==b && a==a && fabs(b - a) <= 1e-9 * max(1.0, fabs(a) ); }
+
+bool do_test(vector<int> d, double __expected) {
     time_t startClock = clock();
-    CorruptedMessage *instance = new CorruptedMessage();
-    string __result = instance->reconstructMessage(s, k);
+    RandomPancakeStackDiv2 *instance = new RandomPancakeStackDiv2();
+    double __result = instance->expectedDeliciousness(d);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
-    if (__result == __expected) {
+    if (double_equal(__expected, __result)) {
         cout << "PASSED!" << " (" << elapsed << " seconds)" << endl;
         return true;
     }
@@ -94,12 +120,10 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        string s;
-        from_stream(s);
-        int k;
-        from_stream(k);
+        vector<int> d;
+        from_stream(d);
         next_line();
-        string __answer;
+        double __answer;
         from_stream(__answer);
 
         cases++;
@@ -107,16 +131,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(s, k, __answer)) {
+        if ( do_test(d, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1429269304;
+        int T = time(NULL) - 1429353601;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -134,9 +158,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "CorruptedMessage (250 Points)" << endl << endl;
+        cout << "RandomPancakeStackDiv2 (500 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
