@@ -12,36 +12,37 @@
 
 using namespace std;
 
-class FoldingPaper2 {
-    public:
+class CorruptedMessage {
 
-		const int INF = 1000000000;
-		int fold(int x, int y)
+	public:
+	string reconstructMessage(string s, int k)
+	{
+		int l = s.length();
+		for (int i = 0; i < 26; i++)
 		{
-			if (x < y) {
-				return INF;
+			int uniqueCount = 0;
+			for (int j = 0; j < l; j++)
+			{
+				if (s[j] != (char)i + 97)
+					uniqueCount++;
 			}
-			if (x == y) {
-				return 0;
+
+			if (uniqueCount == k)
+			{
+				string str;
+				for (int p = 0; p < l; p++)
+					str += (char)i + 97;
+				return str;
 			}
-			return 1 + fold(x - min(x / 2, x - y), y);
 		}
-		int solve(int W, int H, int A)
-		{
-			int res = INF;
-			for (int w = 1; w <= A; w++) {
-				if (A % w == 0) {
-					int h = A / w;
-					res = std::min(res, fold(W, w) + fold(H, h));
-				}
-			}
-			return (res >= INF) ? -1 : res;
-		}
+		return s;
+	}
+
+
 };
 
-/*
 // CUT begin
-ifstream data("../../SRM 655/FoldingPaper2.sample");
+ifstream data("../../Single Round Match 656/CorruptedMessage.sample");
 
 string next_line() {
     string s;
@@ -69,10 +70,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(int W, int H, int A, int __expected) {
+bool do_test(string s, int k, string __expected) {
     time_t startClock = clock();
-    FoldingPaper2 *instance = new FoldingPaper2();
-    int __result = instance->solve(W, H, A);
+    CorruptedMessage *instance = new CorruptedMessage();
+    string __result = instance->reconstructMessage(s, k);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -93,14 +94,12 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        int W;
-        from_stream(W);
-        int H;
-        from_stream(H);
-        int A;
-        from_stream(A);
+        string s;
+        from_stream(s);
+        int k;
+        from_stream(k);
         next_line();
-        int __answer;
+        string __answer;
         from_stream(__answer);
 
         cases++;
@@ -108,16 +107,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(W, H, A, __answer)) {
+        if ( do_test(s, k, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1428712743;
+        int T = time(NULL) - 1429269304;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -135,9 +134,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "FoldingPaper2 (500 Points)" << endl << endl;
+        cout << "CorruptedMessage (250 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
