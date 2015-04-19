@@ -12,50 +12,15 @@
 
 using namespace std;
 
-class RandomPancakeStackDiv2 {
+class PermutationCountsDiv2 {
     public:
-
-		
-    double expectedDeliciousness(vector<int> d) {
-		
-		vector<int> v;
-		vector<double> vv;
-		double div = 0;
-		int sz = d.size();
-		for (int i = 0; i < sz; i++)
-		{
-			v.push_back(i);
- 		}
-
-		do {
-			int del = d[v[0]];
-
-			for (int i = 1; i < sz; i++)
-			{
-				if (v[i]+1 < v[i - 1]+1)
-					break;
-				else
-					del += d[i];
-			}
-
-			div += 1;
-			vv.push_back(del);
-		} while (next_permutation(v.begin(), v.end()));
-
-		double sum = 0.0;
-		for (int i = 0; i < vv.size(); i++)
-		{
-			sum += vv[i];
-		}
-		double ans = 0.0;
-		ans = sum / div;
-
-        return ans;
+    int countPermutations(int N, vector<int> pos) {
+        return 0;
     }
 };
-/*
+
 // CUT begin
-ifstream data("../../SRM 656/RandomPancakeStackDiv2.sample");
+ifstream data("PermutationCountsDiv2.sample");
 
 string next_line() {
     string s;
@@ -94,16 +59,14 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool double_equal(const double &a, const double &b) { return b==b && a==a && fabs(b - a) <= 1e-9 * max(1.0, fabs(a) ); }
-
-bool do_test(vector<int> d, double __expected) {
+bool do_test(int N, vector<int> pos, int __expected) {
     time_t startClock = clock();
-    RandomPancakeStackDiv2 *instance = new RandomPancakeStackDiv2();
-    double __result = instance->expectedDeliciousness(d);
+    PermutationCountsDiv2 *instance = new PermutationCountsDiv2();
+    int __result = instance->countPermutations(N, pos);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
-    if (double_equal(__expected, __result)) {
+    if (__result == __expected) {
         cout << "PASSED!" << " (" << elapsed << " seconds)" << endl;
         return true;
     }
@@ -120,10 +83,12 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<int> d;
-        from_stream(d);
+        int N;
+        from_stream(N);
+        vector<int> pos;
+        from_stream(pos);
         next_line();
-        double __answer;
+        int __answer;
         from_stream(__answer);
 
         cases++;
@@ -131,16 +96,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(d, __answer)) {
+        if ( do_test(N, pos, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1429353601;
+        int T = time(NULL) - 1429440719;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 1000 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -158,9 +123,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "RandomPancakeStackDiv2 (500 Points)" << endl << endl;
+        cout << "PermutationCountsDiv2 (1000 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
