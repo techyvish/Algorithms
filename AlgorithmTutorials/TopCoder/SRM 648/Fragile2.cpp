@@ -18,7 +18,7 @@ class Fragile2 {
         return 0;
     }
 };
-
+/*
 // CUT begin
 ifstream data("../../SRM 648/Fragile2.sample");
 
@@ -126,3 +126,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
