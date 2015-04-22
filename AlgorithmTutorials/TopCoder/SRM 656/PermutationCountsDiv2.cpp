@@ -19,6 +19,7 @@ class PermutationCountsDiv2 {
     }
 };
 
+/*
 // CUT begin
 ifstream data("PermutationCountsDiv2.sample");
 
@@ -128,3 +129,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
