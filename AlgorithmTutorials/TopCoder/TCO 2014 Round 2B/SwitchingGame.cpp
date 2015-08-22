@@ -12,49 +12,16 @@
 
 using namespace std;
 
-class CountryGroup {
+class SwitchingGame {
     public:
-    int solve(vector<int> a) {
-        
-        int p = 0 ;
-        int ans = 0;
-        int N = 0;
-        for ( int i = 0 ; i < a.size() ; i ++  )
-        {
-            p = a[i];
-            bool ap = false ;
-            if ( N + p > a.size() )
-                return -1;
-            
-            for ( int j = i ; j < i+p ; j++ )
-            {
-            
-                if ( a[j] == p )
-                {
-                    ap = true;
-                    N++;
-                }
-                else
-                {
-                    return  -1;
-                }
-            }
-            if ( ap )
-            {
-                ans ++;
-                if ( N == a.size() )
-                    break;
-                i = N-1;
-            }
-        }
-     
-        return  ans;
+    int timeToWin(vector<string> states) {
+        return 0;
     }
 };
-/*
-// CUT begin
-ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/Single Round Match 653/CountryGroup.sample");
 
+// CUT begin
+string path = "TCO 2014 Round 2B/SwitchingGame.sample";
+ifstream data(path.c_str());
 
 string next_line() {
     string s;
@@ -93,10 +60,10 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(vector<int> a, int __expected) {
+bool do_test(vector<string> states, int __expected) {
     time_t startClock = clock();
-    CountryGroup *instance = new CountryGroup();
-    int __result = instance->solve(a);
+    SwitchingGame *instance = new SwitchingGame();
+    int __result = instance->timeToWin(states);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
@@ -117,8 +84,8 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        vector<int> a;
-        from_stream(a);
+        vector<string> states;
+        from_stream(states);
         next_line();
         int __answer;
         from_stream(__answer);
@@ -128,16 +95,16 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(a, __answer)) {
+        if ( do_test(states, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1426590004;
+        int T = time(NULL) - 1440226614;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
-        cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
+        cout << "Score  : " << 350 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
     }
     return 0;
 }
@@ -155,9 +122,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "CountryGroup (250 Points)" << endl << endl;
+        cout << "SwitchingGame (350 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/

@@ -143,6 +143,7 @@
 		C9FE7FA5199C38CC002A1EEE /* DiagonalDisproportion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA2199C38CC002A1EEE /* DiagonalDisproportion.cpp */; };
 		C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */; };
 		C9FE7FAF199C6FC2002A1EEE /* ValueHistogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */; };
+		CF5954C49290D2B2C61675D7 /* SwitchingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF5957305F062DEE199A14C8 /* SwitchingGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -487,6 +488,9 @@
 		C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueHistogram.cpp; sourceTree = "<group>"; };
 		C9FE7FAD199C6FC2002A1EEE /* ValueHistogram.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ValueHistogram.html; sourceTree = "<group>"; };
 		C9FE7FAE199C6FC2002A1EEE /* ValueHistogram.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValueHistogram.sample; sourceTree = "<group>"; };
+		CF5950189407D090043673AA /* SwitchingGame.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = SwitchingGame.sample; sourceTree = "<group>"; };
+		CF5957305F062DEE199A14C8 /* SwitchingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwitchingGame.cpp; sourceTree = "<group>"; };
+		CF595DADACF1655B41A59E22 /* SwitchingGame.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SwitchingGame.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -758,6 +762,7 @@
 				C916A26D195F937500AA4A19 /* TestCases */,
 				C916A265195E9ECB00AA4A19 /* Time.cpp */,
 				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
+				CF595759178532F21F9E7066 /* TCO 2014 Round 2B */,
 			);
 			path = TopCoder;
 			sourceTree = "<group>";
@@ -1459,6 +1464,16 @@
 			path = "SRM 565";
 			sourceTree = "<group>";
 		};
+		CF595759178532F21F9E7066 /* TCO 2014 Round 2B */ = {
+			isa = PBXGroup;
+			children = (
+				CF5957305F062DEE199A14C8 /* SwitchingGame.cpp */,
+				CF595DADACF1655B41A59E22 /* SwitchingGame.html */,
+				CF5950189407D090043673AA /* SwitchingGame.sample */,
+			);
+			path = "TCO 2014 Round 2B";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1646,6 +1661,7 @@
 				C9A4BC2119CFD001002A89D9 /* Rabin-Karp.cpp in Sources */,
 				C9E059F31AA2F4C9006722B4 /* HiddenNumbers.cpp in Sources */,
 				C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */,
+				CF5954C49290D2B2C61675D7 /* SwitchingGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

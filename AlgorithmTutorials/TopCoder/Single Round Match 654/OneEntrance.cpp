@@ -9,15 +9,105 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
+#include <map>
+#include <list>
 
 using namespace std;
 
+#define SZ(x) ((int)x.size())
+#define pb(x) push_back(x)
+#define mp(a, b) make_pair(a, b)
+#define ALL(X) X.begin(), X.end()
+#define SRT(x) sort(ALL(x))
+#define RVRS(x) reverse(ALL(x))
+#define FILL(x, value) memset(x, value, sizeof(x))
+
+#define next next1
+#define hash hash1
+#define rank rank1
+
+#ifdef _DEBUG_
+#define eprintf(...) fprintf(stderr, __VA_ARGS__)
+#else
+#define eprintf(...)
+#endif
+
+using namespace std;
+
+template <class T> inline void check_max(T& actual, T check) {
+    if(actual < check) {
+        actual = check;
+    }
+}
+
+template <class T> inline void check_min(T& actual, T check) {
+    if(actual > check) {
+        actual = check;
+    }
+}
+
+const double EPS = 1e-9;
+const int IINF = 1000000000;
+const double PI = acos(-1.0);
+const long long LINF = 6000000000000000000LL;
+
+bool U[10], USED[10];
+vector<int> G[10];
+
+bool can(int v, int dest) {
+    if(U[v]) return false;
+    if(v == dest) {
+        return true;
+    }
+    USED[v] = true;
+    bool ret = false;
+    for(int to : G[v]) {
+        if(!U[to] && !USED[to]) check_max(ret, can(to, dest));
+    }
+    return ret;
+}
+
+
+
 class OneEntrance {
-    public:
+public:
     int count(vector<int> a, vector<int> b, int s) {
-        return 0;
+        int n = SZ(a) + 1;
+        for(int i = 0; i + 1 < n; ++i) {
+            G[a[i]].pb(b[i]);
+            G[b[i]].pb(a[i]);
+        }
+        int answer = 0;
+        vector<int> idx;
+
+        for(int i = 0; i < n; ++i) {
+            idx.pb(i);
+        }
+        do {
+            FILL(U, 0);
+            bool ok = true;
+
+            for ( auto k = idx.begin() ; k != idx.end() ; k++ )
+            {
+                cout << *k ;
+            }
+            cout << endl;
+            for(int i = 0; i < n; ++i) {
+                FILL(USED, 0);
+                if(can(s, idx[i])) {
+                    U[idx[i]] = 1;
+                }
+                else {
+                    ok = false;
+                    break;
+                }
+            }
+            answer += ok;
+        }while(next_permutation(ALL(idx)));
+        return answer;
     }
 };
+
 
 // CUT begin
 ifstream data("/Users/vishal/Cerebro/Algorithms/AlgorithmTutorials/TopCoder/Single Round Match 654/OneEntrance.sample");
