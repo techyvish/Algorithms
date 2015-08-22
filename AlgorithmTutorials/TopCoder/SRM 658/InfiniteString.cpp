@@ -20,7 +20,7 @@ class InfiniteString {
 };
 
 // CUT begin
-ifstream data("InfiniteString.sample");
+ifstream data("../../SRM 658/InfiniteString.sample");
 
 string next_line() {
     string s;
@@ -91,7 +91,7 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1430892648;
+        int T = time(NULL) - 1430893044;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
         cout << "Score  : " << 250 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
