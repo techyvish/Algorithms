@@ -18,7 +18,7 @@ class SwitchingGame {
         return 0;
     }
 };
-
+/*
 // CUT begin
 string path = "TCO 2014 Round 2B/SwitchingGame.sample";
 ifstream data(path.c_str());
@@ -127,3 +127,4 @@ int main(int argc, char *argv[]) {
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
+*/
