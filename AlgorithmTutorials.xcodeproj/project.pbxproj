@@ -144,6 +144,7 @@
 		C9FE7FAA199C4045002A1EEE /* WhiteCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FA7199C4045002A1EEE /* WhiteCells.cpp */; };
 		C9FE7FAF199C6FC2002A1EEE /* ValueHistogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FE7FAC199C6FC2002A1EEE /* ValueHistogram.cpp */; };
 		CF5954C49290D2B2C61675D7 /* SwitchingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF5957305F062DEE199A14C8 /* SwitchingGame.cpp */; };
+		CF59598CBA962501B13A545A /* EmoticonsDiv2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF5957890754B77828ECF96E /* EmoticonsDiv2.cpp */; };
 		CF595D1C06927C906EC8558C /* PrimeSoccer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF595F5AFFAD624C20E03A37 /* PrimeSoccer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -491,6 +492,9 @@
 		C9FE7FAE199C6FC2002A1EEE /* ValueHistogram.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValueHistogram.sample; sourceTree = "<group>"; };
 		CF5950189407D090043673AA /* SwitchingGame.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = SwitchingGame.sample; sourceTree = "<group>"; };
 		CF5957305F062DEE199A14C8 /* SwitchingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwitchingGame.cpp; sourceTree = "<group>"; };
+		CF5957890754B77828ECF96E /* EmoticonsDiv2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmoticonsDiv2.cpp; sourceTree = "<group>"; };
+		CF5957BAD1432E7CD2236F3F /* EmoticonsDiv2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EmoticonsDiv2.html; sourceTree = "<group>"; };
+		CF595D19618D0C11C3153D2C /* EmoticonsDiv2.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = EmoticonsDiv2.sample; sourceTree = "<group>"; };
 		CF595DADACF1655B41A59E22 /* SwitchingGame.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SwitchingGame.html; sourceTree = "<group>"; };
 		CF595E0A3C62B01A9E229BE5 /* PrimeSoccer.sample */ = {isa = PBXFileReference; lastKnownFileType = file.sample; path = PrimeSoccer.sample; sourceTree = "<group>"; };
 		CF595F5AFFAD624C20E03A37 /* PrimeSoccer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrimeSoccer.cpp; sourceTree = "<group>"; };
@@ -768,6 +772,7 @@
 				C9C3210B19B97E7000F5F34A /* Topcoder High School ChampionShip */,
 				CF595759178532F21F9E7066 /* TCO 2014 Round 2B */,
 				CF5950B74703568385670188 /* SRM 422 */,
+				CF59596A35667AEA1F35B9E1 /* SRM 612 */,
 			);
 			path = TopCoder;
 			sourceTree = "<group>";
@@ -1489,6 +1494,16 @@
 			path = "TCO 2014 Round 2B";
 			sourceTree = "<group>";
 		};
+		CF59596A35667AEA1F35B9E1 /* SRM 612 */ = {
+			isa = PBXGroup;
+			children = (
+				CF5957890754B77828ECF96E /* EmoticonsDiv2.cpp */,
+				CF5957BAD1432E7CD2236F3F /* EmoticonsDiv2.html */,
+				CF595D19618D0C11C3153D2C /* EmoticonsDiv2.sample */,
+			);
+			path = "SRM 612";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1678,6 +1693,7 @@
 				C9F5C907199DC50900A3D863 /* RedundantStrings.cpp in Sources */,
 				CF5954C49290D2B2C61675D7 /* SwitchingGame.cpp in Sources */,
 				CF595D1C06927C906EC8558C /* PrimeSoccer.cpp in Sources */,
+				CF59598CBA962501B13A545A /* EmoticonsDiv2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
