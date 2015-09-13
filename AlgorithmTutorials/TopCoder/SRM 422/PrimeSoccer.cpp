@@ -9,45 +9,18 @@
 #include <sstream>
 #include <typeinfo>
 #include <fstream>
-#include <map>
 
 using namespace std;
 
-class ColorfulRoad {
+class PrimeSoccer {
     public:
-    int getMin(string road) {
-
-        map<char,char> next ;
-        next['R']= 'G';
-        next['G']= 'B';
-        next['B']= 'R';
-
-        const int INF = 1000000;
-
-        int n = road.size();
-
-        int f[n];
-
-        f[n-1] = 0;
-
-        for ( int i = n - 2 ; i >= 0 ; i-- )
-        {
-            f[i] = INF;
-            for ( int j = i + 1 ; j < n ; j ++ )
-            {
-                if ( road[j] == next [road[i]])
-                {
-                    f[i] = std::min( f[i], (j-i) * (j-i) + f[j]);
-                }
-            }
-        }
-
-        return ( f[0] >= INF) ? -1 : f[0];
+    double getProbability(int skillOfTeamA, int skillOfTeamB) {
+        return 0.0;
     }
 };
-/*
+
 // CUT begin
-string path = "SRM 596/ColorfulRoad.sample";
+string path = "SRM 422/PrimeSoccer.sample";
 ifstream data(path.c_str());
 
 string next_line() {
@@ -76,14 +49,16 @@ string to_string(string t) {
     return "\"" + t + "\"";
 }
 
-bool do_test(string road, int __expected) {
+bool double_equal(const double &a, const double &b) { return b==b && a==a && fabs(b - a) <= 1e-9 * max(1.0, fabs(a) ); }
+
+bool do_test(int skillOfTeamA, int skillOfTeamB, double __expected) {
     time_t startClock = clock();
-    ColorfulRoad *instance = new ColorfulRoad();
-    int __result = instance->getMin(road);
+    PrimeSoccer *instance = new PrimeSoccer();
+    double __result = instance->getProbability(skillOfTeamA, skillOfTeamB);
     double elapsed = (double)(clock() - startClock) / CLOCKS_PER_SEC;
     delete instance;
 
-    if (__result == __expected) {
+    if (double_equal(__expected, __result)) {
         cout << "PASSED!" << " (" << elapsed << " seconds)" << endl;
         return true;
     }
@@ -100,10 +75,12 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
     while (true) {
         if (next_line().find("--") != 0)
             break;
-        string road;
-        from_stream(road);
+        int skillOfTeamA;
+        from_stream(skillOfTeamA);
+        int skillOfTeamB;
+        from_stream(skillOfTeamB);
         next_line();
-        int __answer;
+        double __answer;
         from_stream(__answer);
 
         cases++;
@@ -111,13 +88,13 @@ int run_test(bool mainProcess, const set<int> &case_set, const string command) {
             continue;
 
         cout << "  Testcase #" << cases - 1 << " ... ";
-        if ( do_test(road, __answer)) {
+        if ( do_test(skillOfTeamA, skillOfTeamB, __answer)) {
             passed++;
         }
     }
     if (mainProcess) {
         cout << endl << "Passed : " << passed << "/" << cases << " cases" << endl;
-        int T = time(NULL) - 1404418426;
+        int T = time(NULL) - 1442102869;
         double PT = T / 60.0, TT = 75.0;
         cout << "Time   : " << T / 60 << " minutes " << T % 60 << " secs" << endl;
         cout << "Score  : " << 500 * (0.3 + (0.7 * TT * TT) / (10.0 * PT * PT + TT * TT)) << " points" << endl;
@@ -138,9 +115,8 @@ int main(int argc, char *argv[]) {
         }
     }
     if (mainProcess) {
-        cout << "ColorfulRoad (500 Points)" << endl << endl;
+        cout << "PrimeSoccer (500 Points)" << endl << endl;
     }
     return run_test(mainProcess, cases, argv[0]);
 }
 // CUT end
-*/
