@@ -14,19 +14,44 @@ using namespace std;
 
 class EmoticonsDiv2 {
     public:
+    int divisor(int number)
+    {
+        int i;
+        for (i = 2; i <=sqrt(number); i++)
+        {
+            if (number % i == 0)
+            {
+                return number/i;
+            }
+        }
+        return 1;
+    }
     int printSmiles(int smiles) {
         int n = smiles;
-        int f[n+1] = {0};
-        for (int i = 1; i <= smiles ; i++ ){
-
+        int f[100000] = {0,1,2,3,3,5,5,7,6,6,7,11};
+        if ( smiles > 11 )
+        {
+            for (int i = 12; i <= smiles; i++) {
+                int div =   divisor(i);
+                if ( div != i ) {
+                    int minsimilies = f[div];
+                    int op = (i / div) ;
+                    f[i] = op + minsimilies;
+                }
+                else {
+                    f[i] = i;
+                 }
+            }
+            return f[smiles];
+        }
+        else {
+            return f[smiles];
         }
         return 0;
 
     }
 
-    long greatestDivisor(long n) {
-        return 0;
-    }
+
 };
 
 // CUT begin
